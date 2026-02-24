@@ -1,0 +1,7118 @@
+
+{
+  "meta": {
+    "sourcePdf": "XDF________.pdf",
+    "generatedAt": "2026-02-24T01:50:22.692459+00:00",
+    "entryCount": 953,
+    "rootCount": 275
+  },
+  "roots": [
+    {
+      "root": "un",
+      "gloss": "难为情的",
+      "wordCount": 29,
+      "sampleWords": [
+        "unreal",
+        "unequal",
+        "unfortunate",
+        "unabashed",
+        "unassuming",
+        "uncommitted",
+        "unscrupulous",
+        "untoward",
+        "unconditional",
+        "unlimitted",
+        "unambitious",
+        "unconscionable"
+      ]
+    },
+    {
+      "root": "re",
+      "gloss": "再",
+      "wordCount": 28,
+      "sampleWords": [
+        "repopulate",
+        "reflect",
+        "retreat",
+        "retract",
+        "resist",
+        "reverse",
+        "revolt",
+        "resent",
+        "repel",
+        "repose",
+        "reprobate",
+        "resplendent"
+      ]
+    },
+    {
+      "root": "dis",
+      "gloss": "分开",
+      "wordCount": 24,
+      "sampleWords": [
+        "dislike",
+        "disorder",
+        "dishonest",
+        "disappear",
+        "disproof",
+        "discourage",
+        "disarm",
+        "dispel",
+        "dispassionate",
+        "discover",
+        "disseminate",
+        "dispense"
+      ]
+    },
+    {
+      "root": "in",
+      "gloss": "不",
+      "wordCount": 21,
+      "sampleWords": [
+        "inglorious",
+        "incapable",
+        "inhuman",
+        "injustice",
+        "incorrigible",
+        "inconstant",
+        "innocuous",
+        "inimitable",
+        "insubordinate",
+        "inborn",
+        "incentive",
+        "incorporate"
+      ]
+    },
+    {
+      "root": "ate",
+      "gloss": "生命",
+      "wordCount": 20,
+      "sampleWords": [
+        "accumulate",
+        "aggravate",
+        "appreciate",
+        "associate",
+        "assimilate",
+        "adumbrate",
+        "coagulate",
+        "corroborate",
+        "illuminate",
+        "irradiate",
+        "irritate",
+        "incorporate"
+      ]
+    },
+    {
+      "root": "sub",
+      "gloss": "在下面",
+      "wordCount": 19,
+      "sampleWords": [
+        "subdue",
+        "subjugate",
+        "submerge",
+        "submissive",
+        "suborn",
+        "subside",
+        "subterranean",
+        "subcontinent",
+        "subtropics",
+        "subtitle",
+        "subeditor",
+        "suboffice"
+      ]
+    },
+    {
+      "root": "pre",
+      "gloss": "预称 预先走 优走",
+      "wordCount": 18,
+      "sampleWords": [
+        "preschool",
+        "prehistory",
+        "prefix",
+        "prepay",
+        "prebuilt",
+        "preamble",
+        "precaution",
+        "precedent",
+        "precept",
+        "precinct",
+        "precipice",
+        "precise"
+      ]
+    },
+    {
+      "root": "ion",
+      "gloss": "好事",
+      "wordCount": 17,
+      "sampleWords": [
+        "aggression",
+        "benefaction",
+        "benediction",
+        "collusion",
+        "illusion",
+        "malediction",
+        "malefaction",
+        "agitation",
+        "alternation",
+        "recession",
+        "excision",
+        "circulation"
+      ]
+    },
+    {
+      "root": "pro",
+      "gloss": "预先",
+      "wordCount": 17,
+      "sampleWords": [
+        "progress",
+        "prologue",
+        "promote",
+        "protrude",
+        "propel",
+        "profile",
+        "profess",
+        "proclivity",
+        "prospect",
+        "provoke",
+        "procreate",
+        "profit"
+      ]
+    },
+    {
+      "root": "de",
+      "gloss": "打开",
+      "wordCount": 16,
+      "sampleWords": [
+        "desalt",
+        "deforest",
+        "devalue",
+        "depress",
+        "detrain",
+        "decelerate",
+        "decode",
+        "defame",
+        "delimit",
+        "depict",
+        "design",
+        "deminish"
+      ]
+    },
+    {
+      "root": "ex",
+      "gloss": "出",
+      "wordCount": 16,
+      "sampleWords": [
+        "exclude",
+        "expel",
+        "expose",
+        "exalt",
+        "extract",
+        "excise",
+        "exceed",
+        "exhale",
+        "exhume",
+        "expurgate",
+        "ex-wife",
+        "ex-president"
+      ]
+    },
+    {
+      "root": "ad",
+      "gloss": "",
+      "wordCount": 15,
+      "sampleWords": [
+        "addict",
+        "adduce",
+        "adapt",
+        "adept",
+        "adopt",
+        "adhere",
+        "adjacent",
+        "adjoin",
+        "admire",
+        "adumbrate",
+        "adjust",
+        "adventure"
+      ]
+    },
+    {
+      "root": "out",
+      "gloss": "",
+      "wordCount": 15,
+      "sampleWords": [
+        "outdo",
+        "outlive",
+        "outnumber",
+        "outsize",
+        "outwear",
+        "outwit",
+        "outlaw",
+        "outside",
+        "outlandish",
+        "outrage",
+        "outskirts",
+        "outflow"
+      ]
+    },
+    {
+      "root": "over",
+      "gloss": "",
+      "wordCount": 14,
+      "sampleWords": [
+        "overstudy",
+        "overwork",
+        "overact",
+        "overdose",
+        "overproduction",
+        "overcrowded",
+        "overlap",
+        "overwhelm",
+        "overbridge",
+        "overcoat",
+        "overcome",
+        "overturn"
+      ]
+    },
+    {
+      "root": "under",
+      "gloss": "",
+      "wordCount": 13,
+      "sampleWords": [
+        "underground",
+        "underwrite",
+        "undersea",
+        "undermine",
+        "underling",
+        "underclothing",
+        "underwear",
+        "underestimate",
+        "underpopulated",
+        "underdeveloped",
+        "undersized",
+        "underagent"
+      ]
+    },
+    {
+      "root": "al",
+      "gloss": "双语的",
+      "wordCount": 12,
+      "sampleWords": [
+        "bilingual",
+        "coalesce",
+        "colingual",
+        "emphreal",
+        "minimal",
+        "postal",
+        "aerial",
+        "aniaml",
+        "astral",
+        "principal",
+        "capital",
+        "recital"
+      ]
+    },
+    {
+      "root": "be",
+      "gloss": "= 生命 小生命 微生物",
+      "wordCount": 12,
+      "sampleWords": [
+        "beguile",
+        "belie",
+        "besiege",
+        "beware",
+        "befriend",
+        "befool",
+        "befall",
+        "belittle",
+        "bewilder",
+        "before",
+        "beneath",
+        "microbe"
+      ]
+    },
+    {
+      "root": "im",
+      "gloss": "",
+      "wordCount": 12,
+      "sampleWords": [
+        "impossible",
+        "immoral",
+        "impolite",
+        "impartial",
+        "impassive",
+        "impeccable",
+        "immortal",
+        "immutable",
+        "imprison",
+        "impel",
+        "imperil",
+        "impulse"
+      ]
+    },
+    {
+      "root": "per",
+      "gloss": "始终 年的 终年的",
+      "wordCount": 12,
+      "sampleWords": [
+        "perspective",
+        "perennial",
+        "perspire",
+        "permanent",
+        "persist",
+        "persuade",
+        "percussion",
+        "pernicious",
+        "perforate",
+        "permeate",
+        "perfidy",
+        "pervert"
+      ]
+    },
+    {
+      "root": "em",
+      "gloss": "",
+      "wordCount": 11,
+      "sampleWords": [
+        "embrace",
+        "embed",
+        "empathy",
+        "embarrass",
+        "embattle",
+        "empower",
+        "embitter",
+        "embody",
+        "embellish",
+        "emboss",
+        "emphreal"
+      ]
+    },
+    {
+      "root": "en",
+      "gloss": "进入",
+      "wordCount": 10,
+      "sampleWords": [
+        "enroll",
+        "encage",
+        "enchain",
+        "enact",
+        "enchant",
+        "encompass",
+        "endanger",
+        "encourage",
+        "enlighten",
+        "encircle"
+      ]
+    },
+    {
+      "root": "inter",
+      "gloss": "在…中间 拿住 拦截",
+      "wordCount": 10,
+      "sampleWords": [
+        "international",
+        "interpersonal",
+        "interpose",
+        "intersect",
+        "intervene",
+        "interaction",
+        "interchangeable",
+        "interrelate",
+        "interact",
+        "intercept"
+      ]
+    },
+    {
+      "root": "mis",
+      "gloss": "",
+      "wordCount": 10,
+      "sampleWords": [
+        "mistake",
+        "misspell",
+        "misunderstand",
+        "misdoing",
+        "misrule",
+        "misfortune",
+        "mistrust",
+        "misanthrope",
+        "miscreant",
+        "mishap"
+      ]
+    },
+    {
+      "root": "super",
+      "gloss": "",
+      "wordCount": 10,
+      "sampleWords": [
+        "supersized",
+        "supersonic",
+        "supernatural",
+        "superfluous",
+        "supersensitive",
+        "supercharge",
+        "supervise",
+        "superstructure",
+        "superficial",
+        "superintend"
+      ]
+    },
+    {
+      "root": "trans",
+      "gloss": "",
+      "wordCount": 10,
+      "sampleWords": [
+        "transcontinetal",
+        "transnormal",
+        "transcend",
+        "transgress",
+        "transmit",
+        "transect",
+        "tranplant",
+        "transfigure",
+        "transfuse",
+        "transitory"
+      ]
+    },
+    {
+      "root": "ultra",
+      "gloss": "纯的",
+      "wordCount": 10,
+      "sampleWords": [
+        "ultrapure",
+        "ultramilitant",
+        "ultraclean",
+        "ultra-reactionary",
+        "ultraliberal",
+        "ultrasonic",
+        "ultramodern",
+        "ultramundane",
+        "ultrared",
+        "ultraviolet"
+      ]
+    },
+    {
+      "root": "com",
+      "gloss": "",
+      "wordCount": 9,
+      "sampleWords": [
+        "combine",
+        "compassion",
+        "compatriot",
+        "comparison",
+        "compact",
+        "comfort",
+        "compete",
+        "component",
+        "compress"
+      ]
+    },
+    {
+      "root": "con",
+      "gloss": "共同 心一样",
+      "wordCount": 9,
+      "sampleWords": [
+        "concentric",
+        "contemporary",
+        "conclude",
+        "confirm",
+        "condense",
+        "conflict",
+        "confluence",
+        "console",
+        "concord"
+      ]
+    },
+    {
+      "root": "ir",
+      "gloss": "",
+      "wordCount": 9,
+      "sampleWords": [
+        "irregular",
+        "irrational",
+        "irrelative",
+        "irresolute",
+        "irreproadchable",
+        "irrefutable",
+        "irresistible",
+        "irradiate",
+        "irritate"
+      ]
+    },
+    {
+      "root": "ity",
+      "gloss": "状态",
+      "wordCount": 9,
+      "sampleWords": [
+        "proclivity",
+        "acidity",
+        "acuity",
+        "amity",
+        "annuity",
+        "avidity",
+        "brevity",
+        "cordiality",
+        "celerity"
+      ]
+    },
+    {
+      "root": "post",
+      "gloss": "表名词 后面的人 子孙",
+      "wordCount": 9,
+      "sampleWords": [
+        "postwar",
+        "postpone",
+        "postgraduate",
+        "postface",
+        "posterior",
+        "postage",
+        "postoffice",
+        "postcard",
+        "postal"
+      ]
+    },
+    {
+      "root": "a",
+      "gloss": "",
+      "wordCount": 8,
+      "sampleWords": [
+        "acentric",
+        "asocial",
+        "anemia",
+        "asleep",
+        "aside",
+        "ahead",
+        "alive",
+        "awash"
+      ]
+    },
+    {
+      "root": "ag",
+      "gloss": "",
+      "wordCount": 8,
+      "sampleWords": [
+        "aggression",
+        "aggrandize",
+        "aggravate",
+        "agenda",
+        "agile",
+        "agitate",
+        "agent",
+        "agency"
+      ]
+    },
+    {
+      "root": "di",
+      "gloss": "",
+      "wordCount": 8,
+      "sampleWords": [
+        "dichromatic",
+        "dioxide",
+        "dilemma",
+        "dilate",
+        "dilute",
+        "diminish",
+        "digress",
+        "divide"
+      ]
+    },
+    {
+      "root": "ent",
+      "gloss": "坏意志",
+      "wordCount": 8,
+      "sampleWords": [
+        "benewolent",
+        "beneficent",
+        "component",
+        "malevolent",
+        "precedent",
+        "agent",
+        "antecedent",
+        "clairaudient"
+      ]
+    },
+    {
+      "root": "gon",
+      "gloss": "角",
+      "wordCount": 8,
+      "sampleWords": [
+        "paragon",
+        "perigon",
+        "decagon",
+        "heptagon",
+        "hexagon",
+        "octagon",
+        "pentagon",
+        "tetragon"
+      ]
+    },
+    {
+      "root": "multi",
+      "gloss": "",
+      "wordCount": 8,
+      "sampleWords": [
+        "multilingual",
+        "multidirectional",
+        "multiple",
+        "multiply",
+        "multiform",
+        "multicultural",
+        "multimedia",
+        "multitude"
+      ]
+    },
+    {
+      "root": "ous",
+      "gloss": "匿名的",
+      "wordCount": 8,
+      "sampleWords": [
+        "anemia",
+        "anonymous",
+        "inglorious",
+        "innocuous",
+        "monotonous",
+        "endogenous",
+        "disastrous",
+        "circuitous"
+      ]
+    },
+    {
+      "root": "se",
+      "gloss": "分开 分开走 脱离",
+      "wordCount": 8,
+      "sampleWords": [
+        "seclude",
+        "secrete",
+        "seduce",
+        "segregate",
+        "sever",
+        "select",
+        "secede",
+        "secret"
+      ]
+    },
+    {
+      "root": "sur",
+      "gloss": "",
+      "wordCount": 8,
+      "sampleWords": [
+        "surround",
+        "surface",
+        "surpass",
+        "surrealism",
+        "surmount",
+        "surplus",
+        "surcharge",
+        "survival"
+      ]
+    },
+    {
+      "root": "ac",
+      "gloss": "一再 一再喊 欢呼",
+      "wordCount": 7,
+      "sampleWords": [
+        "accelerate",
+        "accentuate",
+        "accomplish",
+        "accumulate",
+        "accustom",
+        "accede",
+        "acclaim"
+      ]
+    },
+    {
+      "root": "an",
+      "gloss": "无",
+      "wordCount": 7,
+      "sampleWords": [
+        "announce",
+        "amphibian",
+        "anharmonic",
+        "anechoic",
+        "anonymous",
+        "anarchy",
+        "anarchism"
+      ]
+    },
+    {
+      "root": "col",
+      "gloss": "",
+      "wordCount": 7,
+      "sampleWords": [
+        "collaboration",
+        "colingual",
+        "collapse",
+        "collate",
+        "colleague",
+        "collect",
+        "collusion"
+      ]
+    },
+    {
+      "root": "extra",
+      "gloss": "",
+      "wordCount": 7,
+      "sampleWords": [
+        "extracurriculum",
+        "extraordinary",
+        "extrasolar",
+        "extraneous",
+        "extravagant",
+        "extrapolate",
+        "extraviolet"
+      ]
+    },
+    {
+      "root": "fore",
+      "gloss": "前面",
+      "wordCount": 7,
+      "sampleWords": [
+        "before",
+        "forestall",
+        "forebode",
+        "forefather",
+        "forearm",
+        "forecast",
+        "foreshadow"
+      ]
+    },
+    {
+      "root": "gram",
+      "gloss": "克",
+      "wordCount": 7,
+      "sampleWords": [
+        "diagram",
+        "epigram",
+        "decigram",
+        "hectogram",
+        "kilogram",
+        "pentagram",
+        "stereoram"
+      ]
+    },
+    {
+      "root": "il",
+      "gloss": "",
+      "wordCount": 7,
+      "sampleWords": [
+        "illegal",
+        "illiterate",
+        "illogical",
+        "illimitable",
+        "illustrate",
+        "illuminate",
+        "illusion"
+      ]
+    },
+    {
+      "root": "micro",
+      "gloss": "波",
+      "wordCount": 7,
+      "sampleWords": [
+        "microscope",
+        "microworld",
+        "microskirt",
+        "microwave",
+        "microbe",
+        "microbiology",
+        "microfilm"
+      ]
+    },
+    {
+      "root": "ab",
+      "gloss": "",
+      "wordCount": 6,
+      "sampleWords": [
+        "abnormal",
+        "abuse",
+        "absorb",
+        "absent",
+        "abduct",
+        "abject"
+      ]
+    },
+    {
+      "root": "act",
+      "gloss": "演出",
+      "wordCount": 6,
+      "sampleWords": [
+        "counteract",
+        "enact",
+        "overact",
+        "activity",
+        "activate",
+        "exact"
+      ]
+    },
+    {
+      "root": "as",
+      "gloss": "",
+      "wordCount": 6,
+      "sampleWords": [
+        "assault",
+        "assiduous",
+        "assist",
+        "associate",
+        "assimilate",
+        "assure"
+      ]
+    },
+    {
+      "root": "bi",
+      "gloss": "生命",
+      "wordCount": 6,
+      "sampleWords": [
+        "amphibian",
+        "biweekly",
+        "bilingual",
+        "biennial",
+        "biannual",
+        "macrobian"
+      ]
+    },
+    {
+      "root": "by",
+      "gloss": "",
+      "wordCount": 6,
+      "sampleWords": [
+        "byproduct",
+        "byroad",
+        "byway",
+        "bygone",
+        "bypass",
+        "bywork"
+      ]
+    },
+    {
+      "root": "co",
+      "gloss": "共同 共同做的人",
+      "wordCount": 6,
+      "sampleWords": [
+        "cooperation",
+        "coagulate",
+        "coalesce",
+        "coexist",
+        "cohere",
+        "coagent"
+      ]
+    },
+    {
+      "root": "exo",
+      "gloss": "",
+      "wordCount": 6,
+      "sampleWords": [
+        "exotic",
+        "exoteric",
+        "exocentric",
+        "exosphere",
+        "exodus",
+        "exothermic"
+      ]
+    },
+    {
+      "root": "mal",
+      "gloss": "",
+      "wordCount": 6,
+      "sampleWords": [
+        "malcontent",
+        "malpractice",
+        "malnutrition",
+        "malodor",
+        "maltreat",
+        "maladroit"
+      ]
+    },
+    {
+      "root": "meter",
+      "gloss": "米",
+      "wordCount": 6,
+      "sampleWords": [
+        "diameter",
+        "perimeter",
+        "decameter",
+        "decimeter",
+        "kilometer",
+        "millimeter"
+      ]
+    },
+    {
+      "root": "mini",
+      "gloss": "小",
+      "wordCount": 6,
+      "sampleWords": [
+        "diminish",
+        "minibus",
+        "miniskirt",
+        "miniwar",
+        "minify",
+        "deminish"
+      ]
+    },
+    {
+      "root": "neo",
+      "gloss": "",
+      "wordCount": 6,
+      "sampleWords": [
+        "neonatal",
+        "neogamist",
+        "neolithic",
+        "neophilia",
+        "neologism",
+        "neoteric"
+      ]
+    },
+    {
+      "root": "para",
+      "gloss": "",
+      "wordCount": 6,
+      "sampleWords": [
+        "parastatal",
+        "parapolitical",
+        "paradox",
+        "paragon",
+        "parachute",
+        "paradrop"
+      ]
+    },
+    {
+      "root": "sus",
+      "gloss": "向下",
+      "wordCount": 6,
+      "sampleWords": [
+        "suspect",
+        "suspend",
+        "suspense",
+        "suspire",
+        "sustain",
+        "susseptible"
+      ]
+    },
+    {
+      "root": "anthropo",
+      "gloss": "人类",
+      "wordCount": 5,
+      "sampleWords": [
+        "anthropology",
+        "anthropologist",
+        "anthropogeography",
+        "anthropomorphous",
+        "anthroposociology"
+      ]
+    },
+    {
+      "root": "anti",
+      "gloss": "",
+      "wordCount": 5,
+      "sampleWords": [
+        "antiwar",
+        "antipathy",
+        "antithesis",
+        "antibacterial",
+        "antibody"
+      ]
+    },
+    {
+      "root": "bene",
+      "gloss": "",
+      "wordCount": 5,
+      "sampleWords": [
+        "benewolent",
+        "benefaction",
+        "benefit",
+        "benediction",
+        "beneficent"
+      ]
+    },
+    {
+      "root": "dia",
+      "gloss": "",
+      "wordCount": 5,
+      "sampleWords": [
+        "dialogue",
+        "diameter",
+        "dialectic",
+        "diagnosis",
+        "diagram"
+      ]
+    },
+    {
+      "root": "dict",
+      "gloss": "说",
+      "wordCount": 5,
+      "sampleWords": [
+        "addict",
+        "benediction",
+        "contradict",
+        "malediction",
+        "predict"
+      ]
+    },
+    {
+      "root": "eu",
+      "gloss": "",
+      "wordCount": 5,
+      "sampleWords": [
+        "eulogize",
+        "euphemism",
+        "euphonious",
+        "eurhythmic",
+        "euphoria"
+      ]
+    },
+    {
+      "root": "gress",
+      "gloss": "走",
+      "wordCount": 5,
+      "sampleWords": [
+        "aggression",
+        "digress",
+        "progress",
+        "retrogress",
+        "transgress"
+      ]
+    },
+    {
+      "root": "hyper",
+      "gloss": "",
+      "wordCount": 5,
+      "sampleWords": [
+        "hyperactive",
+        "hypersensitive",
+        "hypercritical",
+        "hyperbole",
+        "hypertension"
+      ]
+    },
+    {
+      "root": "ic",
+      "gloss": "无回声的",
+      "wordCount": 5,
+      "sampleWords": [
+        "anechoic",
+        "dialectic",
+        "neolithic",
+        "isomorphic",
+        "anarchic"
+      ]
+    },
+    {
+      "root": "macro",
+      "gloss": "",
+      "wordCount": 5,
+      "sampleWords": [
+        "macroworld",
+        "macrostructure",
+        "macroscale",
+        "macrobian",
+        "macroclimate"
+      ]
+    },
+    {
+      "root": "pel",
+      "gloss": "推 击退",
+      "wordCount": 5,
+      "sampleWords": [
+        "dispel",
+        "expel",
+        "impel",
+        "propel",
+        "repel"
+      ]
+    },
+    {
+      "root": "retro",
+      "gloss": "",
+      "wordCount": 5,
+      "sampleWords": [
+        "retrograd",
+        "retrogress",
+        "retrospect",
+        "retroject",
+        "retrovert"
+      ]
+    },
+    {
+      "root": "semi",
+      "gloss": "",
+      "wordCount": 5,
+      "sampleWords": [
+        "semimonthly",
+        "semicolony",
+        "semiconductor",
+        "semicircle",
+        "semiautomatic"
+      ]
+    },
+    {
+      "root": "sym",
+      "gloss": "共同 抛 共同抛出的标志 象征",
+      "wordCount": 5,
+      "sampleWords": [
+        "sympathy",
+        "symphony",
+        "symmetry",
+        "symbiosis",
+        "symbol"
+      ]
+    },
+    {
+      "root": "syn",
+      "gloss": "",
+      "wordCount": 5,
+      "sampleWords": [
+        "synchronous",
+        "synonym",
+        "synthesis",
+        "synopsis",
+        "syndrome"
+      ]
+    },
+    {
+      "root": "able",
+      "gloss": "能…的",
+      "wordCount": 4,
+      "sampleWords": [
+        "illimitable",
+        "impeccable",
+        "inimitable",
+        "alterable"
+      ]
+    },
+    {
+      "root": "abs",
+      "gloss": "",
+      "wordCount": 4,
+      "sampleWords": [
+        "abstain",
+        "abscond",
+        "abscind",
+        "abscise"
+      ]
+    },
+    {
+      "root": "acid",
+      "gloss": "酸",
+      "wordCount": 4,
+      "sampleWords": [
+        "subacid",
+        "acidify",
+        "acidity",
+        "acidulous"
+      ]
+    },
+    {
+      "root": "aero",
+      "gloss": "",
+      "wordCount": 4,
+      "sampleWords": [
+        "aeromechanics",
+        "aerology",
+        "aerosphere",
+        "aeroview"
+      ]
+    },
+    {
+      "root": "angle",
+      "gloss": "角",
+      "wordCount": 4,
+      "sampleWords": [
+        "quadrangle",
+        "septangle",
+        "sexangle",
+        "triangle"
+      ]
+    },
+    {
+      "root": "ap",
+      "gloss": "",
+      "wordCount": 4,
+      "sampleWords": [
+        "appal",
+        "applause",
+        "appreciate",
+        "appoint"
+      ]
+    },
+    {
+      "root": "astro",
+      "gloss": "",
+      "wordCount": 4,
+      "sampleWords": [
+        "astrononmy",
+        "astrospace",
+        "astronaut",
+        "astrophysics"
+      ]
+    },
+    {
+      "root": "ation",
+      "gloss": "表名词",
+      "wordCount": 4,
+      "sampleWords": [
+        "collaboration",
+        "alteration",
+        "citation",
+        "declaration"
+      ]
+    },
+    {
+      "root": "ball",
+      "gloss": "球 表名词",
+      "wordCount": 4,
+      "sampleWords": [
+        "ballroom",
+        "ballet",
+        "balloon",
+        "baseball"
+      ]
+    },
+    {
+      "root": "centric",
+      "gloss": "中心的",
+      "wordCount": 4,
+      "sampleWords": [
+        "acentric",
+        "concentric",
+        "exocentric",
+        "homocentric"
+      ]
+    },
+    {
+      "root": "circum",
+      "gloss": "",
+      "wordCount": 4,
+      "sampleWords": [
+        "circumcise",
+        "circumnavigate",
+        "circumscribe",
+        "circumvent"
+      ]
+    },
+    {
+      "root": "cise",
+      "gloss": "切 环切",
+      "wordCount": 4,
+      "sampleWords": [
+        "abscise",
+        "circumcise",
+        "excise",
+        "precise"
+      ]
+    },
+    {
+      "root": "clude",
+      "gloss": "关闭 关出去 排外",
+      "wordCount": 4,
+      "sampleWords": [
+        "conclude",
+        "exclude",
+        "preclude",
+        "seclude"
+      ]
+    },
+    {
+      "root": "dif",
+      "gloss": "",
+      "wordCount": 4,
+      "sampleWords": [
+        "differ",
+        "diffuse",
+        "difficult",
+        "difform"
+      ]
+    },
+    {
+      "root": "form",
+      "gloss": "形状",
+      "wordCount": 4,
+      "sampleWords": [
+        "difform",
+        "multiform",
+        "twiformed",
+        "uniform"
+      ]
+    },
+    {
+      "root": "intro",
+      "gloss": "",
+      "wordCount": 4,
+      "sampleWords": [
+        "introduce",
+        "introspect",
+        "introvert",
+        "intromit"
+      ]
+    },
+    {
+      "root": "mono",
+      "gloss": "",
+      "wordCount": 4,
+      "sampleWords": [
+        "monogamy",
+        "monologue",
+        "monopoly",
+        "monotonous"
+      ]
+    },
+    {
+      "root": "poly",
+      "gloss": "独家卖 垄断",
+      "wordCount": 4,
+      "sampleWords": [
+        "monopoly",
+        "polyandry",
+        "polyglot",
+        "polyfunctional"
+      ]
+    },
+    {
+      "root": "popul",
+      "gloss": "人民 居民",
+      "wordCount": 4,
+      "sampleWords": [
+        "population",
+        "populous",
+        "populate",
+        "populace"
+      ]
+    },
+    {
+      "root": "pseudo",
+      "gloss": "",
+      "wordCount": 4,
+      "sampleWords": [
+        "pseudonym",
+        "pseudoscience",
+        "pseudograph",
+        "pseudology"
+      ]
+    },
+    {
+      "root": "spect",
+      "gloss": "看 向后看",
+      "wordCount": 4,
+      "sampleWords": [
+        "perspective",
+        "prospect",
+        "retrospect",
+        "respect"
+      ]
+    },
+    {
+      "root": "sphere",
+      "gloss": "球",
+      "wordCount": 4,
+      "sampleWords": [
+        "exosphere",
+        "hemisphere",
+        "aerosphere",
+        "biosphere"
+      ]
+    },
+    {
+      "root": "tri",
+      "gloss": "",
+      "wordCount": 4,
+      "sampleWords": [
+        "triangle",
+        "tricycle",
+        "triple",
+        "tripod"
+      ]
+    },
+    {
+      "root": "af",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "affable",
+        "afford",
+        "affirm"
+      ]
+    },
+    {
+      "root": "agitate",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "agitation",
+        "agitator",
+        "agitating"
+      ]
+    },
+    {
+      "root": "alter",
+      "gloss": "其他的 变成〔其它的〕",
+      "wordCount": 3,
+      "sampleWords": [
+        "alter",
+        "alterable",
+        "alteration"
+      ]
+    },
+    {
+      "root": "ar",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "arrange",
+        "arrest",
+        "arrive"
+      ]
+    },
+    {
+      "root": "ary",
+      "gloss": "相反的",
+      "wordCount": 3,
+      "sampleWords": [
+        "contemporary",
+        "contrary",
+        "aviary"
+      ]
+    },
+    {
+      "root": "at",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "attach",
+        "attain",
+        "attest"
+      ]
+    },
+    {
+      "root": "audi",
+      "gloss": "听",
+      "wordCount": 3,
+      "sampleWords": [
+        "audience",
+        "audible",
+        "clairaudient"
+      ]
+    },
+    {
+      "root": "base",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "basement",
+        "baseball",
+        "baseborn"
+      ]
+    },
+    {
+      "root": "bell",
+      "gloss": "战争",
+      "wordCount": 3,
+      "sampleWords": [
+        "embellish",
+        "rebellion",
+        "belligerent"
+      ]
+    },
+    {
+      "root": "bio",
+      "gloss": "生命",
+      "wordCount": 3,
+      "sampleWords": [
+        "symbiosis",
+        "biography",
+        "biosphere"
+      ]
+    },
+    {
+      "root": "cand",
+      "gloss": "白",
+      "wordCount": 3,
+      "sampleWords": [
+        "candid",
+        "candela",
+        "candescence"
+      ]
+    },
+    {
+      "root": "card",
+      "gloss": "心",
+      "wordCount": 3,
+      "sampleWords": [
+        "discard",
+        "postcard",
+        "endocardial"
+      ]
+    },
+    {
+      "root": "celer",
+      "gloss": "速度 使速度变慢",
+      "wordCount": 3,
+      "sampleWords": [
+        "accentuate",
+        "decelerate",
+        "celerity"
+      ]
+    },
+    {
+      "root": "contra",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "contrary",
+        "contradict",
+        "contravene"
+      ]
+    },
+    {
+      "root": "cor",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "correct",
+        "corrigible",
+        "corroborate"
+      ]
+    },
+    {
+      "root": "cycle",
+      "gloss": "轮子",
+      "wordCount": 3,
+      "sampleWords": [
+        "hemicycle",
+        "quadricycle",
+        "tricycle"
+      ]
+    },
+    {
+      "root": "duce",
+      "gloss": "引 引进",
+      "wordCount": 3,
+      "sampleWords": [
+        "adduce",
+        "introduce",
+        "seduce"
+      ]
+    },
+    {
+      "root": "epi",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "epidemic",
+        "epigram",
+        "epitome"
+      ]
+    },
+    {
+      "root": "fact",
+      "gloss": "做",
+      "wordCount": 3,
+      "sampleWords": [
+        "benefaction",
+        "malefaction",
+        "factitiousa"
+      ]
+    },
+    {
+      "root": "femin",
+      "gloss": "女",
+      "wordCount": 3,
+      "sampleWords": [
+        "feminine",
+        "femininity",
+        "feminism"
+      ]
+    },
+    {
+      "root": "fic",
+      "gloss": "做",
+      "wordCount": 3,
+      "sampleWords": [
+        "beneficent",
+        "difficult",
+        "superficial"
+      ]
+    },
+    {
+      "root": "flu",
+      "gloss": "流 流出",
+      "wordCount": 3,
+      "sampleWords": [
+        "confluence",
+        "effluence",
+        "superfluous"
+      ]
+    },
+    {
+      "root": "fuse",
+      "gloss": "流 流很多 大量的",
+      "wordCount": 3,
+      "sampleWords": [
+        "profuse",
+        "suffuse",
+        "transfuse"
+      ]
+    },
+    {
+      "root": "graph",
+      "gloss": "写，照片",
+      "wordCount": 3,
+      "sampleWords": [
+        "pseudograph",
+        "sterograph",
+        "dictographn"
+      ]
+    },
+    {
+      "root": "ible",
+      "gloss": "能…的",
+      "wordCount": 3,
+      "sampleWords": [
+        "corrigible",
+        "audible",
+        "inaudible"
+      ]
+    },
+    {
+      "root": "ing",
+      "gloss": "被围起来的状态 环境",
+      "wordCount": 3,
+      "sampleWords": [
+        "surrounding",
+        "exacting",
+        "agitating"
+      ]
+    },
+    {
+      "root": "intra",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "intraparty",
+        "intrapersonal",
+        "intranational"
+      ]
+    },
+    {
+      "root": "ish",
+      "gloss": "一再警告",
+      "wordCount": 3,
+      "sampleWords": [
+        "admonish",
+        "diminish",
+        "deminish"
+      ]
+    },
+    {
+      "root": "ism",
+      "gloss": "主义",
+      "wordCount": 3,
+      "sampleWords": [
+        "neologism",
+        "metamorphism",
+        "anarchism"
+      ]
+    },
+    {
+      "root": "iso",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "isotherm",
+        "isogeny",
+        "isomorphic"
+      ]
+    },
+    {
+      "root": "it",
+      "gloss": "走 环行",
+      "wordCount": 3,
+      "sampleWords": [
+        "sedition",
+        "transitory",
+        "circuit"
+      ]
+    },
+    {
+      "root": "ive",
+      "gloss": "没感情",
+      "wordCount": 3,
+      "sampleWords": [
+        "impassive",
+        "incentive",
+        "nativeaa"
+      ]
+    },
+    {
+      "root": "ject",
+      "gloss": "掷 掷出",
+      "wordCount": 3,
+      "sampleWords": [
+        "abject",
+        "eject",
+        "retroject"
+      ]
+    },
+    {
+      "root": "kilo",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "kilogram",
+        "kilometer",
+        "kilowatt"
+      ]
+    },
+    {
+      "root": "lateral",
+      "gloss": "边",
+      "wordCount": 3,
+      "sampleWords": [
+        "octolateral",
+        "quadrilateral",
+        "septiateral"
+      ]
+    },
+    {
+      "root": "lect",
+      "gloss": "讲",
+      "wordCount": 3,
+      "sampleWords": [
+        "collect",
+        "dialectic",
+        "select"
+      ]
+    },
+    {
+      "root": "logue",
+      "gloss": "话 对着说话",
+      "wordCount": 3,
+      "sampleWords": [
+        "dialogue",
+        "monologue",
+        "prologue"
+      ]
+    },
+    {
+      "root": "male",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "malediction",
+        "malefaction",
+        "malevolent"
+      ]
+    },
+    {
+      "root": "ment",
+      "gloss": "表名词",
+      "wordCount": 3,
+      "sampleWords": [
+        "basement",
+        "ecitement",
+        "mention"
+      ]
+    },
+    {
+      "root": "meta",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "metamorphism",
+        "metaphor",
+        "metapsy"
+      ]
+    },
+    {
+      "root": "minim",
+      "gloss": "=",
+      "wordCount": 3,
+      "sampleWords": [
+        "minimal",
+        "minimum",
+        "minion"
+      ]
+    },
+    {
+      "root": "non",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "nonexistent",
+        "nonsmoking",
+        "nonstop"
+      ]
+    },
+    {
+      "root": "ology",
+      "gloss": "学科",
+      "wordCount": 3,
+      "sampleWords": [
+        "pseudology",
+        "aerology",
+        "anthropology"
+      ]
+    },
+    {
+      "root": "omni",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "omnipresent",
+        "omnipotent",
+        "omniscient"
+      ]
+    },
+    {
+      "root": "or",
+      "gloss": "表名词",
+      "wordCount": 3,
+      "sampleWords": [
+        "agitator",
+        "incisor",
+        "clamor"
+      ]
+    },
+    {
+      "root": "pass",
+      "gloss": "感情",
+      "wordCount": 3,
+      "sampleWords": [
+        "bypass",
+        "impassive",
+        "surpass"
+      ]
+    },
+    {
+      "root": "pathy",
+      "gloss": "感情",
+      "wordCount": 3,
+      "sampleWords": [
+        "antipathy",
+        "empathy",
+        "sympathy"
+      ]
+    },
+    {
+      "root": "penta",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "pentagon",
+        "pentagram",
+        "pentoxide"
+      ]
+    },
+    {
+      "root": "press",
+      "gloss": "压 压下去",
+      "wordCount": 3,
+      "sampleWords": [
+        "compress",
+        "depress",
+        "suppress"
+      ]
+    },
+    {
+      "root": "side",
+      "gloss": "旁边",
+      "wordCount": 3,
+      "sampleWords": [
+        "aside",
+        "outside",
+        "ad"
+      ]
+    },
+    {
+      "root": "sist",
+      "gloss": "站 反着站 反抗",
+      "wordCount": 3,
+      "sampleWords": [
+        "assist",
+        "persist",
+        "resist"
+      ]
+    },
+    {
+      "root": "sonic",
+      "gloss": "声音的",
+      "wordCount": 3,
+      "sampleWords": [
+        "supersonic",
+        "ultrasonic",
+        "stereosonic"
+      ]
+    },
+    {
+      "root": "stereo",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "stereosonic",
+        "sterograph",
+        "stereoram"
+      ]
+    },
+    {
+      "root": "suc",
+      "gloss": "下面",
+      "wordCount": 3,
+      "sampleWords": [
+        "succeed",
+        "succumb",
+        "succourn"
+      ]
+    },
+    {
+      "root": "suf",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "suffer",
+        "suffix",
+        "suffuse"
+      ]
+    },
+    {
+      "root": "sup",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "support",
+        "suppress",
+        "suppose"
+      ]
+    },
+    {
+      "root": "tain",
+      "gloss": "拿住 获得",
+      "wordCount": 3,
+      "sampleWords": [
+        "abstain",
+        "attain",
+        "sustain"
+      ]
+    },
+    {
+      "root": "tract",
+      "gloss": "拉 拉出 拔出",
+      "wordCount": 3,
+      "sampleWords": [
+        "distract",
+        "extract",
+        "retract"
+      ]
+    },
+    {
+      "root": "ual",
+      "gloss": "一年两次的",
+      "wordCount": 3,
+      "sampleWords": [
+        "biannual",
+        "annual",
+        "casual"
+      ]
+    },
+    {
+      "root": "uni",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "uniform",
+        "unique",
+        "unison"
+      ]
+    },
+    {
+      "root": "vert",
+      "gloss": "转 向内转 内向",
+      "wordCount": 3,
+      "sampleWords": [
+        "introvert",
+        "pervert",
+        "retrovert"
+      ]
+    },
+    {
+      "root": "war",
+      "gloss": "战争",
+      "wordCount": 3,
+      "sampleWords": [
+        "antiwar",
+        "miniwar",
+        "postwar"
+      ]
+    },
+    {
+      "root": "with",
+      "gloss": "",
+      "wordCount": 3,
+      "sampleWords": [
+        "withdraw",
+        "withdrawn",
+        "withhold"
+      ]
+    },
+    {
+      "root": "acu",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "acuity",
+        "acumen"
+      ]
+    },
+    {
+      "root": "agri",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "agriculture",
+        "agrimotor"
+      ]
+    },
+    {
+      "root": "agro",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "agronomy",
+        "agrobiology"
+      ]
+    },
+    {
+      "root": "amphi",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "amphibian",
+        "amphicar"
+      ]
+    },
+    {
+      "root": "andro",
+      "gloss": "男",
+      "wordCount": 2,
+      "sampleWords": [
+        "androgyne",
+        "androgynism"
+      ]
+    },
+    {
+      "root": "anim",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "aniaml",
+        "animate"
+      ]
+    },
+    {
+      "root": "ann",
+      "gloss": "[年]",
+      "wordCount": 2,
+      "sampleWords": [
+        "biannual",
+        "annual"
+      ]
+    },
+    {
+      "root": "ante",
+      "gloss": "前 走在前面 先行",
+      "wordCount": 2,
+      "sampleWords": [
+        "anterior",
+        "antecede"
+      ]
+    },
+    {
+      "root": "appear",
+      "gloss": "出现",
+      "wordCount": 2,
+      "sampleWords": [
+        "disappear",
+        "reappear"
+      ]
+    },
+    {
+      "root": "apt",
+      "gloss": "能力 有适应能力",
+      "wordCount": 2,
+      "sampleWords": [
+        "adapt",
+        "aptly"
+      ]
+    },
+    {
+      "root": "aqu",
+      "gloss": "水",
+      "wordCount": 2,
+      "sampleWords": [
+        "aquatic",
+        "subaquesous"
+      ]
+    },
+    {
+      "root": "arch",
+      "gloss": "首脑",
+      "wordCount": 2,
+      "sampleWords": [
+        "matriarch",
+        "monarch"
+      ]
+    },
+    {
+      "root": "astr",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "astral",
+        "disastrous"
+      ]
+    },
+    {
+      "root": "avi",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "aviary",
+        "aviation"
+      ]
+    },
+    {
+      "root": "bilolgy",
+      "gloss": "生物学",
+      "wordCount": 2,
+      "sampleWords": [
+        "microbiology",
+        "agrobiology"
+      ]
+    },
+    {
+      "root": "body",
+      "gloss": "身体",
+      "wordCount": 2,
+      "sampleWords": [
+        "antibody",
+        "embody"
+      ]
+    },
+    {
+      "root": "born",
+      "gloss": "出生",
+      "wordCount": 2,
+      "sampleWords": [
+        "inborn",
+        "baseborn"
+      ]
+    },
+    {
+      "root": "cap",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "capacity",
+        "caption"
+      ]
+    },
+    {
+      "root": "cata",
+      "gloss": "向下 说 在下面要说的话 目录",
+      "wordCount": 2,
+      "sampleWords": [
+        "catalog",
+        "cataract"
+      ]
+    },
+    {
+      "root": "cede",
+      "gloss": "走 走开 割让",
+      "wordCount": 2,
+      "sampleWords": [
+        "cede",
+        "accede"
+      ]
+    },
+    {
+      "root": "ceed",
+      "gloss": "走 走出 超出",
+      "wordCount": 2,
+      "sampleWords": [
+        "exceed",
+        "succeed"
+      ]
+    },
+    {
+      "root": "cent",
+      "gloss": "唱歌",
+      "wordCount": 2,
+      "sampleWords": [
+        "accomplish",
+        "incentive"
+      ]
+    },
+    {
+      "root": "chron",
+      "gloss": "时间 共同时间的",
+      "wordCount": 2,
+      "sampleWords": [
+        "synchronous",
+        "chronicle"
+      ]
+    },
+    {
+      "root": "circ",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "circular",
+        "circulate"
+      ]
+    },
+    {
+      "root": "counter",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "counteract",
+        "countermand"
+      ]
+    },
+    {
+      "root": "courage",
+      "gloss": "勇气",
+      "wordCount": 2,
+      "sampleWords": [
+        "discourage",
+        "encourage"
+      ]
+    },
+    {
+      "root": "cover",
+      "gloss": "盖子",
+      "wordCount": 2,
+      "sampleWords": [
+        "discover",
+        "uncover"
+      ]
+    },
+    {
+      "root": "cuss",
+      "gloss": "震 震动 敲打",
+      "wordCount": 2,
+      "sampleWords": [
+        "discuss",
+        "percussion"
+      ]
+    },
+    {
+      "root": "deca",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "decagon",
+        "decameter"
+      ]
+    },
+    {
+      "root": "deci",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "decimeter",
+        "decigram"
+      ]
+    },
+    {
+      "root": "demi",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "demigod",
+        "demilune"
+      ]
+    },
+    {
+      "root": "dys",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "dyspepsia",
+        "dystrophy"
+      ]
+    },
+    {
+      "root": "endo",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "endogenous",
+        "endocardial"
+      ]
+    },
+    {
+      "root": "enn",
+      "gloss": "年",
+      "wordCount": 2,
+      "sampleWords": [
+        "biennial",
+        "millennial"
+      ]
+    },
+    {
+      "root": "face",
+      "gloss": "脸面",
+      "wordCount": 2,
+      "sampleWords": [
+        "postface",
+        "surface"
+      ]
+    },
+    {
+      "root": "fer",
+      "gloss": "带 带到下面去 受苦",
+      "wordCount": 2,
+      "sampleWords": [
+        "differ",
+        "suffer"
+      ]
+    },
+    {
+      "root": "firm",
+      "gloss": "坚定",
+      "wordCount": 2,
+      "sampleWords": [
+        "affirm",
+        "confirm"
+      ]
+    },
+    {
+      "root": "fit",
+      "gloss": "做 做事后的好处 利益",
+      "wordCount": 2,
+      "sampleWords": [
+        "benefit",
+        "profit"
+      ]
+    },
+    {
+      "root": "fix",
+      "gloss": "固定 固定在前面 前缀",
+      "wordCount": 2,
+      "sampleWords": [
+        "prefix",
+        "suffix"
+      ]
+    },
+    {
+      "root": "gen",
+      "gloss": "产生",
+      "wordCount": 2,
+      "sampleWords": [
+        "homogenize",
+        "endogenous"
+      ]
+    },
+    {
+      "root": "graphy",
+      "gloss": "写 写生命 传记",
+      "wordCount": 2,
+      "sampleWords": [
+        "holography",
+        "biography"
+      ]
+    },
+    {
+      "root": "gyn",
+      "gloss": "女",
+      "wordCount": 2,
+      "sampleWords": [
+        "androgyne",
+        "androgynism"
+      ]
+    },
+    {
+      "root": "hecto",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "hectogram",
+        "hectowatt"
+      ]
+    },
+    {
+      "root": "hemi",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "hemisphere",
+        "hemicycle"
+      ]
+    },
+    {
+      "root": "hepta",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "heptagon",
+        "heptaglot"
+      ]
+    },
+    {
+      "root": "here",
+      "gloss": "粘 粘在一起",
+      "wordCount": 2,
+      "sampleWords": [
+        "adhere",
+        "cohere"
+      ]
+    },
+    {
+      "root": "hetero",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "heterosexual",
+        "heterodoxy"
+      ]
+    },
+    {
+      "root": "home",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "homocentric",
+        "homogenize"
+      ]
+    },
+    {
+      "root": "hypo",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "hypodermic",
+        "hypomnesia"
+      ]
+    },
+    {
+      "root": "ia",
+      "gloss": "病 爱新的病",
+      "wordCount": 2,
+      "sampleWords": [
+        "hypomnesia",
+        "neophilia"
+      ]
+    },
+    {
+      "root": "id",
+      "gloss": "…的 渴望的",
+      "wordCount": 2,
+      "sampleWords": [
+        "avid",
+        "candid"
+      ]
+    },
+    {
+      "root": "ile",
+      "gloss": "形容词字尾",
+      "wordCount": 2,
+      "sampleWords": [
+        "virile",
+        "agile"
+      ]
+    },
+    {
+      "root": "just",
+      "gloss": "公正的",
+      "wordCount": 2,
+      "sampleWords": [
+        "adjust",
+        "unjust"
+      ]
+    },
+    {
+      "root": "late",
+      "gloss": "放 分开放 扩大",
+      "wordCount": 2,
+      "sampleWords": [
+        "collate",
+        "dilate"
+      ]
+    },
+    {
+      "root": "like",
+      "gloss": "相像",
+      "wordCount": 2,
+      "sampleWords": [
+        "dislike",
+        "ad"
+      ]
+    },
+    {
+      "root": "limit",
+      "gloss": "限制",
+      "wordCount": 2,
+      "sampleWords": [
+        "delimit",
+        "illimitable"
+      ]
+    },
+    {
+      "root": "lingu",
+      "gloss": "语言",
+      "wordCount": 2,
+      "sampleWords": [
+        "bilingual",
+        "colingual"
+      ]
+    },
+    {
+      "root": "live",
+      "gloss": "活",
+      "wordCount": 2,
+      "sampleWords": [
+        "alive",
+        "outlive"
+      ]
+    },
+    {
+      "root": "log",
+      "gloss": "词语",
+      "wordCount": 2,
+      "sampleWords": [
+        "eulogize",
+        "neologism"
+      ]
+    },
+    {
+      "root": "lus",
+      "gloss": "玩",
+      "wordCount": 2,
+      "sampleWords": [
+        "collusion",
+        "illusion"
+      ]
+    },
+    {
+      "root": "ly",
+      "gloss": "两星期",
+      "wordCount": 2,
+      "sampleWords": [
+        "biweekly",
+        "aptly"
+      ]
+    },
+    {
+      "root": "matri",
+      "gloss": "母 女性",
+      "wordCount": 2,
+      "sampleWords": [
+        "matriarch",
+        "matrimony"
+      ]
+    },
+    {
+      "root": "merge",
+      "gloss": "淹没 淹没下去",
+      "wordCount": 2,
+      "sampleWords": [
+        "emerge",
+        "submerge"
+      ]
+    },
+    {
+      "root": "miss",
+      "gloss": "送 送出 解散",
+      "wordCount": 2,
+      "sampleWords": [
+        "dismiss",
+        "submissive"
+      ]
+    },
+    {
+      "root": "mit",
+      "gloss": "放 放进去 插入",
+      "wordCount": 2,
+      "sampleWords": [
+        "intromit",
+        "transmit"
+      ]
+    },
+    {
+      "root": "mon",
+      "gloss": "警告",
+      "wordCount": 2,
+      "sampleWords": [
+        "admonish",
+        "monarch"
+      ]
+    },
+    {
+      "root": "morph",
+      "gloss": "形",
+      "wordCount": 2,
+      "sampleWords": [
+        "anthropomorphous",
+        "metamorphism"
+      ]
+    },
+    {
+      "root": "national",
+      "gloss": "国家的",
+      "wordCount": 2,
+      "sampleWords": [
+        "international",
+        "intranational"
+      ]
+    },
+    {
+      "root": "nomy",
+      "gloss": "学科 农科",
+      "wordCount": 2,
+      "sampleWords": [
+        "agronomy",
+        "astrononmy"
+      ]
+    },
+    {
+      "root": "ob",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "oblique",
+        "oblivion"
+      ]
+    },
+    {
+      "root": "oc",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "occident",
+        "occupy"
+      ]
+    },
+    {
+      "root": "office",
+      "gloss": "办公室",
+      "wordCount": 2,
+      "sampleWords": [
+        "postoffice",
+        "suboffice"
+      ]
+    },
+    {
+      "root": "onym",
+      "gloss": "名字",
+      "wordCount": 2,
+      "sampleWords": [
+        "anonymous",
+        "synonym"
+      ]
+    },
+    {
+      "root": "paleo",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "paleozoology",
+        "paleotechnic"
+      ]
+    },
+    {
+      "root": "pan",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "panorama",
+        "pansophic"
+      ]
+    },
+    {
+      "root": "patri",
+      "gloss": "父",
+      "wordCount": 2,
+      "sampleWords": [
+        "patriarch",
+        "patriot"
+      ]
+    },
+    {
+      "root": "pect",
+      "gloss": "看 向内看 内省",
+      "wordCount": 2,
+      "sampleWords": [
+        "introspect",
+        "suspect"
+      ]
+    },
+    {
+      "root": "pense",
+      "gloss": "挂 一颗心挂着",
+      "wordCount": 2,
+      "sampleWords": [
+        "dispense",
+        "suspense"
+      ]
+    },
+    {
+      "root": "peri",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "perigon",
+        "perimeter"
+      ]
+    },
+    {
+      "root": "personal",
+      "gloss": "个人的",
+      "wordCount": 2,
+      "sampleWords": [
+        "interpersonal",
+        "intrapersonal"
+      ]
+    },
+    {
+      "root": "phor",
+      "gloss": "带来 带来美好 愉快",
+      "wordCount": 2,
+      "sampleWords": [
+        "euphoria",
+        "metaphor"
+      ]
+    },
+    {
+      "root": "plse",
+      "gloss": "放 放出去 暴露",
+      "wordCount": 2,
+      "sampleWords": [
+        "expose",
+        "repose"
+      ]
+    },
+    {
+      "root": "port",
+      "gloss": "带 带来支持",
+      "wordCount": 2,
+      "sampleWords": [
+        "support",
+        "disport"
+      ]
+    },
+    {
+      "root": "pose",
+      "gloss": "放 放在二者之间",
+      "wordCount": 2,
+      "sampleWords": [
+        "interpose",
+        "suppose"
+      ]
+    },
+    {
+      "root": "quadri",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "quadricycle",
+        "quadrilateral"
+      ]
+    },
+    {
+      "root": "scient",
+      "gloss": "知道的",
+      "wordCount": 2,
+      "sampleWords": [
+        "omniscient",
+        "prescient"
+      ]
+    },
+    {
+      "root": "sect",
+      "gloss": "切 横切",
+      "wordCount": 2,
+      "sampleWords": [
+        "intersect",
+        "transect"
+      ]
+    },
+    {
+      "root": "sensitive",
+      "gloss": "敏感的",
+      "wordCount": 2,
+      "sampleWords": [
+        "hypersensitive",
+        "supersensitive"
+      ]
+    },
+    {
+      "root": "sent",
+      "gloss": "感觉 反感 不满",
+      "wordCount": 2,
+      "sampleWords": [
+        "absent",
+        "resent"
+      ]
+    },
+    {
+      "root": "sex",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "sexangle",
+        "sexfoil"
+      ]
+    },
+    {
+      "root": "sexual",
+      "gloss": "性别的",
+      "wordCount": 2,
+      "sampleWords": [
+        "heterosexual",
+        "homosexual"
+      ]
+    },
+    {
+      "root": "sized",
+      "gloss": "有范围的",
+      "wordCount": 2,
+      "sampleWords": [
+        "supersized",
+        "undersized"
+      ]
+    },
+    {
+      "root": "son",
+      "gloss": "一起平等 比较",
+      "wordCount": 2,
+      "sampleWords": [
+        "comparison",
+        "unison"
+      ]
+    },
+    {
+      "root": "structure",
+      "gloss": "结构",
+      "wordCount": 2,
+      "sampleWords": [
+        "macrostructure",
+        "superstructure"
+      ]
+    },
+    {
+      "root": "terr",
+      "gloss": "地 地下的",
+      "wordCount": 2,
+      "sampleWords": [
+        "subside",
+        "subterranean"
+      ]
+    },
+    {
+      "root": "tetra",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "tetracycline",
+        "tetragon"
+      ]
+    },
+    {
+      "root": "therm",
+      "gloss": "热",
+      "wordCount": 2,
+      "sampleWords": [
+        "exothermic",
+        "isotherm"
+      ]
+    },
+    {
+      "root": "thesis",
+      "gloss": "论文；观点",
+      "wordCount": 2,
+      "sampleWords": [
+        "antithesis",
+        "synthesis"
+      ]
+    },
+    {
+      "root": "treat",
+      "gloss": "对待",
+      "wordCount": 2,
+      "sampleWords": [
+        "maltreat",
+        "retreat"
+      ]
+    },
+    {
+      "root": "tropics",
+      "gloss": "热带",
+      "wordCount": 2,
+      "sampleWords": [
+        "subtropics",
+        "subtitle"
+      ]
+    },
+    {
+      "root": "twi",
+      "gloss": "",
+      "wordCount": 2,
+      "sampleWords": [
+        "twilight",
+        "twiformed"
+      ]
+    },
+    {
+      "root": "vene",
+      "gloss": "走 反着走 违反",
+      "wordCount": 2,
+      "sampleWords": [
+        "contravene",
+        "intervene"
+      ]
+    },
+    {
+      "root": "vent",
+      "gloss": "来 来到",
+      "wordCount": 2,
+      "sampleWords": [
+        "advent",
+        "circumvent"
+      ]
+    },
+    {
+      "root": "violet",
+      "gloss": "紫色的",
+      "wordCount": 2,
+      "sampleWords": [
+        "extraviolet",
+        "ultraviolet"
+      ]
+    },
+    {
+      "root": "vol",
+      "gloss": "意志",
+      "wordCount": 2,
+      "sampleWords": [
+        "benewolent",
+        "malevolent"
+      ]
+    },
+    {
+      "root": "wash",
+      "gloss": "洗",
+      "wordCount": 2,
+      "sampleWords": [
+        "awash",
+        "washern"
+      ]
+    },
+    {
+      "root": "watt",
+      "gloss": "瓦",
+      "wordCount": 2,
+      "sampleWords": [
+        "hectowatt",
+        "kilowatt"
+      ]
+    },
+    {
+      "root": "wear",
+      "gloss": "穿衣服",
+      "wordCount": 2,
+      "sampleWords": [
+        "outwear",
+        "underwear"
+      ]
+    },
+    {
+      "root": "work",
+      "gloss": "工作",
+      "wordCount": 2,
+      "sampleWords": [
+        "bywork",
+        "overwork"
+      ]
+    },
+    {
+      "root": "world",
+      "gloss": "世界",
+      "wordCount": 2,
+      "sampleWords": [
+        "macroworld",
+        "microworld"
+      ]
+    },
+    {
+      "root": "compense",
+      "gloss": "补偿",
+      "wordCount": 1,
+      "sampleWords": [
+        "recompense"
+      ]
+    },
+    {
+      "root": "ept",
+      "gloss": "有能力 熟练的",
+      "wordCount": 1,
+      "sampleWords": [
+        "adept"
+      ]
+    },
+    {
+      "root": "sign",
+      "gloss": "做标志 设计",
+      "wordCount": 1,
+      "sampleWords": [
+        "design"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "id": "e1",
+      "word": "acentric",
+      "meaning": "无中心的",
+      "decomposition": "a+centric 中心的",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "a",
+          "hint": ""
+        },
+        {
+          "morpheme": "centric",
+          "hint": "中心的"
+        }
+      ],
+      "definition": "Acentric means without a center or not having a central point.",
+      "exampleSentence": "The weird drawing was acentric, so the eyes were on the side and the nose floated alone."
+    },
+    {
+      "id": "e2",
+      "word": "asocial",
+      "meaning": "不好社交的",
+      "decomposition": "a+social 好社交的",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "a",
+          "hint": ""
+        },
+        {
+          "morpheme": "social",
+          "hint": "好社交的"
+        }
+      ],
+      "definition": "Asocial describes someone who avoids social activities or does not enjoy being with others.",
+      "exampleSentence": "My cat is so asocial that she hides under the bed when guests come over."
+    },
+    {
+      "id": "e3",
+      "word": "anemia",
+      "meaning": "反常的",
+      "decomposition": "a+nomal 正常的+ous",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "a",
+          "hint": ""
+        },
+        {
+          "morpheme": "nomal",
+          "hint": "正常的"
+        },
+        {
+          "morpheme": "ous",
+          "hint": ""
+        }
+      ],
+      "definition": "Anemia means a condition with too few red blood cells, making a person feel tired.",
+      "exampleSentence": "After the long run, she felt weak and dizzy, maybe because of anemia."
+    },
+    {
+      "id": "e4",
+      "word": "asleep",
+      "meaning": "睡着的",
+      "decomposition": "a+sleep 睡觉",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "a",
+          "hint": ""
+        },
+        {
+          "morpheme": "sleep",
+          "hint": "睡觉"
+        }
+      ],
+      "definition": "Asleep means resting with eyes closed and not awake.",
+      "exampleSentence": "The baby fell asleep in five minutes after drinking milk."
+    },
+    {
+      "id": "e5",
+      "word": "aside",
+      "meaning": "在边上",
+      "decomposition": "a+side 旁边",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "a",
+          "hint": ""
+        },
+        {
+          "morpheme": "side",
+          "hint": "旁边"
+        }
+      ],
+      "definition": "Aside means to one side or away from the main part.",
+      "exampleSentence": "She pushed the toys aside to make space for her new puzzle."
+    },
+    {
+      "id": "e6",
+      "word": "ahead",
+      "meaning": "在前地",
+      "decomposition": "a+head 头",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "a",
+          "hint": ""
+        },
+        {
+          "morpheme": "head",
+          "hint": "头"
+        }
+      ],
+      "definition": "Ahead means in front or before others.",
+      "exampleSentence": "Run ahead and save us a good seat in the cinema!"
+    },
+    {
+      "id": "e7",
+      "word": "alive",
+      "meaning": "活的",
+      "decomposition": "a+live 活",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "a",
+          "hint": ""
+        },
+        {
+          "morpheme": "live",
+          "hint": "活"
+        }
+      ],
+      "definition": "Alive means living and not dead.",
+      "exampleSentence": "After the storm, we were happy to find the little plant still alive."
+    },
+    {
+      "id": "e8",
+      "word": "awash",
+      "meaning": ".泛滥的",
+      "decomposition": "a+wash 冲洗",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "a",
+          "hint": ""
+        },
+        {
+          "morpheme": "wash",
+          "hint": "冲洗"
+        }
+      ],
+      "definition": "Awash means covered or flooded with water.",
+      "exampleSentence": "After heavy rain, the street was awash and we had to wear boots."
+    },
+    {
+      "id": "e9",
+      "word": "abnormal",
+      "meaning": "反常的",
+      "decomposition": "ab+normal 正常的",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ab",
+          "hint": ""
+        },
+        {
+          "morpheme": "normal",
+          "hint": "正常的"
+        }
+      ],
+      "definition": "Abnormal means different from what is usual or normal.",
+      "exampleSentence": "The weather this winter was abnormal — it was warm like spring."
+    },
+    {
+      "id": "e10",
+      "word": "abuse",
+      "meaning": "滥用",
+      "decomposition": "ab+use 用→用坏→滥用",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ab",
+          "hint": ""
+        },
+        {
+          "morpheme": "use",
+          "hint": "用 用坏 滥用"
+        }
+      ],
+      "definition": "Abuse means to use something in a wrong or harmful way.",
+      "exampleSentence": "Don't abuse the phone by dropping it all the time."
+    },
+    {
+      "id": "e11",
+      "word": "absorb",
+      "meaning": "吸收",
+      "decomposition": "ab+sorb 吸收→吸收掉",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ab",
+          "hint": ""
+        },
+        {
+          "morpheme": "sorb",
+          "hint": "吸收 吸收掉"
+        }
+      ],
+      "definition": "Absorb means to take in or soak up something.",
+      "exampleSentence": "The towel can absorb all the water from the wet floor."
+    },
+    {
+      "id": "e12",
+      "word": "absent",
+      "meaning": "缺席的",
+      "decomposition": "ab+sent 出现→没有出现→缺席的",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ab",
+          "hint": ""
+        },
+        {
+          "morpheme": "sent",
+          "hint": "出现 没有出现 缺席的"
+        }
+      ],
+      "definition": "Absent means not present or missing from a place.",
+      "exampleSentence": "He was absent from class because he had a cold."
+    },
+    {
+      "id": "e13",
+      "word": "abduct",
+      "meaning": "诱拐",
+      "decomposition": "ab+duct 引导→引走→诱拐",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ab",
+          "hint": ""
+        },
+        {
+          "morpheme": "duct",
+          "hint": "引导 引走 诱拐"
+        }
+      ],
+      "definition": "Abduct means to take someone away by force.",
+      "exampleSentence": "In movies, aliens sometimes abduct people for experiments."
+    },
+    {
+      "id": "e14",
+      "word": "abject",
+      "meaning": "可怜的",
+      "decomposition": "ab+ject 抛→抛掉→可怜的",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ab",
+          "hint": ""
+        },
+        {
+          "morpheme": "ject",
+          "hint": "抛 抛掉 可怜的"
+        }
+      ],
+      "definition": "Abject means extremely bad or hopeless.",
+      "exampleSentence": "They lived in abject poverty with almost no food."
+    },
+    {
+      "id": "e15",
+      "word": "abstain",
+      "meaning": "戒绝",
+      "decomposition": "abs+tain 拿住→不再拿住→戒绝",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "abs",
+          "hint": ""
+        },
+        {
+          "morpheme": "tain",
+          "hint": "拿住 不再拿住 戒绝"
+        }
+      ],
+      "definition": "Abstain means to deliberately not do or take something.",
+      "exampleSentence": "He decided to abstain from sweets to stay healthy."
+    },
+    {
+      "id": "e16",
+      "word": "abscond",
+      "meaning": "潜逃",
+      "decomposition": "abs+cond 藏→藏起来→潜逃",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "abs",
+          "hint": ""
+        },
+        {
+          "morpheme": "cond",
+          "hint": "藏 藏起来 潜逃"
+        }
+      ],
+      "definition": "Abscond means to leave quickly and secretly to avoid being caught.",
+      "exampleSentence": "The thief absconded with the jewels before anyone noticed."
+    },
+    {
+      "id": "e17",
+      "word": "abscind",
+      "meaning": "废除",
+      "decomposition": "abs+cind 剪切→切掉→废除",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "abs",
+          "hint": ""
+        },
+        {
+          "morpheme": "cind",
+          "hint": "剪切 切掉 废除"
+        }
+      ],
+      "definition": "Abscind means to cut off or remove completely.",
+      "exampleSentence": "They abscind the broken branch from the tree."
+    },
+    {
+      "id": "e18",
+      "word": "abscise",
+      "meaning": "切除",
+      "decomposition": "abs+cise 剪→剪掉→切除",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "abs",
+          "hint": ""
+        },
+        {
+          "morpheme": "cise",
+          "hint": "剪 剪掉 切除"
+        }
+      ],
+      "definition": "Abscise means to cut away or separate.",
+      "exampleSentence": "The doctor abscised the infected tissue to save the finger."
+    },
+    {
+      "id": "e19",
+      "word": "accompany",
+      "meaning": "陪伴",
+      "decomposition": "ac+company 伙伴→陪伴",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ac",
+          "hint": ""
+        },
+        {
+          "morpheme": "company",
+          "hint": "伙伴 陪伴"
+        }
+      ],
+      "definition": "Accompany means to go somewhere with someone.",
+      "exampleSentence": "She asked her brother to accompany her to the park."
+    },
+    {
+      "id": "e20",
+      "word": "accelerate",
+      "meaning": "加速",
+      "decomposition": "ac+celer 速度→一再增加速度",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ac",
+          "hint": ""
+        },
+        {
+          "morpheme": "celer",
+          "hint": "速度 一再增加速度"
+        }
+      ],
+      "definition": "Accelerate means to make something go faster.",
+      "exampleSentence": "Press the pedal to accelerate the car on the highway."
+    },
+    {
+      "id": "e21",
+      "word": "accentuate",
+      "meaning": "强调",
+      "decomposition": "ac+cent 唱歌→一再唱出→强调",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ac",
+          "hint": ""
+        },
+        {
+          "morpheme": "cent",
+          "hint": "唱歌 一再唱出 强调"
+        }
+      ],
+      "definition": "Accentuate means to make something more noticeable or important.",
+      "exampleSentence": "The bright color accentuates her beautiful eyes."
+    },
+    {
+      "id": "e22",
+      "word": "accomplish",
+      "meaning": "完成",
+      "decomposition": "ac+compl 完成+ish→完成",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ac",
+          "hint": ""
+        },
+        {
+          "morpheme": "compl",
+          "hint": "完成"
+        },
+        {
+          "morpheme": "ish",
+          "hint": "完成"
+        }
+      ],
+      "definition": "Accomplish means to successfully complete something.",
+      "exampleSentence": "With hard work, she accomplished her goal of running a marathon."
+    },
+    {
+      "id": "e23",
+      "word": "accumulate",
+      "meaning": "积累",
+      "decomposition": "ac+cumul 堆积+ate→堆积起来→积累",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ac",
+          "hint": ""
+        },
+        {
+          "morpheme": "cumul",
+          "hint": "堆积"
+        },
+        {
+          "morpheme": "ate",
+          "hint": "堆积起来 积累"
+        }
+      ],
+      "definition": "Accumulate means to gather or collect more over time.",
+      "exampleSentence": "If you save a little every day, money will accumulate quickly."
+    },
+    {
+      "id": "e24",
+      "word": "accustom",
+      "meaning": "使习惯",
+      "decomposition": "ac+custom 习俗→习惯习俗",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ac",
+          "hint": ""
+        },
+        {
+          "morpheme": "custom",
+          "hint": "习俗 习惯习俗"
+        }
+      ],
+      "definition": "Accustom means to make someone used to something.",
+      "exampleSentence": "It took time to accustom myself to waking up early."
+    },
+    {
+      "id": "e25",
+      "word": "addict",
+      "meaning": "上瘾，入迷",
+      "decomposition": "ad+dict 说→一再说起→对……入迷",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ad",
+          "hint": ""
+        },
+        {
+          "morpheme": "dict",
+          "hint": "说 一再说起 对……入迷"
+        }
+      ],
+      "definition": "Addict means someone who cannot stop doing something harmful.",
+      "exampleSentence": "He became a coffee addict and drank five cups every day."
+    },
+    {
+      "id": "e26",
+      "word": "additive",
+      "meaning": "上瘾的",
+      "decomposition": "addict 的形容词",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "addict",
+          "hint": "的形容词"
+        }
+      ],
+      "definition": "Additive means a substance added to food or other things.",
+      "exampleSentence": "This juice has no artificial additive, it's all natural."
+    },
+    {
+      "id": "e27",
+      "word": "adduce",
+      "meaning": "引证，举例",
+      "decomposition": "ad+duce 引导→一再引导→举例说明",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ad",
+          "hint": ""
+        },
+        {
+          "morpheme": "duce",
+          "hint": "引导 一再引导 举例说明"
+        }
+      ],
+      "definition": "Adduce means to give reasons or examples to support an idea.",
+      "exampleSentence": "She adduced several facts to prove her point."
+    },
+    {
+      "id": "e28",
+      "word": "affable",
+      "meaning": "亲切的",
+      "decomposition": "af+fable 说话→不断可以说话→亲切",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "af",
+          "hint": ""
+        },
+        {
+          "morpheme": "fable",
+          "hint": "说话 不断可以说话 亲切"
+        }
+      ],
+      "definition": "Affable means friendly and easy to talk to.",
+      "exampleSentence": "The old shopkeeper is affable and always smiles at customers."
+    },
+    {
+      "id": "e29",
+      "word": "afford",
+      "meaning": "买得起",
+      "decomposition": "af+ford 拿出→一再拿出{钱}→买得起",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "af",
+          "hint": ""
+        },
+        {
+          "morpheme": "ford",
+          "hint": "拿出 一再拿出{钱} 买得起"
+        }
+      ],
+      "definition": "Afford means to have enough money to buy something.",
+      "exampleSentence": "I can't afford a new phone right now, maybe next month."
+    },
+    {
+      "id": "e30",
+      "word": "affirm",
+      "meaning": "肯定",
+      "decomposition": "af+firm 坚定→肯定",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "af",
+          "hint": ""
+        },
+        {
+          "morpheme": "firm",
+          "hint": "坚定 肯定"
+        }
+      ],
+      "definition": "Affirm means to state something is definitely true.",
+      "exampleSentence": "She affirmed that she would finish the work on time."
+    },
+    {
+      "id": "e31",
+      "word": "aggression",
+      "meaning": "侵略，进攻",
+      "decomposition": "ag+gress 走+ion→一再往前走→进攻",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ag",
+          "hint": ""
+        },
+        {
+          "morpheme": "gress",
+          "hint": "走"
+        },
+        {
+          "morpheme": "ion",
+          "hint": "一再往前走 进攻"
+        }
+      ],
+      "definition": "Aggression means angry or violent attack.",
+      "exampleSentence": "The dog showed aggression when a stranger came near."
+    },
+    {
+      "id": "e32",
+      "word": "aggrandize",
+      "meaning": "扩大",
+      "decomposition": "ag+grand 大→一再大→扩大[权力]等",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ag",
+          "hint": ""
+        },
+        {
+          "morpheme": "grand",
+          "hint": "大 一再大 扩大[权力]等"
+        }
+      ],
+      "definition": "Aggrandize means to make something seem greater than it is.",
+      "exampleSentence": "He likes to aggrandize his small achievements into big stories."
+    },
+    {
+      "id": "e33",
+      "word": "aggravate",
+      "meaning": "恶化",
+      "decomposition": "ag+grav 重+ate 病加重",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ag",
+          "hint": ""
+        },
+        {
+          "morpheme": "grav",
+          "hint": "重"
+        },
+        {
+          "morpheme": "ate",
+          "hint": "病加重"
+        }
+      ],
+      "definition": "Aggravate means to make a problem or situation worse.",
+      "exampleSentence": "Scratching the mosquito bite will only aggravate it."
+    },
+    {
+      "id": "e34",
+      "word": "announce",
+      "meaning": "通告",
+      "decomposition": "an+nounce 通知→通告",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "an",
+          "hint": ""
+        },
+        {
+          "morpheme": "nounce",
+          "hint": "通知 通告"
+        }
+      ],
+      "definition": "Announce means to make something known publicly.",
+      "exampleSentence": "The principal announced that school would be closed tomorrow."
+    },
+    {
+      "id": "e35",
+      "word": "appal",
+      "meaning": "使震惊",
+      "decomposition": "ap+pal 白色→[脸]变白→受惊",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ap",
+          "hint": ""
+        },
+        {
+          "morpheme": "pal",
+          "hint": "白色 [脸]变白 受惊"
+        }
+      ],
+      "definition": "Appal means to shock or horrify someone greatly.",
+      "exampleSentence": "The terrible news appalled all the family members."
+    },
+    {
+      "id": "e36",
+      "word": "applause",
+      "meaning": "鼓掌",
+      "decomposition": "ap+pease 赞扬→一再赞扬→鼓掌",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ap",
+          "hint": ""
+        },
+        {
+          "morpheme": "pease",
+          "hint": "赞扬 一再赞扬 鼓掌"
+        }
+      ],
+      "definition": "Applause means clapping hands to show approval.",
+      "exampleSentence": "The singer received loud applause after the beautiful song."
+    },
+    {
+      "id": "e37",
+      "word": "appreciate",
+      "meaning": "欣赏",
+      "decomposition": "ap+reci 价值+ate→一再给价→欣赏",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ap",
+          "hint": ""
+        },
+        {
+          "morpheme": "reci",
+          "hint": "价值"
+        },
+        {
+          "morpheme": "ate",
+          "hint": "一再给价 欣赏"
+        }
+      ],
+      "definition": "Appreciate means to recognize the value or enjoy something.",
+      "exampleSentence": "I really appreciate your help with my homework."
+    },
+    {
+      "id": "e38",
+      "word": "appoint",
+      "meaning": "指定，任命",
+      "decomposition": "ap+point 指→指定",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ap",
+          "hint": ""
+        },
+        {
+          "morpheme": "point",
+          "hint": "指 指定"
+        }
+      ],
+      "definition": "Appoint means to choose someone for a job or position.",
+      "exampleSentence": "The teacher appointed me as the class monitor."
+    },
+    {
+      "id": "e39",
+      "word": "arrange",
+      "meaning": "安排",
+      "decomposition": "ar+range 排列→安排",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ar",
+          "hint": ""
+        },
+        {
+          "morpheme": "range",
+          "hint": "排列 安排"
+        }
+      ],
+      "definition": "Arrange means to put things in order or plan something.",
+      "exampleSentence": "Let's arrange a meeting next week to discuss the project."
+    },
+    {
+      "id": "e40",
+      "word": "arrest",
+      "meaning": "逮捕，阻止",
+      "decomposition": "ar+rest 休息→不让动→逮捕",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ar",
+          "hint": ""
+        },
+        {
+          "morpheme": "rest",
+          "hint": "休息 不让动 逮捕"
+        }
+      ],
+      "definition": "Arrest means to catch someone and take them to the police.",
+      "exampleSentence": "The police arrested the man who stole the bike."
+    },
+    {
+      "id": "e41",
+      "word": "arrive",
+      "meaning": "到达",
+      "decomposition": "ar+rive 河→到达河边→达到目标",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ar",
+          "hint": ""
+        },
+        {
+          "morpheme": "rive",
+          "hint": "河 到达河边 达到目标"
+        }
+      ],
+      "definition": "Arrive means to reach a place after traveling.",
+      "exampleSentence": "The train will arrive at the station in ten minutes."
+    },
+    {
+      "id": "e42",
+      "word": "assault",
+      "meaning": "进攻",
+      "decomposition": "as+saul 跳→跳起来→进攻",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "as",
+          "hint": ""
+        },
+        {
+          "morpheme": "saul",
+          "hint": "跳 跳起来 进攻"
+        }
+      ],
+      "definition": "Assault means a violent physical attack.",
+      "exampleSentence": "The angry man was charged with assault after the fight."
+    },
+    {
+      "id": "e43",
+      "word": "assiduous",
+      "meaning": "勤奋的",
+      "decomposition": "as+sid 坐+uous→一再坐着[学习] →勤奋",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "as",
+          "hint": ""
+        },
+        {
+          "morpheme": "sid",
+          "hint": "坐"
+        },
+        {
+          "morpheme": "uous",
+          "hint": "一再坐着[学习] 勤奋"
+        }
+      ],
+      "definition": "Assiduous means working very hard and carefully.",
+      "exampleSentence": "She is assiduous and always finishes her homework early."
+    },
+    {
+      "id": "e44",
+      "word": "assist",
+      "meaning": "帮助",
+      "decomposition": "as+sist 站→站过来→帮助",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "as",
+          "hint": ""
+        },
+        {
+          "morpheme": "sist",
+          "hint": "站 站过来 帮助"
+        }
+      ],
+      "definition": "Assist means to help someone do something.",
+      "exampleSentence": "Can you assist me in carrying these heavy books?"
+    },
+    {
+      "id": "e45",
+      "word": "associate",
+      "meaning": "联合，结合",
+      "decomposition": "as+soci 社团+ate→结成团队→联合",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "as",
+          "hint": ""
+        },
+        {
+          "morpheme": "soci",
+          "hint": "社团"
+        },
+        {
+          "morpheme": "ate",
+          "hint": "结成团队 联合"
+        }
+      ],
+      "definition": "Associate means to connect things in your mind or join together.",
+      "exampleSentence": "I always associate summer with ice cream and swimming."
+    },
+    {
+      "id": "e46",
+      "word": "assimilate",
+      "meaning": "吸收；同化",
+      "decomposition": "as+simil 相同+ate→成为相同→同化",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "as",
+          "hint": ""
+        },
+        {
+          "morpheme": "simil",
+          "hint": "相同"
+        },
+        {
+          "morpheme": "ate",
+          "hint": "成为相同 同化"
+        }
+      ],
+      "definition": "Assimilate means to take in and understand new information.",
+      "exampleSentence": "It takes time for new students to assimilate into the class."
+    },
+    {
+      "id": "e47",
+      "word": "assure",
+      "meaning": "肯定；确信",
+      "decomposition": "as+sure 确定→一不再确定→肯定",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "as",
+          "hint": ""
+        },
+        {
+          "morpheme": "sure",
+          "hint": "确定 一不再确定 肯定"
+        }
+      ],
+      "definition": "Assure means to tell someone confidently that something is true.",
+      "exampleSentence": "I assure you the food is safe to eat."
+    },
+    {
+      "id": "e48",
+      "word": "attach",
+      "meaning": "附上；依恋",
+      "decomposition": "at+tach 接角→接触上→附上",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "at",
+          "hint": ""
+        },
+        {
+          "morpheme": "tach",
+          "hint": "接角 接触上 附上"
+        }
+      ],
+      "definition": "Attach means to fasten or join one thing to another.",
+      "exampleSentence": "Please attach the photo to your application form."
+    },
+    {
+      "id": "e49",
+      "word": "attain",
+      "meaning": "达到；获得",
+      "decomposition": "at+tain 拿住→获得",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "at",
+          "hint": ""
+        },
+        {
+          "morpheme": "tain",
+          "hint": "拿住 获得"
+        }
+      ],
+      "definition": "Attain means to succeed in reaching or getting something.",
+      "exampleSentence": "With hard work, she attained first place in the race."
+    },
+    {
+      "id": "e50",
+      "word": "attest",
+      "meaning": "证实",
+      "decomposition": "at+test 试验→一再试验→证实",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "at",
+          "hint": ""
+        },
+        {
+          "morpheme": "test",
+          "hint": "试验 一再试验 证实"
+        }
+      ],
+      "definition": "Attest means to prove or show that something is true.",
+      "exampleSentence": "His good grades attest to how hard he studies."
+    },
+    {
+      "id": "e51",
+      "word": "adapt",
+      "meaning": "适应",
+      "decomposition": "ad+apt 能力→有适应能力",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ad",
+          "hint": ""
+        },
+        {
+          "morpheme": "apt",
+          "hint": "能力 有适应能力"
+        }
+      ],
+      "definition": "Adapt means to change to fit a new situation.",
+      "exampleSentence": "Plants adapt to different climates over time."
+    },
+    {
+      "id": "e52",
+      "word": "adept",
+      "meaning": "熟练的",
+      "decomposition": "ad+ept 能力→有做事能力→熟练的",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ad",
+          "hint": ""
+        },
+        {
+          "morpheme": "ept",
+          "hint": "能力 有做事能力 熟练的"
+        }
+      ],
+      "definition": "Adept means very skilled at doing something.",
+      "exampleSentence": "She is adept at solving difficult math problems quickly."
+    },
+    {
+      "id": "e53",
+      "word": "adopt",
+      "meaning": "收养；采纳",
+      "decomposition": "ad+opt 选择→选出来→采纳",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ad",
+          "hint": ""
+        },
+        {
+          "morpheme": "opt",
+          "hint": "选择 选出来 采纳"
+        }
+      ],
+      "definition": "Adopt means to take something or someone as your own.",
+      "exampleSentence": "They decided to adopt a puppy from the animal shelter."
+    },
+    {
+      "id": "e54",
+      "word": "adhere",
+      "meaning": "坚持",
+      "decomposition": "ad+here 粘→粘在一起→坚持",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ad",
+          "hint": ""
+        },
+        {
+          "morpheme": "here",
+          "hint": "粘 粘在一起 坚持"
+        }
+      ],
+      "definition": "Adhere means to stick firmly to something or follow closely.",
+      "exampleSentence": "Please adhere to the school rules during the trip."
+    },
+    {
+      "id": "e55",
+      "word": "adjacent",
+      "meaning": "邻近的",
+      "decomposition": "ad+jacent 躺→躺在一起→邻近的",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ad",
+          "hint": ""
+        },
+        {
+          "morpheme": "jacent",
+          "hint": "躺 躺在一起 邻近的"
+        }
+      ],
+      "definition": "Adjacent means next to or very close to something.",
+      "exampleSentence": "The park is adjacent to our school, so we go there often."
+    },
+    {
+      "id": "e56",
+      "word": "adjoin",
+      "meaning": "贴近；毗连",
+      "decomposition": "ad+join 参加→参加在一起→贴近",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ad",
+          "hint": ""
+        },
+        {
+          "morpheme": "join",
+          "hint": "参加 参加在一起 贴近"
+        }
+      ],
+      "definition": "Adjoin means to be next to or connected with.",
+      "exampleSentence": "Our house adjoins the library, so it's very convenient."
+    },
+    {
+      "id": "e57",
+      "word": "admire",
+      "meaning": "羡慕",
+      "decomposition": "ad+mire 惊奇→惊喜；羡慕",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ad",
+          "hint": ""
+        },
+        {
+          "morpheme": "mire",
+          "hint": "惊奇 惊喜；羡慕"
+        }
+      ],
+      "definition": "Admire means to respect and like someone or something very much.",
+      "exampleSentence": "I admire people who work hard to achieve their dreams."
+    },
+    {
+      "id": "e58",
+      "word": "adumbrate",
+      "meaning": "预示",
+      "decomposition": "ad+umbr 影子+ate→[将来的]影子出现→预示",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ad",
+          "hint": ""
+        },
+        {
+          "morpheme": "umbr",
+          "hint": "影子"
+        },
+        {
+          "morpheme": "ate",
+          "hint": "[将来的]影子出现 预示"
+        }
+      ],
+      "definition": "Adumbrate means to give a hint or outline of something in the future.",
+      "exampleSentence": "Dark clouds adumbrate that rain is coming soon."
+    },
+    {
+      "id": "e59",
+      "word": "adjust",
+      "meaning": "调整",
+      "decomposition": "ad+just 正确→弄正确→调整",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ad",
+          "hint": ""
+        },
+        {
+          "morpheme": "just",
+          "hint": "正确 弄正确 调整"
+        }
+      ],
+      "definition": "Adjust means to change something slightly to make it better.",
+      "exampleSentence": "I need to adjust the chair so it's more comfortable."
+    },
+    {
+      "id": "e60",
+      "word": "adventure",
+      "meaning": "冒险",
+      "decomposition": "ad+venture 冒险",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ad",
+          "hint": ""
+        },
+        {
+          "morpheme": "venture",
+          "hint": "冒险"
+        }
+      ],
+      "definition": "Adventure means an exciting and risky experience.",
+      "exampleSentence": "We went on an adventure in the forest and found a hidden cave."
+    },
+    {
+      "id": "e61",
+      "word": "admonish",
+      "meaning": "告诫，警告",
+      "decomposition": "ad+mon 警告+ish→一再警告",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ad",
+          "hint": ""
+        },
+        {
+          "morpheme": "mon",
+          "hint": "警告"
+        },
+        {
+          "morpheme": "ish",
+          "hint": "一再警告"
+        }
+      ],
+      "definition": "Admonish means to warn or advise someone firmly.",
+      "exampleSentence": "The teacher admonished the students for talking in class."
+    },
+        {
+      "id": "e62",
+      "word": "advent",
+      "meaning": "来临，来到",
+      "decomposition": "ad+vent 来→来到",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ad",
+          "hint": ""
+        },
+        {
+          "morpheme": "vent",
+          "hint": "来 来到"
+        }
+      ],
+      "definition": "Advent means the arrival or coming of something important.",
+      "exampleSentence": "The advent of the internet changed the way people communicate forever."
+    },
+    {
+      "id": "e63",
+      "word": "amphibian",
+      "meaning": "两栖动物",
+      "decomposition": "amphi+bi 生命→两栖生命",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "amphi",
+          "hint": ""
+        },
+        {
+          "morpheme": "bi",
+          "hint": "生命"
+        }
+      ],
+      "definition": "Amphibian is an animal that can live both in water and on land.",
+      "exampleSentence": "Frogs are amphibians; they start life as tadpoles in water."
+    },
+    {
+      "id": "e64",
+      "word": "antecedent",
+      "meaning": "先行的，前面的",
+      "decomposition": "ante+cede 走→走在前面→先行的",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "ante",
+          "hint": ""
+        },
+        {
+          "morpheme": "cede",
+          "hint": "走 走在前面 先行的"
+        }
+      ],
+      "definition": "Antecedent means something that comes before another thing.",
+      "exampleSentence": "The antecedent event was the heavy rain that caused the flood."
+    },
+    {
+      "id": "e65",
+      "word": "aviary",
+      "meaning": "鸟舍",
+      "decomposition": "avi+ary 地方→鸟的地方",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "avi",
+          "hint": ""
+        },
+        {
+          "morpheme": "ary",
+          "hint": "地方"
+        }
+      ],
+      "definition": "Aviary is a large cage or building for keeping birds.",
+      "exampleSentence": "We visited the zoo's aviary and saw colorful parrots flying around."
+    },
+    {
+      "id": "e66",
+      "word": "avidity",
+      "meaning": "贪婪；热切",
+      "decomposition": "avid+ity 状态→贪婪的状态",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "avid",
+          "hint": ""
+        },
+        {
+          "morpheme": "ity",
+          "hint": "状态"
+        }
+      ],
+      "definition": "Avidity means strong eagerness or greed.",
+      "exampleSentence": "He read the book with avidity and finished it in one night."
+    },
+    {
+      "id": "e67",
+      "word": "belligerent",
+      "meaning": "好斗的",
+      "decomposition": "bell 战争+iger+ent→好战的",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "bell",
+          "hint": "战争"
+        }
+      ],
+      "definition": "Belligerent means showing aggression or ready to fight.",
+      "exampleSentence": "The belligerent dog barked at every stranger who passed by."
+    },
+    {
+      "id": "e68",
+      "word": "benefaction",
+      "meaning": "善行，捐助",
+      "decomposition": "bene+fact 做+ion→做好事",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "bene",
+          "hint": ""
+        },
+        {
+          "morpheme": "fact",
+          "hint": "做"
+        },
+        {
+          "morpheme": "ion",
+          "hint": "做好事"
+        }
+      ],
+      "definition": "Benefaction means a charitable act or gift.",
+      "exampleSentence": "His generous benefaction helped build the new library."
+    },
+    {
+      "id": "e69",
+      "word": "benediction",
+      "meaning": "祝福",
+      "decomposition": "bene+dict 说→说好话→祝福",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "bene",
+          "hint": ""
+        },
+        {
+          "morpheme": "dict",
+          "hint": "说"
+        }
+      ],
+      "definition": "Benediction means a blessing or prayer for good wishes.",
+      "exampleSentence": "The priest gave a benediction at the end of the ceremony."
+    },
+    {
+      "id": "e70",
+      "word": "benefit",
+      "meaning": "利益，好处",
+      "decomposition": "bene+fit 做→做好处",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "bene",
+          "hint": ""
+        },
+        {
+          "morpheme": "fit",
+          "hint": "做"
+        }
+      ],
+      "definition": "Benefit means something that gives advantage or good result.",
+      "exampleSentence": "Eating vegetables has many health benefits."
+    },
+    {
+      "id": "e71",
+      "word": "benewolent",
+      "meaning": "仁慈的",
+      "decomposition": "bene+vol 意志+ent→好意志的",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "bene",
+          "hint": ""
+        },
+        {
+          "morpheme": "vol",
+          "hint": "意志"
+        },
+        {
+          "morpheme": "ent",
+          "hint": "好意志的"
+        }
+      ],
+      "definition": "Benevolent means kind and generous.",
+      "exampleSentence": "The benevolent old man donated money to help poor children."
+    },
+    {
+      "id": "e72",
+      "word": "biweekly",
+      "meaning": "两周一次的",
+      "decomposition": "bi+week 周+ly→两周一次",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "bi",
+          "hint": ""
+        },
+        {
+          "morpheme": "week",
+          "hint": "周"
+        },
+        {
+          "morpheme": "ly",
+          "hint": "两周一次"
+        }
+      ],
+      "definition": "Biweekly means happening every two weeks.",
+      "exampleSentence": "The magazine is published biweekly, so we get two issues a month."
+    },
+    {
+      "id": "e73",
+      "word": "bilingual",
+      "meaning": "双语的",
+      "decomposition": "bi+lingu 语言→两种语言",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "bi",
+          "hint": ""
+        },
+        {
+          "morpheme": "lingu",
+          "hint": "语言"
+        }
+      ],
+      "definition": "Bilingual means able to speak two languages.",
+      "exampleSentence": "She is bilingual and can speak both English and Chinese fluently."
+    },
+    {
+      "id": "e74",
+      "word": "biennial",
+      "meaning": "两年一次的",
+      "decomposition": "bi+enn 年→两年一次",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "bi",
+          "hint": ""
+        },
+        {
+          "morpheme": "enn",
+          "hint": "年"
+        }
+      ],
+      "definition": "Biennial means happening every two years.",
+      "exampleSentence": "The art exhibition is biennial, so the next one is in 2028."
+    },
+    {
+      "id": "e75",
+      "word": "biannual",
+      "meaning": "一年两次的",
+      "decomposition": "bi+ann 年→一年两次",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "bi",
+          "hint": ""
+        },
+        {
+          "morpheme": "ann",
+          "hint": "年"
+        }
+      ],
+      "definition": "Biannual means happening twice a year.",
+      "exampleSentence": "The company holds biannual meetings in June and December."
+    },
+    {
+      "id": "e76",
+      "word": "coagent",
+      "meaning": "合作者",
+      "decomposition": "co 共同＋agent→共同做的人",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "co",
+          "hint": "共同"
+        }
+      ],
+      "definition": "Coagent means a person who works together with others.",
+      "exampleSentence": "She was the coagent in planning the surprise party with her sister."
+    },
+    {
+      "id": "e77",
+      "word": "coalesce",
+      "meaning": "合并，联合",
+      "decomposition": "co+alesce 生长→一起生长→合并",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "co",
+          "hint": ""
+        },
+        {
+          "morpheme": "alesce",
+          "hint": "生长 一起生长 合并"
+        }
+      ],
+      "definition": "Coalesce means to come together to form one mass or whole.",
+      "exampleSentence": "The small groups coalesced into one big team for the project."
+    },
+    {
+      "id": "e78",
+      "word": "coerce",
+      "meaning": "强迫",
+      "decomposition": "co+erce 逼迫→一起逼迫",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "co",
+          "hint": ""
+        },
+        {
+          "morpheme": "erce",
+          "hint": "逼迫 一起逼迫"
+        }
+      ],
+      "definition": "Coerce means to force someone to do something.",
+      "exampleSentence": "He was coerced into signing the contract under pressure."
+    },
+    {
+      "id": "e79",
+      "word": "cohere",
+      "meaning": "粘合，一致",
+      "decomposition": "co+here 粘→粘在一起",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "co",
+          "hint": ""
+        },
+        {
+          "morpheme": "here",
+          "hint": "粘 粘在一起"
+        }
+      ],
+      "definition": "Cohere means to stick together or be consistent.",
+      "exampleSentence": "The argument doesn't cohere; the points contradict each other."
+    },
+    {
+      "id": "e80",
+      "word": "coherent",
+      "meaning": "连贯的",
+      "decomposition": "cohere+ent→连贯的",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "cohere",
+          "hint": ""
+        }
+      ],
+      "definition": "Coherent means logical and consistent.",
+      "exampleSentence": "His speech was clear and coherent, easy to follow."
+    },
+     
+    {
+      "id": "e81",
+      "word": "cooperation",
+      "meaning": "合作",
+      "decomposition": "co+oper 操作→一起操作→合作",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "co",
+          "hint": "共同"
+        },
+        {
+          "morpheme": "oper",
+          "hint": "操作"
+        }
+      ],
+      "definition": "Cooperation means working together with others to achieve something.",
+      "exampleSentence": "Good cooperation between team members made the project finish early."
+    },
+    {
+      "id": "e82",
+      "word": "coagulate",
+      "meaning": "凝固",
+      "decomposition": "co+ag 做+ulate→一起做成塊→凝固",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "co",
+          "hint": "共同"
+        },
+        {
+          "morpheme": "ag",
+          "hint": "做"
+        },
+        {
+          "morpheme": "ulate",
+          "hint": "一起做成塊 凝固"
+        }
+      ],
+      "definition": "Coagulate means to change from liquid to solid or semi-solid.",
+      "exampleSentence": "Blood will coagulate to stop bleeding when you get a cut."
+    },
+    {
+      "id": "e83",
+      "word": "coexist",
+      "meaning": "共存",
+      "decomposition": "co+exist 存在→一起存在→共存",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "co",
+          "hint": "共同"
+        },
+        {
+          "morpheme": "exist",
+          "hint": "存在"
+        }
+      ],
+      "definition": "Coexist means to live or exist together peacefully.",
+      "exampleSentence": "Different animals can coexist in the same forest if they don't compete too much."
+    },
+    {
+      "id": "e84",
+      "word": "colleague",
+      "meaning": "同事",
+      "decomposition": "col+league 聯盟→一起聯盟的人→同事",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "col",
+          "hint": ""
+        },
+        {
+          "morpheme": "league",
+          "hint": "聯盟"
+        }
+      ],
+      "definition": "Colleague means a person you work with in the same company or team.",
+      "exampleSentence": "My colleague helped me finish the report before the deadline."
+    },
+    {
+      "id": "e85",
+      "word": "collapse",
+      "meaning": "崩潰，倒塌",
+      "decomposition": "col+lapse 滑落→一起滑落→崩潰",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "col",
+          "hint": ""
+        },
+        {
+          "morpheme": "lapse",
+          "hint": "滑落 一起滑落 崩潰"
+        }
+      ],
+      "definition": "Collapse means to fall down suddenly or fail completely.",
+      "exampleSentence": "The old building collapsed during the strong earthquake."
+    },
+    {
+      "id": "e86",
+      "word": "collect",
+      "meaning": "收集",
+      "decomposition": "col+lect 選→選在一起→收集",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "col",
+          "hint": ""
+        },
+        {
+          "morpheme": "lect",
+          "hint": "選"
+        }
+      ],
+      "definition": "Collect means to gather things together.",
+      "exampleSentence": "She likes to collect stamps from different countries."
+    },
+    {
+      "id": "e87",
+      "word": "collusion",
+      "meaning": "勾結",
+      "decomposition": "col+lus 玩→一起玩陰的→勾結",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "col",
+          "hint": ""
+        },
+        {
+          "morpheme": "lus",
+          "hint": "玩 一起玩陰的 勾結"
+        }
+      ],
+      "definition": "Collusion means secret agreement for dishonest purposes.",
+      "exampleSentence": "The two companies were accused of collusion to fix prices."
+    },
+    {
+      "id": "e88",
+      "word": "combine",
+      "meaning": "結合",
+      "decomposition": "com+bine 兩個→兩個在一起→結合",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "com",
+          "hint": ""
+        },
+        {
+          "morpheme": "bine",
+          "hint": "兩個"
+        }
+      ],
+      "definition": "Combine means to join two or more things together.",
+      "exampleSentence": "Combine flour and water to make dough for bread."
+    },
+    {
+      "id": "e89",
+      "word": "compassion",
+      "meaning": "同情",
+      "decomposition": "com+pass 感情→共同感情→同情",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "com",
+          "hint": ""
+        },
+        {
+          "morpheme": "pass",
+          "hint": "感情"
+        }
+      ],
+      "definition": "Compassion means feeling sympathy and wanting to help others.",
+      "exampleSentence": "She showed compassion by helping the homeless man with food."
+    },
+    {
+      "id": "e90",
+      "word": "compatriot",
+      "meaning": "同胞",
+      "decomposition": "com+patriot 愛國者→同愛國者→同胞",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "com",
+          "hint": ""
+        },
+        {
+          "morpheme": "patriot",
+          "hint": "愛國者"
+        }
+      ],
+      "definition": "Compatriot means a person from the same country.",
+      "exampleSentence": "He felt proud to meet a compatriot abroad."
+    },
+    {
+      "id": "e91",
+      "word": "comparison",
+      "meaning": "比較",
+      "decomposition": "com+par 相等+ison→放在一起看相等→比較",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "com",
+          "hint": ""
+        },
+        {
+          "morpheme": "par",
+          "hint": "相等"
+        },
+        {
+          "morpheme": "ison",
+          "hint": "放在一起看相等 比較"
+        }
+      ],
+      "definition": "Comparison means examining two things to see similarities and differences.",
+      "exampleSentence": "In comparison with last year, this year's sales are much higher."
+    },
+    {
+      "id": "e92",
+      "word": "compact",
+      "meaning": "緊湊的",
+      "decomposition": "com+pact 包→包在一起→緊湊的",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "com",
+          "hint": ""
+        },
+        {
+          "morpheme": "pact",
+          "hint": "包"
+        }
+      ],
+      "definition": "Compact means small and tightly packed together.",
+      "exampleSentence": "The compact car is easy to park in small spaces."
+    },
+    {
+      "id": "e93",
+      "word": "comfort",
+      "meaning": "安慰",
+      "decomposition": "com+fort 強→給力量→安慰",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "com",
+          "hint": ""
+        },
+        {
+          "morpheme": "fort",
+          "hint": "強"
+        }
+      ],
+      "definition": "Comfort means to make someone feel better when they are sad.",
+      "exampleSentence": "She tried to comfort her friend after the bad news."
+    },
+    {
+      "id": "e94",
+      "word": "compete",
+      "meaning": "競爭",
+      "decomposition": "com+pet 尋求→一起尋求→競爭",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "com",
+          "hint": ""
+        },
+        {
+          "morpheme": "pet",
+          "hint": "尋求"
+        }
+      ],
+      "definition": "Compete means to try to be better than others.",
+      "exampleSentence": "The two teams will compete in the final match tomorrow."
+    },
+    {
+      "id": "e95",
+      "word": "component",
+      "meaning": "組成部分",
+      "decomposition": "com+pon 放+ent→放在一起的→組成部分",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "com",
+          "hint": ""
+        },
+        {
+          "morpheme": "pon",
+          "hint": "放"
+        },
+        {
+          "morpheme": "ent",
+          "hint": "放在一起的 組成部分"
+        }
+      ],
+      "definition": "Component means a part of something larger.",
+      "exampleSentence": "The engine has many components that work together."
+    },
+    {
+      "id": "e96",
+      "word": "compress",
+      "meaning": "壓縮",
+      "decomposition": "com+press 壓→壓在一起→壓縮",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "com",
+          "hint": ""
+        },
+        {
+          "morpheme": "press",
+          "hint": "壓"
+        }
+      ],
+      "definition": "Compress means to press something into a smaller space.",
+      "exampleSentence": "Compress the files before sending them by email."
+    },
+    {
+      "id": "e97",
+      "word": "concentric",
+      "meaning": "同中心的",
+      "decomposition": "con+centric 中心→同中心",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "centric",
+          "hint": "中心"
+        }
+      ],
+      "definition": "Concentric means having the same center.",
+      "exampleSentence": "The circles on the target are concentric rings."
+    },
+    {
+      "id": "e98",
+      "word": "contemporary",
+      "meaning": "當代的",
+      "decomposition": "con+tempor 時間→同時間的→當代的",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "tempor",
+          "hint": "時間"
+        }
+      ],
+      "definition": "Contemporary means belonging to the present time.",
+      "exampleSentence": "Contemporary art is very different from classical paintings."
+    },
+    {
+      "id": "e99",
+      "word": "conclude",
+      "meaning": "結束，結論",
+      "decomposition": "con+clude 關→關閉→結束",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "clude",
+          "hint": "關"
+        }
+      ],
+      "definition": "Conclude means to finish or reach a decision.",
+      "exampleSentence": "The meeting concluded with everyone agreeing on the plan."
+    },
+    {
+      "id": "e100",
+      "word": "confirm",
+      "meaning": "確認",
+      "decomposition": "con+firm 堅定→使堅定→確認",
+      "page": 1,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "firm",
+          "hint": "堅定"
+        }
+      ],
+      "definition": "Confirm means to make sure something is true.",
+      "exampleSentence": "Please confirm your booking by replying to this email."
+    },
+  
+    {
+      "id": "e101",
+      "word": "condense",
+      "meaning": "濃縮",
+      "decomposition": "con+dense 密集→使密集→濃縮",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "dense",
+          "hint": "密集"
+        }
+      ],
+      "definition": "Condense means to make something shorter or more concentrated.",
+      "exampleSentence": "Can you condense this long report into one page?"
+    },
+    {
+      "id": "e102",
+      "word": "conflict",
+      "meaning": "衝突",
+      "decomposition": "con+flict 打擊→互相打擊→衝突",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "flict",
+          "hint": "打擊"
+        }
+      ],
+      "definition": "Conflict means a serious disagreement or fight.",
+      "exampleSentence": "There was a conflict between the two teams over the rules."
+    },
+    {
+      "id": "e103",
+      "word": "confluence",
+      "meaning": "匯合",
+      "decomposition": "con+flu 流→流到一起→匯合",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "flu",
+          "hint": "流"
+        }
+      ],
+      "definition": "Confluence means the meeting or joining of two or more things.",
+      "exampleSentence": "The city is at the confluence of two big rivers."
+    },
+    {
+      "id": "e104",
+      "word": "console",
+      "meaning": "安慰",
+      "decomposition": "con+sole 單獨→一起安慰孤單的人",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "sole",
+          "hint": "單獨"
+        }
+      ],
+      "definition": "Console means to comfort someone who is sad.",
+      "exampleSentence": "She tried to console her friend after the bad exam result."
+    },
+    {
+      "id": "e105",
+      "word": "concord",
+      "meaning": "和諧，一致",
+      "decomposition": "con+cord 心→心在一起→和諧",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "cord",
+          "hint": "心"
+        }
+      ],
+      "definition": "Concord means agreement or harmony.",
+      "exampleSentence": "The family lived in concord after solving their problems."
+    },
+    {
+      "id": "e106",
+      "word": "conclude",
+      "meaning": "結束，結論",
+      "decomposition": "con+clude 關→關閉→結束",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "clude",
+          "hint": "關"
+        }
+      ],
+      "definition": "Conclude means to bring something to an end or form an opinion.",
+      "exampleSentence": "We can conclude that the experiment was successful."
+    },
+    {
+      "id": "e107",
+      "word": "confirm",
+      "meaning": "確認",
+      "decomposition": "con+firm 堅定→使堅定→確認",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "firm",
+          "hint": "堅定"
+        }
+      ],
+      "definition": "Confirm means to prove or make certain that something is true.",
+      "exampleSentence": "Please confirm your attendance by Friday."
+    },
+    {
+      "id": "e108",
+      "word": "conscientious",
+      "meaning": "認真的，有良心的",
+      "decomposition": "con+sci 知道+ent+ious→知道對錯而認真",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "sci",
+          "hint": "知道"
+        }
+      ],
+      "definition": "Conscientious means careful and hardworking.",
+      "exampleSentence": "She is a conscientious student who always does her best."
+    },
+    {
+      "id": "e109",
+      "word": "conscious",
+      "meaning": "有意識的",
+      "decomposition": "con+sci 知道+ous→知道自己在做什麼",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "sci",
+          "hint": "知道"
+        },
+        {
+          "morpheme": "ous",
+          "hint": ""
+        }
+      ],
+      "definition": "Conscious means aware of what is happening.",
+      "exampleSentence": "He became conscious after fainting for a few minutes."
+    },
+    {
+      "id": "e110",
+      "word": "consequence",
+      "meaning": "結果，後果",
+      "decomposition": "con+sequ 跟隨+ence→跟隨而來的東西→後果",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "sequ",
+          "hint": "跟隨"
+        },
+        {
+          "morpheme": "ence",
+          "hint": "跟隨而來的東西 後果"
+        }
+      ],
+      "definition": "Consequence means the result of an action.",
+      "exampleSentence": "If you study hard, the consequence will be good grades."
+    },
+    {
+      "id": "e111",
+      "word": "conserve",
+      "meaning": "保存，節約",
+      "decomposition": "con+serve 保持→保持原樣→保存",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "serve",
+          "hint": "保持"
+        }
+      ],
+      "definition": "Conserve means to protect or use carefully to avoid waste.",
+      "exampleSentence": "We need to conserve water during the dry season."
+    },
+    {
+      "id": "e112",
+      "word": "consider",
+      "meaning": "考慮",
+      "decomposition": "con+sider 星星→一起看星星→仔細觀察→考慮",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "sider",
+          "hint": "星星"
+        }
+      ],
+      "definition": "Consider means to think about something carefully.",
+      "exampleSentence": "I will consider your suggestion before deciding."
+    },
+    {
+      "id": "e113",
+      "word": "consistent",
+      "meaning": "一致的",
+      "decomposition": "con+sist 站→站在一起→一致",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "sist",
+          "hint": "站"
+        }
+      ],
+      "definition": "Consistent means always behaving in the same way.",
+      "exampleSentence": "His work is consistent and never disappointing."
+    },
+    {
+      "id": "e114",
+      "word": "console",
+      "meaning": "安慰",
+      "decomposition": "con+sole 單獨→一起安慰孤單的人",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "sole",
+          "hint": "單獨"
+        }
+      ],
+      "definition": "Console means to comfort someone who is unhappy.",
+      "exampleSentence": "He tried to console his little sister after she lost her toy."
+    },
+    {
+      "id": "e115",
+      "word": "construct",
+      "meaning": "建造",
+      "decomposition": "con+struct 建→建在一起→建造",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "struct",
+          "hint": "建"
+        }
+      ],
+      "definition": "Construct means to build something.",
+      "exampleSentence": "They will construct a new bridge next year."
+    },
+    {
+      "id": "e116",
+      "word": "contain",
+      "meaning": "包含",
+      "decomposition": "con+tain 拿住→拿住裡面→包含",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "tain",
+          "hint": "拿住"
+        }
+      ],
+      "definition": "Contain means to have something inside.",
+      "exampleSentence": "The box contains many old photos from my childhood."
+    },
+    {
+      "id": "e117",
+      "word": "continue",
+      "meaning": "繼續",
+      "decomposition": "con+tin 保持+ue→保持下去→繼續",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "tin",
+          "hint": "保持"
+        }
+      ],
+      "definition": "Continue means to keep doing something without stopping.",
+      "exampleSentence": "Please continue reading from where we left off."
+    },
+    {
+      "id": "e118",
+      "word": "contract",
+      "meaning": "合同；收縮",
+      "decomposition": "con+tract 拉→拉到一起→收縮；合同",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "tract",
+          "hint": "拉"
+        }
+      ],
+      "definition": "Contract can mean an agreement or to become smaller.",
+      "exampleSentence": "Sign the contract before starting the job."
+    },
+    {
+      "id": "e119",
+      "word": "contradict",
+      "meaning": "矛盾，反駁",
+      "decomposition": "contra+dict 說→反著說→矛盾",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "contra",
+          "hint": ""
+        },
+        {
+          "morpheme": "dict",
+          "hint": "說"
+        }
+      ],
+      "definition": "Contradict means to say the opposite of something.",
+      "exampleSentence": "His story contradicts what the witness said."
+    },
+    {
+      "id": "e120",
+      "word": "contrary",
+      "meaning": "相反的",
+      "decomposition": "contra+ary 相反的",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "contra",
+          "hint": ""
+        },
+        {
+          "morpheme": "ary",
+          "hint": "相反的"
+        }
+      ],
+      "definition": "Contrary means opposite or different.",
+      "exampleSentence": "Contrary to expectations, it didn't rain today."
+    },
+    {
+      "id": "e121",
+      "word": "control",
+      "meaning": "控制",
+      "decomposition": "contra+rol 輪→反轉輪子→控制方向",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "contra",
+          "hint": ""
+        },
+        {
+          "morpheme": "rol",
+          "hint": "輪"
+        }
+      ],
+      "definition": "Control means to manage or direct something.",
+      "exampleSentence": "You need to control your temper when angry."
+    },
+    {
+      "id": "e122",
+      "word": "controversy",
+      "meaning": "爭議",
+      "decomposition": "contra+vers 轉→轉向相反→爭議",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "contra",
+          "hint": ""
+        },
+        {
+          "morpheme": "vers",
+          "hint": "轉"
+        }
+      ],
+      "definition": "Controversy means a strong public disagreement.",
+      "exampleSentence": "The new law caused a lot of controversy in the city."
+    },
+    {
+      "id": "e123",
+      "word": "convene",
+      "meaning": "召集",
+      "decomposition": "con+vene 來→一起來→召集",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "vene",
+          "hint": "來"
+        }
+      ],
+      "definition": "Convene means to bring people together for a meeting.",
+      "exampleSentence": "The committee will convene next Monday."
+    },
+    {
+      "id": "e124",
+      "word": "converge",
+      "meaning": "匯聚",
+      "decomposition": "con+verge 轉向→轉向一起→匯聚",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "verge",
+          "hint": "轉向"
+        }
+      ],
+      "definition": "Converge means to come together from different directions.",
+      "exampleSentence": "The roads converge at the city center."
+    },
+    {
+      "id": "e125",
+      "word": "converse",
+      "meaning": "相反的；交談",
+      "decomposition": "con+verse 轉→轉向對方→交談",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "verse",
+          "hint": "轉"
+        }
+      ],
+      "definition": "Converse means to talk with someone.",
+      "exampleSentence": "We conversed about our favorite movies all night."
+    },
+    {
+      "id": "e126",
+      "word": "convert",
+      "meaning": "轉換",
+      "decomposition": "con+vert 轉→轉變",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "vert",
+          "hint": "轉"
+        }
+      ],
+      "definition": "Convert means to change from one form to another.",
+      "exampleSentence": "They want to convert the old factory into apartments."
+    },
+    {
+      "id": "e127",
+      "word": "convey",
+      "meaning": "傳達",
+      "decomposition": "con+vey 路→一起走路→傳達",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "vey",
+          "hint": "路"
+        }
+      ],
+      "definition": "Convey means to communicate or carry something.",
+      "exampleSentence": "Please convey my thanks to your parents."
+    },
+    {
+      "id": "e128",
+      "word": "convict",
+      "meaning": "定罪",
+      "decomposition": "con+vict 征服→征服證據→定罪",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "vict",
+          "hint": "征服"
+        }
+      ],
+      "definition": "Convict means to prove someone guilty in court.",
+      "exampleSentence": "The jury decided to convict him of the crime."
+    },
+    {
+      "id": "e129",
+      "word": "convince",
+      "meaning": "說服",
+      "decomposition": "con+vince 征服→征服對方想法→說服",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "con",
+          "hint": ""
+        },
+        {
+          "morpheme": "vince",
+          "hint": "征服"
+        }
+      ],
+      "definition": "Convince means to make someone believe something.",
+      "exampleSentence": "I tried to convince her that the plan was safe."
+    },
+    {
+      "id": "e130",
+      "word": "cooperate",
+      "meaning": "合作",
+      "decomposition": "co+oper 操作→一起操作→合作",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "co",
+          "hint": ""
+        },
+        {
+          "morpheme": "oper",
+          "hint": "操作"
+        }
+      ],
+      "definition": "Cooperate means to work together for a common purpose.",
+      "exampleSentence": "The students cooperated well to finish the group project."
+    },
+    {
+      "id": "e131",
+      "word": "coordinate",
+      "meaning": "協調",
+      "decomposition": "co+ordin 順序→一起順序→協調",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "co",
+          "hint": ""
+        },
+        {
+          "morpheme": "ordin",
+          "hint": "順序"
+        }
+      ],
+      "definition": "Coordinate means to organize different parts to work together.",
+      "exampleSentence": "She will coordinate the event so everything runs smoothly."
+    },
+    {
+      "id": "e132",
+      "word": "copious",
+      "meaning": "豐富的",
+      "decomposition": "co+pi 豐富→豐富的",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "co",
+          "hint": ""
+        },
+        {
+          "morpheme": "pi",
+          "hint": "豐富"
+        }
+      ],
+      "definition": "Copious means large in quantity or abundant.",
+      "exampleSentence": "She took copious notes during the lecture."
+    },
+    {
+      "id": "e133",
+      "word": "cordial",
+      "meaning": "熱情的",
+      "decomposition": "cord 心+ial→真心的→熱情的",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "cord",
+          "hint": "心"
+        }
+      ],
+      "definition": "Cordial means warm and friendly.",
+      "exampleSentence": "The host gave us a cordial welcome at the party."
+    },
+    {
+      "id": "e134",
+      "word": "corporate",
+      "meaning": "公司的",
+      "decomposition": "corpor 身體+ate→團體的→公司的",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "corpor",
+          "hint": "身體"
+        }
+      ],
+      "definition": "Corporate means relating to a large company.",
+      "exampleSentence": "He works in the corporate office downtown."
+    },
+    {
+      "id": "e135",
+      "word": "corpse",
+      "meaning": "屍體",
+      "decomposition": "corp 身體→死的身体→屍體",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "corp",
+          "hint": "身體"
+        }
+      ],
+      "definition": "Corpse means a dead body.",
+      "exampleSentence": "The police found the corpse in the old house."
+    },
+    {
+      "id": "e136",
+      "word": "correct",
+      "meaning": "正確的；改正",
+      "decomposition": "cor+rect 直→弄直→改正",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "cor",
+          "hint": ""
+        },
+        {
+          "morpheme": "rect",
+          "hint": "直"
+        }
+      ],
+      "definition": "Correct means right or to fix mistakes.",
+      "exampleSentence": "Please correct the spelling errors in your essay."
+    },
+    {
+      "id": "e137",
+      "word": "correlate",
+      "meaning": "相關聯",
+      "decomposition": "cor+relate 關聯→一起關聯",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "cor",
+          "hint": ""
+        },
+        {
+          "morpheme": "relate",
+          "hint": "關聯"
+        }
+      ],
+      "definition": "Correlate means to have a connection or relationship.",
+      "exampleSentence": "Studies show that exercise correlates with better health."
+    },
+    {
+      "id": "e138",
+      "word": "correspond",
+      "meaning": "相應；通信",
+      "decomposition": "cor+respond 回應→互相回應→相應",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "cor",
+          "hint": ""
+        },
+        {
+          "morpheme": "respond",
+          "hint": "回應"
+        }
+      ],
+      "definition": "Correspond means to match or to write letters to someone.",
+      "exampleSentence": "Her story doesn't correspond with the facts."
+    },
+    {
+      "id": "e139",
+      "word": "corroborate",
+      "meaning": "證實",
+      "decomposition": "cor+robor 力量+ate→加強力量→證實",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "cor",
+          "hint": ""
+        },
+        {
+          "morpheme": "robor",
+          "hint": "力量"
+        }
+      ],
+      "definition": "Corroborate means to confirm or support with evidence.",
+      "exampleSentence": "The witness corroborated the police report."
+    },
+    {
+      "id": "e140",
+      "word": "corrode",
+      "meaning": "腐蝕",
+      "decomposition": "cor+rode 咬→咬壞→腐蝕",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "cor",
+          "hint": ""
+        },
+        {
+          "morpheme": "rode",
+          "hint": "咬"
+        }
+      ],
+      "definition": "Corrode means to eat away slowly by chemical action.",
+      "exampleSentence": "Rust will corrode the metal if left outside."
+    },
+    {
+      "id": "e141",
+      "word": "corrigible",
+      "meaning": "可改正的",
+      "decomposition": "cor+rig 直+ible→可弄直的→可改正的",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "cor",
+          "hint": ""
+        },
+        {
+          "morpheme": "rig",
+          "hint": "直"
+        },
+        {
+          "morpheme": "ible",
+          "hint": "可弄直的 可改正的"
+        }
+      ],
+      "definition": "Corrigible means able to be corrected.",
+      "exampleSentence": "His bad habits are corrigible with enough effort."
+    },
+    {
+      "id": "e142",
+      "word": "corrupt",
+      "meaning": "腐敗的",
+      "decomposition": "cor+rupt 破→破壞→腐敗",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "cor",
+          "hint": ""
+        },
+        {
+          "morpheme": "rupt",
+          "hint": "破"
+        }
+      ],
+      "definition": "Corrupt means dishonest or immoral.",
+      "exampleSentence": "The corrupt official was sent to prison."
+    },
+    {
+      "id": "e143",
+      "word": "counsel",
+      "meaning": "建議；律師",
+      "decomposition": "coun+sel 跳→跳出來建議→建議",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "coun",
+          "hint": ""
+        },
+        {
+          "morpheme": "sel",
+          "hint": "跳"
+        }
+      ],
+      "definition": "Counsel means advice or a lawyer.",
+      "exampleSentence": "The teacher gave good counsel to the worried student."
+    },
+    {
+      "id": "e144",
+      "word": "counteract",
+      "meaning": "抵消",
+      "decomposition": "counter+act 行動→反向行動→抵消",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "counter",
+          "hint": ""
+        },
+        {
+          "morpheme": "act",
+          "hint": "行動"
+        }
+      ],
+      "definition": "Counteract means to act against something to reduce its effect.",
+      "exampleSentence": "This medicine counteracts the side effects of the other drug."
+    },
+    {
+      "id": "e145",
+      "word": "counterfeit",
+      "meaning": "偽造的",
+      "decomposition": "counter+feit 做→反著做→偽造",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "counter",
+          "hint": ""
+        },
+        {
+          "morpheme": "feit",
+          "hint": "做"
+        }
+      ],
+      "definition": "Counterfeit means fake or not genuine.",
+      "exampleSentence": "The police caught someone selling counterfeit money."
+    },
+    {
+      "id": "e146",
+      "word": "courage",
+      "meaning": "勇氣",
+      "decomposition": "cor+age 心→有心的→有勇氣",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "cor",
+          "hint": "心"
+        }
+      ],
+      "definition": "Courage means the ability to face danger without fear.",
+      "exampleSentence": "It takes courage to stand up for what is right."
+    },
+    {
+      "id": "e147",
+      "word": "course",
+      "meaning": "課程；路線",
+      "decomposition": "cours 跑→跑的路線→課程",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "cours",
+          "hint": "跑"
+        }
+      ],
+      "definition": "Course can mean a class or the path something follows.",
+      "exampleSentence": "I'm taking a cooking course this summer."
+    },
+    {
+      "id": "e148",
+      "word": "courteous",
+      "meaning": "有禮貌的",
+      "decomposition": "court 宮廷+eous→宮廷式的→有禮貌的",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "court",
+          "hint": "宮廷"
+        }
+      ],
+      "definition": "Courteous means polite and respectful.",
+      "exampleSentence": "The courteous waiter made our dinner very pleasant."
+    },
+    {
+      "id": "e149",
+      "word": "covert",
+      "meaning": "隱秘的",
+      "decomposition": "co+vert 轉→轉到隱藏處→隱秘的",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "co",
+          "hint": ""
+        },
+        {
+          "morpheme": "vert",
+          "hint": "轉"
+        }
+      ],
+      "definition": "Covert means secret or hidden.",
+      "exampleSentence": "They had a covert plan to surprise their friend."
+    },
+    {
+      "id": "e150",
+      "word": "credit",
+      "meaning": "信用；歸功於",
+      "decomposition": "cred 相信+it→相信能還→信用",
+      "page": 2,
+      "components": [
+        {
+          "morpheme": "cred",
+          "hint": "相信"
+        }
+      ],
+      "definition": "Credit means trust or to give recognition.",
+      "exampleSentence": "Give credit to the team for their hard work."
+    },
+ 
+    {
+      "id": "e151",
+      "word": "decagon",
+      "meaning": "十邊形",
+      "decomposition": "deca+gon 角→十個角",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "deca",
+          "hint": ""
+        },
+        {
+          "morpheme": "gon",
+          "hint": "角"
+        }
+      ],
+      "definition": "Decagon is a polygon with ten sides and ten angles.",
+      "exampleSentence": "A regular decagon has all sides and angles equal."
+    },
+    {
+      "id": "e152",
+      "word": "decameter",
+      "meaning": "十米",
+      "decomposition": "deca+meter 米→十米",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "deca",
+          "hint": ""
+        },
+        {
+          "morpheme": "meter",
+          "hint": "米"
+        }
+      ],
+      "definition": "Decameter is a metric unit of length equal to 10 meters.",
+      "exampleSentence": "The field is about two decameters wide."
+    },
+    {
+      "id": "e153",
+      "word": "decelerate",
+      "meaning": "減速",
+      "decomposition": "de+celer 速度+ate→降低速度",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "celer",
+          "hint": "速度"
+        }
+      ],
+      "definition": "Decelerate means to slow down or reduce speed.",
+      "exampleSentence": "The car began to decelerate as it approached the red light."
+    },
+    {
+      "id": "e154",
+      "word": "decigram",
+      "meaning": "分克",
+      "decomposition": "deci+gram 克→十分之一克",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "deci",
+          "hint": ""
+        },
+        {
+          "morpheme": "gram",
+          "hint": "克"
+        }
+      ],
+      "definition": "Decigram is a unit of mass equal to 0.1 gram.",
+      "exampleSentence": "The powder sample weighed only 5 decigrams."
+    },
+    {
+      "id": "e155",
+      "word": "decimeter",
+      "meaning": "分米",
+      "decomposition": "deci+meter 米→十分之一米",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "deci",
+          "hint": ""
+        },
+        {
+          "morpheme": "meter",
+          "hint": "米"
+        }
+      ],
+      "definition": "Decimeter is a unit of length equal to 0.1 meter or 10 centimeters.",
+      "exampleSentence": "The book is about 2 decimeters tall."
+    },
+    {
+      "id": "e156",
+      "word": "declare",
+      "meaning": "宣佈",
+      "decomposition": "de+clare 清楚→說清楚→宣佈",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "clare",
+          "hint": "清楚"
+        }
+      ],
+      "definition": "Declare means to state something officially or publicly.",
+      "exampleSentence": "The mayor will declare the festival open tomorrow."
+    },
+    {
+      "id": "e157",
+      "word": "declination",
+      "meaning": "衰退；下傾",
+      "decomposition": "de+cline 傾斜→向下傾斜→衰退",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "cline",
+          "hint": "傾斜"
+        }
+      ],
+      "definition": "Declination means a downward slope or a decline in quality or quantity.",
+      "exampleSentence": "There has been a gradual declination in the company's profits."
+    },
+    {
+      "id": "e158",
+      "word": "decode",
+      "meaning": "解碼",
+      "decomposition": "de+code 碼→解開碼→解碼",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "code",
+          "hint": "碼"
+        }
+      ],
+      "definition": "Decode means to convert a coded message into understandable form.",
+      "exampleSentence": "The spy tried to decode the secret message quickly."
+    },
+    {
+      "id": "e159",
+      "word": "decorate",
+      "meaning": "裝飾",
+      "decomposition": "deco+rate 適合→使適合美觀→裝飾",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "deco",
+          "hint": ""
+        },
+        {
+          "morpheme": "rate",
+          "hint": "適合"
+        }
+      ],
+      "definition": "Decorate means to make something more beautiful by adding things.",
+      "exampleSentence": "They decorate the Christmas tree with colorful lights every year."
+    },
+    {
+      "id": "e160",
+      "word": "deduce",
+      "meaning": "推論",
+      "decomposition": "de+duce 引導→從前面引導→推論",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "duce",
+          "hint": "引導"
+        }
+      ],
+      "definition": "Deduce means to reach a conclusion by logical reasoning.",
+      "exampleSentence": "From the clues, Sherlock Holmes could deduce the criminal's identity."
+    },
+    {
+      "id": "e161",
+      "word": "defame",
+      "meaning": "誹謗",
+      "decomposition": "de+fame 名聲→破壞名聲→誹謗",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "fame",
+          "hint": "名聲"
+        }
+      ],
+      "definition": "Defame means to damage someone's reputation by false statements.",
+      "exampleSentence": "Spreading lies to defame a person can lead to legal trouble."
+    },
+    {
+      "id": "e162",
+      "word": "defeat",
+      "meaning": "擊敗",
+      "decomposition": "de+feat 做→使做不成→擊敗",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "feat",
+          "hint": "做"
+        }
+      ],
+      "definition": "Defeat means to win against someone in a competition or battle.",
+      "exampleSentence": "The home team defeated their rivals with a score of 4-2."
+    },
+    {
+      "id": "e163",
+      "word": "defend",
+      "meaning": "防衛",
+      "decomposition": "de+fend 打擊→打擊回去→防衛",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "fend",
+          "hint": "打擊"
+        }
+      ],
+      "definition": "Defend means to protect from harm or attack.",
+      "exampleSentence": "The lawyer will defend the client in court next week."
+    },
+    {
+      "id": "e164",
+      "word": "defer",
+      "meaning": "延遲；順從",
+      "decomposition": "de+fer 帶→帶到後面→延遲",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "fer",
+          "hint": "帶"
+        }
+      ],
+      "definition": "Defer means to postpone or to yield to another's opinion.",
+      "exampleSentence": "They decided to defer the decision until more information arrives."
+    },
+    {
+      "id": "e165",
+      "word": "deficient",
+      "meaning": "缺乏的",
+      "decomposition": "de+fic 做→做得不夠→缺乏的",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "fic",
+          "hint": "做"
+        }
+      ],
+      "definition": "Deficient means lacking in some necessary quality or amount.",
+      "exampleSentence": "The diet was deficient in vitamins, causing health problems."
+    },
+    {
+      "id": "e166",
+      "word": "define",
+      "meaning": "定義",
+      "decomposition": "de+fin 界限→劃定界限→定義",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "fin",
+          "hint": "界限"
+        }
+      ],
+      "definition": "Define means to state or explain the meaning of something clearly.",
+      "exampleSentence": "The dictionary can define difficult words for us."
+    },
+    {
+      "id": "e167",
+      "word": "definite",
+      "meaning": "明確的",
+      "decomposition": "de+fin 界限+ite→有界限的→明確的",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "fin",
+          "hint": "界限"
+        }
+      ],
+      "definition": "Definite means clear, certain, or with exact limits.",
+      "exampleSentence": "We have a definite plan for the weekend trip."
+    },
+    {
+      "id": "e168",
+      "word": "deflect",
+      "meaning": "偏轉",
+      "decomposition": "de+flect 彎→彎開→偏轉",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "flect",
+          "hint": "彎"
+        }
+      ],
+      "definition": "Deflect means to cause something to change direction.",
+      "exampleSentence": "The mirror can deflect light in different directions."
+    },
+    {
+      "id": "e169",
+      "word": "deform",
+      "meaning": "變形",
+      "decomposition": "de+form 形→使形狀改變→變形",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "form",
+          "hint": "形"
+        }
+      ],
+      "definition": "Deform means to change the shape of something, usually in a negative way.",
+      "exampleSentence": "High heat can deform plastic materials."
+    },
+    {
+      "id": "e170",
+      "word": "degenerate",
+      "meaning": "退化",
+      "decomposition": "de+gen 產生+erate→產生向壞的方向→退化",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "gen",
+          "hint": "產生"
+        }
+      ],
+      "definition": "Degenerate means to become worse, lower, or less developed.",
+      "exampleSentence": "Without care, the garden will degenerate into a mess of weeds."
+    },
+    {
+      "id": "e171",
+      "word": "degrade",
+      "meaning": "降級；侮辱",
+      "decomposition": "de+grade 等級→降低等級→降級",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "grade",
+          "hint": "等級"
+        }
+      ],
+      "definition": "Degrade means to lower in rank, quality, or to treat with disrespect.",
+      "exampleSentence": "Constant criticism can degrade a person's confidence."
+    },
+    {
+      "id": "e172",
+      "word": "dehydrate",
+      "meaning": "脫水",
+      "decomposition": "de+hydr 水+ate→去除水→脫水",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "hydr",
+          "hint": "水"
+        }
+      ],
+      "definition": "Dehydrate means to remove water from something or to become very dry.",
+      "exampleSentence": "Running long distances in hot weather can dehydrate you quickly."
+    },
+    {
+      "id": "e173",
+      "word": "dejected",
+      "meaning": "沮喪的",
+      "decomposition": "de+ject 拋→拋下心情→沮喪的",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "ject",
+          "hint": "拋"
+        }
+      ],
+      "definition": "Dejected means feeling sad, depressed, or discouraged.",
+      "exampleSentence": "He looked dejected after losing the important match."
+    },
+    {
+      "id": "e174",
+      "word": "deliberate",
+      "meaning": "故意的；深思熟慮",
+      "decomposition": "de+liber 自由→自由權衡→深思熟慮",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "liber",
+          "hint": "自由"
+        }
+      ],
+      "definition": "Deliberate means done on purpose or after careful thought.",
+      "exampleSentence": "The decision was deliberate and not made in haste."
+    },
+    {
+      "id": "e175",
+      "word": "delicate",
+      "meaning": "精緻的；脆弱的",
+      "decomposition": "de+lic 誘惑→誘人的精緻→精緻的",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "lic",
+          "hint": "誘惑"
+        }
+      ],
+      "definition": "Delicate means fine, easily damaged, or requiring careful handling.",
+      "exampleSentence": "The delicate lace dress needs to be washed by hand."
+    },
+    {
+      "id": "e176",
+      "word": "delight",
+      "meaning": "快樂",
+      "decomposition": "de+light 光→使心情明亮→快樂",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "light",
+          "hint": "光"
+        }
+      ],
+      "definition": "Delight means great pleasure or joy.",
+      "exampleSentence": "The children were filled with delight when they saw the fireworks."
+    },
+    {
+      "id": "e177",
+      "word": "deliver",
+      "meaning": "交付；拯救",
+      "decomposition": "de+liver 自由→從束縛中釋放→交付",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "liver",
+          "hint": "自由"
+        }
+      ],
+      "definition": "Deliver means to bring or hand over something to someone.",
+      "exampleSentence": "The pizza delivery man will deliver your order in 30 minutes."
+    },
+    {
+      "id": "e178",
+      "word": "demand",
+      "meaning": "要求",
+      "decomposition": "de+mand 命令→強烈命令→要求",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "mand",
+          "hint": "命令"
+        }
+      ],
+      "definition": "Demand means to ask for something forcefully or as a right.",
+      "exampleSentence": "The workers demand higher wages and better conditions."
+    },
+    {
+      "id": "e179",
+      "word": "deminish",
+      "meaning": "減少",
+      "decomposition": "de+mini 小→使變小→減少",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "mini",
+          "hint": "小"
+        }
+      ],
+      "definition": "Deminish means to make or become smaller, fewer, or less important.",
+      "exampleSentence": "His influence began to deminish after the scandal."
+    },
+    {
+      "id": "e180",
+      "word": "democracy",
+      "meaning": "民主",
+      "decomposition": "demo 人民+cracy 統治→人民統治",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "demo",
+          "hint": "人民"
+        },
+        {
+          "morpheme": "cracy",
+          "hint": "統治"
+        }
+      ],
+      "definition": "Democracy is a system of government in which people vote to choose their leaders.",
+      "exampleSentence": "Many countries practice democracy by holding free elections."
+    },
+    {
+      "id": "e181",
+      "word": "demolish",
+      "meaning": "拆毀",
+      "decomposition": "de+molish 堆積→拆掉堆積→拆毀",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "molish",
+          "hint": "堆積"
+        }
+      ],
+      "definition": "Demolish means to completely destroy or tear down a building.",
+      "exampleSentence": "They plan to demolish the old warehouse and build a mall."
+    },
+    {
+      "id": "e182",
+      "word": "demonstrate",
+      "meaning": "展示；示威",
+      "decomposition": "de+monstr 顯示+ate→顯示出來→展示",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "monstr",
+          "hint": "顯示"
+        }
+      ],
+      "definition": "Demonstrate means to show clearly how something works or to protest publicly.",
+      "exampleSentence": "The teacher will demonstrate how to solve the math problem."
+    },
+    {
+      "id": "e183",
+      "word": "denote",
+      "meaning": "表示",
+      "decomposition": "de+note 標記→標記出來→表示",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "note",
+          "hint": "標記"
+        }
+      ],
+      "definition": "Denote means to be a sign or symbol of something.",
+      "exampleSentence": "The color red often denotes danger or stop."
+    },
+    {
+      "id": "e184",
+      "word": "denounce",
+      "meaning": "譴責",
+      "decomposition": "de+nounce 宣佈→公開宣佈反對→譴責",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "nounce",
+          "hint": "宣佈"
+        }
+      ],
+      "definition": "Denounce means to publicly criticize or condemn something.",
+      "exampleSentence": "The leader denounced the violence and called for peace."
+    },
+    {
+      "id": "e185",
+      "word": "depict",
+      "meaning": "描繪",
+      "decomposition": "de+pict 畫→畫出來→描繪",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "pict",
+          "hint": "畫"
+        }
+      ],
+      "definition": "Depict means to show or represent something in a picture or words.",
+      "exampleSentence": "The movie depicts life in a small village during the 1950s."
+    },
+    {
+      "id": "e186",
+      "word": "deplete",
+      "meaning": "耗盡",
+      "decomposition": "de+plete 充滿→使不充滿→耗盡",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "plete",
+          "hint": "充滿"
+        }
+      ],
+      "definition": "Deplete means to use up or reduce the amount of something.",
+      "exampleSentence": "Overfishing has depleted the fish population in the lake."
+    },
+    {
+      "id": "e187",
+      "word": "deplore",
+      "meaning": "譴責",
+      "decomposition": "de+plore 哭→為……哭泣→譴責",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "plore",
+          "hint": "哭"
+        }
+      ],
+      "definition": "Deplore means to feel or express strong disapproval of something.",
+      "exampleSentence": "Most people deplore cruelty to animals."
+    },
+    {
+      "id": "e188",
+      "word": "deploy",
+      "meaning": "部署",
+      "decomposition": "de+ploy 折疊→展開→部署",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "ploy",
+          "hint": "折疊"
+        }
+      ],
+      "definition": "Deploy means to position or spread out for effective use.",
+      "exampleSentence": "The company will deploy new software next month."
+    },
+    {
+      "id": "e189",
+      "word": "deport",
+      "meaning": "驅逐出境",
+      "decomposition": "de+port 帶→帶出去→驅逐",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "port",
+          "hint": "帶"
+        }
+      ],
+      "definition": "Deport means to force a person to leave a country.",
+      "exampleSentence": "Illegal immigrants may be deported to their home country."
+    },
+    {
+      "id": "e190",
+      "word": "depose",
+      "meaning": "廢黜",
+      "decomposition": "de+pose 放→把位置放下去→廢黜",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "pose",
+          "hint": "放"
+        }
+      ],
+      "definition": "Depose means to remove someone from power or a high position.",
+      "exampleSentence": "The king was deposed after a long rebellion."
+    },
+    {
+      "id": "e191",
+      "word": "deposit",
+      "meaning": "存款；沉積",
+      "decomposition": "de+posit 放→放下→存款",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "posit",
+          "hint": "放"
+        }
+      ],
+      "definition": "Deposit means to put money in a bank or to leave something somewhere.",
+      "exampleSentence": "I need to deposit this check into my account today."
+    },
+    {
+      "id": "e192",
+      "word": "depress",
+      "meaning": "壓抑；使沮喪",
+      "decomposition": "de+press 壓→向下壓→沮喪",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "press",
+          "hint": "壓"
+        }
+      ],
+      "definition": "Depress means to make someone feel very sad or to push something down.",
+      "exampleSentence": "Continuous bad news can depress people's spirits."
+    },
+    {
+      "id": "e193",
+      "word": "deprive",
+      "meaning": "剝奪",
+      "decomposition": "de+prive 拿走→拿走→剝奪",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "prive",
+          "hint": "拿走"
+        }
+      ],
+      "definition": "Deprive means to take something important away from someone.",
+      "exampleSentence": "Don't deprive yourself of sleep; it's bad for health."
+    },
+    {
+      "id": "e194",
+      "word": "deride",
+      "meaning": "嘲笑",
+      "decomposition": "de+ride 笑→笑落→嘲笑",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "ride",
+          "hint": "笑"
+        }
+      ],
+      "definition": "Deride means to mock or express contempt for someone.",
+      "exampleSentence": "It's cruel to deride people for their mistakes."
+    },
+    {
+      "id": "e195",
+      "word": "derive",
+      "meaning": "獲得；源自",
+      "decomposition": "de+rive 河→從河裡引水→獲得",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "rive",
+          "hint": "河"
+        }
+      ],
+      "definition": "Derive means to get or receive something from a source.",
+      "exampleSentence": "Many modern medicines derive from plants."
+    },
+    {
+      "id": "e196",
+      "word": "descend",
+      "meaning": "下降",
+      "decomposition": "de+scend 爬→向下爬→下降",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "scend",
+          "hint": "爬"
+        }
+      ],
+      "definition": "Descend means to move or go down.",
+      "exampleSentence": "The plane will descend slowly before landing."
+    },
+    {
+      "id": "e197",
+      "word": "describe",
+      "meaning": "描述",
+      "decomposition": "de+scribe 寫→寫下來→描述",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "scribe",
+          "hint": "寫"
+        }
+      ],
+      "definition": "Describe means to give a detailed account of something.",
+      "exampleSentence": "Please describe the person you saw at the scene."
+    },
+    {
+      "id": "e198",
+      "word": "desert",
+      "meaning": "拋棄；沙漠",
+      "decomposition": "de+sert 分開→分開離開→拋棄",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "sert",
+          "hint": "分開"
+        }
+      ],
+      "definition": "Desert means to abandon someone or a dry sandy area without water.",
+      "exampleSentence": "Never desert your friends when they are in trouble."
+    },
+    {
+      "id": "e199",
+      "word": "deserve",
+      "meaning": "應得",
+      "decomposition": "de+serve 服務→服務應得→應得",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "serve",
+          "hint": "服務"
+        }
+      ],
+      "definition": "Deserve means to be worthy of something as a result of actions.",
+      "exampleSentence": "Good students deserve praise and rewards."
+    },
+    {
+      "id": "e200",
+      "word": "design",
+      "meaning": "設計",
+      "decomposition": "de+sign 標記→標記出來→設計",
+      "page": 3,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "sign",
+          "hint": "標記"
+        }
+      ],
+      "definition": "Design means to plan or create the look or structure of something.",
+      "exampleSentence": "The architect will design a modern house for the family."
+    },
+   
+    {
+      "id": "e940",
+      "word": "gloriouslyad",
+      "meaning": "光荣地",
+      "decomposition": "glorious 光荣的",
+      "page": 90,
+      "components": [
+        {
+          "morpheme": "glorious",
+          "hint": "光荣的"
+        }
+      ],
+      "definition": "Gloriously means in a splendid or magnificent way.",
+      "exampleSentence": "The team won the championship gloriously after years of hard work."
+    },
+    {
+      "id": "e941",
+      "word": "ad",
+      "meaning": "过分地",
+      "decomposition": "extreme 极端的",
+      "page": 90,
+      "components": [
+        {
+          "morpheme": "extreme",
+          "hint": "极端的"
+        }
+      ],
+      "definition": "",
+      "exampleSentence": ""
+    },
+    {
+      "id": "e942",
+      "word": "definitelyad",
+      "meaning": "明确地",
+      "decomposition": "definite 明确的",
+      "page": 90,
+      "components": [
+        {
+          "morpheme": "definite",
+          "hint": "明确的"
+        }
+      ],
+      "definition": "Definitely means without any doubt or certainly.",
+      "exampleSentence": "I will definitely come to your birthday party tonight."
+    },
+    {
+      "id": "e943",
+      "word": "ad",
+      "meaning": "可能性",
+      "decomposition": "probable 可能的",
+      "page": 90,
+      "components": [
+        {
+          "morpheme": "probable",
+          "hint": "可能的"
+        }
+      ],
+      "definition": "",
+      "exampleSentence": ""
+    },
+    {
+      "id": "e944",
+      "word": "ad",
+      "meaning": "生物学地",
+      "decomposition": "biological 生物学的",
+      "page": 90,
+      "components": [
+        {
+          "morpheme": "biological",
+          "hint": "生物学的"
+        }
+      ],
+      "definition": "",
+      "exampleSentence": ""
+    },
+    {
+      "id": "e945",
+      "word": "greatlyad",
+      "meaning": "很大地",
+      "decomposition": "great 大",
+      "page": 90,
+      "components": [
+        {
+          "morpheme": "great",
+          "hint": "大"
+        }
+      ],
+      "definition": "Greatly means very much or to a large degree.",
+      "exampleSentence": "We greatly appreciate your help during this difficult time."
+    },
+    {
+      "id": "e946",
+      "word": "ad",
+      "meaning": "交叉地",
+      "decomposition": "cross 交叉",
+      "page": 93,
+      "components": [
+        {
+          "morpheme": "cross",
+          "hint": "交叉"
+        }
+      ],
+      "definition": "",
+      "exampleSentence": ""
+    },
+    {
+      "id": "e947",
+      "word": "endwisead",
+      "meaning": "末端朝前地",
+      "decomposition": "end 末端",
+      "page": 93,
+      "components": [
+        {
+          "morpheme": "end",
+          "hint": "末端"
+        }
+      ],
+      "definition": "Endwise means with the end forward or lengthwise.",
+      "exampleSentence": "Place the log endwise to fit it through the door."
+    },
+    {
+      "id": "e948",
+      "word": "ad",
+      "meaning": "沿海地",
+      "decomposition": "coast 海岸",
+      "page": 93,
+      "components": [
+        {
+          "morpheme": "coast",
+          "hint": "海岸"
+        }
+      ],
+      "definition": "",
+      "exampleSentence": ""
+    },
+    {
+      "id": "e949",
+      "word": "ad",
+      "meaning": "斜向一边地",
+      "decomposition": "side 旁边",
+      "page": 93,
+      "components": [
+        {
+          "morpheme": "side",
+          "hint": "旁边"
+        }
+      ],
+      "definition": "",
+      "exampleSentence": ""
+    },
+    {
+      "id": "e950",
+      "word": "ad",
+      "meaning": "顺时针地",
+      "decomposition": "clock 时钟",
+      "page": 93,
+      "components": [
+        {
+          "morpheme": "clock",
+          "hint": "时钟"
+        }
+      ],
+      "definition": "",
+      "exampleSentence": ""
+    },
+    {
+      "id": "e951",
+      "word": "ad",
+      "meaning": "同样地",
+      "decomposition": "like 相像",
+      "page": 93,
+      "components": [
+        {
+          "morpheme": "like",
+          "hint": "相像"
+        }
+      ],
+      "definition": "",
+      "exampleSentence": ""
+    },
+    {
+      "id": "e952",
+      "word": "ad",
+      "meaning": "要不然",
+      "decomposition": "other 另外的",
+      "page": 93,
+      "components": [
+        {
+          "morpheme": "other",
+          "hint": "另外的"
+        }
+      ],
+      "definition": "",
+      "exampleSentence": ""
+    },
+    {
+      "id": "e953",
+      "word": "ad",
+      "meaning": "横行地",
+      "decomposition": "crab 螃蟹",
+      "page": 93,
+      "components": [
+        {
+          "morpheme": "crab",
+          "hint": "螃蟹"
+        }
+      ],
+      "definition": "",
+      "exampleSentence": ""
+    }
+  ]
+}
+
