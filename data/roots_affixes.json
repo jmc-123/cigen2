@@ -6902,7 +6902,4679 @@
       "definition": "Design means to plan or create the look or structure of something.",
       "exampleSentence": "The architect will design a modern house for the family."
     },
-   
+       {
+      "id": "e201",
+      "word": "desire",
+      "meaning": "渴望",
+      "decomposition": "de+sire 星星→望着星星→渴望",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "sire",
+          "hint": "星星"
+        }
+      ],
+      "definition": "Desire means a strong feeling of wanting to have something or wishing for something to happen.",
+      "exampleSentence": "She had a strong desire to travel the world and see new places."
+    },
+    {
+      "id": "e202",
+      "word": "destroy",
+      "meaning": "破坏",
+      "decomposition": "de+stroy 建造→反建造→破坏",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "stroy",
+          "hint": "建造"
+        }
+      ],
+      "definition": "Destroy means to completely ruin or damage something so badly that it no longer exists or works.",
+      "exampleSentence": "The storm destroyed many houses along the coast."
+    },
+    {
+      "id": "e203",
+      "word": "detail",
+      "meaning": "细节",
+      "decomposition": "de+tail 切割→切成小块→细节",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "tail",
+          "hint": "切割"
+        }
+      ],
+      "definition": "Detail means a small individual fact or piece of information about something.",
+      "exampleSentence": "Please give more details about what happened yesterday."
+    },
+    {
+      "id": "e204",
+      "word": "detect",
+      "meaning": "发觉；看破",
+      "decomposition": "de+tect 把盖上的打开→发觉",
+      "page": 50,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": "打开"
+        },
+        {
+          "morpheme": "tect",
+          "hint": "把盖上的打开→发觉"
+        }
+      ],
+      "definition": "Detect means to discover or notice something that is not easy to see or find.",
+      "exampleSentence": "The security camera can detect movement at night."
+    },
+    {
+      "id": "e205",
+      "word": "deter",
+      "meaning": "阻止",
+      "decomposition": "de+ter 恐惧→使害怕→阻止",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "ter",
+          "hint": "恐惧"
+        }
+      ],
+      "definition": "Deter means to discourage someone from doing something by making them afraid or doubtful.",
+      "exampleSentence": "High fines help deter people from parking illegally."
+    },
+    {
+      "id": "e206",
+      "word": "develop",
+      "meaning": "发展",
+      "decomposition": "de+velop 包裹→展开包裹→发展",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "velop",
+          "hint": "包裹"
+        }
+      ],
+      "definition": "Develop means to grow or improve gradually over time.",
+      "exampleSentence": "The company has developed a new app for language learning."
+    },
+    {
+      "id": "e207",
+      "word": "deviate",
+      "meaning": "偏离",
+      "decomposition": "de+viate 路→离开道路→偏离",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "viate",
+          "hint": "路"
+        }
+      ],
+      "definition": "Deviate means to depart from an established course or norm.",
+      "exampleSentence": "Don't deviate from the original plan without telling us."
+    },
+    {
+      "id": "e208",
+      "word": "device",
+      "meaning": "装置",
+      "decomposition": "de+vice 代替→代替工具→装置",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "vice",
+          "hint": "代替"
+        }
+      ],
+      "definition": "Device means a tool, machine, or piece of equipment made for a particular purpose.",
+      "exampleSentence": "This small device can measure your heart rate while running."
+    },
+    {
+      "id": "e209",
+      "word": "devote",
+      "meaning": "奉献",
+      "decomposition": "de+vot 发誓→发誓给予→奉献",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "de",
+          "hint": ""
+        },
+        {
+          "morpheme": "vot",
+          "hint": "发誓"
+        }
+      ],
+      "definition": "Devote means to give a lot of time, energy, or attention to something.",
+      "exampleSentence": "He devotes most of his free time to playing the guitar."
+    },
+    {
+      "id": "e210",
+      "word": "dictate",
+      "meaning": "口述；命令",
+      "decomposition": "dict 说+ate→说出来→口述",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dict",
+          "hint": "说"
+        }
+      ],
+      "definition": "Dictate means to say words for someone else to write down, or to give orders.",
+      "exampleSentence": "The manager will dictate the letter to his assistant."
+    },
+    {
+      "id": "e211",
+      "word": "dictographn",
+      "meaning": "侦听器",
+      "decomposition": "dicto 说+graph→把说的写下→侦听器",
+      "page": 25,
+      "components": [
+        {
+          "morpheme": "dicto",
+          "hint": "说"
+        },
+        {
+          "morpheme": "graph",
+          "hint": "把说的写下 侦听器"
+        }
+      ],
+      "definition": "Dictograph is a device used for secretly recording or listening to conversations.",
+      "exampleSentence": "The detective installed a dictograph to gather evidence."
+    },
+    {
+      "id": "e212",
+      "word": "differ",
+      "meaning": "不同",
+      "decomposition": "dif+fer 带→带到不同方向→不同",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dif",
+          "hint": ""
+        },
+        {
+          "morpheme": "fer",
+          "hint": "带"
+        }
+      ],
+      "definition": "Differ means to not be the same as something else.",
+      "exampleSentence": "The two versions differ only in color."
+    },
+    {
+      "id": "e213",
+      "word": "difficult",
+      "meaning": "困难的",
+      "decomposition": "dif+ficult 做→做起来不容易→困难的",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dif",
+          "hint": ""
+        },
+        {
+          "morpheme": "ficult",
+          "hint": "做"
+        }
+      ],
+      "definition": "Difficult means not easy to do, understand, or deal with.",
+      "exampleSentence": "This math problem is quite difficult for most students."
+    },
+    {
+      "id": "e214",
+      "word": "diffuse",
+      "meaning": "散开；冗长的",
+      "decomposition": "dif+fuse 流→流开→散开",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dif",
+          "hint": ""
+        },
+        {
+          "morpheme": "fuse",
+          "hint": "流"
+        }
+      ],
+      "definition": "Diffuse means to spread out over a large area, or to be wordy and not clear.",
+      "exampleSentence": "The perfume diffused slowly through the room."
+    },
+    {
+      "id": "e215",
+      "word": "digest",
+      "meaning": "消化；领会",
+      "decomposition": "di+gest 带→带进身体→消化",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "di",
+          "hint": ""
+        },
+        {
+          "morpheme": "gest",
+          "hint": "带"
+        }
+      ],
+      "definition": "Digest means to break down food in the stomach or to understand information slowly.",
+      "exampleSentence": "It takes time to digest such a large amount of information."
+    },
+    {
+      "id": "e216",
+      "word": "dilate",
+      "meaning": "扩张",
+      "decomposition": "di+late 宽→使变宽→扩张",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "di",
+          "hint": ""
+        },
+        {
+          "morpheme": "late",
+          "hint": "宽"
+        }
+      ],
+      "definition": "Dilate means to become wider or more open.",
+      "exampleSentence": "The doctor used drops to dilate the patient's pupils."
+    },
+    {
+      "id": "e217",
+      "word": "dilute",
+      "meaning": "稀释",
+      "decomposition": "di+lu 洗→洗开→稀释",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "di",
+          "hint": ""
+        },
+        {
+          "morpheme": "lu",
+          "hint": "洗"
+        }
+      ],
+      "definition": "Dilute means to make a liquid weaker by adding water or another liquid.",
+      "exampleSentence": "You should dilute the cleaning solution before using it."
+    },
+    {
+      "id": "e218",
+      "word": "diminish",
+      "meaning": "减少",
+      "decomposition": "di+minish 小→使变小→减少",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "di",
+          "hint": ""
+        },
+        {
+          "morpheme": "minish",
+          "hint": "小"
+        }
+      ],
+      "definition": "Diminish means to make or become smaller, fewer, or less important.",
+      "exampleSentence": "The pain will diminish after you take the medicine."
+    },
+    {
+      "id": "e219",
+      "word": "direct",
+      "meaning": "直接的；指导",
+      "decomposition": "di+rect 直→直线→直接",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "di",
+          "hint": ""
+        },
+        {
+          "morpheme": "rect",
+          "hint": "直"
+        }
+      ],
+      "definition": "Direct means going straight from one place to another without turning, or to tell someone what to do.",
+      "exampleSentence": "Please give me direct directions to the station."
+    },
+    {
+      "id": "e220",
+      "word": "disable",
+      "meaning": "使无能",
+      "decomposition": "dis+able 能→不能→使无能",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "able",
+          "hint": "能"
+        }
+      ],
+      "definition": "Disable means to make something unable to work or function properly.",
+      "exampleSentence": "The virus disabled the computer's firewall."
+    },
+    {
+      "id": "e221",
+      "word": "disagree",
+      "meaning": "不同意",
+      "decomposition": "dis+agree 同意→不同意",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "agree",
+          "hint": "同意"
+        }
+      ],
+      "definition": "Disagree means to have or express a different opinion.",
+      "exampleSentence": "I disagree with your idea because it seems too risky."
+    },
+    {
+      "id": "e222",
+      "word": "disappear",
+      "meaning": "消失",
+      "decomposition": "dis+appear 出现→不出现→消失",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "appear",
+          "hint": "出现"
+        }
+      ],
+      "definition": "Disappear means to stop being visible or to go missing.",
+      "exampleSentence": "The sun disappeared behind the clouds suddenly."
+    },
+    {
+      "id": "e223",
+      "word": "disappoint",
+      "meaning": "失望",
+      "decomposition": "dis+appoint 任命→任命失败→失望",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "appoint",
+          "hint": "任命"
+        }
+      ],
+      "definition": "Disappoint means to fail to meet someone's expectations.",
+      "exampleSentence": "The result disappointed all the fans."
+    },
+    {
+      "id": "e224",
+      "word": "disapprove",
+      "meaning": "不赞成",
+      "decomposition": "dis+approve 赞成→不赞成",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "approve",
+          "hint": "赞成"
+        }
+      ],
+      "definition": "Disapprove means to have or express an unfavorable opinion.",
+      "exampleSentence": "Her parents disapprove of her late-night parties."
+    },
+    {
+      "id": "e225",
+      "word": "disarm",
+      "meaning": "解除武装",
+      "decomposition": "dis+arm 武装→解除武装",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "arm",
+          "hint": "武装"
+        }
+      ],
+      "definition": "Disarm means to take weapons away or to reduce suspicion.",
+      "exampleSentence": "His friendly smile disarmed everyone's anger."
+    },
+    {
+      "id": "e226",
+      "word": "disaster",
+      "meaning": "灾难",
+      "decomposition": "dis+aster 星星→不吉利的星星→灾难",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "aster",
+          "hint": "星星"
+        }
+      ],
+      "definition": "Disaster means a sudden event causing great damage or suffering.",
+      "exampleSentence": "The earthquake was a terrible disaster for the town."
+    },
+    {
+      "id": "e227",
+      "word": "discard",
+      "meaning": "丢弃",
+      "decomposition": "dis+card 心→丢开心→丢弃",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "card",
+          "hint": "心"
+        }
+      ],
+      "definition": "Discard means to throw something away.",
+      "exampleSentence": "Please discard the old newspapers in the recycling bin."
+    },
+    {
+      "id": "e228",
+      "word": "disclose",
+      "meaning": "揭露",
+      "decomposition": "dis+close 关闭→打开关闭→揭露",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "close",
+          "hint": "关闭"
+        }
+      ],
+      "definition": "Disclose means to make secret information known.",
+      "exampleSentence": "The company refused to disclose the exact salary."
+    },
+    {
+      "id": "e229",
+      "word": "discourage",
+      "meaning": "使气馁",
+      "decomposition": "dis+courage 勇气→拿走勇气→使气馁",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "courage",
+          "hint": "勇气"
+        }
+      ],
+      "definition": "Discourage means to make someone lose confidence or enthusiasm.",
+      "exampleSentence": "Don't let failure discourage you from trying again."
+    },
+    {
+      "id": "e230",
+      "word": "discover",
+      "meaning": "发现",
+      "decomposition": "dis+cover 盖→揭开盖子→发现",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "cover",
+          "hint": "盖"
+        }
+      ],
+      "definition": "Discover means to find something for the first time.",
+      "exampleSentence": "Columbus discovered America in 1492."
+    },
+    {
+      "id": "e231",
+      "word": "discreet",
+      "meaning": "谨慎的",
+      "decomposition": "dis+creet 筛选→筛选小心→谨慎的",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "creet",
+          "hint": "筛选"
+        }
+      ],
+      "definition": "Discreet means careful not to cause embarrassment or attract attention.",
+      "exampleSentence": "Be discreet when discussing private matters in public."
+    },
+    {
+      "id": "e232",
+      "word": "discriminate",
+      "meaning": "歧视；辨别",
+      "decomposition": "dis+crim 判断→不公平判断→歧视",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "crim",
+          "hint": "判断"
+        }
+      ],
+      "definition": "Discriminate means to treat people differently or to recognize differences.",
+      "exampleSentence": "It's wrong to discriminate against anyone based on race."
+    },
+    {
+      "id": "e233",
+      "word": "discuss",
+      "meaning": "讨论",
+      "decomposition": "dis+cuss 震动→互相震动→讨论",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "cuss",
+          "hint": "震动"
+        }
+      ],
+      "definition": "Discuss means to talk about something with others.",
+      "exampleSentence": "We need to discuss the problem before making a decision."
+    },
+    {
+      "id": "e234",
+      "word": "disdain",
+      "meaning": "轻视",
+      "decomposition": "dis+dain 值得→不值得→轻视",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "dain",
+          "hint": "值得"
+        }
+      ],
+      "definition": "Disdain means to consider something unworthy or beneath one's dignity.",
+      "exampleSentence": "She looked at the cheap gift with disdain."
+    },
+    {
+      "id": "e235",
+      "word": "disease",
+      "meaning": "疾病",
+      "decomposition": "dis+ease 舒适→不舒适→疾病",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "ease",
+          "hint": "舒适"
+        }
+      ],
+      "definition": "Disease means an illness affecting a person or animal.",
+      "exampleSentence": "Heart disease is a common health problem today."
+    },
+    {
+      "id": "e236",
+      "word": "disgrace",
+      "meaning": "耻辱",
+      "decomposition": "dis+grace 优雅→失去优雅→耻辱",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "grace",
+          "hint": "优雅"
+        }
+      ],
+      "definition": "Disgrace means loss of reputation or shame.",
+      "exampleSentence": "His actions brought disgrace to the whole family."
+    },
+    {
+      "id": "e237",
+      "word": "disguise",
+      "meaning": "伪装",
+      "decomposition": "dis+guise 外貌→改变外貌→伪装",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "guise",
+          "hint": "外貌"
+        }
+      ],
+      "definition": "Disguise means to change appearance to hide identity.",
+      "exampleSentence": "He wore a mask to disguise himself at the party."
+    },
+    {
+      "id": "e238",
+      "word": "disgust",
+      "meaning": "厌恶",
+      "decomposition": "dis+gust 味道→不好的味道→厌恶",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "gust",
+          "hint": "味道"
+        }
+      ],
+      "definition": "Disgust means a strong feeling of dislike or revulsion.",
+      "exampleSentence": "The rotten smell filled her with disgust."
+    },
+    {
+      "id": "e239",
+      "word": "dishonest",
+      "meaning": "不诚实的",
+      "decomposition": "dis+honest 诚实→不诚实",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "honest",
+          "hint": "诚实"
+        }
+      ],
+      "definition": "Dishonest means not truthful or fair.",
+      "exampleSentence": "It's dishonest to cheat on an exam."
+    },
+    {
+      "id": "e240",
+      "word": "dislike",
+      "meaning": "不喜欢",
+      "decomposition": "dis+like 喜欢→不喜欢",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "like",
+          "hint": "喜欢"
+        }
+      ],
+      "definition": "Dislike means to not like something or someone.",
+      "exampleSentence": "I dislike rainy days because I can't go outside."
+    },
+    {
+      "id": "e241",
+      "word": "dismay",
+      "meaning": "沮丧",
+      "decomposition": "dis+may 力量→失去力量→沮丧",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "may",
+          "hint": "力量"
+        }
+      ],
+      "definition": "Dismay means sudden or great discouragement.",
+      "exampleSentence": "To her dismay, the flight was canceled."
+    },
+    {
+      "id": "e242",
+      "word": "dismiss",
+      "meaning": "解雇；驳回",
+      "decomposition": "dis+miss 送→送走→解雇",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "miss",
+          "hint": "送"
+        }
+      ],
+      "definition": "Dismiss means to send away or to reject an idea.",
+      "exampleSentence": "The manager decided to dismiss the lazy employee."
+    },
+    {
+      "id": "e243",
+      "word": "disorder",
+      "meaning": "混乱",
+      "decomposition": "dis+order 秩序→无秩序→混乱",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "order",
+          "hint": "秩序"
+        }
+      ],
+      "definition": "Disorder means a lack of order or confusion.",
+      "exampleSentence": "The room was in complete disorder after the party."
+    },
+    {
+      "id": "e244",
+      "word": "dispel",
+      "meaning": "驱散",
+      "decomposition": "dis+pel 推→推开→驱散",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "pel",
+          "hint": "推"
+        }
+      ],
+      "definition": "Dispel means to drive away or make disappear.",
+      "exampleSentence": "The sunshine helped dispel the morning fog."
+    },
+    {
+      "id": "e245",
+      "word": "dispose",
+      "meaning": "处理；倾向",
+      "decomposition": "dis+pose 放→放开→处理",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "pose",
+          "hint": "放"
+        }
+      ],
+      "definition": "Dispose means to get rid of or to be inclined to do something.",
+      "exampleSentence": "Please dispose of the trash properly."
+    },
+    {
+      "id": "e246",
+      "word": "dispute",
+      "meaning": "争论",
+      "decomposition": "dis+pute 思考→不同思考→争论",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "pute",
+          "hint": "思考"
+        }
+      ],
+      "definition": "Dispute means a disagreement or argument.",
+      "exampleSentence": "They had a dispute over who should pay the bill."
+    },
+    {
+      "id": "e247",
+      "word": "disregard",
+      "meaning": "忽视",
+      "decomposition": "dis+regard 注意→不注意→忽视",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "regard",
+          "hint": "注意"
+        }
+      ],
+      "definition": "Disregard means to pay no attention to something.",
+      "exampleSentence": "Don't disregard the safety rules when driving."
+    },
+    {
+      "id": "e248",
+      "word": "disseminate",
+      "meaning": "散播",
+      "decomposition": "dis+semin 种子→撒种子→散播",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "semin",
+          "hint": "种子"
+        }
+      ],
+      "definition": "Disseminate means to spread information widely.",
+      "exampleSentence": "The organization disseminates health information to schools."
+    },
+    {
+      "id": "e249",
+      "word": "dissent",
+      "meaning": "不同意",
+      "decomposition": "dis+sent 感觉→不同感觉→不同意",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "sent",
+          "hint": "感觉"
+        }
+      ],
+      "definition": "Dissent means to disagree with an opinion or decision.",
+      "exampleSentence": "A few members expressed dissent during the vote."
+    },
+    {
+      "id": "e250",
+      "word": "dissolve",
+      "meaning": "溶解",
+      "decomposition": "dis+solve 松开→松开→溶解",
+      "page": 4,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "solve",
+          "hint": "松开"
+        }
+      ],
+      "definition": "Dissolve means to mix completely with a liquid or to end something.",
+      "exampleSentence": "Sugar will dissolve quickly in hot tea."
+    },
+    {
+      "id": "e251",
+      "word": "distinct",
+      "meaning": "明显的；不同的",
+      "decomposition": "dis+tinct 刺→刺出来→明显的",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "tinct",
+          "hint": "刺"
+        }
+      ],
+      "definition": "Distinct means clearly different or easily recognizable.",
+      "exampleSentence": "There are distinct differences between the two paintings."
+    },
+    {
+      "id": "e252",
+      "word": "distort",
+      "meaning": "扭曲",
+      "decomposition": "dis+tort 扭→扭歪→扭曲",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "tort",
+          "hint": "扭"
+        }
+      ],
+      "definition": "Distort means to change something from its usual or natural shape.",
+      "exampleSentence": "The mirror distorted her reflection and made her look funny."
+    },
+    {
+      "id": "e253",
+      "word": "distract",
+      "meaning": "分心",
+      "decomposition": "dis+tract 拉→拉开注意力→分心",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "tract",
+          "hint": "拉"
+        }
+      ],
+      "definition": "Distract means to take someone's attention away from something.",
+      "exampleSentence": "The loud music distracted him from his homework."
+    },
+    {
+      "id": "e254",
+      "word": "distress",
+      "meaning": "痛苦",
+      "decomposition": "dis+stress 拉紧→拉得太紧→痛苦",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "stress",
+          "hint": "拉紧"
+        }
+      ],
+      "definition": "Distress means extreme anxiety, sorrow, or pain.",
+      "exampleSentence": "The news caused her great distress."
+    },
+    {
+      "id": "e255",
+      "word": "distribute",
+      "meaning": "分配",
+      "decomposition": "dis+tribute 给→分开给→分配",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "tribute",
+          "hint": "给"
+        }
+      ],
+      "definition": "Distribute means to give things to a number of people.",
+      "exampleSentence": "They will distribute food to the poor families."
+    },
+    {
+      "id": "e256",
+      "word": "district",
+      "meaning": "地区",
+      "decomposition": "dis+strict 拉紧→划定的区域→地区",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "dis",
+          "hint": ""
+        },
+        {
+          "morpheme": "strict",
+          "hint": "拉紧"
+        }
+      ],
+      "definition": "District means an area of a city or country with special boundaries.",
+      "exampleSentence": "This is the business district of the city."
+    },
+    {
+      "id": "e257",
+      "word": "diverge",
+      "meaning": "分歧",
+      "decomposition": "di+verge 转→转开→分歧",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "di",
+          "hint": ""
+        },
+        {
+          "morpheme": "verge",
+          "hint": "转"
+        }
+      ],
+      "definition": "Diverge means to separate and go in different directions.",
+      "exampleSentence": "Their opinions began to diverge after the discussion."
+    },
+    {
+      "id": "e258",
+      "word": "diverse",
+      "meaning": "多样的",
+      "decomposition": "di+verse 转→转到不同方向→多样的",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "di",
+          "hint": ""
+        },
+        {
+          "morpheme": "verse",
+          "hint": "转"
+        }
+      ],
+      "definition": "Diverse means different in kind or variety.",
+      "exampleSentence": "The school has students from diverse backgrounds."
+    },
+    {
+      "id": "e259",
+      "word": "divide",
+      "meaning": "划分",
+      "decomposition": "di+vide 分→分开→划分",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "di",
+          "hint": ""
+        },
+        {
+          "morpheme": "vide",
+          "hint": "分"
+        }
+      ],
+      "definition": "Divide means to separate into parts or groups.",
+      "exampleSentence": "Let's divide the cake into eight pieces."
+    },
+    {
+      "id": "e260",
+      "word": "divine",
+      "meaning": "神圣的",
+      "decomposition": "di+vine 葡萄→神圣的葡萄→神圣的",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "di",
+          "hint": ""
+        },
+        {
+          "morpheme": "vine",
+          "hint": "葡萄"
+        }
+      ],
+      "definition": "Divine means related to God or extremely good.",
+      "exampleSentence": "The music was divine and touched everyone's heart."
+    },
+         {
+      "id": "e261",
+      "word": "divine",
+      "meaning": "神圣的",
+      "decomposition": "di+vine 葡萄→神圣的葡萄→神圣的",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "di",
+          "hint": ""
+        },
+        {
+          "morpheme": "vine",
+          "hint": "葡萄"
+        }
+      ],
+      "definition": "Divine means related to God or extremely good and beautiful.",
+      "exampleSentence": "The choir sang with divine harmony that moved everyone."
+    },
+    {
+      "id": "e262",
+      "word": "division",
+      "meaning": "划分；部门",
+      "decomposition": "di+vision 看→分开看→划分",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "di",
+          "hint": ""
+        },
+        {
+          "morpheme": "vision",
+          "hint": "看"
+        }
+      ],
+      "definition": "Division means the act of separating or a department in a company.",
+      "exampleSentence": "The company has a marketing division and a sales division."
+    },
+    {
+      "id": "e263",
+      "word": "donate",
+      "meaning": "捐赠",
+      "decomposition": "don+ate→给出去",
+      "page": 19,
+      "components": [
+        {
+          "morpheme": "don",
+          "hint": ""
+        },
+        {
+          "morpheme": "ate",
+          "hint": "给出去"
+        }
+      ],
+      "definition": "Donate means to give something (especially money) to help others or a cause.",
+      "exampleSentence": "Many people donate money to help children in poor areas."
+    },
+    {
+      "id": "e264",
+      "word": "donor",
+      "meaning": "捐赠者",
+      "decomposition": "don+or→给的人",
+      "page": 19,
+      "components": [
+        {
+          "morpheme": "don",
+          "hint": ""
+        },
+        {
+          "morpheme": "or",
+          "hint": "给的人"
+        }
+      ],
+      "definition": "Donor is a person who gives something (especially money or blood).",
+      "exampleSentence": "The hospital thanked all blood donors for their kindness."
+    },
+    {
+      "id": "e265",
+      "word": "dormant",
+      "meaning": "休眠的",
+      "decomposition": "dor+mant 睡觉→睡觉的→休眠的",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "dor",
+          "hint": ""
+        },
+        {
+          "morpheme": "mant",
+          "hint": "睡觉"
+        }
+      ],
+      "definition": "Dormant means not active or growing at the moment but able to become active later.",
+      "exampleSentence": "The volcano has been dormant for many years."
+    },
+    {
+      "id": "e266",
+      "word": "dual",
+      "meaning": "双重的",
+      "decomposition": "du+al 双→双重的",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "du",
+          "hint": ""
+        },
+        {
+          "morpheme": "al",
+          "hint": "双"
+        }
+      ],
+      "definition": "Dual means having two parts or aspects.",
+      "exampleSentence": "She has dual citizenship in Canada and France."
+    },
+    {
+      "id": "e267",
+      "word": "duet",
+      "meaning": "二重唱",
+      "decomposition": "du+et 双→两个人一起→二重唱",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "du",
+          "hint": ""
+        },
+        {
+          "morpheme": "et",
+          "hint": "双"
+        }
+      ],
+      "definition": "Duet means a piece of music performed by two people.",
+      "exampleSentence": "They sang a beautiful duet at the concert."
+    },
+    {
+      "id": "e268",
+      "word": "durability",
+      "meaning": "耐久性",
+      "decomposition": "dur+ability 能→能持久→耐久性",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "dur",
+          "hint": ""
+        },
+        {
+          "morpheme": "ability",
+          "hint": "能"
+        }
+      ],
+      "definition": "Durability means the ability to last a long time without being damaged.",
+      "exampleSentence": "This phone is known for its excellent durability."
+    },
+    {
+      "id": "e269",
+      "word": "durable",
+      "meaning": "耐用的",
+      "decomposition": "dur+able 能→能持久→耐用的",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "dur",
+          "hint": ""
+        },
+        {
+          "morpheme": "able",
+          "hint": "能"
+        }
+      ],
+      "definition": "Durable means able to withstand wear and last a long time.",
+      "exampleSentence": "These shoes are very durable and good for hiking."
+    },
+    {
+      "id": "e270",
+      "word": "during",
+      "meaning": "在……期间",
+      "decomposition": "dur+ing 持续→持续的时间→在期间",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "dur",
+          "hint": ""
+        },
+        {
+          "morpheme": "ing",
+          "hint": "持续"
+        }
+      ],
+      "definition": "During means throughout the course of something.",
+      "exampleSentence": "It rained heavily during the night."
+    },
+    {
+      "id": "e271",
+      "word": "dynamic",
+      "meaning": "动态的；有活力的",
+      "decomposition": "dyn+amic 力量→有力量的→动态的",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "dyn",
+          "hint": "力量"
+        },
+        {
+          "morpheme": "amic",
+          "hint": ""
+        }
+      ],
+      "definition": "Dynamic means full of energy and change, or relating to forces producing movement.",
+      "exampleSentence": "She is a dynamic leader who always motivates the team."
+    },
+    {
+      "id": "e272",
+      "word": "dysfunction",
+      "meaning": "功能失调",
+      "decomposition": "dys+function 功能→功能异常→功能失调",
+      "page": 5,
+      "components": [
+        {
+          "morpheme": "dys",
+          "hint": ""
+        },
+        {
+          "morpheme": "function",
+          "hint": "功能"
+        }
+      ],
+      "definition": "Dysfunction means abnormal or impaired functioning.",
+      "exampleSentence": "Family dysfunction can affect children's behavior."
+    },
+    {
+      "id": "e273",
+      "word": "eager",
+      "meaning": "热切的",
+      "decomposition": "e+ager 尖锐→渴望尖锐→热切的",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "ager",
+          "hint": "尖锐"
+        }
+      ],
+      "definition": "Eager means very excited and interested in doing something.",
+      "exampleSentence": "The children were eager to open their Christmas presents."
+    },
+    {
+      "id": "e274",
+      "word": "ecitement",
+      "meaning": "兴奋",
+      "decomposition": "excite+ment",
+      "page": 16,
+      "components": [
+        {
+          "morpheme": "excite",
+          "hint": ""
+        },
+        {
+          "morpheme": "ment",
+          "hint": ""
+        }
+      ],
+      "definition": "Excitement means a feeling of great enthusiasm and eagerness.",
+      "exampleSentence": "There was a lot of excitement when the singer appeared on stage."
+    },
+    {
+      "id": "e275",
+      "word": "eject",
+      "meaning": "喷出；逐出",
+      "decomposition": "e+ject 抛→抛出去→喷出",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "ject",
+          "hint": "抛"
+        }
+      ],
+      "definition": "Eject means to force something or someone out.",
+      "exampleSentence": "The machine ejects the CD after it finishes playing."
+    },
+    {
+      "id": "e276",
+      "word": "elaborate",
+      "meaning": "详细的；精心制作",
+      "decomposition": "e+labor 工作→努力工作→精心制作",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "labor",
+          "hint": "工作"
+        }
+      ],
+      "definition": "Elaborate means detailed and complicated, or to explain something in detail.",
+      "exampleSentence": "She gave an elaborate explanation of the project."
+    },
+    {
+      "id": "e277",
+      "word": "elect",
+      "meaning": "选举",
+      "decomposition": "e+lect 选→选出来→选举",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "lect",
+          "hint": "选"
+        }
+      ],
+      "definition": "Elect means to choose someone by voting.",
+      "exampleSentence": "The people will elect a new president next year."
+    },
+    {
+      "id": "e278",
+      "word": "elegant",
+      "meaning": "优雅的",
+      "decomposition": "e+leg 选择→选出来的好→优雅的",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "leg",
+          "hint": "选择"
+        }
+      ],
+      "definition": "Elegant means graceful and stylish in appearance or manner.",
+      "exampleSentence": "She wore an elegant dress to the party."
+    },
+    {
+      "id": "e279",
+      "word": "eliminate",
+      "meaning": "消除",
+      "decomposition": "e+limin 门槛→移出门外→消除",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "limin",
+          "hint": "门槛"
+        }
+      ],
+      "definition": "Eliminate means to remove or get rid of something completely.",
+      "exampleSentence": "We need to eliminate all mistakes from the report."
+    },
+    {
+      "id": "e280",
+      "word": "elite",
+      "meaning": "精英",
+      "decomposition": "e+lite 选择→被选中的→精英",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "lite",
+          "hint": "选择"
+        }
+      ],
+      "definition": "Elite means the best or most powerful group in society.",
+      "exampleSentence": "The school only accepts students from the elite families."
+    },
+    {
+      "id": "e281",
+      "word": "eloquent",
+      "meaning": "雄辩的",
+      "decomposition": "e+loqu 说→说得很流利→雄辩的",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "loqu",
+          "hint": "说"
+        }
+      ],
+      "definition": "Eloquent means able to speak clearly and persuasively.",
+      "exampleSentence": "His eloquent speech inspired everyone in the room."
+    },
+    {
+      "id": "e282",
+      "word": "emancipate",
+      "meaning": "解放",
+      "decomposition": "e+mancip 手→从手中放开→解放",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "mancip",
+          "hint": "手"
+        }
+      ],
+      "definition": "Emancipate means to free someone from slavery or restrictions.",
+      "exampleSentence": "The law helped emancipate people from unfair rules."
+    },
+    {
+      "id": "e283",
+      "word": "embark",
+      "meaning": "开始；上船",
+      "decomposition": "em+bark 船→上船→开始",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "em",
+          "hint": ""
+        },
+        {
+          "morpheme": "bark",
+          "hint": "船"
+        }
+      ],
+      "definition": "Embark means to start a new project or to go on board a ship.",
+      "exampleSentence": "We will embark on a new adventure next month."
+    },
+    {
+      "id": "e284",
+      "word": "embarrass",
+      "meaning": "使尴尬",
+      "decomposition": "em+barrass 障碍→设置障碍→使尴尬",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "em",
+          "hint": ""
+        },
+        {
+          "morpheme": "barrass",
+          "hint": "障碍"
+        }
+      ],
+      "definition": "Embarrass means to make someone feel ashamed or awkward.",
+      "exampleSentence": "He felt embarrassed when he forgot her name."
+    },
+    {
+      "id": "e285",
+      "word": "embody",
+      "meaning": "体现",
+      "decomposition": "em+body 身体→放入身体→体现",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "em",
+          "hint": ""
+        },
+        {
+          "morpheme": "body",
+          "hint": "身体"
+        }
+      ],
+      "definition": "Embody means to represent or express something in a clear way.",
+      "exampleSentence": "She embodies the spirit of kindness and generosity."
+    },
+    {
+      "id": "e286",
+      "word": "embrace",
+      "meaning": "拥抱；欣然接受",
+      "decomposition": "em+brace 手臂→用手臂抱住→拥抱",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "em",
+          "hint": ""
+        },
+        {
+          "morpheme": "brace",
+          "hint": "手臂"
+        }
+      ],
+      "definition": "Embrace means to hold someone tightly or to accept something willingly.",
+      "exampleSentence": "She embraced her friend warmly after a long time apart."
+    },
+    {
+      "id": "e287",
+      "word": "emerge",
+      "meaning": "出现",
+      "decomposition": "e+merge 沉没→从沉没中出来→出现",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "merge",
+          "hint": "沉没"
+        }
+      ],
+      "definition": "Emerge means to come out or appear from something.",
+      "exampleSentence": "The sun emerged from behind the clouds."
+    },
+    {
+      "id": "e288",
+      "word": "emergency",
+      "meaning": "紧急情况",
+      "decomposition": "e+merge 沉没→突然出现→紧急",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "merge",
+          "hint": "沉没"
+        }
+      ],
+      "definition": "Emergency means a serious situation requiring immediate action.",
+      "exampleSentence": "Call 120 in case of emergency."
+    },
+    {
+      "id": "e289",
+      "word": "emigrate",
+      "meaning": "移民",
+      "decomposition": "e+migrate 迁移→移出→移民",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "migrate",
+          "hint": "迁移"
+        }
+      ],
+      "definition": "Emigrate means to leave one's country to live in another.",
+      "exampleSentence": "Many people emigrate to find better jobs."
+    },
+    {
+      "id": "e290",
+      "word": "emit",
+      "meaning": "发射；散发",
+      "decomposition": "e+mit 送→送出→发射",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "mit",
+          "hint": "送"
+        }
+      ],
+      "definition": "Emit means to give off or send out something.",
+      "exampleSentence": "The chimney emits a lot of smoke."
+    },
+    {
+      "id": "e291",
+      "word": "emotion",
+      "meaning": "情感",
+      "decomposition": "e+mot 动→动心→情感",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "mot",
+          "hint": "动"
+        }
+      ],
+      "definition": "Emotion means a strong feeling such as love, anger, or joy.",
+      "exampleSentence": "Her voice was full of emotion when she spoke."
+    },
+    {
+      "id": "e292",
+      "word": "empathy",
+      "meaning": "同理心",
+      "decomposition": "em+pathy 感情→进入感情→同理心",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "em",
+          "hint": ""
+        },
+        {
+          "morpheme": "pathy",
+          "hint": "感情"
+        }
+      ],
+      "definition": "Empathy means the ability to understand and share the feelings of others.",
+      "exampleSentence": "She showed great empathy toward her sad friend."
+    },
+    {
+      "id": "e293",
+      "word": "empire",
+      "meaning": "帝国",
+      "decomposition": "em+pire 命令→命令大家→帝国",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "em",
+          "hint": ""
+        },
+        {
+          "morpheme": "pire",
+          "hint": "命令"
+        }
+      ],
+      "definition": "Empire means a group of countries ruled by one powerful leader.",
+      "exampleSentence": "The Roman Empire was very powerful in ancient times."
+    },
+    {
+      "id": "e294",
+      "word": "employ",
+      "meaning": "雇用；使用",
+      "decomposition": "em+ploy 折叠→折进去→雇用",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "em",
+          "hint": ""
+        },
+        {
+          "morpheme": "ploy",
+          "hint": "折叠"
+        }
+      ],
+      "definition": "Employ means to give someone a job or to use something.",
+      "exampleSentence": "The company employs over 500 people."
+    },
+    {
+      "id": "e295",
+      "word": "empower",
+      "meaning": "授权；赋予力量",
+      "decomposition": "em+power 力量→赋予力量",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "em",
+          "hint": ""
+        },
+        {
+          "morpheme": "power",
+          "hint": "力量"
+        }
+      ],
+      "definition": "Empower means to give someone power or confidence to do something.",
+      "exampleSentence": "Education can empower people to change their lives."
+    },
+    {
+      "id": "e296",
+      "word": "empty",
+      "meaning": "空的",
+      "decomposition": "em+pty 放→放空→空的",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "em",
+          "hint": ""
+        },
+        {
+          "morpheme": "pty",
+          "hint": "放"
+        }
+      ],
+      "definition": "Empty means having nothing inside.",
+      "exampleSentence": "The bottle is empty; we need to buy more water."
+    },
+    {
+      "id": "e297",
+      "word": "enable",
+      "meaning": "使能够",
+      "decomposition": "en+able 能→使能→使能够",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "able",
+          "hint": "能"
+        }
+      ],
+      "definition": "Enable means to make it possible for someone to do something.",
+      "exampleSentence": "This app enables you to edit photos easily."
+    },
+    {
+      "id": "e298",
+      "word": "enact",
+      "meaning": "制定；表演",
+      "decomposition": "en+act 行动→使行动→制定",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "act",
+          "hint": "行动"
+        }
+      ],
+      "definition": "Enact means to make a law or to perform something.",
+      "exampleSentence": "The government will enact new rules next year."
+    },
+    {
+      "id": "e299",
+      "word": "enchant",
+      "meaning": "使着迷",
+      "decomposition": "en+chant 唱→唱出魔力→使着迷",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "chant",
+          "hint": "唱"
+        }
+      ],
+      "definition": "Enchant means to fill someone with great delight or charm.",
+      "exampleSentence": "The beautiful music enchanted all the listeners."
+    },
+    {
+      "id": "e300",
+      "word": "enclose",
+      "meaning": "围住；附上",
+      "decomposition": "en+close 关闭→关在里面→围住",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "close",
+          "hint": "关闭"
+        }
+      ],
+      "definition": "Enclose means to surround something or to include something with a letter.",
+      "exampleSentence": "Please enclose a photo with your application."
+    },    {
+      "id": "e301",
+      "word": "encompass",
+      "meaning": "包含；环绕",
+      "decomposition": "en+compass 包围→包围在内→包含",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": "进入"
+        },
+        {
+          "morpheme": "compass",
+          "hint": "包围"
+        }
+      ],
+      "definition": "Encompass means to include or surround completely.",
+      "exampleSentence": "The book encompasses many topics about history and culture."
+    },
+    {
+      "id": "e302",
+      "word": "encounter",
+      "meaning": "遭遇；遇到",
+      "decomposition": "en+counter 对抗→面对面→遇到",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "counter",
+          "hint": "对抗"
+        }
+      ],
+      "definition": "Encounter means to meet someone or something unexpectedly.",
+      "exampleSentence": "We encountered a wild deer on the hiking trail."
+    },
+    {
+      "id": "e303",
+      "word": "encourage",
+      "meaning": "鼓励",
+      "decomposition": "en+courage 勇气→给予勇气→鼓励",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "courage",
+          "hint": "勇气"
+        }
+      ],
+      "definition": "Encourage means to give someone confidence or support to do something.",
+      "exampleSentence": "Teachers should encourage students to ask questions."
+    },
+    {
+      "id": "e304",
+      "word": "endanger",
+      "meaning": "危及",
+      "decomposition": "en+danger 危险→使处于危险→危及",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "danger",
+          "hint": "危险"
+        }
+      ],
+      "definition": "Endanger means to put someone or something in danger.",
+      "exampleSentence": "Pollution can endanger the health of children."
+    },
+    {
+      "id": "e305",
+      "word": "endorse",
+      "meaning": "赞同；背书",
+      "decomposition": "en+dorse 背→在背后支持→赞同",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "dorse",
+          "hint": "背"
+        }
+      ],
+      "definition": "Endorse means to give support or approval to something.",
+      "exampleSentence": "The celebrity endorsed the new brand of shoes."
+    },
+    {
+      "id": "e306",
+      "word": "endure",
+      "meaning": "忍受；持久",
+      "decomposition": "en+dure 坚硬→使坚硬→忍受",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "dure",
+          "hint": "坚硬"
+        }
+      ],
+      "definition": "Endure means to suffer through something difficult or to last a long time.",
+      "exampleSentence": "They endured many hardships during the long journey."
+    },
+    {
+      "id": "e307",
+      "word": "energy",
+      "meaning": "能量；活力",
+      "decomposition": "en+erg 工作→工作的力量→能量",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "erg",
+          "hint": "工作"
+        }
+      ],
+      "definition": "Energy means the ability to do work or a feeling of liveliness.",
+      "exampleSentence": "The kids have so much energy after eating candy."
+    },
+    {
+      "id": "e308",
+      "word": "enforce",
+      "meaning": "执行；强制",
+      "decomposition": "en+force 力量→使有力→强制执行",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "force",
+          "hint": "力量"
+        }
+      ],
+      "definition": "Enforce means to make sure a rule or law is obeyed.",
+      "exampleSentence": "The police enforce traffic laws on the highway."
+    },
+    {
+      "id": "e309",
+      "word": "engage",
+      "meaning": "吸引；参与",
+      "decomposition": "en+gage 抵押→抵押进去→参与",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "gage",
+          "hint": "抵押"
+        }
+      ],
+      "definition": "Engage means to attract someone's attention or to take part in something.",
+      "exampleSentence": "The story is so interesting that it engages everyone."
+    },
+    {
+      "id": "e310",
+      "word": "engine",
+      "meaning": "引擎",
+      "decomposition": "en+gine 生→产生力量→引擎",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "gine",
+          "hint": "生"
+        }
+      ],
+      "definition": "Engine is a machine that converts energy into mechanical power.",
+      "exampleSentence": "The car engine started with a loud roar."
+    },
+    {
+      "id": "e311",
+      "word": "engrave",
+      "meaning": "雕刻",
+      "decomposition": "en+grave 刻→刻进去→雕刻",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "grave",
+          "hint": "刻"
+        }
+      ],
+      "definition": "Engrave means to cut words or designs into a hard surface.",
+      "exampleSentence": "They engraved their names on the tree trunk."
+    },
+    {
+      "id": "e312",
+      "word": "enhance",
+      "meaning": "提高；增强",
+      "decomposition": "en+hance 高→使变高→提高",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "hance",
+          "hint": "高"
+        }
+      ],
+      "definition": "Enhance means to improve or increase in quality or value.",
+      "exampleSentence": "This cream can enhance the skin's natural glow."
+    },
+    {
+      "id": "e313",
+      "word": "enjoy",
+      "meaning": "享受",
+      "decomposition": "en+joy 快乐→进入快乐→享受",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "joy",
+          "hint": "快乐"
+        }
+      ],
+      "definition": "Enjoy means to take pleasure in something.",
+      "exampleSentence": "We enjoy listening to music on weekends."
+    },
+    {
+      "id": "e314",
+      "word": "enlarge",
+      "meaning": "扩大",
+      "decomposition": "en+large 大→使变大→扩大",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "large",
+          "hint": "大"
+        }
+      ],
+      "definition": "Enlarge means to make something bigger.",
+      "exampleSentence": "Can you enlarge this photo for the poster?"
+    },
+    {
+      "id": "e315",
+      "word": "enlighten",
+      "meaning": "启发",
+      "decomposition": "en+light 光→给予光明→启发",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "light",
+          "hint": "光"
+        }
+      ],
+      "definition": "Enlighten means to give someone knowledge or understanding.",
+      "exampleSentence": "The book enlightened me about ancient cultures."
+    },
+    {
+      "id": "e316",
+      "word": "enormous",
+      "meaning": "巨大的",
+      "decomposition": "e+norm 规范→超出规范→巨大的",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "norm",
+          "hint": "规范"
+        }
+      ],
+      "definition": "Enormous means very large in size or amount.",
+      "exampleSentence": "The elephant is an enormous animal."
+    },
+    {
+      "id": "e317",
+      "word": "enrich",
+      "meaning": "丰富；使富裕",
+      "decomposition": "en+rich 富有→使富有→丰富",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "rich",
+          "hint": "富有"
+        }
+      ],
+      "definition": "Enrich means to improve the quality or make something richer.",
+      "exampleSentence": "Reading books can enrich your knowledge."
+    },
+    {
+      "id": "e318",
+      "word": "enroll",
+      "meaning": "登记；注册",
+      "decomposition": "en+roll 卷→卷进去→登记",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "roll",
+          "hint": "卷"
+        }
+      ],
+      "definition": "Enroll means to officially join a course, school, or group.",
+      "exampleSentence": "I want to enroll in the English class next semester."
+    },
+    {
+      "id": "e319",
+      "word": "ensure",
+      "meaning": "确保",
+      "decomposition": "en+sure 确定→使确定→确保",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "sure",
+          "hint": "确定"
+        }
+      ],
+      "definition": "Ensure means to make certain that something will happen.",
+      "exampleSentence": "Please ensure the door is locked before leaving."
+    },
+    {
+      "id": "e320",
+      "word": "enterprise",
+      "meaning": "企业；事业",
+      "decomposition": "enter+prise 拿→拿进去做→企业",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "enter",
+          "hint": ""
+        },
+        {
+          "morpheme": "prise",
+          "hint": "拿"
+        }
+      ],
+      "definition": "Enterprise means a business or a project that requires effort.",
+      "exampleSentence": "Starting a new enterprise takes courage and planning."
+    },
+    {
+      "id": "e321",
+      "word": "entertain",
+      "meaning": "娱乐",
+      "decomposition": "enter+tain 持有→持有注意力→娱乐",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "enter",
+          "hint": ""
+        },
+        {
+          "morpheme": "tain",
+          "hint": "持有"
+        }
+      ],
+      "definition": "Entertain means to provide amusement or enjoyment.",
+      "exampleSentence": "The clown entertained the children with funny tricks."
+    },
+    {
+      "id": "e322",
+      "word": "enthusiasm",
+      "meaning": "热情",
+      "decomposition": "en+thus 神→受神启发→热情",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "thus",
+          "hint": "神"
+        }
+      ],
+      "definition": "Enthusiasm means great excitement and interest.",
+      "exampleSentence": "She spoke with enthusiasm about her new job."
+    },
+    {
+      "id": "e323",
+      "word": "entire",
+      "meaning": "全部的",
+      "decomposition": "en+tire 拉→拉成一体→全部的",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "tire",
+          "hint": "拉"
+        }
+      ],
+      "definition": "Entire means whole or complete.",
+      "exampleSentence": "I read the entire book in one day."
+    },
+    {
+      "id": "e324",
+      "word": "entrance",
+      "meaning": "入口；迷住",
+      "decomposition": "en+trance 穿过→进入→入口",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "trance",
+          "hint": "穿过"
+        }
+      ],
+      "definition": "Entrance means the way into a place or to fill with wonder.",
+      "exampleSentence": "The main entrance is on the left side of the building."
+    },
+    {
+      "id": "e325",
+      "word": "entreat",
+      "meaning": "恳求",
+      "decomposition": "en+treat 处理→认真处理→恳求",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "treat",
+          "hint": "处理"
+        }
+      ],
+      "definition": "Entreat means to ask someone earnestly or beg.",
+      "exampleSentence": "She entreated him to stay a little longer."
+    },
+    {
+      "id": "e326",
+      "word": "envelope",
+      "meaning": "信封",
+      "decomposition": "en+velop 包裹→包裹信件→信封",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "velop",
+          "hint": "包裹"
+        }
+      ],
+      "definition": "Envelope is a paper container for a letter.",
+      "exampleSentence": "Put the card inside the envelope before mailing it."
+    },
+    {
+      "id": "e327",
+      "word": "environment",
+      "meaning": "环境",
+      "decomposition": "en+viron 环绕→环绕周围→环境",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "viron",
+          "hint": "环绕"
+        }
+      ],
+      "definition": "Environment means the natural world or surroundings.",
+      "exampleSentence": "We should protect the environment by recycling more."
+    },
+    {
+      "id": "e328",
+      "word": "envy",
+      "meaning": "嫉妒",
+      "decomposition": "en+vy 看→看别人好→嫉妒",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "en",
+          "hint": ""
+        },
+        {
+          "morpheme": "vy",
+          "hint": "看"
+        }
+      ],
+      "definition": "Envy means a feeling of discontent because someone has something you want.",
+      "exampleSentence": "She felt envy when her friend got a new phone."
+    },
+    {
+      "id": "e329",
+      "word": "equal",
+      "meaning": "平等的",
+      "decomposition": "e+qual 平衡→平衡相等→平等的",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "qual",
+          "hint": "平衡"
+        }
+      ],
+      "definition": "Equal means the same in size, amount, or value.",
+      "exampleSentence": "All people are equal in the eyes of the law."
+    },
+    {
+      "id": "e330",
+      "word": "equate",
+      "meaning": "等同",
+      "decomposition": "e+quate 平衡→使平衡→等同",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "quate",
+          "hint": "平衡"
+        }
+      ],
+      "definition": "Equate means to consider something as equal to something else.",
+      "exampleSentence": "Don't equate money with happiness."
+    },
+    {
+      "id": "e331",
+      "word": "equip",
+      "meaning": "装备",
+      "decomposition": "e+quip 船→装备船→装备",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "quip",
+          "hint": "船"
+        }
+      ],
+      "definition": "Equip means to provide someone with necessary tools or items.",
+      "exampleSentence": "The school will equip each student with a laptop."
+    },
+    {
+      "id": "e332",
+      "word": "equivalent",
+      "meaning": "等价的",
+      "decomposition": "e+quivalent 价值→同等价值→等价的",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "quivalent",
+          "hint": "价值"
+        }
+      ],
+      "definition": "Equivalent means equal in value, amount, or meaning.",
+      "exampleSentence": "One dollar is equivalent to about seven yuan."
+    },
+    {
+      "id": "e333",
+      "word": "eradicate",
+      "meaning": "根除",
+      "decomposition": "e+radic 根→拔除根→根除",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "radic",
+          "hint": "根"
+        }
+      ],
+      "definition": "Eradicate means to completely destroy or get rid of something.",
+      "exampleSentence": "We must eradicate poverty through education."
+    },
+    {
+      "id": "e334",
+      "word": "erect",
+      "meaning": "竖立",
+      "decomposition": "e+rect 直→使直立→竖立",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "rect",
+          "hint": "直"
+        }
+      ],
+      "definition": "Erect means to build or set something upright.",
+      "exampleSentence": "They will erect a statue in the park next year."
+    },
+    {
+      "id": "e335",
+      "word": "erode",
+      "meaning": "侵蚀",
+      "decomposition": "e+rode 咬→一点点咬掉→侵蚀",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "rode",
+          "hint": "咬"
+        }
+      ],
+      "definition": "Erode means to wear away slowly by wind, water, or other forces.",
+      "exampleSentence": "The river can erode the banks over many years."
+    },
+    {
+      "id": "e336",
+      "word": "error",
+      "meaning": "错误",
+      "decomposition": "err+or 游荡→走错路→错误",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "err",
+          "hint": "游荡"
+        },
+        {
+          "morpheme": "or",
+          "hint": ""
+        }
+      ],
+      "definition": "Error means a mistake or something incorrect.",
+      "exampleSentence": "There is an error in the calculation."
+    },
+    {
+      "id": "e337",
+      "word": "erupt",
+      "meaning": "爆发",
+      "decomposition": "e+rupt 破→破裂而出→爆发",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "rupt",
+          "hint": "破"
+        }
+      ],
+      "definition": "Erupt means to suddenly burst out or explode.",
+      "exampleSentence": "The volcano erupted and sent ash into the sky."
+    },
+    {
+      "id": "e338",
+      "word": "escape",
+      "meaning": "逃脱",
+      "decomposition": "e+scape 披风→脱掉披风→逃脱",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "scape",
+          "hint": "披风"
+        }
+      ],
+      "definition": "Escape means to get free from something dangerous or unpleasant.",
+      "exampleSentence": "The prisoner tried to escape from jail."
+    },
+    {
+      "id": "e339",
+      "word": "esoteric",
+      "meaning": "深奥的",
+      "decomposition": "eso+teric 内→内部的→深奥的",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "eso",
+          "hint": "内"
+        },
+        {
+          "morpheme": "teric",
+          "hint": ""
+        }
+      ],
+      "definition": "Esoteric means understood by only a small group of people.",
+      "exampleSentence": "This book is too esoteric for beginners."
+    },
+    {
+      "id": "e340",
+      "word": "essential",
+      "meaning": "必要的",
+      "decomposition": "es+sence 存在→存在的核心→必要的",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "es",
+          "hint": ""
+        },
+        {
+          "morpheme": "sence",
+          "hint": "存在"
+        }
+      ],
+      "definition": "Essential means absolutely necessary or very important.",
+      "exampleSentence": "Water is essential for human life."
+    },
+    {
+      "id": "e341",
+      "word": "establish",
+      "meaning": "建立",
+      "decomposition": "e+stabl 稳定→使稳定→建立",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "stabl",
+          "hint": "稳定"
+        }
+      ],
+      "definition": "Establish means to set up or start something officially.",
+      "exampleSentence": "They established a new school in the village."
+    },
+    {
+      "id": "e342",
+      "word": "esteem",
+      "meaning": "尊重",
+      "decomposition": "e+steem 估计→高度估计→尊重",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "steem",
+          "hint": "估计"
+        }
+      ],
+      "definition": "Esteem means high respect or admiration.",
+      "exampleSentence": "She holds her teacher in high esteem."
+    },
+    {
+      "id": "e343",
+      "word": "estimate",
+      "meaning": "估计",
+      "decomposition": "e+stimate 稳定→稳定判断→估计",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "stimate",
+          "hint": "稳定"
+        }
+      ],
+      "definition": "Estimate means to make an approximate judgment of value or amount.",
+      "exampleSentence": "We estimate the cost will be around 500 dollars."
+    },
+    {
+      "id": "e344",
+      "word": "eternal",
+      "meaning": "永恒的",
+      "decomposition": "e+tern 时间→超出时间→永恒的",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "tern",
+          "hint": "时间"
+        }
+      ],
+      "definition": "Eternal means lasting forever or without end.",
+      "exampleSentence": "Some people believe in eternal life after death."
+    },
+    {
+      "id": "e345",
+      "word": "ethics",
+      "meaning": "伦理",
+      "decomposition": "eth+ics 习惯→习惯规范→伦理",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "eth",
+          "hint": "习惯"
+        },
+        {
+          "morpheme": "ics",
+          "hint": ""
+        }
+      ],
+      "definition": "Ethics means moral principles that govern behavior.",
+      "exampleSentence": "Business ethics is important for company reputation."
+    },
+    {
+      "id": "e346",
+      "word": "ethnic",
+      "meaning": "民族的",
+      "decomposition": "ethn+ic 习惯→习惯群体→民族的",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "ethn",
+          "hint": "习惯"
+        },
+        {
+          "morpheme": "ic",
+          "hint": ""
+        }
+      ],
+      "definition": "Ethnic means relating to a particular race or cultural group.",
+      "exampleSentence": "The festival celebrates ethnic diversity."
+    },
+    {
+      "id": "e347",
+      "word": "eulogize",
+      "meaning": "赞美",
+      "decomposition": "eu+log 说→说好话→赞美",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "eu",
+          "hint": ""
+        },
+        {
+          "morpheme": "log",
+          "hint": "说"
+        }
+      ],
+      "definition": "Eulogize means to praise someone highly, especially at a funeral.",
+      "exampleSentence": "He eulogized his friend at the memorial service."
+    },
+    {
+      "id": "e348",
+      "word": "euphemism",
+      "meaning": "委婉语",
+      "decomposition": "eu+phem 说→说好听的话→委婉语",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "eu",
+          "hint": ""
+        },
+        {
+          "morpheme": "phem",
+          "hint": "说"
+        }
+      ],
+      "definition": "Euphemism is a mild or indirect word used instead of a harsh one.",
+      "exampleSentence": "'Passed away' is a euphemism for 'died'."
+    },
+    {
+      "id": "e349",
+      "word": "euphoria",
+      "meaning": "欣快感",
+      "decomposition": "eu+phor 带来→带来愉快→欣快感",
+      "page": 6,
+      "components": [
+        {
+          "morpheme": "eu",
+          "hint": ""
+        },
+        {
+          "morpheme": "phor",
+          "hint": "带来"
+        }
+      ],
+      "definition": "Euphoria means a feeling of intense happiness and excitement.",
+      "exampleSentence": "Winning the lottery filled her with euphoria."
+    },
+    {
+      "id": "e350",
+      "word": "evade",
+      "meaning": "逃避",
+      "decomposition": "e+vade 走→走开→逃避",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "vade",
+          "hint": "走"
+        }
+      ],
+      "definition": "Evade means to avoid or escape from something.",
+      "exampleSentence": "He tried to evade the question about his past."
+    },
+    {
+      "id": "e351",
+      "word": "evaluate",
+      "meaning": "评价",
+      "decomposition": "e+valu 价值→估价→评价",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "valu",
+          "hint": "价值"
+        }
+      ],
+      "definition": "Evaluate means to judge the value or quality of something.",
+      "exampleSentence": "The teacher will evaluate our essays next week."
+    },
+    {
+      "id": "e352",
+      "word": "evaporate",
+      "meaning": "蒸发",
+      "decomposition": "e+vapor 蒸汽→变成蒸汽→蒸发",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "vapor",
+          "hint": "蒸汽"
+        }
+      ],
+      "definition": "Evaporate means to turn from liquid into vapor.",
+      "exampleSentence": "The water will evaporate if left in the sun."
+    },
+    {
+      "id": "e353",
+      "word": "even",
+      "meaning": "平的；甚至",
+      "decomposition": "e+ven 路→平坦的路→平的",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "ven",
+          "hint": "路"
+        }
+      ],
+      "definition": "Even means flat or level, or used to emphasize something surprising.",
+      "exampleSentence": "The table is even and stable."
+    },
+    {
+      "id": "e354",
+      "word": "event",
+      "meaning": "事件",
+      "decomposition": "e+vent 来→来到→事件",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "vent",
+          "hint": "来"
+        }
+      ],
+      "definition": "Event means something that happens, especially important.",
+      "exampleSentence": "The concert is the biggest event of the year."
+    },
+    {
+      "id": "e355",
+      "word": "evidence",
+      "meaning": "证据",
+      "decomposition": "e+vid 看→看出来的→证据",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "vid",
+          "hint": "看"
+        }
+      ],
+      "definition": "Evidence means information that shows whether something is true.",
+      "exampleSentence": "The police need more evidence to solve the case."
+    },
+    {
+      "id": "e356",
+      "word": "evident",
+      "meaning": "明显的",
+      "decomposition": "e+vid 看→看得见的→明显的",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "vid",
+          "hint": "看"
+        }
+      ],
+      "definition": "Evident means clear or obvious.",
+      "exampleSentence": "It is evident that he is very talented."
+    },
+    {
+      "id": "e357",
+      "word": "evolve",
+      "meaning": "进化",
+      "decomposition": "e+volve 卷→展开卷→进化",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "e",
+          "hint": ""
+        },
+        {
+          "morpheme": "volve",
+          "hint": "卷"
+        }
+      ],
+      "definition": "Evolve means to develop gradually over time.",
+      "exampleSentence": "Humans evolved from ancient ancestors."
+    },
+    {
+      "id": "e358",
+      "word": "exact",
+      "meaning": "精确的",
+      "decomposition": "ex+act 行动→完全行动→精确的",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "act",
+          "hint": "行动"
+        }
+      ],
+      "definition": "Exact means correct in every detail.",
+      "exampleSentence": "Please give the exact time of your arrival."
+    },
+    {
+      "id": "e359",
+      "word": "exalt",
+      "meaning": "赞扬；提升",
+      "decomposition": "ex+alt 高→抬高→赞扬",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "alt",
+          "hint": "高"
+        }
+      ],
+      "definition": "Exalt means to praise highly or to raise to a higher level.",
+      "exampleSentence": "The leader exalted the team's hard work."
+    },
+    {
+      "id": "e360",
+      "word": "exceed",
+      "meaning": "超过",
+      "decomposition": "ex+ceed 走→走出去→超过",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "ceed",
+          "hint": "走"
+        }
+      ],
+      "definition": "Exceed means to be greater than or go beyond.",
+      "exampleSentence": "The cost exceeded our budget by 20%."
+    },
+    {
+      "id": "e361",
+      "word": "excel",
+      "meaning": "优秀",
+      "decomposition": "ex+cel 上升→上升到顶→优秀",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "cel",
+          "hint": "上升"
+        }
+      ],
+      "definition": "Excel means to be very good at something.",
+      "exampleSentence": "She excels in math and science."
+    },
+    {
+      "id": "e362",
+      "word": "except",
+      "meaning": "除外",
+      "decomposition": "ex+cept 拿→拿出去→除外",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "cept",
+          "hint": "拿"
+        }
+      ],
+      "definition": "Except means not including.",
+      "exampleSentence": "Everyone came except John."
+    },
+    {
+      "id": "e363",
+      "word": "exchange",
+      "meaning": "交换",
+      "decomposition": "ex+change 改变→改变所有者→交换",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "change",
+          "hint": "改变"
+        }
+      ],
+      "definition": "Exchange means to give something and receive something else.",
+      "exampleSentence": "We can exchange gifts on Christmas."
+    },
+    {
+      "id": "e364",
+      "word": "excite",
+      "meaning": "使兴奋",
+      "decomposition": "ex+cite 叫→叫出情绪→使兴奋",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "cite",
+          "hint": "叫"
+        }
+      ],
+      "definition": "Excite means to make someone feel enthusiastic or eager.",
+      "exampleSentence": "The news excited all the students."
+    },
+    {
+      "id": "e365",
+      "word": "exclude",
+      "meaning": "排除",
+      "decomposition": "ex+clude 关→关在外面→排除",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "clude",
+          "hint": "关"
+        }
+      ],
+      "definition": "Exclude means to keep someone or something out.",
+      "exampleSentence": "The club excludes people under 18 years old."
+    },
+    {
+      "id": "e366",
+      "word": "excuse",
+      "meaning": "原谅；借口",
+      "decomposition": "ex+cuse 原因→给出原因→借口",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "cuse",
+          "hint": "原因"
+        }
+      ],
+      "definition": "Excuse means to forgive or a reason given to avoid blame.",
+      "exampleSentence": "Please excuse my mistake; I was very tired."
+    },
+    {
+      "id": "e367",
+      "word": "execute",
+      "meaning": "执行；处决",
+      "decomposition": "ex+ecute 跟随→跟随到底→执行",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "ecute",
+          "hint": "跟随"
+        }
+      ],
+      "definition": "Execute means to carry out or to kill someone as punishment.",
+      "exampleSentence": "The plan was executed perfectly."
+    },
+    {
+      "id": "e368",
+      "word": "exempt",
+      "meaning": "免除",
+      "decomposition": "ex+empt 拿→拿走责任→免除",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "empt",
+          "hint": "拿"
+        }
+      ],
+      "definition": "Exempt means free from an obligation or duty.",
+      "exampleSentence": "Children under 12 are exempt from the fee."
+    },
+    {
+      "id": "e369",
+      "word": "exercise",
+      "meaning": "锻炼；练习",
+      "decomposition": "ex+ercise 工作→工作出来→锻炼",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "ercise",
+          "hint": "工作"
+        }
+      ],
+      "definition": "Exercise means physical activity or to practice something.",
+      "exampleSentence": "Regular exercise is good for health."
+    },
+    {
+      "id": "e370",
+      "word": "exert",
+      "meaning": "施加",
+      "decomposition": "ex+ert 拉紧→拉出去→施加",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "ert",
+          "hint": "拉紧"
+        }
+      ],
+      "definition": "Exert means to apply force or effort.",
+      "exampleSentence": "He exerted all his strength to lift the box."
+    },
+    {
+      "id": "e371",
+      "word": "exhale",
+      "meaning": "呼气",
+      "decomposition": "ex+hale 呼吸→呼出→呼气",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "hale",
+          "hint": "呼吸"
+        }
+      ],
+      "definition": "Exhale means to breathe out.",
+      "exampleSentence": "Exhale slowly to calm down."
+    },
+    {
+      "id": "e372",
+      "word": "exhibit",
+      "meaning": "展览",
+      "decomposition": "ex+hibit 持有→拿出来→展览",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "hibit",
+          "hint": "持有"
+        }
+      ],
+      "definition": "Exhibit means to show or display something publicly.",
+      "exampleSentence": "The museum will exhibit new artworks next month."
+    },
+    {
+      "id": "e373",
+      "word": "exile",
+      "meaning": "流放",
+      "decomposition": "ex+ile 走→走出去→流放",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "ile",
+          "hint": "走"
+        }
+      ],
+      "definition": "Exile means to force someone to leave their country.",
+      "exampleSentence": "The king was sent into exile after the revolution."
+    },
+    {
+      "id": "e374",
+      "word": "exist",
+      "meaning": "存在",
+      "decomposition": "ex+sist 站→站出来→存在",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "sist",
+          "hint": "站"
+        }
+      ],
+      "definition": "Exist means to be real or have being.",
+      "exampleSentence": "Ghosts do not exist in real life."
+    },
+    {
+      "id": "e375",
+      "word": "exit",
+      "meaning": "出口",
+      "decomposition": "ex+it 走→走出去→出口",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "it",
+          "hint": "走"
+        }
+      ],
+      "definition": "Exit means a way out or to leave a place.",
+      "exampleSentence": "Please use the nearest exit in case of emergency."
+    },
+    {
+      "id": "e376",
+      "word": "exotic",
+      "meaning": "异国情调的",
+      "decomposition": "ex+otic 外面→外来的→异国情调的",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "otic",
+          "hint": "外面"
+        }
+      ],
+      "definition": "Exotic means unusual and exciting because it comes from far away.",
+      "exampleSentence": "She loves exotic fruits like dragon fruit."
+    },
+    {
+      "id": "e377",
+      "word": "expand",
+      "meaning": "扩张",
+      "decomposition": "ex+pand 伸展→伸展开→扩张",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "pand",
+          "hint": "伸展"
+        }
+      ],
+      "definition": "Expand means to make or become larger.",
+      "exampleSentence": "The company plans to expand to other countries."
+    },
+    {
+      "id": "e378",
+      "word": "expect",
+      "meaning": "期待",
+      "decomposition": "ex+spect 看→向前看→期待",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "spect",
+          "hint": "看"
+        }
+      ],
+      "definition": "Expect means to believe something will happen.",
+      "exampleSentence": "I expect you to finish the homework by tomorrow."
+    },
+    {
+      "id": "e379",
+      "word": "expend",
+      "meaning": "花费",
+      "decomposition": "ex+pend 挂→挂出去→花费",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "pend",
+          "hint": "挂"
+        }
+      ],
+      "definition": "Expend means to spend or use up.",
+      "exampleSentence": "They expended a lot of energy on the project."
+    },
+    {
+      "id": "e380",
+      "word": "expense",
+      "meaning": "费用",
+      "decomposition": "ex+pense 挂→挂出去的钱→费用",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "pense",
+          "hint": "挂"
+        }
+      ],
+      "definition": "Expense means the cost of something.",
+      "exampleSentence": "Travel expenses will be covered by the company."
+    },
+    {
+      "id": "e381",
+      "word": "experience",
+      "meaning": "经验；经历",
+      "decomposition": "ex+peri 尝试→尝试过→经验",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "peri",
+          "hint": "尝试"
+        }
+      ],
+      "definition": "Experience means knowledge gained from doing something or an event one lives through.",
+      "exampleSentence": "Traveling gives you valuable experience."
+    },
+    {
+      "id": "e382",
+      "word": "expert",
+      "meaning": "专家",
+      "decomposition": "ex+pert 尝试→尝试很多→专家",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "pert",
+          "hint": "尝试"
+        }
+      ],
+      "definition": "Expert means a person with great knowledge or skill in a particular area.",
+      "exampleSentence": "He is an expert in computer programming."
+    },
+    {
+      "id": "e383",
+      "word": "expire",
+      "meaning": "到期；死亡",
+      "decomposition": "ex+spire 呼吸→停止呼吸→到期",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "spire",
+          "hint": "呼吸"
+        }
+      ],
+      "definition": "Expire means to come to an end or to die.",
+      "exampleSentence": "Your passport will expire next month."
+    },
+    {
+      "id": "e384",
+      "word": "explain",
+      "meaning": "解释",
+      "decomposition": "ex+plain 平坦→使平坦→解释清楚",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "plain",
+          "hint": "平坦"
+        }
+      ],
+      "definition": "Explain means to make something clear by describing it.",
+      "exampleSentence": "Can you explain how to use this machine?"
+    },
+    {
+      "id": "e385",
+      "word": "explicit",
+      "meaning": "明确的",
+      "decomposition": "ex+plicit 折叠→展开→明确的",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "plicit",
+          "hint": "折叠"
+        }
+      ],
+      "definition": "Explicit means clear and direct.",
+      "exampleSentence": "The instructions are explicit and easy to follow."
+    },
+    {
+      "id": "e386",
+      "word": "explode",
+      "meaning": "爆炸",
+      "decomposition": "ex+plode 拍打→拍打出去→爆炸",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "plode",
+          "hint": "拍打"
+        }
+      ],
+      "definition": "Explode means to burst with a loud noise and force.",
+      "exampleSentence": "The fireworks explode in beautiful colors."
+    },
+    {
+      "id": "e387",
+      "word": "exploit",
+      "meaning": "剥削；利用",
+      "decomposition": "ex+ploit 折叠→展开利用→剥削",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "ploit",
+          "hint": "折叠"
+        }
+      ],
+      "definition": "Exploit means to use someone unfairly or to use something fully.",
+      "exampleSentence": "Don't exploit your workers for profit."
+    },
+    {
+      "id": "e388",
+      "word": "explore",
+      "meaning": "探索",
+      "decomposition": "ex+plore 哭→哭喊着前进→探索",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "plore",
+          "hint": "哭"
+        }
+      ],
+      "definition": "Explore means to travel through an area to learn about it.",
+      "exampleSentence": "We love to explore new cities on foot."
+    },
+    {
+      "id": "e389",
+      "word": "export",
+      "meaning": "出口",
+      "decomposition": "ex+port 带→带出去→出口",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "port",
+          "hint": "带"
+        }
+      ],
+      "definition": "Export means to send goods to another country.",
+      "exampleSentence": "China exports many products to the world."
+    },
+    {
+      "id": "e390",
+      "word": "expose",
+      "meaning": "暴露",
+      "decomposition": "ex+pose 放→放出来→暴露",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "pose",
+          "hint": "放"
+        }
+      ],
+      "definition": "Expose means to uncover or reveal something.",
+      "exampleSentence": "Don't expose your skin to the sun too long."
+    },
+    {
+      "id": "e391",
+      "word": "express",
+      "meaning": "表达",
+      "decomposition": "ex+press 压→压出去→表达",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "press",
+          "hint": "压"
+        }
+      ],
+      "definition": "Express means to show or say what you think or feel.",
+      "exampleSentence": "She expressed her gratitude with a big smile."
+    },
+    {
+      "id": "e392",
+      "word": "extend",
+      "meaning": "延伸；延长",
+      "decomposition": "ex+tend 伸→伸出去→延伸",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "tend",
+          "hint": "伸"
+        }
+      ],
+      "definition": "Extend means to make longer or to stretch out.",
+      "exampleSentence": "Please extend the deadline by one week."
+    },
+    {
+      "id": "e393",
+      "word": "extinct",
+      "meaning": "灭绝的",
+      "decomposition": "ex+stinct 刺→刺灭→灭绝的",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "stinct",
+          "hint": "刺"
+        }
+      ],
+      "definition": "Extinct means no longer existing.",
+      "exampleSentence": "Dinosaurs became extinct millions of years ago."
+    },
+    {
+      "id": "e394",
+      "word": "extra",
+      "meaning": "额外的",
+      "decomposition": "extra 外面→外加的→额外的",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "extra",
+          "hint": "外面"
+        }
+      ],
+      "definition": "Extra means more than what is usual or expected.",
+      "exampleSentence": "You can have extra time if you need it."
+    },
+    {
+      "id": "e395",
+      "word": "extract",
+      "meaning": "提取",
+      "decomposition": "ex+tract 拉→拉出来→提取",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "tract",
+          "hint": "拉"
+        }
+      ],
+      "definition": "Extract means to remove or take out something.",
+      "exampleSentence": "They extract oil from the ground."
+    },
+    {
+      "id": "e396",
+      "word": "extraordinary",
+      "meaning": "非凡的",
+      "decomposition": "extra+ordinary 普通→超出普通→非凡的",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "extra",
+          "hint": ""
+        },
+        {
+          "morpheme": "ordinary",
+          "hint": "普通"
+        }
+      ],
+      "definition": "Extraordinary means very unusual or remarkable.",
+      "exampleSentence": "She has extraordinary talent in music."
+    },
+    {
+      "id": "e397",
+      "word": "extreme",
+      "meaning": "极端的",
+      "decomposition": "ex+treme 极端→最外面的→极端的",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "treme",
+          "hint": "极端"
+        }
+      ],
+      "definition": "Extreme means very great or far from moderate.",
+      "exampleSentence": "Extreme weather can cause floods or droughts."
+    },
+    {
+      "id": "e398",
+      "word": "extravagant",
+      "meaning": "奢侈的",
+      "decomposition": "extra+vag 走→走得太远→奢侈的",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "extra",
+          "hint": ""
+        },
+        {
+          "morpheme": "vag",
+          "hint": "走"
+        }
+      ],
+      "definition": "Extravagant means spending too much money or being excessive.",
+      "exampleSentence": "The wedding was very extravagant with many decorations."
+    },
+    {
+      "id": "e399",
+      "word": "extreme",
+      "meaning": "极端",
+      "decomposition": "ex+treme 极端→最外面的→极端",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "treme",
+          "hint": "极端"
+        }
+      ],
+      "definition": "Extreme means very great or severe.",
+      "exampleSentence": "He holds extreme views on politics."
+    },
+    {
+      "id": "e400",
+      "word": "exult",
+      "meaning": "狂喜",
+      "decomposition": "ex+ult 跳→跳起来→狂喜",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "ult",
+          "hint": "跳"
+        }
+      ],
+      "definition": "Exult means to show great joy or triumph.",
+      "exampleSentence": "They exulted over their victory in the game."
+    },
+        {
+      "id": "e401",
+      "word": "exult",
+      "meaning": "狂喜",
+      "decomposition": "ex+ult 跳→跳起来→狂喜",
+      "page": 7,
+      "components": [
+        {
+          "morpheme": "ex",
+          "hint": ""
+        },
+        {
+          "morpheme": "ult",
+          "hint": "跳"
+        }
+      ],
+      "definition": "Exult means to show or feel great joy or triumph.",
+      "exampleSentence": "The fans exulted when their team scored the winning goal."
+    },
+    {
+      "id": "e402",
+      "word": "fabric",
+      "meaning": "织物；结构",
+      "decomposition": "fab+ric 做→做出来的东西→织物",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fab",
+          "hint": "做"
+        },
+        {
+          "morpheme": "ric",
+          "hint": ""
+        }
+      ],
+      "definition": "Fabric means cloth or the basic structure of something.",
+      "exampleSentence": "This fabric is soft and comfortable for summer clothes."
+    },
+    {
+      "id": "e403",
+      "word": "facile",
+      "meaning": "容易的；浅薄的",
+      "decomposition": "fac+ile 做→容易做的→容易的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fac",
+          "hint": "做"
+        },
+        {
+          "morpheme": "ile",
+          "hint": ""
+        }
+      ],
+      "definition": "Facile means easy or superficial, often without depth.",
+      "exampleSentence": "His facile explanation didn't convince anyone."
+    },
+    {
+      "id": "e404",
+      "word": "facilitate",
+      "meaning": "促进；使容易",
+      "decomposition": "fac+ilit 容易→使容易→促进",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fac",
+          "hint": "做"
+        },
+        {
+          "morpheme": "ilit",
+          "hint": "容易"
+        }
+      ],
+      "definition": "Facilitate means to make an action or process easier.",
+      "exampleSentence": "This tool will facilitate your work significantly."
+    },
+    {
+      "id": "e405",
+      "word": "factor",
+      "meaning": "因素",
+      "decomposition": "fact+or 做→做出来的原因→因素",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fact",
+          "hint": "做"
+        },
+        {
+          "morpheme": "or",
+          "hint": ""
+        }
+      ],
+      "definition": "Factor means something that contributes to a result.",
+      "exampleSentence": "Weather is an important factor in crop growth."
+    },
+    {
+      "id": "e406",
+      "word": "faculty",
+      "meaning": "能力；教职员",
+      "decomposition": "fac+ulty 做→做事情的能力→能力",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fac",
+          "hint": "做"
+        },
+        {
+          "morpheme": "ulty",
+          "hint": ""
+        }
+      ],
+      "definition": "Faculty means ability or the teaching staff of a school.",
+      "exampleSentence": "She has a great faculty for learning languages."
+    },
+    {
+      "id": "e407",
+      "word": "fail",
+      "meaning": "失败",
+      "decomposition": "fail 欺骗→欺骗期望→失败",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fail",
+          "hint": "欺骗"
+        }
+      ],
+      "definition": "Fail means not to succeed in something.",
+      "exampleSentence": "Don't be afraid to fail; it's part of learning."
+    },
+    {
+      "id": "e408",
+      "word": "faint",
+      "meaning": "微弱的；昏厥",
+      "decomposition": "faint 假装→假装弱→微弱的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "faint",
+          "hint": "假装"
+        }
+      ],
+      "definition": "Faint means weak or barely perceptible, or to lose consciousness.",
+      "exampleSentence": "She felt faint after standing for too long."
+    },
+    {
+      "id": "e409",
+      "word": "fake",
+      "meaning": "假的",
+      "decomposition": "fake 做→做假→假的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fake",
+          "hint": "做"
+        }
+      ],
+      "definition": "Fake means not genuine or counterfeit.",
+      "exampleSentence": "This diamond is fake; it's just glass."
+    },
+    {
+      "id": "e410",
+      "word": "fall",
+      "meaning": "落下；失败",
+      "decomposition": "fall 落下→掉下来→落下",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fall",
+          "hint": "落下"
+        }
+      ],
+      "definition": "Fall means to drop from a higher position or to fail.",
+      "exampleSentence": "Be careful not to fall down the stairs."
+    },
+    {
+      "id": "e411",
+      "word": "fame",
+      "meaning": "名声",
+      "decomposition": "fame 说→大家说→名声",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fame",
+          "hint": "说"
+        }
+      ],
+      "definition": "Fame means widespread recognition or reputation.",
+      "exampleSentence": "The singer gained fame after her first hit song."
+    },
+    {
+      "id": "e412",
+      "word": "familiar",
+      "meaning": "熟悉的",
+      "decomposition": "famili+ar 家庭→像家人一样→熟悉的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "famili",
+          "hint": "家庭"
+        },
+        {
+          "morpheme": "ar",
+          "hint": ""
+        }
+      ],
+      "definition": "Familiar means well known or recognized from experience.",
+      "exampleSentence": "The song sounds familiar; I think I've heard it before."
+    },
+    {
+      "id": "e413",
+      "word": "family",
+      "meaning": "家庭",
+      "decomposition": "fam+ily 仆人→像仆人一样亲近→家庭",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fam",
+          "hint": "仆人"
+        },
+        {
+          "morpheme": "ily",
+          "hint": ""
+        }
+      ],
+      "definition": "Family means a group of people related by blood or marriage.",
+      "exampleSentence": "Family is the most important thing in life."
+    },
+    {
+      "id": "e414",
+      "word": "famous",
+      "meaning": "著名的",
+      "decomposition": "fame+ous 名声→有名的→著名的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fame",
+          "hint": "名声"
+        },
+        {
+          "morpheme": "ous",
+          "hint": ""
+        }
+      ],
+      "definition": "Famous means known by many people.",
+      "exampleSentence": "Paris is famous for the Eiffel Tower."
+    },
+    {
+      "id": "e415",
+      "word": "fanatic",
+      "meaning": "狂热的",
+      "decomposition": "fan+atic 神庙→像神庙一样狂热→狂热的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fan",
+          "hint": "神庙"
+        },
+        {
+          "morpheme": "atic",
+          "hint": ""
+        }
+      ],
+      "definition": "Fanatic means extremely enthusiastic or zealous about something.",
+      "exampleSentence": "He is a football fanatic and watches every match."
+    },
+    {
+      "id": "e416",
+      "word": "fancy",
+      "meaning": "花哨的；幻想",
+      "decomposition": "fan+cy 幻想→幻想出来的→花哨的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fan",
+          "hint": "幻想"
+        },
+        {
+          "morpheme": "cy",
+          "hint": ""
+        }
+      ],
+      "definition": "Fancy means elaborate or decorative, or to imagine something.",
+      "exampleSentence": "She has a fancy dress for the party."
+    },
+    {
+      "id": "e417",
+      "word": "fantasy",
+      "meaning": "幻想",
+      "decomposition": "fant+asy 出现→想象出现→幻想",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fant",
+          "hint": "出现"
+        },
+        {
+          "morpheme": "asy",
+          "hint": ""
+        }
+      ],
+      "definition": "Fantasy means imagination or an unrealistic idea.",
+      "exampleSentence": "Reading fantasy novels helps escape reality."
+    },
+    {
+      "id": "e418",
+      "word": "far",
+      "meaning": "远的",
+      "decomposition": "far 远→远的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "far",
+          "hint": "远"
+        }
+      ],
+      "definition": "Far means at a great distance.",
+      "exampleSentence": "The airport is far from the city center."
+    },
+    {
+      "id": "e419",
+      "word": "fascinate",
+      "meaning": "迷住",
+      "decomposition": "fas+cin 束缚→束缚注意力→迷住",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fas",
+          "hint": "束缚"
+        },
+        {
+          "morpheme": "cin",
+          "hint": ""
+        }
+      ],
+      "definition": "Fascinate means to attract and hold someone's attention strongly.",
+      "exampleSentence": "The magic show fascinated all the children."
+    },
+    {
+      "id": "e420",
+      "word": "fashion",
+      "meaning": "时尚",
+      "decomposition": "fas+ion 做→做出来的样子→时尚",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fas",
+          "hint": "做"
+        },
+        {
+          "morpheme": "ion",
+          "hint": ""
+        }
+      ],
+      "definition": "Fashion means popular style in clothes or behavior.",
+      "exampleSentence": "This season's fashion is bright colors."
+    },
+    {
+      "id": "e421",
+      "word": "fast",
+      "meaning": "快速的；斋戒",
+      "decomposition": "fast 牢固→固定不动→快速的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fast",
+          "hint": "牢固"
+        }
+      ],
+      "definition": "Fast means moving quickly or to abstain from food.",
+      "exampleSentence": "The car is very fast on the highway."
+    },
+    {
+      "id": "e422",
+      "word": "fatal",
+      "meaning": "致命的",
+      "decomposition": "fat+al 命运→命运注定→致命的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fat",
+          "hint": "命运"
+        },
+        {
+          "morpheme": "al",
+          "hint": ""
+        }
+      ],
+      "definition": "Fatal means causing death.",
+      "exampleSentence": "The accident was fatal for the driver."
+    },
+    {
+      "id": "e423",
+      "word": "fate",
+      "meaning": "命运",
+      "decomposition": "fat+e 说→说出来的→命运",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fat",
+          "hint": "说"
+        },
+        {
+          "morpheme": "e",
+          "hint": ""
+        }
+      ],
+      "definition": "Fate means the course of events beyond human control.",
+      "exampleSentence": "Some people believe fate brings people together."
+    },
+    {
+      "id": "e424",
+      "word": "fault",
+      "meaning": "过错；故障",
+      "decomposition": "fault 欺骗→欺骗别人→过错",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fault",
+          "hint": "欺骗"
+        }
+      ],
+      "definition": "Fault means responsibility for a mistake or a defect.",
+      "exampleSentence": "It's not your fault; don't blame yourself."
+    },
+    {
+      "id": "e425",
+      "word": "favor",
+      "meaning": "喜爱；恩惠",
+      "decomposition": "fav+or 喜爱→喜爱的→喜爱",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fav",
+          "hint": "喜爱"
+        },
+        {
+          "morpheme": "or",
+          "hint": ""
+        }
+      ],
+      "definition": "Favor means to like or prefer, or an act of kindness.",
+      "exampleSentence": "Can you do me a favor and carry this bag?"
+    },
+    {
+      "id": "e426",
+      "word": "favorable",
+      "meaning": "有利的",
+      "decomposition": "favor+able 能→能被喜爱的→有利的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "favor",
+          "hint": "喜爱"
+        },
+        {
+          "morpheme": "able",
+          "hint": "能"
+        }
+      ],
+      "definition": "Favorable means advantageous or positive.",
+      "exampleSentence": "The weather is favorable for outdoor activities."
+    },
+    {
+      "id": "e427",
+      "word": "favorite",
+      "meaning": "最喜欢的",
+      "decomposition": "favor+ite 喜爱→最被喜爱的→最喜欢的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "favor",
+          "hint": "喜爱"
+        },
+        {
+          "morpheme": "ite",
+          "hint": ""
+        }
+      ],
+      "definition": "Favorite means liked more than others.",
+      "exampleSentence": "Ice cream is my favorite dessert."
+    },
+    {
+      "id": "e428",
+      "word": "fear",
+      "meaning": "恐惧",
+      "decomposition": "fear 突然→突然害怕→恐惧",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fear",
+          "hint": "突然"
+        }
+      ],
+      "definition": "Fear means an unpleasant feeling caused by danger.",
+      "exampleSentence": "Many people have a fear of heights."
+    },
+    {
+      "id": "e429",
+      "word": "feasible",
+      "meaning": "可行的",
+      "decomposition": "feas+ible 做→能做的→可行的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "feas",
+          "hint": "做"
+        },
+        {
+          "morpheme": "ible",
+          "hint": "能"
+        }
+      ],
+      "definition": "Feasible means possible to do easily or conveniently.",
+      "exampleSentence": "This plan is feasible within our budget."
+    },
+    {
+      "id": "e430",
+      "word": "feature",
+      "meaning": "特征；特色",
+      "decomposition": "feat+ure 做→做出来的样子→特征",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "feat",
+          "hint": "做"
+        },
+        {
+          "morpheme": "ure",
+          "hint": ""
+        }
+      ],
+      "definition": "Feature means a distinctive characteristic or attraction.",
+      "exampleSentence": "The phone's main feature is its long battery life."
+    },
+    {
+      "id": "e431",
+      "word": "federal",
+      "meaning": "联邦的",
+      "decomposition": "feder+al 联盟→联盟的→联邦的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "feder",
+          "hint": "联盟"
+        },
+        {
+          "morpheme": "al",
+          "hint": ""
+        }
+      ],
+      "definition": "Federal means relating to a system of government with central and regional powers.",
+      "exampleSentence": "The federal government controls national defense."
+    },
+    {
+      "id": "e432",
+      "word": "feeble",
+      "meaning": "虚弱的",
+      "decomposition": "fee+ble 哭→哭弱→虚弱的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fee",
+          "hint": "哭"
+        },
+        {
+          "morpheme": "ble",
+          "hint": ""
+        }
+      ],
+      "definition": "Feeble means lacking strength or power.",
+      "exampleSentence": "The old man spoke in a feeble voice."
+    },
+    {
+      "id": "e433",
+      "word": "feed",
+      "meaning": "喂养",
+      "decomposition": "feed 喂→喂食→喂养",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "feed",
+          "hint": "喂"
+        }
+      ],
+      "definition": "Feed means to give food to a person or animal.",
+      "exampleSentence": "Please feed the cat before we leave."
+    },
+    {
+      "id": "e434",
+      "word": "feel",
+      "meaning": "感觉",
+      "decomposition": "feel 触摸→通过触摸感觉→感觉",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "feel",
+          "hint": "触摸"
+        }
+      ],
+      "definition": "Feel means to perceive by touch or to experience emotion.",
+      "exampleSentence": "I feel happy when I see my friends."
+    },
+    {
+      "id": "e435",
+      "word": "female",
+      "meaning": "女性的",
+      "decomposition": "fe+male 雄性→非雄性→女性",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fe",
+          "hint": ""
+        },
+        {
+          "morpheme": "male",
+          "hint": "雄性"
+        }
+      ],
+      "definition": "Female means relating to women or girls.",
+      "exampleSentence": "The female bird builds the nest."
+    },
+    {
+      "id": "e436",
+      "word": "feminine",
+      "meaning": "女性的",
+      "decomposition": "femin+ine 女人→女性的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "femin",
+          "hint": "女人"
+        },
+        {
+          "morpheme": "ine",
+          "hint": ""
+        }
+      ],
+      "definition": "Feminine means having qualities traditionally associated with women.",
+      "exampleSentence": "She has a very feminine style of dressing."
+    },
+    {
+      "id": "e437",
+      "word": "ferocious",
+      "meaning": "凶猛的",
+      "decomposition": "feroc+ious 野蛮→野蛮的→凶猛的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "feroc",
+          "hint": "野蛮"
+        },
+        {
+          "morpheme": "ious",
+          "hint": ""
+        }
+      ],
+      "definition": "Ferocious means fierce and violent.",
+      "exampleSentence": "The ferocious lion roared loudly."
+    },
+    {
+      "id": "e438",
+      "word": "fertile",
+      "meaning": "肥沃的",
+      "decomposition": "fer+tile 带→带来成果→肥沃的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fer",
+          "hint": "带"
+        },
+        {
+          "morpheme": "tile",
+          "hint": ""
+        }
+      ],
+      "definition": "Fertile means able to produce much or rich in nutrients.",
+      "exampleSentence": "The fertile soil is good for growing vegetables."
+    },
+    {
+      "id": "e439",
+      "word": "festival",
+      "meaning": "节日",
+      "decomposition": "fest+ival 欢乐→欢乐的日子→节日",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fest",
+          "hint": "欢乐"
+        },
+        {
+          "morpheme": "ival",
+          "hint": ""
+        }
+      ],
+      "definition": "Festival means a celebration or special event.",
+      "exampleSentence": "The spring festival is the biggest holiday in China."
+    },
+    {
+      "id": "e440",
+      "word": "fever",
+      "meaning": "发烧",
+      "decomposition": "fever 热→身体发热→发烧",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fever",
+          "hint": "热"
+        }
+      ],
+      "definition": "Fever means a high body temperature caused by illness.",
+      "exampleSentence": "He has a high fever and needs to rest."
+    },
+    {
+      "id": "e441",
+      "word": "fiction",
+      "meaning": "小说",
+      "decomposition": "fic+tion 做→做出来的故事→小说",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fic",
+          "hint": "做"
+        },
+        {
+          "morpheme": "tion",
+          "hint": ""
+        }
+      ],
+      "definition": "Fiction means stories that are invented, not real.",
+      "exampleSentence": "I like reading science fiction books."
+    },
+    {
+      "id": "e442",
+      "word": "fictitious",
+      "meaning": "虚构的",
+      "decomposition": "fict+itious 做→做出来的→虚构的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fict",
+          "hint": "做"
+        },
+        {
+          "morpheme": "itious",
+          "hint": ""
+        }
+      ],
+      "definition": "Fictitious means invented or imaginary.",
+      "exampleSentence": "The character in the story is fictitious."
+    },
+    {
+      "id": "e443",
+      "word": "fierce",
+      "meaning": "凶猛的",
+      "decomposition": "fierce 野蛮→凶猛的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fierce",
+          "hint": "野蛮"
+        }
+      ],
+      "definition": "Fierce means violent or very intense.",
+      "exampleSentence": "The fierce wind blew down the trees."
+    },
+    {
+      "id": "e444",
+      "word": "fight",
+      "meaning": "战斗",
+      "decomposition": "fight 打→打斗→战斗",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fight",
+          "hint": "打"
+        }
+      ],
+      "definition": "Fight means to struggle against someone or something.",
+      "exampleSentence": "The two teams will fight for the championship."
+    },
+    {
+      "id": "e445",
+      "word": "figure",
+      "meaning": "数字；人物",
+      "decomposition": "fig+ure 做→做出来的形状→数字",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fig",
+          "hint": "做"
+        },
+        {
+          "morpheme": "ure",
+          "hint": ""
+        }
+      ],
+      "definition": "Figure means a number or an important person.",
+      "exampleSentence": "The sales figure increased by 10% last month."
+    },
+    {
+      "id": "e446",
+      "word": "file",
+      "meaning": "文件；锉刀",
+      "decomposition": "file 线→排成线→文件",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "file",
+          "hint": "线"
+        }
+      ],
+      "definition": "File means a collection of documents or to smooth with a tool.",
+      "exampleSentence": "Please save the file before closing the program."
+    },
+    {
+      "id": "e447",
+      "word": "fill",
+      "meaning": "填充",
+      "decomposition": "fill 满→使满→填充",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fill",
+          "hint": "满"
+        }
+      ],
+      "definition": "Fill means to put something into a space until it's full.",
+      "exampleSentence": "Fill the glass with water, please."
+    },
+    {
+      "id": "e448",
+      "word": "final",
+      "meaning": "最终的",
+      "decomposition": "fin+al 结束→结束的→最终的",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fin",
+          "hint": "结束"
+        },
+        {
+          "morpheme": "al",
+          "hint": ""
+        }
+      ],
+      "definition": "Final means last or coming at the end.",
+      "exampleSentence": "This is the final exam of the semester."
+    },
+    {
+      "id": "e449",
+      "word": "finance",
+      "meaning": "财政；融资",
+      "decomposition": "fin+ance 结束→结束债务→财政",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "fin",
+          "hint": "结束"
+        },
+        {
+          "morpheme": "ance",
+          "hint": ""
+        }
+      ],
+      "definition": "Finance means the management of money or to provide money for something.",
+      "exampleSentence": "She works in the finance department of the bank."
+    },
+    {
+      "id": "e450",
+      "word": "find",
+      "meaning": "找到",
+      "decomposition": "find 发现→找到",
+      "page": 8,
+      "components": [
+        {
+          "morpheme": "find",
+          "hint": "发现"
+        }
+      ],
+      "definition": "Find means to discover or locate something.",
+      "exampleSentence": "I can't find my keys anywhere."
+    },
     {
       "id": "e940",
       "word": "gloriouslyad",

@@ -106,7 +106,9 @@ function bindEvents() {
 function handleSearchInput() {
   const query = els.rootSearch.value.trim();
   renderRootList(query);
-  renderWordSearchResults(query);
+  if (state.filteredRoots.length) {
+    selectRoot(state.filteredRoots[0].root);
+  }
 }
 
 async function loadData() {
@@ -292,7 +294,7 @@ function renderRootDetail() {
 
     const word = document.createElement("div");
     word.className = "example-word clickable-word";
-    word.textContent = entry.word;
+    highlightRoot(word, entry.word, state.selectedRoot);
     word.addEventListener("click", () => {
       showWordDetail(entry);
     });
@@ -415,18 +417,19 @@ function showWordDetail(entry) {
   label.textContent = "词根/词缀：";
   morphemes.appendChild(label);
 
-  (entry.components || []).forEach((component) => {
+  (entry.components || []).forEach((component, idx) => {
     const morpheme = component.morpheme;
     if (!morpheme) return;
     const chip = document.createElement("span");
     chip.textContent = morpheme;
+    const colorClass = `morph-color-${idx % 5}`;
     if (state.rootMap.has(morpheme)) {
-      chip.className = "word-morpheme-link";
+      chip.className = `word-morpheme-link ${colorClass}`;
       chip.addEventListener("click", () => {
         selectRoot(morpheme);
       });
     } else {
-      chip.className = "word-morpheme";
+      chip.className = `word-morpheme ${colorClass}`;
     }
     morphemes.appendChild(chip);
   });
@@ -617,6 +620,28 @@ function shuffle(items) {
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   return arr;
+}
+
+function highlightRoot(el, word, root) {
+  if (!root) {
+    el.textContent = word;
+    return;
+  }
+  const idx = word.toLowerCase().indexOf(root.toLowerCase());
+  if (idx === -1) {
+    el.textContent = word;
+    return;
+  }
+  if (idx > 0) {
+    el.appendChild(document.createTextNode(word.slice(0, idx)));
+  }
+  const mark = document.createElement("span");
+  mark.className = "root-highlight";
+  mark.textContent = word.slice(idx, idx + root.length);
+  el.appendChild(mark);
+  if (idx + root.length < word.length) {
+    el.appendChild(document.createTextNode(word.slice(idx + root.length)));
+  }
 }
 
 function clearNode(node) {

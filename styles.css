@@ -448,6 +448,18 @@ button:hover {
   border-color: var(--accent);
 }
 
+.root-highlight {
+  background: var(--accent-soft);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+.morph-color-0 { background: #dbeafe; }
+.morph-color-1 { background: #dcfce7; }
+.morph-color-2 { background: #fef3c7; }
+.morph-color-3 { background: #fce7f3; }
+.morph-color-4 { background: #e0e7ff; }
+
 @media (max-width: 900px) {
   .map-layout {
     grid-template-columns: 1fr;
