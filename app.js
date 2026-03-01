@@ -189,11 +189,7 @@ function renderRootList(query) {
     if ((rootData.gloss || "").includes(q)) {
       return true;
     }
-    if ((rootData.sampleWords || []).some((word) => word.includes(q))) {
-      return true;
-    }
-    const entries = state.rootToEntries.get(rootData.root) || [];
-    return entries.some((entry) => (entry.meaning || "").includes(q));
+    return false;
   });
 
   clearNode(els.rootList);
@@ -294,7 +290,7 @@ function renderRootDetail() {
 
     const word = document.createElement("div");
     word.className = "example-word clickable-word";
-    highlightRoot(word, entry.word, state.selectedRoot);
+    highlightComponents(word, entry.word, entry.components);
     word.addEventListener("click", () => {
       showWordDetail(entry);
     });
@@ -389,7 +385,7 @@ function showWordDetail(entry) {
   const title = document.createElement("div");
   title.className = "word-detail-title";
   const wordText = document.createElement("span");
-  wordText.textContent = entry.word;
+  highlightComponents(wordText, entry.word, entry.components);
   title.appendChild(wordText);
 
   const audioWrap = document.createElement("div");
@@ -622,25 +618,31 @@ function shuffle(items) {
   return arr;
 }
 
-function highlightRoot(el, word, root) {
-  if (!root) {
-    el.textContent = word;
+function highlightComponents(el, targetWord, components) {
+  el.textContent = "";
+  if (!components || components.length === 0) {
+    el.textContent = targetWord;
     return;
   }
-  const idx = word.toLowerCase().indexOf(root.toLowerCase());
-  if (idx === -1) {
-    el.textContent = word;
-    return;
-  }
-  if (idx > 0) {
-    el.appendChild(document.createTextNode(word.slice(0, idx)));
-  }
-  const mark = document.createElement("span");
-  mark.className = "root-highlight";
-  mark.textContent = word.slice(idx, idx + root.length);
-  el.appendChild(mark);
-  if (idx + root.length < word.length) {
-    el.appendChild(document.createTextNode(word.slice(idx + root.length)));
+  let currentIndex = 0;
+  let lowerWord = targetWord.toLowerCase();
+  components.forEach((comp, idx) => {
+    let m = (comp.morpheme || "").toLowerCase();
+    if (!m) return;
+    let pos = lowerWord.indexOf(m, currentIndex);
+    if (pos !== -1) {
+      if (pos > currentIndex) {
+        el.appendChild(document.createTextNode(targetWord.slice(currentIndex, pos)));
+      }
+      const mark = document.createElement("span");
+      mark.className = `root-highlight morph-color-${idx % 5}`;
+      mark.textContent = targetWord.slice(pos, pos + m.length);
+      el.appendChild(mark);
+      currentIndex = pos + m.length;
+    }
+  });
+  if (currentIndex < targetWord.length) {
+    el.appendChild(document.createTextNode(targetWord.slice(currentIndex)));
   }
 }
 
