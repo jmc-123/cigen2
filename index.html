@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="zh-CN">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>词根词缀记忆工坊</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
     <div class="bg bg-a"></div>
     <div class="bg bg-b"></div>
@@ -14,6 +16,7 @@
         <button class="tab active" data-tab="home">检索首页</button>
         <button class="tab" data-tab="learn">学习页</button>
         <button class="tab" data-tab="k12">K12课本单词</button>
+        <button class="tab" data-tab="1368">1368个口语单词</button>
         <button class="tab" data-tab="about">关于</button>
       </div>
       <div class="stats" id="metaStats">
@@ -26,11 +29,7 @@
         <h2>检索首页</h2>
         <p class="panel-sub">在这里按词根/词缀/中文提示或单词快速检索。</p>
         <div class="toolbar">
-          <input
-            type="search"
-            id="rootSearch"
-            placeholder="搜索词根/词缀/中文提示，例如: trans, anti, 反"
-          />
+          <input type="search" id="rootSearch" placeholder="搜索词根/词缀/中文提示，例如: trans, anti, 反" />
           <button id="randomRoot">随机词根</button>
         </div>
         <div class="word-search-results" id="wordSearchResults"></div>
@@ -129,4 +128,5 @@
 
     <script src="./app.js"></script>
   </body>
+
 </html>
