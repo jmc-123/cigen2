@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>七年级下册英语单词闪卡 (Unit 2 - Unit 8)</title>
+        <style>
+            body {
+                font-family: 'Microsoft YaHei', -apple-system, sans-serif;
+                background-color: #f4f7f6;
+                margin: 0;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 100vh;
+            }
+
+            h1 {
+                color: #4A90E2;
+                text-align: center;
+                font-size: 1.5rem;
+                margin-bottom: 5px;
+            }
+
+            .progress {
+                color: #666666;
+                font-size: 1rem;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+
+            .flashcard-container {
+                width: 100%;
+                max-width: 450px;
+                height: 350px;
+                perspective: 1000px;
+                margin-bottom: 30px;
+                cursor: pointer;
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            .flashcard {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+                transform-style: preserve-3d;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 15px;
+            }
+
+            .flashcard.is-flipped {
+                transform: rotateY(180deg);
+            }
+
+            .card-face {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 15px;
+                background-color: #ffffff;
+                padding: 30px 20px;
+                box-sizing: border-box;
+                text-align: center;
+            }
+
+            .card-back {
+                transform: rotateY(180deg);
+                background-color: #4A90E2;
+                color: white;
+            }
+
+            .chinese-meaning {
+                font-size: 1.6rem;
+                color: #333333;
+                font-weight: bold;
+                line-height: 1.4;
+                margin-bottom: 15px;
+            }
+
+            .english-explanation {
+                font-size: 1.1rem;
+                color: #555555;
+                font-style: italic;
+                line-height: 1.4;
+                padding: 0 10px;
+                border-top: 1px solid #eee;
+                padding-top: 15px;
+            }
+
+            .english-word {
+                font-size: 3rem;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+
+            .hint {
+                position: absolute;
+                bottom: 15px;
+                font-size: 0.85rem;
+                color: #aaa;
+            }
+
+            .card-back .hint {
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            .controls {
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+                max-width: 450px;
+            }
+
+            button {
+                background-color: #fff;
+                border: 2px solid #4A90E2;
+                color: #4A90E2;
+                padding: 12px 24px;
+                font-size: 1.1rem;
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: all 0.2s;
+                outline: none;
+                touch-action: manipulation;
+            }
+
+            button:active {
+                background-color: #4A90E2;
+                color: #fff;
+                transform: scale(0.95);
+            }
+
+            .btn-shuffle {
+                background-color: #f39c12;
+                border-color: #f39c12;
+                color: white;
+            }
+
+            .btn-shuffle:active {
+                background-color: #d68910;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h1>七年级下册英语闪卡</h1>
+        <div class="progress" id="progress">1 / 100</div>
+
+        <div class="flashcard-container" onclick="flipCard()">
+            <div class="flashcard" id="flashcard">
+                <!-- 侧面 A: 中文释义 + 英文解释 -->
+                <div class="card-face card-front">
+                    <div class="chinese-meaning" id="side-a-chinese">载入中...</div>
+                    <div class="english-explanation" id="side-a-english">Loading explanation...</div>
+                    <div class="hint">点击卡片翻面 (Tap to flip)</div>
+                </div>
+                <!-- 侧面 B: 英文单词 -->
+                <div class="card-face card-back">
+                    <div class="english-word" id="side-b-word">Loading...</div>
+                    <div class="hint">点击卡片翻面 (Tap to flip)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button onclick="prevCard()">上一张 (Prev)</button>
+            <button onclick="nextCard()">下一张 (Next)</button>
+            <button class="btn-shuffle" onclick="shuffleCards()">乱序 (Shuffle)</button>
+        </div>
+
+        <script>
+            var originalVocabulary = [
+                // Unit 2
+                { word: "rule", meaning: "n. 规则；规章", exp: "An instruction that tells you what you are allowed or not allowed to do." },
+                { word: "order", meaning: "n. 秩序；命令 v. 点菜；命令", exp: "An instruction or a request for food/goods." },
+                { word: "follow", meaning: "v. 遵循；跟随", exp: "To move behind someone or obey a rule." },
+                { word: "late for", meaning: "迟到", exp: "Arriving after the expected or planned time." },
+                { word: "arrive", meaning: "v. 到达", exp: "To reach a place, especially at the end of a journey." },
+                { word: "on time", meaning: "准时", exp: "Happening at the planned time; not late." },
+                { word: "hallway", meaning: "n. 走廊", exp: "A passage in a building with doors leading to rooms." },
+                { word: "uniform", meaning: "n. 校服；制服", exp: "A special set of clothes worn by members of an organization or school." },
+                { word: "litter", meaning: "v. 乱扔 n. 垃圾", exp: "Small pieces of rubbish left lying around in public places." },
+                { word: "polite", meaning: "adj. 有礼貌的", exp: "Having good manners and showing respect." },
+                { word: "treat", meaning: "v. 对待；招待；治疗 n. 款待", exp: "To behave towards someone in a particular way." },
+                { word: "respect", meaning: "n. & v. 尊敬", exp: "Polite behavior showing that you care about someone's feelings." },
+                { word: "if", meaning: "conj. 如果", exp: "Used to say that one thing can happen only after another thing happens." },
+                { word: "jacket", meaning: "n. 夹克衫；短上衣", exp: "A short coat with long sleeves." },
+                { word: "have to", meaning: "不得不", exp: "Must; used to show that something is necessary." },
+                { word: "everything", meaning: "pron. 每件事；一切", exp: "All things." },
+                { word: "lend", meaning: "v. 借给；借出", exp: "To give something to someone for a short time." },
+                { word: "sweet", meaning: "n. 糖果 adj. 甜的", exp: "Having a taste like sugar; a small piece of sweet food." },
+                { word: "snack", meaning: "n. 点心；小吃", exp: "A small amount of food eaten between meals." },
+                { word: "of course", meaning: "当然", exp: "Used to say 'yes' strongly or politely." },
+                { word: "mobile", meaning: "adj. 可移动的", exp: "Able to move or be moved easily." },
+                { word: "mobile phone", meaning: "手机", exp: "A telephone that you can carry with you." },
+                { word: "turn off", meaning: "关掉（水、电或煤气）", exp: "To stop a machine or equipment from working." },
+                { word: "queue", meaning: "n. 队", exp: "A line of people waiting for something." },
+                { word: "jump the queue", meaning: "插队", exp: "To move to the front of a line without waiting for your turn." },
+                { word: "feed", meaning: "v. 喂养；饲养", exp: "To give food to a person or an animal." },
+                { word: "leave", meaning: "v. 离开；留下", exp: "To go away from a place or a person." },
+                { word: "absent", meaning: "adj. 缺席的；不在的", exp: "Not in the place where you are expected to be." },
+                { word: "absent from", meaning: "缺席；不在", exp: "Not present at a place." },
+                { word: "shh", meaning: "interj. 嘘（用以让别人安静下来）", exp: "Used to tell someone to be quiet." },
+                { word: "quietly", meaning: "adv. 轻声地；安静地", exp: "Without making much noise." },
+                { word: "belt", meaning: "n. 安全带；腰带；皮带", exp: "A long, thin piece of leather or cloth worn around the waist." },
+                { word: "noise", meaning: "n. 声音；噪声", exp: "A sound, especially one that is loud or unpleasant." },
+                { word: "unhappy", meaning: "adj. 不快乐的", exp: "Sad." },
+                { word: "make sb's/the bed", meaning: "整理床铺；铺床", exp: "To tidy the sheets and blankets on a bed after sleeping in it." },
+                { word: "either", meaning: "adv. 也（用于否定词组后）", exp: "Used in negative sentences to mean 'also'." },
+                { word: "practise", meaning: "v. 训练；练习", exp: "To do an activity regularly to improve your skill." },
+                { word: "hang", meaning: "v. 悬挂", exp: "To fix something at the top so that the lower part is free." },
+                { word: "hang out", meaning: "闲逛；常去某处", exp: "To spend a lot of time in a place or with someone." },
+                { word: "weekday", meaning: "n. 工作日", exp: "Any day of the week except Saturday and Sunday." },
+                { word: "awful", meaning: "adj. 糟糕的；讨厌的", exp: "Very bad or unpleasant." },
+                { word: "become", meaning: "v. 变成；成为", exp: "To start to be." },
+                { word: "better", meaning: "adj. 较好的 adv. 较好地", exp: "Of a higher quality or more suitable." },
+                { word: "person", meaning: "n. 人", exp: "A human being." },
+                { word: "focus", meaning: "v. 集中（注意力、精力等）；聚焦", exp: "To give your full attention to something." },
+                { word: "focus on", meaning: "集中（注意力、精力等）于", exp: "To concentrate on one specific thing." },
+                { word: "build", meaning: "v. 创建；建造", exp: "To make something by putting pieces together." },
+                { word: "spirit", meaning: "n. 精神；情绪", exp: "The feelings and attitudes of a person or group." },
+                { word: "think about", meaning: "思考；考虑", exp: "To consider or ponder something." },
+                { word: "relax", meaning: "v. 放松；休息", exp: "To rest and become calm." },
+                { word: "advice", meaning: "n. 建议；意见", exp: "An opinion about what someone should do." },
+                { word: "understand", meaning: "v. 理解；领会", exp: "To know the meaning of something." },
+                { word: "untidy", meaning: "adj. 不整洁的", exp: "Not neat or well arranged; messy." },
+
+                // Unit 3
+                { word: "fit", meaning: "adj. 健康的；健壮的 v. 适合", exp: "Healthy and strong, especially as a result of exercise." },
+                { word: "baseball", meaning: "n. 棒球（运动）", exp: "A sport played with a bat and ball by two teams of nine players." },
+                { word: "glove", meaning: "n.（手指分开的）手套", exp: "A piece of clothing that covers your fingers and hand." },
+                { word: "mat", meaning: "n.（运动用的）垫子", exp: "A piece of thick material put on the floor for exercise." },
+                { word: "rope", meaning: "n. 绳子；粗绳", exp: "Strong, thick string made of twisted threads." },
+                { word: "jump rope", meaning: "跳绳（运动）", exp: "A rope used for the activity of jumping over it as it is swung under the feet." },
+                { word: "racket", meaning: "n.（网球、羽毛球等的）球拍", exp: "A piece of sports equipment used to hit a ball or shuttlecock." },
+                { word: "hardly", meaning: "adv. 几乎不；几乎没有", exp: "Almost not." },
+                { word: "ever", meaning: "adv. 在任何时候；从来；曾经", exp: "At any time." },
+                { word: "hardly ever", meaning: "几乎从不", exp: "Very rarely." },
+                { word: "once", meaning: "adv. 一次；曾经 conj. 一旦", exp: "One single time." },
+                { word: "twice", meaning: "adv. 两次；两倍", exp: "Two times." },
+                { word: "mine", meaning: "pron. 我的（所有物）", exp: "Belonging to me." },
+                { word: "hers", meaning: "pron. 她的（所有物）", exp: "Belonging to a female person." },
+                { word: "maybe", meaning: "adv. 也许；大概", exp: "Possibly; perhaps." },
+                { word: "well-used", meaning: "adj. 使用得多的", exp: "Used often and showing signs of wear." },
+                { word: "practice", meaning: "n. 练习；实践", exp: "Doing something regularly to improve." },
+                { word: "perfect", meaning: "adj. 完美的；极好的", exp: "Having no faults; exactly right." },
+                { word: "seldom", meaning: "adv. 很少；不常", exp: "Not often; rarely." },
+                { word: "badminton", meaning: "n. 羽毛球运动", exp: "A sport where players hit a shuttlecock over a net." },
+                { word: "double", meaning: "n. 双打 adj. 成双的；两倍的", exp: "Twice the size or amount; a game for two pairs of players." },
+                { word: "sometime", meaning: "adv. 在某个时候", exp: "At a time in the future or past that is not known." },
+                { word: "volleyball", meaning: "n. 排球（运动）", exp: "A game where two teams hit a ball back and forth over a high net." },
+                { word: "theirs", meaning: "pron. 他们的（所有物）", exp: "Belonging to them." },
+                { word: "jog", meaning: "v. 慢跑", exp: "To run at a slow, steady speed for exercise." },
+                { word: "few", meaning: "adj.（表示否定的）很少的", exp: "Not many; a small number." },
+                { word: "a few", meaning: "少数；几个", exp: "Some; a small number of things or people." },
+                { word: "excuse", meaning: "v. 原谅；宽恕", exp: "To forgive someone for a small mistake." },
+                { word: "excuse me", meaning: "劳驾；请原谅", exp: "A polite phrase used to get someone's attention or say sorry." },
+                { word: "over there", meaning: "在那边", exp: "In or at that place, a short distance away." },
+                { word: "just", meaning: "adv. 只是；正好", exp: "Exactly or only." },
+                { word: "T-shirt", meaning: "n. T恤衫", exp: "A simple shirt with short sleeves and no collar." },
+                { word: "belong", meaning: "v. 应在（某处）", exp: "To be in the right or suitable place." },
+                { word: "belong to", meaning: "属于（某人）", exp: "To be the property of someone." },
+                { word: "working", meaning: "adj. 工作的", exp: "Having a job; relating to work." },
+                { word: "working day", meaning: "工作日", exp: "A day on which people normally work." },
+                { word: "full of", meaning: "有许多；充满", exp: "Containing a lot of things or people." },
+                { word: "energy", meaning: "n. 精力；能量", exp: "The power and ability to be physically or mentally active." },
+                { word: "group", meaning: "n. 组；群", exp: "A number of people or things together." },
+                { word: "skateboard", meaning: "n. 滑板", exp: "A board with wheels on the bottom used for riding on." },
+                { word: "encourage", meaning: "v. 鼓励；激励", exp: "To give someone confidence or hope." },
+                { word: "trick", meaning: "n. 技巧；戏法", exp: "A clever action done to entertain people." },
+                { word: "succeed", meaning: "v. 成功；达到目标", exp: "To achieve what you tried to do." },
+                { word: "skateboarding", meaning: "n. 滑板运动", exp: "The sport of riding on a skateboard." },
+                { word: "goal", meaning: "n. 目标；目的", exp: "Something you want to achieve." },
+                { word: "sit-up", meaning: "n. 仰卧起坐", exp: "An exercise to make your stomach muscles strong." },
+                { word: "work out", meaning: "锻炼", exp: "To exercise to improve your body's strength or appearance." },
+                { word: "app", meaning: "n. 应用程序", exp: "A computer program designed for a specific purpose on a phone." },
+                { word: "progress", meaning: "n. 进步；进展", exp: "Improvement or development." },
+                { word: "match", meaning: "n. 比赛；竞赛", exp: "A sports competition between two people or teams." },
+                { word: "team", meaning: "n. 队；组", exp: "A group of people playing a sport together." },
+                { word: "ours", meaning: "pron. 我们的（所有物）", exp: "Belonging to us." },
+                { word: "lose", meaning: "v. 输掉；丢失", exp: "To not win a game; to not be able to find something." },
+                { word: "teenager", meaning: "n. 青少年", exp: "A person aged between 13 and 19 years old." },
+
+                // Unit 4
+                { word: "watermelon", meaning: "n. 西瓜", exp: "A large, round fruit with a green skin and red, juicy flesh." },
+                { word: "cabbage", meaning: "n. 卷心菜", exp: "A large, round vegetable with thick green or purple leaves." },
+                { word: "mutton", meaning: "n. 羊肉", exp: "The meat of an adult sheep eaten as food." },
+                { word: "cookie", meaning: "n. 曲奇饼", exp: "A small, flat, sweet biscuit." },
+                { word: "onion", meaning: "n. 洋葱；葱头", exp: "A round vegetable with strong smell and flavor." },
+                { word: "dumpling", meaning: "n. 饺子", exp: "A small piece of dough, usually filled with meat or vegetables." },
+                { word: "coffee", meaning: "n. 咖啡", exp: "A dark brown hot drink made from roasted coffee beans." },
+                { word: "bean", meaning: "n. 豆", exp: "A seed, or the pod containing seeds, of various climbing plants." },
+                { word: "chip", meaning: "n. 炸薯条", exp: "A long, thin piece of potato fried in oil." },
+                { word: "fish and chips", meaning: "炸鱼薯条", exp: "A popular British dish of fried fish and fried potatoes." },
+                { word: "salad", meaning: "n. 沙拉；色拉", exp: "A dish of raw vegetables, often mixed with other ingredients." },
+                { word: "porridge", meaning: "n. 粥；麦片粥", exp: "A thick, soft food made from oats boiled in milk or water." },
+                { word: "waiter", meaning: "n.（男）服务员", exp: "A man whose job is to serve customers at their tables in a restaurant." },
+                { word: "What about ...?", meaning: "……怎么样？", exp: "Used to make a suggestion or ask for an opinion." },
+                { word: "taste", meaning: "v. 有……味道；尝 n. 味道", exp: "To have a particular flavor; the flavor of food." },
+                { word: "anything", meaning: "pron. 某事物；任何事物", exp: "Used instead of 'something' in questions and negative sentences." },
+                { word: "dish", meaning: "n. 一道菜；盘子", exp: "Food prepared in a particular way as part of a meal; a shallow container." },
+                { word: "choice", meaning: "n. 选择", exp: "An act or the possibility of choosing." },
+                { word: "meal", meaning: "n. 一餐所吃的食物；一餐", exp: "The food eaten at a particular time of the day." },
+                { word: "pork", meaning: "n. 猪肉", exp: "The meat of a pig used as food." },
+                { word: "strawberry", meaning: "n. 草莓", exp: "A small juicy red fruit with small brown seeds on its surface." },
+                { word: "menu", meaning: "n. 菜单", exp: "A list of the food that you can eat at a restaurant." },
+                { word: "customer", meaning: "n. 顾客", exp: "A person who buys goods or a service." },
+                { word: "serve", meaning: "v. 提供；服务", exp: "To provide food or drinks to someone." },
+                { word: "waitress", meaning: "n. 女服务员", exp: "A woman whose job is to serve customers at their tables." },
+                { word: "sir", meaning: "n. 先生", exp: "A polite way of talking to a man." },
+                { word: "go with", meaning: "搭配；相配", exp: "To combine well with something else." },
+                { word: "instead", meaning: "adv. 反而；代替", exp: "In place of someone or something else." },
+                { word: "pear", meaning: "n. 梨", exp: "A sweet, juicy fruit that is narrow near its stem and rounder at the bottom." },
+                { word: "too much", meaning: "太多", exp: "More than is necessary or good (for uncountable nouns)." },
+                { word: "sugar", meaning: "n. 糖", exp: "A sweet substance used to make food and drinks sweet." },
+                { word: "improve", meaning: "v. 改进；改善", exp: "To make something better." },
+                { word: "habit", meaning: "n. 习惯", exp: "Something that you do often and regularly." },
+                { word: "fast food", meaning: "快餐", exp: "Hot food such as hamburgers that is served very quickly." },
+                { word: "salt", meaning: "n. 盐", exp: "A white substance used to add flavor to food." },
+                { word: "fat", meaning: "n. 脂肪 adj. 肥胖的", exp: "A solid or liquid substance from animals or plants used in cooking." },
+                { word: "put on", meaning: "增加；穿上", exp: "To gain weight; to wear clothing." },
+                { word: "weight", meaning: "n. 体重；重量", exp: "How heavy someone or something is." },
+                { word: "hamburger", meaning: "n. 汉堡包", exp: "A flat round piece of minced beef served in a bread roll." },
+                { word: "cause", meaning: "v. 造成；导致", exp: "To make something happen." },
+                { word: "heart", meaning: "n. 心脏；中心", exp: "The organ in your chest that pumps blood." },
+                { word: "balanced", meaning: "adj. 均衡的；平衡的", exp: "Containing a healthy mixture of different types of food." },
+                { word: "too … to", meaning: "太……以至于不能", exp: "More than is needed so that an action is impossible." },
+                { word: "sleepy", meaning: "adj. 困倦的；想睡的", exp: "Tired and ready to sleep." },
+                { word: "after all", meaning: "毕竟；终归", exp: "Used to add information that shows what you have just said is true." },
+                { word: "away", meaning: "adv. 离开；在别处", exp: "To or in a different place." },
+                { word: "poor", meaning: "adj. 不好的；贫穷的", exp: "Having little money; of a low quality." },
+                { word: "result", meaning: "n. 后果；结果", exp: "Something that happens because of something else." },
+                { word: "article", meaning: "n. 文章；冠词", exp: "A piece of writing in a magazine, newspaper, etc." },
+                { word: "common", meaning: "adj. 共同的；普遍的", exp: "Happening often or existing in large numbers." },
+                { word: "among", meaning: "prep. 在……中；……之一", exp: "In the middle of or surrounded by other things." },
+                { word: "soft", meaning: "adj. 柔和的；柔软的", exp: "Not hard or firm." },
+                { word: "soft drink", meaning: "软饮料", exp: "A cold, sweet drink that does not contain alcohol." },
+                { word: "enough", meaning: "adj. 足够的 adv. 足够地", exp: "As much as is necessary." },
+                { word: "thirsty", meaning: "adj. 渴的", exp: "Needing to drink." },
+
+                // Unit 5
+                { word: "right now", meaning: "现在；立刻", exp: "At this exact moment." },
+                { word: "ride", meaning: "v. 骑 n. 旅程", exp: "To sit on and control a bicycle or an animal." },
+                { word: "moment", meaning: "n. 某个时刻；片刻；瞬间", exp: "A very short period of time." },
+                { word: "at the moment", meaning: "现在；此刻", exp: "Now." },
+                { word: "work on", meaning: "做；从事", exp: "To spend time repairing or improving something." },
+                { word: "dragon", meaning: "n. 龙", exp: "A large imaginary creature that breathes fire." },
+                { word: "festival", meaning: "n. 节日", exp: "A special day or period with celebrations." },
+                { word: "hold", meaning: "v. 拿着；抓住", exp: "To carry something in your hands or arms." },
+                { word: "hold on", meaning: "别挂断电话；等一等", exp: "Used to ask someone to wait for a short time." },
+                { word: "voice", meaning: "n. 嗓音；声音", exp: "The sound made when a person speaks or sings." },
+                { word: "race", meaning: "n. 比赛；竞赛", exp: "A competition to see who is the fastest." },
+                { word: "darling", meaning: "n. 亲爱的；宝贝", exp: "A word used to address someone you love." },
+                { word: "somebody", meaning: "pron. 某人；有人", exp: "An unknown or unspecified person." },
+                { word: "could", meaning: "modal v. 能；可以", exp: "Used as the past form of 'can' or to make polite requests." },
+                { word: "message", meaning: "n. 消息；信息", exp: "A short piece of information given to someone." },
+                { word: "take a message", meaning: "捎个口信", exp: "To write down information for someone else." },
+                { word: "leave a message", meaning: "留个口信", exp: "To give information to someone so they can pass it on." },
+                { word: "call back", meaning: "回电话", exp: "To telephone someone who has telephoned you." },
+                { word: "kick", meaning: "v. 踢；踹", exp: "To hit someone or something with the foot." },
+                { word: "wow", meaning: "interj. 哇；呀", exp: "An exclamation showing surprise or admiration." },
+                { word: "online", meaning: "adj. 在线的", exp: "Connected to the internet." },
+                { word: "shuttlecock", meaning: "n. 羽毛球", exp: "The object hit back and forth in badminton." },
+                { word: "sight", meaning: "n. 名胜；风景；视力", exp: "The ability to see; places of interest." },
+                { word: "exam", meaning: "n. 考试", exp: "A formal test of knowledge or skill." },
+                { word: "hope", meaning: "v. & n. 希望", exp: "To want something to happen and think it is possible." },
+                { word: "forward", meaning: "adv. 向前", exp: "Towards the direction that is in front of you." },
+                { word: "look forward to", meaning: "盼望", exp: "To feel pleased and excited about something that is going to happen." },
+                { word: "skate", meaning: "v. 滑冰", exp: "To move on boots with wheels or blades." },
+                { word: "happen", meaning: "v. 发生", exp: "To take place." },
+                { word: "zone", meaning: "n. 地区；地带；区域", exp: "An area that has a particular characteristic." },
+                { word: "time zone", meaning: "时区", exp: "One of the areas the world is divided into, each having its own time." },
+                { word: "around the world", meaning: "世界各地", exp: "In all parts of the earth." },
+                { word: "rush", meaning: "v. & n. 冲；奔", exp: "To hurry or move very quickly." },
+                { word: "in a hurry", meaning: "匆忙", exp: "Needing to do something or go somewhere quickly." },
+                { word: "shine", meaning: "v. 发光；照耀 n. 光亮", exp: "To produce or reflect light." },
+                { word: "brightly", meaning: "adv. 明亮地", exp: "In a way that produces a lot of light." },
+                { word: "colourful", meaning: "adj. 色彩鲜艳的", exp: "Having bright colors." },
+                { word: "slowly", meaning: "adv. 缓慢地", exp: "At a slow speed." },
+                { word: "such", meaning: "adj. 这样的；那样的", exp: "Of a particular or similar type." },
+                { word: "such as", meaning: "例如", exp: "For example." },
+                { word: "painting", meaning: "n. 绘画作品；油画", exp: "A picture made using paint." },
+                { word: "market", meaning: "n. 市场", exp: "A place where people go to buy and sell things." },
+                { word: "side", meaning: "n. 边；侧", exp: "A flat outer surface of an object." },
+                { word: "side by side", meaning: "并排；并肩地", exp: "Next to each other." },
+                { word: "subway", meaning: "n. 地铁", exp: "An underground railway system in a city." },
+                { word: "bright", meaning: "adj. 鲜艳的；聪明的", exp: "Full of light; intelligent." },
+                { word: "drop", meaning: "v. 把……送至；落下", exp: "To fall or let something fall." },
+                { word: "drop off", meaning: "（开车）把某人送到某处", exp: "To take someone to a place and leave them there." },
+                { word: "passenger", meaning: "n. 乘客", exp: "A person traveling in a vehicle who is not driving." },
+                { word: "central", meaning: "adj. 中心的；中央的", exp: "In or near the middle of a place." },
+                { word: "explain", meaning: "v. 解释；说明", exp: "To make something clear or easy to understand." },
+                { word: "take part in", meaning: "参加", exp: "To join in an activity." },
+                { word: "tour", meaning: "n. & v. 旅行；旅游", exp: "A journey made for pleasure to several different places." },
+                { word: "sunshine", meaning: "n. 阳光", exp: "The light and heat that come from the sun." },
+                { word: "drive", meaning: "v. 开车；驾驶", exp: "To control the movement of a car or other vehicle." },
+                { word: "rush hour", meaning: "交通高峰期", exp: "The busy part of the day when towns and cities are crowded." },
+
+                // Unit 6
+                { word: "rain or shine", meaning: "不论是雨或是晴；不管发生什么事", exp: "Whatever happens; no matter the weather." },
+                { word: "affect", meaning: "v. 影响", exp: "To have an influence on someone or something." },
+                { word: "dry", meaning: "adj. 干的；干旱的", exp: "Without water or moisture." },
+                { word: "lightning", meaning: "n. 闪电", exp: "A bright flash of light in the sky during a storm." },
+                { word: "stormy", meaning: "adj. 有暴风雨（或暴风雪）的", exp: "Involving heavy rain and strong wind." },
+                { word: "north", meaning: "n. 北部；北", exp: "The direction that goes towards the top of a map." },
+                { word: "west", meaning: "n. 西部；西", exp: "The direction where the sun sets." },
+                { word: "south", meaning: "n. 南部；南", exp: "The direction that goes towards the bottom of a map." },
+                { word: "east", meaning: "n. 东部；东", exp: "The direction where the sun rises." },
+                { word: "stay in", meaning: "待在家里；没有外出", exp: "To remain indoors." },
+                { word: "lucky", meaning: "adj. 运气好的", exp: "Having good luck." },
+                { word: "lucky you", meaning: "你真幸运", exp: "A phrase used to tell someone they are fortunate." },
+                { word: "sunbathe", meaning: "v. 沐日光浴；晒太阳", exp: "To sit or lie in the sun to get a tan." },
+                { word: "some day", meaning: "将来；有朝一日", exp: "At an unknown time in the future." },
+                { word: "temperature", meaning: "n. 温度", exp: "A measure of how hot or cold a place or thing is." },
+                { word: "snowman", meaning: "n. 雪人", exp: "A figure made of snow, shaped like a person." },
+                { word: "heavily", meaning: "adv. 大量地；沉重地", exp: "To a great degree; a lot." },
+                { word: "snowy", meaning: "adj. 下雪的；雪白的", exp: "Full of or covered with snow." },
+                { word: "beach volleyball", meaning: "沙滩排球", exp: "A volleyball game played on sand." },
+                { word: "high", meaning: "adv. & adj. 高", exp: "Large in distance from top to bottom." },
+                { word: "freezing", meaning: "adj. 极冷的；冰冻的", exp: "Extremely cold." },
+                { word: "tourist", meaning: "n. 旅行者；观光客", exp: "A person who visits a place for pleasure." },
+                { word: "mount", meaning: "n. 山；山峰", exp: "A mountain (used in names)." },
+                { word: "cloud", meaning: "n. 云；云彩", exp: "A white or grey mass in the sky made of drops of water." },
+                { word: "feel like", meaning: "感觉像", exp: "To have a sensation resembling something." },
+                { word: "magical", meaning: "adj. 魔法的；神奇的", exp: "Produced by magic; wonderful." },
+                { word: "rock", meaning: "n. 岩石", exp: "The solid mineral material forming part of the earth." },
+                { word: "rest", meaning: "n. 休息；剩余部分", exp: "A period of relaxing; the remaining part." },
+                { word: "area", meaning: "n. 场地；地区", exp: "A particular part of a place." },
+                { word: "rest area", meaning: "休息区", exp: "A place for people to stop and rest, usually along a road." },
+                { word: "make progress", meaning: "取得进展", exp: "To move closer to a goal." },
+                { word: "although", meaning: "conj. 虽然；尽管", exp: "Despite the fact that." },
+                { word: "still", meaning: "adv. 还；仍然", exp: "Continuing to happen or exist." },
+                { word: "in high spirits", meaning: "情绪高涨；兴高采烈", exp: "Being in a very happy or cheerful mood." },
+                { word: "experience", meaning: "n. 经历；经验 v. 经历", exp: "Knowledge or skill from doing or seeing things." },
+                { word: "through", meaning: "prep. 穿过；凭借", exp: "From one end or side of something to the other." },
+                { word: "glad", meaning: "adj. 高兴的", exp: "Pleased and happy." },
+                { word: "peak", meaning: "n. 山顶；顶点", exp: "The pointed top of a mountain." },
+                { word: "grey", meaning: "adj. 灰色的", exp: "The color that is a mixture of black and white." },
+                { word: "because of", meaning: "因为", exp: "As a result of." },
+                { word: "fog", meaning: "n. 雾", exp: "A thick cloud of tiny water drops near the ground." },
+                { word: "ground", meaning: "n. 地面", exp: "The solid surface of the earth." },
+                { word: "wet", meaning: "adj. 湿的", exp: "Covered with water or another liquid." },
+                { word: "tiring", meaning: "adj. 令人疲倦的；累人的", exp: "Making you feel tired." },
+                { word: "seem", meaning: "v. 似乎；好像", exp: "To give the effect of being; to appear." },
+                { word: "sunlight", meaning: "n. 阳光；日光", exp: "Light coming from the sun." },
+                { word: "at the top", meaning: "在顶部；在顶端", exp: "At the highest point." },
+                { word: "thought", meaning: "n. 想法", exp: "An idea or opinion produced by thinking." },
+                { word: "mountain", meaning: "n. 山；高山", exp: "A very high hill." },
+                { word: "at the start", meaning: "开始；起初", exp: "At the beginning." },
+                { word: "end", meaning: "n. 末尾；结束", exp: "The final part of something." },
+                { word: "at the end", meaning: "最后；在末尾", exp: "In the final part." },
+                { word: "storm", meaning: "n. 暴风雨；暴风雪", exp: "Extreme weather with heavy rain and strong wind." },
+                { word: "pour", meaning: "v. 倾倒；倒出", exp: "To make a liquid flow rapidly." },
+                { word: "wind", meaning: "n. 风", exp: "Moving air." },
+                { word: "shout", meaning: "v. & n. 喊叫；呼唤", exp: "To speak with a very loud voice." },
+                { word: "run after", meaning: "追逐", exp: "To chase." },
+
+                // Unit 7
+                { word: "meet up", meaning: "碰头；相聚", exp: "To meet someone, usually by arrangement." },
+                { word: "museum", meaning: "n. 博物馆", exp: "A building where historical or cultural objects are kept." },
+                { word: "exhibition", meaning: "n. 展览", exp: "A public display of works of art or items of interest." },
+                { word: "direction", meaning: "n. 方向", exp: "The path that must be taken to reach a specific place." },
+                { word: "trip", meaning: "n. 旅行", exp: "A journey in which you go somewhere." },
+                { word: "wastewater", meaning: "n. 废水", exp: "Water that has been used and is no longer clean." },
+                { word: "plant", meaning: "n. 工厂", exp: "A factory where power is produced or industrial processes occur." },
+                { word: "into", meaning: "prep. 到……里面；进入", exp: "To the inside or middle of a place." },
+                { word: "remove", meaning: "v. 移开；拿走", exp: "To take something away." },
+                { word: "piece", meaning: "n. 片；块", exp: "A part of something." },
+                { word: "waste", meaning: "n. 废弃物 v. 浪费", exp: "Unwanted matter or material of any type." },
+                { word: "machine", meaning: "n. 机器", exp: "A piece of equipment with moving parts that does work." },
+                { word: "germ", meaning: "n. 微生物；细菌", exp: "A very small living thing that causes disease." },
+                { word: "step", meaning: "n. 步骤；脚步", exp: "One action in a series of actions." },
+                { word: "used to", meaning: "过去常常（做）", exp: "Something happened in the past but does not happen now." },
+                { word: "realize", meaning: "v. 认识到；实现", exp: "To understand a situation, sometimes suddenly." },
+                { word: "inside", meaning: "prep. 在……里面 adv. 在里面", exp: "In or into a room or building." },
+                { word: "go on a trip", meaning: "去旅行", exp: "To go somewhere for a holiday or visit." },
+                { word: "process", meaning: "n. 过程", exp: "A series of actions that you take to achieve a result." },
+                { word: "theatre", meaning: "n. 戏院；电影院", exp: "A building where plays or shows are performed." },
+                { word: "factory", meaning: "n. 工厂", exp: "A building where goods are made by machines." },
+                { word: "terrible", meaning: "adj. 糟糕的", exp: "Very bad or unpleasant." },
+                { word: "actor", meaning: "n. 演员", exp: "A person whose job is acting in plays or films." },
+                { word: "gun", meaning: "n. 枪", exp: "A weapon from which bullets are fired." },
+                { word: "try on", meaning: "试穿", exp: "To put on clothes to see if they fit." },
+                { word: "along", meaning: "prep. 沿着；顺着", exp: "From one part of a road, river, etc. to another." },
+                { word: "road", meaning: "n. 道路", exp: "A hard surface built for vehicles to travel on." },
+                { word: "create", meaning: "v. 创造", exp: "To make something new exist." },
+                { word: "record", meaning: "v. 记录 n. 记录", exp: "To write down information so it is not forgotten." },
+                { word: "skill", meaning: "n. 技能", exp: "An ability to do an activity well." },
+                { word: "write down", meaning: "写下；记下", exp: "To record information on paper." },
+                { word: "explore", meaning: "v. 探索", exp: "To search and discover." },
+                { word: "tent", meaning: "n. 帐篷", exp: "A shelter made of cloth used for camping." },
+                { word: "cucumber", meaning: "n. 黄瓜", exp: "A long, green vegetable eaten raw in salads." },
+                { word: "from … to …", meaning: "从……到……", exp: "Starting at one point and ending at another." },
+                { word: "straight", meaning: "adv. 直接；立即 adj. 直的", exp: "Continuing in one direction without bending." },
+                { word: "fill", meaning: "v. 装满；盛满", exp: "To make a container full." },
+                { word: "basket", meaning: "n. 篮子；筐", exp: "A container usually made of woven wood or plastic." },
+                { word: "teach", meaning: "v. 教", exp: "To give someone knowledge or train someone." },
+                { word: "branch", meaning: "n. 分支；树枝", exp: "A part of a tree that grows out from the trunk." },
+                { word: "leaf", meaning: "n. 叶；叶子", exp: "A flat, green part of a plant that grows from a stem." },
+                { word: "finally", meaning: "adv. 终于", exp: "After a long time." },
+                { word: "think of", meaning: "考虑；想起", exp: "To remember or consider something." },
+                { word: "grain", meaning: "n. 谷物；谷粒", exp: "Seeds from plants like wheat or rice used for food." },
+                { word: "fresh", meaning: "adj. 新鲜的", exp: "Recently made or picked; not frozen or in a tin." },
+                { word: "certainly", meaning: "adv. 肯定地", exp: "Used to agree strongly or say 'yes'." },
+                { word: "diary", meaning: "n. 日记；日记本", exp: "A book where you write down your personal experiences." },
+                { word: "entry", meaning: "n.（日记的）一则", exp: "A piece of writing in a diary." },
+                { word: "agree", meaning: "v. 赞成；同意", exp: "To have the same opinion." },
+                { word: "agree with", meaning: "赞成；同意", exp: "To have the same opinion as someone else." },
+
+                // Unit 8
+                { word: "upon", meaning: "prep. 在……上", exp: "On." },
+                { word: "once upon a time", meaning: "从前；很久以前", exp: "A phrase used at the beginning of children's stories." },
+                { word: "bite", meaning: "v. 咬；咬伤", exp: "To use your teeth to cut into something." },
+                { word: "bite through", meaning: "咬穿", exp: "To use teeth to break something completely." },
+                { word: "net", meaning: "n. 网；网状物", exp: "Material made of crossed threads used to catch things." },
+                { word: "hunter", meaning: "n. 猎人；搜寻者", exp: "A person who chases and kills wild animals." },
+                { word: "promise", meaning: "v. 承诺；保证 n. 承诺", exp: "To tell someone you will definitely do something." },
+                { word: "long ago", meaning: "很久以前", exp: "In the distant past." },
+                { word: "war", meaning: "n. 战争", exp: "Armed fighting between two or more countries or groups." },
+                { word: "neighbour", meaning: "n. 邻居", exp: "Someone who lives very close to you." },
+                { word: "wise", meaning: "adj. 明智的；高明的", exp: "Having good judgment based on knowledge and experience." },
+                { word: "emperor", meaning: "n. 皇帝", exp: "A man who rules an empire." },
+                { word: "lie", meaning: "v. 撒谎 n. 谎言", exp: "To say or write something that is not true." },
+                { word: "pretend", meaning: "v. 假装；伪装", exp: "To behave as if something is true when you know it is not." },
+                { word: "official", meaning: "n. 官员；高级职员", exp: "A person holding a public office or rank." },
+                { word: "silly", meaning: "adj. 愚蠢的；傻的", exp: "Showing a lack of thought or judgment; foolish." },
+                { word: "decide", meaning: "v. 决定", exp: "To choose something after thinking about it." },
+                { word: "praise", meaning: "v. & n. 赞美；表扬", exp: "To express admiration or approval for someone or something." },
+                { word: "afraid", meaning: "adj. 害怕的；担心的", exp: "Feeling fear or worry." },
+                { word: "suddenly", meaning: "adv. 突然地；出乎意料地", exp: "Quickly and unexpectedly." },
+                { word: "at first", meaning: "起初；最初", exp: "In or at the beginning." },
+                { word: "truth", meaning: "n. 真相；事实", exp: "The real facts about a situation." },
+                { word: "tell the truth", meaning: "说实话", exp: "To say what really happened." },
+                { word: "make money", meaning: "赚钱", exp: "To earn wealth from work or business." },
+                { word: "true", meaning: "adj. 符合事实的；真正的", exp: "Right and not wrong; according to facts." },
+                { word: "hate", meaning: "v. 不喜欢；厌恶；讨厌", exp: "To dislike someone or something very much." },
+                { word: "get out", meaning: "逃脱；离开", exp: "To leave a place, often quickly." },
+                { word: "king", meaning: "n. 君主；国王", exp: "A man who rules a country because he was born into a royal family." },
+                { word: "artist", meaning: "n. 美术家；艺术家", exp: "Someone who paints, draws, or makes sculptures." },
+                { word: "quickly", meaning: "adv. 快速地；很快", exp: "At a fast speed." },
+                { word: "smile", meaning: "v. 微笑 n. 微笑；笑容", exp: "To make a happy expression on your face." },
+                { word: "all over", meaning: "到处；遍及", exp: "Everywhere." },
+                { word: "ugly", meaning: "adj. 丑陋的；难看的", exp: "Unpleasant to look at." },
+                { word: "duckling", meaning: "n. 小鸭子", exp: "A young duck." },
+                { word: "real", meaning: "adj. 真的；真正的", exp: "Existing in fact; not imaginary." },
+                { word: "laugh at", meaning: "嘲笑", exp: "To show that you think someone or something is stupid." },
+                { word: "go away", meaning: "走开", exp: "To leave a place or person." },
+                { word: "search", meaning: "v. 寻找；搜寻", exp: "To look somewhere carefully to find something." },
+                { word: "search for", meaning: "寻找", exp: "To try to find." },
+                { word: "hen", meaning: "n. 母鸡", exp: "An adult female chicken." },
+                { word: "hopefully", meaning: "adv. 有希望地", exp: "Feeling positive about a future event." },
+                { word: "purr", meaning: "v. （猫愉快时）发出呜呜声", exp: "To make a quiet, continuous, soft sound (like a happy cat)." },
+                { word: "lay", meaning: "v. 下（蛋）；放置；搁", exp: "To put something in especially a flat or horizontal position." },
+                { word: "swan", meaning: "n. 天鹅", exp: "A large, usually white bird with a long neck that lives on water." },
+                { word: "feather", meaning: "n. 羽毛", exp: "One of the soft, light things that cover a bird's body." },
+                { word: "to sb's surprise", meaning: "出乎某人的意料", exp: "Happening in a way that someone did not expect." },
+                { word: "size", meaning: "n. 大小；尺寸", exp: "How large or small something is." },
+                { word: "believe", meaning: "v. 相信；认为", exp: "To think that something is true." },
+                { word: "only if", meaning: "只有", exp: "On the condition that." },
+                { word: "fisherman", meaning: "n. 渔夫", exp: "Someone who catches fish, especially as a job." },
+                { word: "fishing", meaning: "n. 钓鱼；捕鱼", exp: "The sport or job of catching fish." },
+                { word: "come out", meaning: "出现；盛开", exp: "To appear or become visible." },
+                { word: "genie", meaning: "n. 妖怪；鬼", exp: "A magical spirit in stories who can grant wishes." },
+                { word: "die", meaning: "v. 死亡；消失", exp: "To stop living." },
+                { word: "make a promise", meaning: "许下诺言", exp: "To tell someone you will definitely do something." },
+                { word: "someone", meaning: "pron. 某人；有人", exp: "Used to refer to a single person when you do not know who they are." },
+                { word: "set", meaning: "v. 使处于某种状况；使开始", exp: "To put something in a particular place or position." },
+                { word: "set … free", meaning: "释放", exp: "To allow a person or animal to leave a prison or cage." },
+                { word: "rich", meaning: "adj. 富有的；富含……的", exp: "Having a lot of money or valuable possessions." },
+                { word: "powerful", meaning: "adj. 强大的；有影响力的", exp: "Having a lot of strength, power, or control." },
+                { word: "anyone", meaning: "pron. 任何人；某个人", exp: "Any person or people." },
+                { word: "instead of", meaning: "而不是；代替", exp: "In place of." },
+                { word: "succeed in doing sth", meaning: "成功做成某事", exp: "To manage to achieve something." },
+                { word: "himself", meaning: "pron. 他自己；他本人", exp: "The reflexive form of the pronoun 'he'." },
+                { word: "in the end", meaning: "最后；终究", exp: "Finally, after a lot of thought or time." }
+            ];
+
+            window.onload = function () {
+                var vocabulary = originalVocabulary.slice();
+                var currentIndex = 0;
+                var isFlipped = false;
+
+                var flashcard = document.getElementById('flashcard');
+                var sideAChinese = document.getElementById('side-a-chinese');
+                var sideAEnglish = document.getElementById('side-a-english');
+                var sideBWord = document.getElementById('side-b-word');
+                var progress = document.getElementById('progress');
+
+                function resetToSideA() {
+                    if (isFlipped) {
+                        // 暂时关闭动画，瞬间切回A面
+                        flashcard.style.transition = 'none';
+                        flashcard.classList.remove('is-flipped');
+                        isFlipped = false;
+
+                        // 强制浏览器重绘 (Reflow)
+                        void flashcard.offsetWidth;
+
+                        // 恢复动画
+                        flashcard.style.transition = 'transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1)';
+                    }
+                }
+
+                function updateCard() {
+                    if (vocabulary.length === 0) return;
+
+                    var currentWord = vocabulary[currentIndex];
+
+                    sideAChinese.innerText = currentWord.meaning;
+                    sideAEnglish.innerText = currentWord.exp;
+                    sideBWord.innerText = currentWord.word;
+
+                    progress.innerText = (currentIndex + 1) + " / " + vocabulary.length;
+
+                    resetToSideA();
+                }
+
+                window.flipCard = function () {
+                    isFlipped = !isFlipped;
+                    if (isFlipped) {
+                        flashcard.classList.add('is-flipped');
+                    } else {
+                        flashcard.classList.remove('is-flipped');
+                    }
+                };
+
+                window.prevCard = function () {
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                        updateCard();
+                    }
+                };
+
+                window.nextCard = function () {
+                    if (currentIndex < vocabulary.length - 1) {
+                        currentIndex++;
+                        updateCard();
+                    }
+                };
+
+                window.shuffleCards = function () {
+                    for (var i = vocabulary.length - 1; i > 0; i--) {
+                        var j = Math.floor(Math.random() * (i + 1));
+                        var temp = vocabulary[i];
+                        vocabulary[i] = vocabulary[j];
+                        vocabulary[j] = temp;
+                    }
+                    currentIndex = 0;
+                    updateCard();
+                };
+
+                document.addEventListener('keydown', function (e) {
+                    if (e.code === 'ArrowRight') {
+                        nextCard();
+                    } else if (e.code === 'ArrowLeft') {
+                        prevCard();
+                    } else if (e.code === 'Space' || e.code === 'ArrowUp' || e.code === 'ArrowDown') {
+                        e.preventDefault();
+                        flipCard();
+                    }
+                });
+
+                updateCard();
+            };
+        </script>
+    </body>
+
+</html>

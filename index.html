@@ -13,6 +13,7 @@
       <div class="tabs">
         <button class="tab active" data-tab="home">检索首页</button>
         <button class="tab" data-tab="learn">学习页</button>
+        <button class="tab" data-tab="k12">K12课本单词</button>
         <button class="tab" data-tab="about">关于</button>
       </div>
       <div class="stats" id="metaStats">
@@ -61,6 +62,55 @@
           <div class="quiz-options" id="quizOptions"></div>
           <div class="quiz-feedback" id="quizFeedback"></div>
           <button id="nextQuiz">下一题</button>
+        </div>
+      </section>
+
+      <section class="panel" id="panel-k12">
+        <h2>K12课本单词</h2>
+        <p class="panel-sub">选择学期和单元，使用闪卡背诵课本单词。</p>
+        <div class="k12-toolbar">
+          <select id="k12Semester">
+            <option value="七上">七上</option>
+            <option value="七下" selected>七下</option>
+            <option value="八上">八上</option>
+            <option value="八下">八下</option>
+          </select>
+          <div class="k12-units" id="k12Units">
+            <label><input type="checkbox" value="all" checked /> 全选</label>
+            <label><input type="checkbox" value="1" checked /> Unit1</label>
+            <label><input type="checkbox" value="2" checked /> Unit2</label>
+            <label><input type="checkbox" value="3" checked /> Unit3</label>
+            <label><input type="checkbox" value="4" checked /> Unit4</label>
+            <label><input type="checkbox" value="5" checked /> Unit5</label>
+            <label><input type="checkbox" value="6" checked /> Unit6</label>
+            <label><input type="checkbox" value="7" checked /> Unit7</label>
+            <label><input type="checkbox" value="8" checked /> Unit8</label>
+            <label><input type="checkbox" value="9" checked /> Unit9</label>
+            <label><input type="checkbox" value="10" checked /> Unit10</label>
+          </div>
+        </div>
+        <div class="k12-flash-area" id="k12FlashArea">
+          <div class="k12-progress" id="k12Progress">0 / 0</div>
+          <div class="k12-flashcard-container" id="k12CardContainer">
+            <div class="k12-flashcard" id="k12Flashcard">
+              <div class="k12-card-face k12-card-front">
+                <div class="k12-chinese" id="k12Chinese">请选择学期和单元</div>
+                <div class="k12-english-exp" id="k12Exp"></div>
+                <div class="k12-hint">点击卡片翻面</div>
+              </div>
+              <div class="k12-card-face k12-card-back">
+                <div class="k12-english-word" id="k12Word"></div>
+                <div class="k12-example-sentence" id="k12Example"></div>
+                <div class="k12-hint">点击卡片翻面</div>
+              </div>
+            </div>
+          </div>
+          <div class="k12-controls">
+            <button id="k12Prev">上一张</button>
+            <button id="k12Next">下一张</button>
+            <button class="btn-shuffle" id="k12Shuffle">随机</button>
+            <button id="k12Sequential">顺序</button>
+          </div>
         </div>
       </section>
 
