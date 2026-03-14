@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scene Pressure Cooker 🔥</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0f0f0f;
+  --bg2: #1a1a1a;
+  --bg3: #242424;
+  --border: #2e2e2e;
+  --text: #f0f0f0;
+  --muted: #888;
+  --hint: #555;
+  --fire: #ff5c1a;
+  --fire2: #ff8a00;
+  --fire-dim: rgba(255,92,26,0.15);
+  --green: #22c55e;
+  --green-dim: rgba(34,197,94,0.12);
+  --blue: #60a5fa;
+  --blue-dim: rgba(96,165,250,0.12);
+  --amber: #fbbf24;
+  --amber-dim: rgba(251,191,36,0.12);
+  --red: #f87171;
+  --purple: #a78bfa;
+  --purple-dim: rgba(167,139,250,0.12);
+  --teal: #2dd4bf;
+  --teal-dim: rgba(45,212,191,0.12);
+  --font-mono: 'Space Mono', monospace;
+  --font-body: 'Noto Sans SC', sans-serif;
+  --r: 12px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: var(--bg); }
+body { font-family: var(--font-body); color: var(--text); min-height: 100vh; background: var(--bg); }
+#app { max-width: 600px; margin: 0 auto; padding: 20px 16px 80px; }
+
+/* Typography */
+.mono { font-family: var(--font-mono); }
+h1 { font-family: var(--font-mono); font-size: 22px; font-weight: 700; }
+h2 { font-family: var(--font-mono); font-size: 17px; font-weight: 700; }
+h3 { font-size: 15px; font-weight: 500; }
+p { font-size: 14px; line-height: 1.7; color: var(--muted); }
+.label { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+/* Cards */
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 16px;
+  margin-bottom: 12px;
+}
+.card-accent { border-left: 3px solid var(--fire); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 10px 18px; border-radius: 8px; border: none; cursor: pointer;
+  font-family: var(--font-body); font-size: 14px; font-weight: 500;
+  transition: all .15s; text-decoration: none;
+}
+.btn:hover { opacity: .85; }
+.btn-fire {
+  background: var(--fire); color: #fff;
+  box-shadow: 0 0 24px rgba(255,92,26,.3);
+}
+.btn-fire:hover { box-shadow: 0 0 32px rgba(255,92,26,.5); }
+.btn-ghost { background: var(--bg3); color: var(--text); border: 1px solid var(--border); }
+.btn-block { width: 100%; padding: 14px; font-size: 15px; }
+.btn-sm { padding: 7px 14px; font-size: 13px; }
+
+/* Chips */
+.chip {
+  display: inline-block; padding: 4px 10px; border-radius: 20px;
+  font-size: 12px; font-family: var(--font-mono); margin: 3px;
+  background: var(--bg3); color: var(--muted); border: 1px solid var(--border);
+}
+.chip-fire { background: var(--fire-dim); color: var(--fire); border-color: rgba(255,92,26,.3); }
+.chip-green { background: var(--green-dim); color: var(--green); border-color: rgba(34,197,94,.3); }
+.chip-gray { background: var(--bg3); color: var(--hint); border-color: var(--border); text-decoration: line-through; }
+
+/* Module colors */
+.m0 { --mc: var(--blue); --md: var(--blue-dim); }
+.m1 { --mc: var(--purple); --md: var(--purple-dim); }
+.m2 { --mc: var(--teal); --md: var(--teal-dim); }
+.m3 { --mc: var(--amber); --md: var(--amber-dim); }
+.m4 { --mc: var(--fire); --md: var(--fire-dim); }
+.m5 { --mc: var(--green); --md: var(--green-dim); }
+
+/* Score bar */
+.bar-wrap { height: 6px; background: var(--bg3); border-radius: 3px; overflow: hidden; margin: 5px 0; }
+.bar-fill { height: 100%; border-radius: 3px; transition: width .8s cubic-bezier(.23,1,.32,1); }
+
+/* Timer ring */
+.timer-container { display: flex; flex-direction: column; align-items: center; padding: 20px 0 10px; }
+.timer-svg { transform: rotate(-90deg); filter: drop-shadow(0 0 16px rgba(255,92,26,.4)); }
+.ring-bg { fill: none; stroke: var(--bg3); stroke-width: 6; }
+.ring-fill { fill: none; stroke: var(--fire); stroke-width: 6; stroke-linecap: round; transition: stroke-dashoffset 1s linear, stroke .4s; }
+.timer-num { font-family: var(--font-mono); font-size: 48px; font-weight: 700; color: var(--fire); margin-top: -108px; }
+
+/* Transcript */
+.transcript {
+  background: var(--bg3); border: 1px solid var(--border); border-radius: 10px;
+  padding: 14px; min-height: 90px; max-height: 150px; overflow-y: auto;
+  font-size: 14px; line-height: 1.8; color: var(--text); margin: 12px 0;
+}
+.interim { color: var(--hint); font-style: italic; }
+.placeholder { color: var(--hint); }
+
+/* Module grid */
+.module-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 14px 0; }
+.module-card {
+  background: var(--bg2); border: 1px solid var(--border); border-radius: var(--r);
+  padding: 16px; cursor: pointer; transition: all .15s;
+}
+.module-card:hover { border-color: var(--mc); background: var(--md); }
+.module-card .mc-name { font-size: 13px; font-weight: 500; color: var(--mc); margin-bottom: 6px; }
+.module-card .mc-num { font-family: var(--font-mono); font-size: 28px; font-weight: 700; color: var(--text); }
+.module-card .mc-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+/* Scene list */
+.scene-item {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 14px; border-radius: 10px; cursor: pointer;
+  background: var(--bg2); border: 1px solid var(--border); margin-bottom: 8px;
+  transition: all .15s;
+}
+.scene-item:hover { border-color: var(--mc); background: var(--md); }
+.scene-item-name { font-size: 14px; font-weight: 500; }
+.scene-item-vocab { font-size: 11px; color: var(--muted); margin-top: 3px; font-family: var(--font-mono); }
+.scene-item-arrow { color: var(--mc); font-size: 18px; }
+
+/* Countdown */
+.countdown-display {
+  text-align: center; padding: 80px 20px 60px;
+}
+.cd-num {
+  font-family: var(--font-mono); font-size: 160px; font-weight: 700;
+  color: var(--fire); line-height: 1;
+  text-shadow: 0 0 60px rgba(255,92,26,.5);
+  animation: cd-pulse .5s ease-in-out;
+}
+@keyframes cd-pulse { 0%{transform:scale(1.3);opacity:.5} 100%{transform:scale(1);opacity:1} }
+
+/* Spinner */
+@keyframes spin { to { transform: rotate(360deg); } }
+.spinner {
+  width: 36px; height: 36px; border: 3px solid var(--bg3);
+  border-top-color: var(--fire); border-radius: 50%;
+  animation: spin .7s linear infinite; margin: 24px auto;
+}
+
+/* Feedback word */
+.fw-used { background: var(--green-dim); color: var(--green); border: 1px solid rgba(34,197,94,.3); }
+.fw-missed { background: var(--bg3); color: var(--hint); border: 1px solid var(--border); text-decoration: line-through; }
+
+/* Score ring (mini) */
+.score-ring-wrap { display: flex; flex-direction: column; align-items: center; }
+
+/* API key section */
+.apikey-section {
+  margin-top: 16px; padding: 14px 16px; border: 1px solid var(--border);
+  border-radius: var(--r); background: var(--bg2);
+}
+input[type=password], input[type=text], textarea {
+  width: 100%; padding: 9px 12px; border-radius: 8px;
+  border: 1px solid var(--border); background: var(--bg3); color: var(--text);
+  font-size: 13px; font-family: var(--font-mono); margin-top: 6px;
+  outline: none; transition: border-color .15s;
+}
+input:focus, textarea:focus { border-color: var(--fire); }
+
+/* Feedback header */
+.feedback-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 18px; border-radius: var(--r); margin-bottom: 12px;
+  background: var(--bg2); border: 1px solid var(--border);
+}
+.total-score { font-family: var(--font-mono); font-size: 44px; font-weight: 700; line-height: 1; }
+
+/* Back btn */
+.back-btn {
+  display: inline-flex; align-items: center; gap: 5px; font-size: 13px;
+  color: var(--muted); cursor: pointer; padding: 6px 0; margin-bottom: 16px;
+  background: none; border: none;
+}
+.back-btn:hover { color: var(--text); }
+
+/* Divider */
+.divider { height: 1px; background: var(--border); margin: 14px 0; }
+
+/* Pills row */
+.pills { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+
+/* Pattern hint */
+.pat-hint {
+  padding: 10px 12px; border-radius: 8px; margin-bottom: 8px;
+  background: var(--bg3); border-left: 2px solid var(--purple);
+}
+.pat-hint-name { font-size: 12px; font-weight: 500; color: var(--purple); margin-bottom: 3px; }
+.pat-hint-text { font-size: 12px; color: var(--muted); font-family: var(--font-mono); }
+
+/* Responsive */
+@media(max-width:480px) {
+  .module-grid { grid-template-columns: 1fr 1fr; }
+  .cd-num { font-size: 120px; }
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+'use strict';
+
+// ─── DATA ────────────────────────────────────────────────────────────────────
+
+const MODS = [
+  {name:'出行与落地', en:'Travel & Arrival',    cls:'m0'},
+  {name:'校园与研究', en:'Campus & Research',   cls:'m1'},
+  {name:'日常生活',   en:'Daily Life',           cls:'m2'},
+  {name:'社交与文化', en:'Social & Culture',     cls:'m3'},
+  {name:'学术合作',   en:'Academic Collab',      cls:'m4'},
+  {name:'拓展场景',   en:'Extended Scenes',      cls:'m5'},
+];
+
+const PATS = [
+  {name:'存在与描述', hint:'There is/are... · The ... is/are ...'},
+  {name:'位置与空间', hint:'... near/inside/on/under/between/across ...'},
+  {name:'时间表达',   hint:'... tomorrow/yesterday/next week/at ... /starts/lasts'},
+  {name:'动作表达',   hint:'I work/study/analyze/build/process/test ...'},
+  {name:'交流表达',   hint:'I want to/think/suggest/agree/believe/confirm ...'},
+  {name:'请求与允许', hint:'Can you.../Could you.../Please.../You should/must ...'},
+  {name:'原因与结果', hint:'... because .../This works/The result changed/improved'},
+  {name:'比较与评价', hint:'... better/more accurate/faster/similar/different than ...'},
+  {name:'计划与未来', hint:'We plan/will start/will develop/will submit ...'},
+  {name:'经验表达',   hint:'I have experience.../I learned/visited/worked/completed ...'},
+  {name:'情绪与态度', hint:'I am happy/excited/curious/worried/proud/grateful ...'},
+  {name:'社交与日常', hint:'Nice to meet you./Where are you from?/See you ...'},
+];
+
+const SC = [
+// ── 出行与落地 (0-7) ──
+{id:1,m:0,name:'机场出发',
+ prompt:'The visiting scholar is about to fly to your city. Describe the full departure process at the airport: where to check in, how to go through security, how to find the gate, and what happens when boarding.',
+ vocab:['airport','plane','seat','ticket','passport','security','gate','travel'],
+ pats:[0,1,2]},
+{id:2,m:0,name:'飞机上交流',
+ prompt:'You are sitting next to the visiting scholar on the plane. Introduce yourself, ask about their research visit, describe the flight time and in-flight service, and offer help with anything they need.',
+ vocab:['seat','food','drink','coffee','passenger','flight','time','service'],
+ pats:[0,4,10]},
+{id:3,m:0,name:'入境检查',
+ prompt:'You are guiding the scholar through airport immigration and customs. Explain what questions the officer might ask, what documents to prepare, what the form requires, and what to do at baggage claim.',
+ vocab:['passport','visa','officer','question','form','information','document','country'],
+ pats:[3,4,5]},
+{id:4,m:0,name:'打车去城市',
+ prompt:'You just cleared immigration and need a taxi to the university. Describe the route to the driver, the roads and bridges you pass, how long the trip takes, and what the city looks like from the window.',
+ vocab:['car','driver','road','street','bridge','traffic','map','city','station'],
+ pats:[1,2,6]},
+{id:5,m:0,name:'酒店入住',
+ prompt:'Help the scholar check in at the hotel. Describe the room location, explain where everything is (floor, window, desk, bathroom), and mention the key services available at the hotel.',
+ vocab:['hotel','room','floor','key','window','door','desk','bed','shower','service'],
+ pats:[1,2,4]},
+{id:6,m:0,name:'熟悉城市',
+ prompt:'Give the scholar a verbal tour of your city. Mention key landmarks — the river, park, museum, local shops, markets, famous streets, and important buildings near the university.',
+ vocab:['city','river','park','museum','shop','market','street','bridge','building'],
+ pats:[0,1,2]},
+{id:7,m:0,name:'公共交通',
+ prompt:'Explain how to use public transportation in your city. Describe the bus and train network, how to buy tickets, which platform to use, how to read the map, and where the nearest stop is.',
+ vocab:['bus','train','station','ticket','platform','map','line','stop','travel'],
+ pats:[1,3,5]},
+{id:8,m:0,name:'租房找住处',
+ prompt:'The scholar needs temporary housing for their stay. Describe the available options — apartments, rooms, rental prices, contract requirements, the owner, and what furniture is usually included.',
+ vocab:['house','apartment','room','rent','price','contract','owner','furniture'],
+ pats:[0,7,8]},
+// ── 校园与研究 (8-17) ──
+{id:9,m:1,name:'初到校园',
+ prompt:'Welcome the scholar to your university campus on their first day. Describe the key buildings, where the lab is located, where the offices are, and introduce the main staff they will work with.',
+ vocab:['university','campus','office','building','lab','room','student','staff'],
+ pats:[0,1,3]},
+{id:10,m:1,name:'认识导师',
+ prompt:'Introduce the visiting scholar to your professor or supervisor. Describe the professor\'s research background, the current project they are leading, the main study topic, and the research team.',
+ vocab:['professor','teacher','researcher','project','study','research','topic','team'],
+ pats:[0,4,9]},
+{id:11,m:1,name:'实验室介绍',
+ prompt:'Give the scholar a tour of your lab. Describe all the equipment, computers, cameras, devices, and data systems. Explain what experiments are currently running and what results you are tracking.',
+ vocab:['lab','equipment','computer','camera','device','system','data','experiment'],
+ pats:[0,3,7]},
+{id:12,m:1,name:'研究项目',
+ prompt:'Explain your research project to the visiting scholar. Describe the original plan, the central idea, the problem you are solving, the method you use, and what results you expect to find.',
+ vocab:['project','plan','idea','problem','method','result','test','experiment'],
+ pats:[3,4,6]},
+{id:13,m:1,name:'学术讨论',
+ prompt:'Have an academic discussion with the scholar about your research area. Share your view, present your analysis, describe the theory behind it, and ask about the evidence supporting their work.',
+ vocab:['question','answer','theory','idea','view','analysis','argument','evidence'],
+ pats:[4,5,7]},
+{id:14,m:1,name:'数据分析',
+ prompt:'Walk the scholar through your latest data analysis. Describe the data you collected, the model you built, the results you got, the key figures, and what the information shows so far.',
+ vocab:['data','model','result','number','figure','sample','information','system'],
+ pats:[3,6,7]},
+{id:15,m:1,name:'写报告',
+ prompt:'Discuss a written report or paper with the scholar. Describe the structure of the document: the main text, the ideas covered, the conclusion you reached, and the argument the paper makes.',
+ vocab:['report','document','text','paper','article','note','idea','conclusion'],
+ pats:[3,4,8]},
+{id:16,m:1,name:'会议准备',
+ prompt:'Prepare the scholar for an upcoming team meeting or talk. Explain the topic of the meeting, who the audience is, how to present the slides effectively, and what questions might come up.',
+ vocab:['meeting','talk','presentation','slide','topic','audience','question'],
+ pats:[2,4,5]},
+{id:17,m:1,name:'学术会议',
+ prompt:'Describe an academic conference that you both will attend. Talk about the research being discussed, the network opportunities, the projects being introduced, and how collaboration might grow from it.',
+ vocab:['conference','discussion','research','topic','network','project','collaboration'],
+ pats:[9,4,8]},
+{id:18,m:1,name:'项目合作',
+ prompt:'Propose a formal collaboration project with the scholar. Describe the team structure, the group goals, a concrete plan, the strategy for moving forward, and the expected outcomes of the program.',
+ vocab:['team','group','partner','project','plan','strategy','policy','program'],
+ pats:[8,4,6]},
+// ── 日常生活 (18-25) ──
+{id:19,m:2,name:'餐厅点餐',
+ prompt:'Take the scholar to a local restaurant. Describe the menu, recommend your favorite food and drinks, explain how to order, and chat about the bill and tipping customs.',
+ vocab:['menu','table','food','drink','coffee','tea','meat','vegetable','bill'],
+ pats:[0,4,5]},
+{id:20,m:2,name:'超市购物',
+ prompt:'Go grocery shopping with the scholar at a supermarket. Describe where to find fruit, bread, milk, and other items. Explain how prices work, how to pay, and what to put in the bag.',
+ vocab:['shop','market','food','fruit','milk','bread','price','money','bag'],
+ pats:[1,5,3]},
+{id:21,m:2,name:'做饭生活',
+ prompt:'Invite the scholar to cook a meal together. Describe the kitchen setup, the dishes and utensils you need, the steps to prepare the food, and what the finished meal will look like.',
+ vocab:['kitchen','dish','bowl','plate','knife','spoon','cook','food','meal'],
+ pats:[1,3,2]},
+{id:22,m:2,name:'健身运动',
+ prompt:'Invite the scholar to join a sports activity with you. Describe the sport options available, the benefits of regular exercise, how the game or competition works, and where to go.',
+ vocab:['sport','game','football','basketball','run','exercise','team','competition'],
+ pats:[3,10,8]},
+{id:23,m:2,name:'健康与医疗',
+ prompt:'The scholar is not feeling well and needs to visit a hospital or clinic. Help them by describing how the process works: talking to the doctor, seeing the nurse, getting medicine, and what the health issue might be.',
+ vocab:['hospital','doctor','nurse','medicine','drug','pill','health','disease'],
+ pats:[0,5,10]},
+{id:24,m:2,name:'日常作息',
+ prompt:'Describe your typical daily routine to the scholar. Explain what you do in the morning, afternoon, evening, and night, including your work schedule, rest habits, and sleep patterns.',
+ vocab:['morning','afternoon','evening','night','work','rest','sleep','schedule'],
+ pats:[2,3,9]},
+{id:25,m:2,name:'天气与季节',
+ prompt:'Discuss the local weather and four seasons with the scholar. Describe what rain, snow, wind, heat, and cold are like here, and explain which season is the best time to visit.',
+ vocab:['weather','rain','snow','wind','hot','cold','season','temperature'],
+ pats:[0,2,10]},
+{id:26,m:2,name:'网络与通讯',
+ prompt:'Help the scholar set up their internet and mobile connection. Explain how to connect to wifi, use email, send messages, update apps on the phone, and manage communication.',
+ vocab:['internet','email','message','phone','information','update','connection'],
+ pats:[3,4,5]},
+// ── 社交与文化 (26-33) ──
+{id:27,m:3,name:'认识新朋友',
+ prompt:'Introduce the scholar to your group of friends and colleagues at a social event. Describe each person\'s role, their study or work background, how you know each other, and the group dynamic.',
+ vocab:['friend','person','people','group','student','visitor','colleague'],
+ pats:[0,4,9]},
+{id:28,m:3,name:'介绍自己',
+ prompt:'Introduce yourself fully to the visiting scholar at a first meeting. Talk about your name, your current job or study, where you are from, your city background, family situation, and research experience.',
+ vocab:['name','job','country','city','family','study','work','experience'],
+ pats:[0,9,4]},
+{id:29,m:3,name:'兴趣爱好',
+ prompt:'Share your personal hobbies and interests with the scholar in a casual conversation. Talk about music, movies, sports, books, travel, and any games or creative hobbies you enjoy in your free time.',
+ vocab:['music','movie','sport','book','travel','hobby','game'],
+ pats:[3,10,9]},
+{id:30,m:3,name:'周末活动',
+ prompt:'Plan a fun weekend activity with the scholar. Suggest a day trip, a park visit, a museum tour, a picnic, or a barbecue. Describe what you will do, where you will go, and what to bring.',
+ vocab:['trip','park','museum','picnic','party','barbecue','travel','photo'],
+ pats:[8,5,2]},
+{id:31,m:3,name:'城市文化',
+ prompt:'Tell the scholar about the local culture of your city or country. Describe the history, traditional art forms, famous buildings, local festivals, and the cultural customs that visitors should know.',
+ vocab:['history','culture','art','building','tradition','local','festival'],
+ pats:[0,2,9]},
+{id:32,m:3,name:'礼仪与习惯',
+ prompt:'Explain local customs and social etiquette to the scholar. Describe what counts as polite behavior here, cultural rules around communication, what to respect, and any habits that might be surprising.',
+ vocab:['custom','rule','polite','behavior','culture','respect','communication'],
+ pats:[5,4,7]},
+{id:33,m:3,name:'情绪表达',
+ prompt:'Talk with the scholar about how you feel about the visit so far. Express your happiness, excitement, curiosity, and pride about the research work. Also mention any worries or surprises you have experienced.',
+ vocab:['happy','excited','nervous','worried','proud','surprised','curious'],
+ pats:[10,4,6]},
+{id:34,m:3,name:'冲突与误会',
+ prompt:'Describe a small misunderstanding or confusion that happened during the visit. Explain the original problem, what mistake was made, why the confusion occurred, and how it was eventually resolved.',
+ vocab:['problem','mistake','misunderstanding','explanation','solution','help'],
+ pats:[6,4,11]},
+// ── 学术合作 (34-39) ──
+{id:35,m:4,name:'学术报告',
+ prompt:'Describe a research presentation you or the scholar will give. Talk about the research method, the main results, how to structure the talk, how to handle questions, and what discussion points to prepare.',
+ vocab:['presentation','research','method','result','question','discussion'],
+ pats:[3,4,7]},
+{id:36,m:4,name:'研究反馈',
+ prompt:'Give the scholar constructive feedback on their research. Suggest improvements, discuss the experiment results and data quality, share your analysis, and offer new ideas to strengthen the work.',
+ vocab:['suggestion','improvement','idea','experiment','data','result','analysis'],
+ pats:[4,7,6]},
+{id:37,m:4,name:'申请项目',
+ prompt:'Discuss applying for a joint research grant together. Explain the grant proposal process, outline the project plan, describe the application requirements, and talk through the budget you will need.',
+ vocab:['fund','grant','proposal','plan','project','application','budget'],
+ pats:[8,5,3]},
+{id:38,m:4,name:'教学交流',
+ prompt:'Discuss a teaching exchange opportunity with the scholar. Describe the course content, the students involved, the teaching methods you use, lesson planning, and the education goals for the program.',
+ vocab:['course','class','student','teaching','lesson','education','training'],
+ pats:[3,4,8]},
+{id:39,m:4,name:'职业发展',
+ prompt:'Have a candid conversation with the scholar about career development in academia. Discuss job opportunities, different positions available, the experience required, important skills to build, and future directions.',
+ vocab:['career','job','position','experience','skill','opportunity'],
+ pats:[8,9,4]},
+{id:40,m:4,name:'告别与未来',
+ prompt:'It is the last day of the visit. Say a warm farewell to the scholar. Talk about the experience you shared, the memories you made, the friendship that grew, future cooperation plans, and your hopes going forward.',
+ vocab:['experience','memory','friendship','future','cooperation','plan'],
+ pats:[9,8,10]},
+// ── 拓展场景 (40-47) ──
+{id:41,m:5,name:'自然旅行',
+ prompt:'Take the scholar on a nature trip outside the city. Describe the mountains, rivers, forest, sky, and open fields. Talk about the plants and animals you see, the weather conditions, and the overall atmosphere.',
+ vocab:['mountain','air','light','water','river','field','forest','sky','stone'],
+ pats:[0,1,2]},
+{id:42,m:5,name:'公园动物观察',
+ prompt:'Visit a park or nature reserve with the scholar to observe animals. Describe the birds, cats, dogs, insects, butterflies, and other creatures you spot together. Share what interests you most.',
+ vocab:['animal','bird','cat','dog','insect','bee','butterfly','spider','plant'],
+ pats:[0,1,10]},
+{id:43,m:5,name:'身体健康检查',
+ prompt:'Go with the scholar for a routine health checkup at a clinic. Describe the body parts that are examined, what the test process involves, what the doctor checks, and what the results show.',
+ vocab:['body','head','eye','ear','heart','lung','muscle','bone','health'],
+ pats:[0,3,10]},
+{id:44,m:5,name:'家庭聊天',
+ prompt:'Chat with the scholar about your families in a relaxed conversation. Describe your parents, siblings, husband or wife, children, and grandparents. Ask about their family background too.',
+ vocab:['parent','daughter','son','father','mother','brother','sister','husband','wife'],
+ pats:[0,9,4]},
+{id:45,m:5,name:'宿舍整理',
+ prompt:'Help the scholar organize and settle into their dorm room. Describe the furniture — bed, chair, desk, table — where to put their belongings, and how to keep the space clean and comfortable.',
+ vocab:['room','floor','wall','window','door','furniture','bed','chair','desk','table'],
+ pats:[1,3,5]},
+{id:46,m:5,name:'城市新闻讨论',
+ prompt:'Discuss a recent news story about your city with the scholar. Describe the event, the people involved, the cause of what happened, the result, and share your opinion on the issue.',
+ vocab:['news','event','information','fact','evidence','report','update','notice'],
+ pats:[6,4,7]},
+{id:47,m:5,name:'社会问题讨论',
+ prompt:'Have a thoughtful discussion with the scholar about a current social issue. Explain the problem clearly, describe its cause, present different views that people hold, and suggest possible solutions.',
+ vocab:['problem','people','government','policy','change','society','future','reason'],
+ pats:[6,7,4]},
+{id:48,m:5,name:'文化博物馆',
+ prompt:'Visit a cultural or history museum with the scholar. Describe the history section, the art on display, traditional objects in the collection, the architecture of the building, and what you both find most interesting.',
+ vocab:['museum','history','culture','art','building','tradition','collection','guide'],
+ pats:[0,1,9]},
+];
+
+// ─── STATE ────────────────────────────────────────────────────────────────────
+
+let ST = {
+  view: 'home',
+  module: null,
+  scene: null,
+  cdNum: 3,
+  timeLeft: 60,
+  transcript: '',
+  interim: '',
+  feedback: null,
+  apiKey: (() => { try { return localStorage.getItem('spc_key') || ''; } catch(e){ return ''; }})(),
+};
+
+let recognition = null, timerInt = null, cdInt = null;
+
+// ─── VIEWS ────────────────────────────────────────────────────────────────────
+
+function vHome() {
+  const cnt = SC.length;
+  const keySaved = ST.apiKey ? '✓ Key saved' : 'Enter API Key';
+  return `
+  <div>
+    <div style="margin-bottom:20px">
+      <div class="label" style="margin-bottom:6px">60s · ${cnt} scenes · AI feedback</div>
+      <h1>Scene Pressure<br>Cooker <span style="color:var(--fire)">🔥</span></h1>
+      <p style="margin-top:8px">选一个场景，限时60秒说英语，AI用中文反馈你的词汇覆盖、句型多样性和语法。</p>
+    </div>
+
+    <button class="btn btn-fire btn-block" onclick="randomScene()">⚡ 随机挑战一个场景</button>
+
+    <div style="margin:18px 0 8px" class="label">按模块练习</div>
+    <div class="module-grid">
+      ${MODS.map((m,i)=>{
+        const n = SC.filter(s=>s.m===i).length;
+        return `<div class="module-card ${m.cls}" onclick="goModule(${i})">
+          <div class="mc-name">${m.name}</div>
+          <div class="mc-num">${String(n).padStart(2,'0')}</div>
+          <div class="mc-sub">${m.en}</div>
+        </div>`;
+      }).join('')}
+    </div>
+
+    <div class="apikey-section">
+      <div class="label">${keySaved}</div>
+      <div style="display:flex;gap:8px;align-items:flex-end">
+        <div style="flex:1">
+          <input type="password" id="apikey-input" placeholder="sk-ant-api..." value="${ST.apiKey}">
+        </div>
+        <button class="btn btn-ghost btn-sm" onclick="saveKey()" style="margin-top:6px;white-space:nowrap">保存</button>
+      </div>
+      <p style="margin-top:6px;font-size:11px">部署到 Vercel 后在此输入 Anthropic API Key，否则将使用本地评分。</p>
+    </div>
+  </div>`;
+}
+
+function vModule() {
+  const mi = ST.module, m = MODS[mi];
+  const scenes = SC.filter(s=>s.m===mi);
+  return `
+  <div class="${m.cls}">
+    <button class="back-btn" onclick="back()">← 返回</button>
+    <div style="margin-bottom:16px">
+      <div class="label" style="margin-bottom:4px">${m.en}</div>
+      <h1>${m.name}</h1>
+      <p style="margin-top:4px">${scenes.length} 个场景 · 每次60秒</p>
+    </div>
+    ${scenes.map(s=>`
+    <div class="scene-item ${m.cls}" onclick="goDetail(${s.id})">
+      <div>
+        <div class="scene-item-name">${s.name}</div>
+        <div class="scene-item-vocab">${s.vocab.slice(0,5).join(' · ')}</div>
+      </div>
+      <span class="scene-item-arrow">›</span>
+    </div>`).join('')}
+  </div>`;
+}
+
+function vDetail() {
+  const s = ST.scene, m = MODS[s.m];
+  const rp = s.pats.map(i=>PATS[i]);
+  return `
+  <div class="${m.cls}">
+    <button class="back-btn" onclick="back()">← 返回</button>
+    <div style="margin-bottom:16px">
+      <div class="label" style="margin-bottom:4px">${m.name} · ${m.en}</div>
+      <h1>${s.name}</h1>
+    </div>
+
+    <div class="card card-accent">
+      <div class="label" style="margin-bottom:8px">📋 任务说明</div>
+      <p style="color:var(--text);line-height:1.75">${s.prompt}</p>
+    </div>
+
+    <div class="card">
+      <div class="label" style="margin-bottom:8px">🎯 目标词汇 — 尽量覆盖这些词</div>
+      <div class="pills">
+        ${s.vocab.map(w=>`<span class="chip chip-fire">${w}</span>`).join('')}
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label" style="margin-bottom:10px">💬 建议句型结构</div>
+      ${rp.map(p=>`
+      <div class="pat-hint">
+        <div class="pat-hint-name">${p.name}</div>
+        <div class="pat-hint-text">${p.hint}</div>
+      </div>`).join('')}
+    </div>
+
+    <button class="btn btn-fire btn-block" onclick="startCountdown()" style="margin-top:4px">
+      ▶ 开始 60 秒挑战
+    </button>
+  </div>`;
+}
+
+function vCountdown() {
+  const s = ST.scene, m = MODS[s.m];
+  return `
+  <div class="countdown-display ${m.cls}">
+    <div class="label" style="margin-bottom:8px">${s.name}</div>
+    <div id="cd-num" class="cd-num">${ST.cdNum}</div>
+    <p style="margin-top:16px">深呼吸，准备开口！</p>
+  </div>`;
+}
+
+function vRecording() {
+  const s = ST.scene, m = MODS[s.m];
+  const t = ST.timeLeft;
+  const circ = 2 * Math.PI * 52;
+  const offset = circ * (1 - t / 60);
+  const ringColor = t > 20 ? 'var(--fire)' : 'var(--red)';
+  return `
+  <div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+      <div style="flex:1">
+        <div class="label ${m.cls}" style="margin-bottom:2px">${m.name}</div>
+        <h2>${s.name}</h2>
+      </div>
+    </div>
+
+    <div class="timer-container">
+      <svg class="timer-svg" width="120" height="120" viewBox="0 0 120 120">
+        <circle class="ring-bg" cx="60" cy="60" r="52"/>
+        <circle id="ring" class="ring-fill" cx="60" cy="60" r="52"
+          stroke="${ringColor}"
+          stroke-dasharray="${circ.toFixed(2)}"
+          stroke-dashoffset="${offset.toFixed(2)}"/>
+      </svg>
+      <div id="tnum" class="timer-num mono" style="color:${ringColor}">${t}</div>
+      <div class="label" style="margin-top:10px">🎙 正在录音...</div>
+    </div>
+
+    <div class="transcript" id="tbox">
+      <span id="ft">${ST.transcript}</span><span class="interim" id="it">${ST.interim}</span>${!ST.transcript&&!ST.interim?'<span class="placeholder">开口说英语，文字会出现在这里...</span>':''}
+    </div>
+
+    <div style="display:flex;gap:8px">
+      <button class="btn btn-ghost" style="flex:1" onclick="stopRec()">⏹ 提前结束</button>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <div class="label" style="margin-bottom:6px">词汇提示</div>
+      <div class="pills">${s.vocab.map(w=>`<span class="chip">${w}</span>`).join('')}</div>
+    </div>
+  </div>`;
+}
+
+function vAnalyzing() {
+  return `
+  <div style="text-align:center;padding:60px 20px">
+    <div class="spinner"></div>
+    <h2 style="margin-top:4px">AI 正在分析...</h2>
+    <p style="margin-top:8px">评估词汇覆盖率 · 句型多样性 · 语法准确度</p>
+  </div>`;
+}
+
+function vFeedback() {
+  const s = ST.scene, m = MODS[s.m], f = ST.feedback;
+  if(!f) return `<p>分析失败，请重试。</p>`;
+  const sc = n => n >= 8 ? 'var(--green)' : n >= 5 ? 'var(--amber)' : 'var(--red)';
+  const totalC = sc(f.totalScore);
+  return `
+  <div>
+    <div class="feedback-header">
+      <div>
+        <div class="label ${m.cls}" style="margin-bottom:4px">${m.name} · ${s.name}</div>
+        <h2>练习反馈</h2>
+      </div>
+      <div style="text-align:center">
+        <div class="total-score mono" style="color:${totalC}">${f.totalScore}</div>
+        <div class="label">/ 10 综合分</div>
+      </div>
+    </div>
+
+    <!-- Score bars -->
+    <div class="card">
+      ${[['词汇覆盖率', f.vocabScore, 'var(--teal)'],
+         ['句型多样性', f.patternScore, 'var(--purple)'],
+         ['语法准确度', f.grammarScore, 'var(--blue)']].map(([lb,sc2,c])=>`
+      <div style="margin-bottom:12px">
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px">
+          <span style="font-size:13px">${lb}</span>
+          <span class="mono" style="font-size:13px;font-weight:700;color:${c}">${sc2}/10</span>
+        </div>
+        <div class="bar-wrap"><div class="bar-fill" style="width:${sc2*10}%;background:${c}"></div></div>
+      </div>`).join('')}
+    </div>
+
+    <!-- Vocab -->
+    <div class="card">
+      <div class="label" style="margin-bottom:8px">🎯 词汇覆盖情况</div>
+      <div class="pills">
+        ${(f.vocabUsed||[]).map(w=>`<span class="chip fw-used">✓ ${w}</span>`).join('')}
+        ${(f.vocabMissed||[]).map(w=>`<span class="chip fw-missed">${w}</span>`).join('')}
+      </div>
+    </div>
+
+    ${f.bestSentence ? `
+    <div class="card" style="border-color:rgba(34,197,94,.3);background:var(--green-dim)">
+      <div class="label" style="color:var(--green);margin-bottom:6px">⭐ 说得最好的句子</div>
+      <p style="color:var(--green);font-style:italic;font-size:14px">"${f.bestSentence}"</p>
+    </div>` : ''}
+
+    ${f.grammarTips && f.grammarTips.length > 0 ? `
+    <div class="card">
+      <div class="label" style="margin-bottom:8px">📝 语法提示</div>
+      ${f.grammarTips.map(t=>`<div style="padding:8px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--muted)">⚠ ${t}</div>`).join('')}
+    </div>` : ''}
+
+    ${f.patternComment ? `
+    <div class="card" style="border-color:rgba(167,139,250,.3);background:var(--purple-dim)">
+      <div class="label" style="color:var(--purple);margin-bottom:6px">💬 句型分析</div>
+      <p style="color:var(--purple);font-size:14px">${f.patternComment}</p>
+    </div>` : ''}
+
+    <div class="card" style="border-color:rgba(251,191,36,.3);background:var(--amber-dim)">
+      <div class="label" style="color:var(--amber);margin-bottom:6px">💡 最重要的改进建议</div>
+      <p style="color:var(--amber);font-size:14px">${f.suggestion||''}</p>
+    </div>
+
+    ${f.encouragement ? `
+    <div style="text-align:center;padding:12px;font-size:13px;color:var(--muted)">🎉 ${f.encouragement}</div>` : ''}
+
+    <div class="card" style="margin-top:4px">
+      <div class="label" style="margin-bottom:6px">📄 你说的内容</div>
+      <p style="font-size:13px;color:var(--hint);line-height:1.8">${ST.transcript || '（未检测到语音内容）'}</p>
+    </div>
+
+    <div style="display:flex;gap:10px;margin-top:8px">
+      <button class="btn btn-ghost" style="flex:1" onclick="retry()">🔄 重新挑战</button>
+      <button class="btn btn-fire" style="flex:1" onclick="nextRandom()">⚡ 随机下一个</button>
+    </div>
+  </div>`;
+}
+
+// ─── RENDER ───────────────────────────────────────────────────────────────────
+
+const VIEWS = { home:vHome, module:vModule, detail:vDetail, countdown:vCountdown, recording:vRecording, analyzing:vAnalyzing, feedback:vFeedback };
+
+function render() {
+  document.getElementById('app').innerHTML = VIEWS[ST.view]();
+}
+
+// ─── ACTIONS ──────────────────────────────────────────────────────────────────
+
+function back() {
+  if(ST.view==='module') ST.view='home';
+  else if(ST.view==='detail') ST.view = (ST.module!=null) ? 'module' : 'home';
+  else ST.view='home';
+  render();
+}
+
+function goModule(i) {
+  ST.module = i;
+  ST.view = 'module';
+  render();
+}
+
+function goDetail(id) {
+  ST.scene = SC.find(s=>s.id===id);
+  ST.view = 'detail';
+  render();
+}
+
+function randomScene() {
+  const s = SC[Math.floor(Math.random()*SC.length)];
+  ST.scene = s;
+  ST.module = s.m;
+  ST.view = 'detail';
+  render();
+}
+
+function saveKey() {
+  const val = document.getElementById('apikey-input').value.trim();
+  ST.apiKey = val;
+  try { localStorage.setItem('spc_key', val); } catch(e){}
+  render();
+}
+
+function startCountdown() {
+  ST.cdNum = 3;
+  ST.transcript = '';
+  ST.interim = '';
+  ST.feedback = null;
+  ST.view = 'countdown';
+  render();
+  cdInt = setInterval(()=>{
+    ST.cdNum--;
+    const el = document.getElementById('cd-num');
+    if(el) { el.textContent = ST.cdNum; el.style.animation='none'; void el.offsetWidth; el.style.animation=''; }
+    if(ST.cdNum <= 0) { clearInterval(cdInt); startRec(); }
+  }, 1000);
+}
+
+function startRec() {
+  ST.timeLeft = 60;
+  ST.view = 'recording';
+  render();
+
+  timerInt = setInterval(()=>{
+    ST.timeLeft--;
+    const tn = document.getElementById('tnum');
+    const rg = document.getElementById('ring');
+    if(tn) tn.textContent = ST.timeLeft;
+    if(rg) {
+      const circ = 2*Math.PI*52;
+      rg.setAttribute('stroke-dashoffset', (circ*(1-ST.timeLeft/60)).toFixed(2));
+      const c = ST.timeLeft>20 ? 'var(--fire)' : 'var(--red)';
+      rg.setAttribute('stroke', c);
+      if(tn) tn.style.color = c;
+    }
+    if(ST.timeLeft <= 0) stopRec();
+  }, 1000);
+
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if(SR) {
+    recognition = new SR();
+    recognition.lang = 'en-US';
+    recognition.continuous = true;
+    recognition.interimResults = true;
+    recognition.onresult = e => {
+      let interim = '';
+      for(let i=e.resultIndex;i<e.results.length;i++) {
+        if(e.results[i].isFinal) ST.transcript += e.results[i][0].transcript+' ';
+        else interim += e.results[i][0].transcript;
+      }
+      ST.interim = interim;
+      const ft=document.getElementById('ft'), it=document.getElementById('it');
+      if(ft) ft.textContent = ST.transcript;
+      if(it) it.textContent = interim;
+      const tb=document.getElementById('tbox');
+      if(tb) tb.scrollTop=tb.scrollHeight;
+    };
+    recognition.onerror = e => { if(e.error!=='no-speech'&&e.error!=='aborted') console.warn(e.error); };
+    recognition.onend = () => { if(ST.view==='recording'&&ST.timeLeft>0) { try{recognition.start();}catch(e){} } };
+    try{recognition.start();}catch(e){}
+  } else {
+    // Fallback textarea
+    const tb=document.getElementById('tbox');
+    if(tb) tb.innerHTML=`<textarea id="manual" style="width:100%;background:transparent;border:none;outline:none;resize:none;min-height:80px;font-size:14px;color:var(--text);font-family:var(--font-body)" placeholder="浏览器不支持语音识别（请用 Chrome），可在此手动输入英文..."></textarea>`;
+    document.getElementById('manual')?.addEventListener('input',function(){ST.transcript=this.value;});
+  }
+}
+
+function stopRec() {
+  clearInterval(timerInt);
+  if(recognition){ try{recognition.stop();}catch(e){} recognition=null; }
+  if(ST.interim){ ST.transcript+=ST.interim; ST.interim=''; }
+  const m=document.getElementById('manual');
+  if(m) ST.transcript=m.value;
+  getAIFeedback();
+}
+
+function retry() { ST.view='detail'; render(); }
+function nextRandom() { randomScene(); }
+
+// ─── AI FEEDBACK ─────────────────────────────────────────────────────────────
+
+async function getAIFeedback() {
+  ST.view='analyzing'; render();
+  const s=ST.scene;
+  const tx=ST.transcript.trim();
+
+  if(!tx) {
+    ST.feedback = localFeedback(s, '');
+    ST.view='feedback'; render(); return;
+  }
+
+  const patNames = s.pats.map(i=>PATS[i].name).join('、');
+  const prompt = `你是一位专业的英语口语教练，正在评估学习者的学术访问场景口语练习。
+
+【场景名称】${s.name}
+【场景任务】${s.prompt}
+【目标词汇（共${s.vocab.length}个）】${s.vocab.join(', ')}
+【建议句型模块】${patNames}
+【学习者的口语内容】
+"""
+${tx}
+"""
+
+请用中文给出专业的口语评估反馈。只返回以下JSON格式，不要有任何其他文字、解释或markdown标记：
+{
+  "totalScore": 数字1-10,
+  "vocabScore": 数字1-10,
+  "patternScore": 数字1-10,
+  "grammarScore": 数字1-10,
+  "vocabUsed": ["已使用的目标词"],
+  "vocabMissed": ["未使用的目标词"],
+  "bestSentence": "说得最自然流利的一句原话（英文）",
+  "grammarTips": ["具体语法问题1（中文）", "具体语法问题2（中文）"],
+  "patternComment": "句型多样性点评（中文，1-2句）",
+  "suggestion": "最重要的一条改进建议（中文，一句话，具体可操作）",
+  "encouragement": "一句鼓励的话（中文，真诚不浮夸）"
+}`;
+
+  try {
+    const headers = { 'Content-Type': 'application/json', 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' };
+    if(ST.apiKey) headers['x-api-key'] = ST.apiKey;
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST', headers,
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 1000,
+        messages: [{ role: 'user', content: prompt }]
+      })
+    });
+    const data = await res.json();
+    const raw = data.content?.find(c=>c.type==='text')?.text || '';
+    const clean = raw.replace(/```json|```/g,'').trim();
+    ST.feedback = JSON.parse(clean);
+  } catch(err) {
+    console.warn('API error:', err);
+    ST.feedback = localFeedback(s, tx);
+  }
+  ST.view='feedback'; render();
+}
+
+function localFeedback(s, tx) {
+  const lower = tx.toLowerCase();
+  const used = s.vocab.filter(w=>lower.includes(w.toLowerCase()));
+  const missed = s.vocab.filter(w=>!lower.includes(w.toLowerCase()));
+  const vs = Math.round((used.length/s.vocab.length)*10);
+  const words = tx.split(/\s+/).filter(Boolean).length;
+  const sents = (tx.match(/[.!?]+/g)||[]).length || 1;
+  const avgLen = words/sents;
+  const ps = Math.min(10, Math.round(3 + (sents > 3 ? 2 : 0) + (avgLen > 8 ? 2 : 0) + (tx.includes('because')?1:0) + (tx.includes('however')||tx.includes('but')?1:0)));
+  return {
+    totalScore: Math.round((vs+ps+6)/3),
+    vocabScore: vs,
+    patternScore: ps || 5,
+    grammarScore: 6,
+    vocabUsed: used,
+    vocabMissed: missed,
+    bestSentence: tx.split(/[.!?]/)[0]?.trim() || '',
+    grammarTips: tx ? ['（需要 API Key 才能获取详细语法分析）'] : [],
+    patternComment: tx ? `检测到 ${sents} 句话，使用了 ${used.length}/${s.vocab.length} 个目标词。` : '未检测到语音内容。',
+    suggestion: ST.apiKey ? '请检查 API Key 是否正确。' : '配置 Anthropic API Key 可获得完整 AI 语法分析和句型反馈。',
+    encouragement: tx ? '每次开口练习都是进步，继续加油！' : '下次开口试试，语言只有说出来才会进步！'
+  };
+}
+
+// ─── INIT ─────────────────────────────────────────────────────────────────────
+
+render();
+</script>
+</body>
+</html>

@@ -44,9 +44,19 @@
 
       <section class="panel" id="panel-learn">
         <h2>学习页</h2>
-        <p class="panel-sub">使用闪卡和选择题巩固词根词缀。</p>
+        <p class="panel-sub">使用闪卡和选择题巩固词根词缀。按 <kbd>Space</kbd> 翻卡，<kbd>←</kbd><kbd>→</kbd> 切换，<kbd>Enter</kbd> 标记掌握。</p>
+        <div class="learn-section-label">📇 闪卡复习</div>
         <div class="flash-wrap">
-          <div class="flash-meta" id="flashMeta">闪卡准备中...</div>
+          <div class="flash-toolbar">
+            <div class="flash-meta" id="flashMeta">闪卡准备中...</div>
+            <label class="flash-filter-toggle">
+              <input type="checkbox" id="flashFilterUnmastered" />
+              仅显示未掌握
+            </label>
+          </div>
+          <div class="flash-progress-bar" id="flashProgressBar">
+            <div class="flash-progress-fill" id="flashProgressFill"></div>
+          </div>
           <div class="flash-card" id="flashCard"></div>
           <div class="flash-actions">
             <button id="flashReveal">显示答案</button>
@@ -55,6 +65,8 @@
             <button id="flashNext">下一张</button>
           </div>
         </div>
+        <div class="learn-divider"></div>
+        <div class="learn-section-label">📝 选择题巩固</div>
         <div class="quiz-wrap">
           <div class="quiz-score" id="quizScore">正确率: 0 / 0</div>
           <div class="quiz-question" id="quizQuestion">题目加载中...</div>
@@ -113,15 +125,27 @@
         </div>
       </section>
 
+      <section class="panel" id="panel-1368">
+        <h2>1368个口语单词</h2>
+        <p class="panel-sub">选择场景，限时60秒说英语，AI用中文给出词汇、句型和语法反馈。</p>
+        <div id="spc-app"></div>
+      </section>
+
       <section class="panel" id="panel-about">
         <p class="eyebrow">Root & Affix Memory Lab</p>
         <h1>词根词缀记忆工坊</h1>
         <h2>关于</h2>
         <p class="panel-sub">
-          基于 PDF 自动抽取数据的交互式记忆工具，支持检索、拆解联想、闪卡训练和选择题巩固。
+          综合英语记忆与口语训练工具，涵盖四大模块：
         </p>
+        <ul class="panel-sub" style="margin:0 0 10px 20px;color:var(--muted);font-size:0.95rem;line-height:1.8">
+          <li><strong>检索首页</strong> — 按词根/词缀/中文提示或单词快速检索，查看拆解联想与例词。</li>
+          <li><strong>学习页</strong> — 闪卡复习词根词缀，选择题巩固记忆，追踪掌握进度。</li>
+          <li><strong>K12课本单词</strong> — 按学期和单元筛选，翻转闪卡背诵人教版课本单词。</li>
+          <li><strong>1368个口语单词</strong> — 48个学术访问场景，限时60秒口语挑战，支持语音识别与 AI 反馈（词汇覆盖、句型多样性、语法准确度）。</li>
+        </ul>
         <p class="panel-sub">
-          学习入口在「检索首页」和「学习页」，本页主要用于介绍项目背景与使用说明。
+          数据基于 PDF 自动抽取，口语反馈由 Anthropic Claude 提供（需配置 API Key，否则使用本地评分）。
         </p>
       </section>
     </main>
