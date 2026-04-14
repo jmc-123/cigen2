@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教学事故认定与处理办法 在线考试</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:微软雅黑, sans-serif;}
+        body{background:#f5f7fa;}
+        .main{display:flex;min-height:100vh;max-width:1200px;margin:0 auto;}
+        
+        /* 左侧导航 */
+        .sidebar{width:240px;background:#2c3e50;color:white;padding:20px;}
+        .sidebar h2{font-size:18px;margin-bottom:15px;text-align:center;padding-bottom:10px;border-bottom:1px solid #555;}
+        .nav-item{padding:10px 12px;margin:6px 0;border-radius:4px;cursor:pointer;font-size:14px;transition:0.2s;}
+        .nav-item:hover{background:#3498db;}
+        .nav-item.active{background:#3498db;font-weight:bold;}
+        .user-info{margin-bottom:20px;}
+        .user-info input{width:100%;padding:8px;margin:5px 0;border:none;border-radius:4px;font-size:14px;}
+        .tip{font-size:12px;color:#bdc3e7;margin-top:5px;}
+
+        /* 右侧内容 */
+        .content{flex:1;padding:30px;background:white;position:relative;}
+        .content h1{font-size:22px;color:#2c3e50;margin-bottom:20px;text-align:center;}
+        .question-box{padding:25px;background:#f8f9fa;border-radius:8px;min-height:300px;display:flex;flex-direction:column;}
+        .q-title{font-size:16px;margin-bottom:20px;line-height:1.6;}
+        .options{margin-top:15px;}
+        .option{margin:12px 0;font-size:15px;}
+        .option label{cursor:pointer;}
+        .btn-bar{margin-top:auto;padding-top:20px;display:flex;justify-content:space-between;}
+        button{padding:10px 18px;border:none;border-radius:5px;cursor:pointer;font-size:14px;}
+        .prev{background:#95a5a6;color:white;}
+        .next{background:#3498db;color:white;}
+        .submit{background:#e74c3c;color:white;}
+        .goto{background:#27ae60;color:white;}
+
+        /* 结果页面 */
+        .result-page{display:none;padding:20px;line-height:1.8;}
+        .result-page h2{text-align:center;color:#2c3e50;margin-bottom:20px;}
+        .result-info{background:#ecf0f1;padding:20px;border-radius:10px;margin-bottom:20px;}
+        .answer-list{max-height:400px;overflow-y:auto;padding-right:10px;}
+        .item{margin:8px 0;padding:8px;border-bottom:1px solid #eee;}
+        .correct{color:#27ae60;font-weight:bold;}
+        .wrong{color:#e74c3c;font-weight:bold;}
+        .score{font-size:20px;font-weight:bold;text-align:center;margin:10px 0;}
+        .export-btn{text-align:center;margin-top:20px;}
+        .reset-btn{background:#e67e22;color:white;margin-left:10px;}
+
+        /* 考试区域默认隐藏 */
+        .exam-box{display:none;}
+    </style>
+</head>
+<body>
+
+<div class="main">
+    <!-- 左侧导航 -->
+    <div class="sidebar">
+        <h2>考试导航</h2>
+        <div class="user-info">
+            <input type="text" id="jobNum" placeholder="请输入工号">
+            <input type="text" id="userName" placeholder="请输入姓名">
+            <div class="tip">👤 填写后才能开始考试</div>
+            <button class="goto" onclick="startExam()" style="width:100%;margin-top:10px;">开始考试</button>
+        </div>
+        <div id="navList"></div>
+    </div>
+
+    <!-- 右侧内容 -->
+    <div class="content">
+        <h1>湖北师范大学教学事故认定与处理办法 考试</h1>
+
+        <!-- 考试区域 -->
+        <div class="exam-box" id="examBox">
+            <div class="question-box" id="questionBox"></div>
+            <div class="btn-bar">
+                <button class="prev" onclick="prevQuestion()">← 上一题</button>
+                <button class="next" onclick="nextQuestion()">下一题 →</button>
+                <button class="submit" onclick="submitExam()">提交试卷</button>
+            </div>
+        </div>
+
+        <!-- 结果页面 -->
+        <div class="result-page" id="resultPage">
+            <h2>📄 考试成绩报告单</h2>
+            <div class="result-info" id="resultInfo"></div>
+            <div class="answer-list" id="answerList"></div>
+            <div class="export-btn">
+                <button onclick="exportScore()">导出成绩 Excel</button>
+                <button class="reset-btn" onclick="resetExam()">重新考试</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// 所有题目
+const questions = [
+    // 单选 15题
+    {type:'single', q:"1. 湖北师范大学教学事故分为几类？",o:["A.三类","B.四类","C.五类","D.六类"],a:"B"},
+    {type:'single', q:"2. 教学事故按情节轻重分为几级？",o:["A.两级","B.三级","C.四级","D.五级"],a:"B"},
+    {type:'single', q:"3. 教师上课迟到5-10分钟，一年一次属于？",o:["A.警告","B.一般教学事故","C.严重教学事故","D.重大教学事故"],a:"B"},
+    {type:'single', q:"4. 教师上课迟到10-15分钟，一年一次属于？",o:["A.一般教学事故","B.严重教学事故","C.重大教学事故","D.警告"],a:"B"},
+    {type:'single', q:"5. 监考人员监考时接打电话、看手机，两次及以上按（）处理。",o:["A.警告","B.一般教学事故","C.严重教学事故","D.重大教学事故"],a:"B"},
+    {type:'single', q:"6. 学士学位论文（设计）查重率超过（），指导教师按一般教学事故处理。",o:["A.20%","B.25%","C.30%","D.50%"],a:"B"},
+    {type:'single', q:"7. 学士学位论文（设计）查重率超过（），指导教师按严重教学事故处理。",o:["A.25%","B.30%","C.40%","D.50%"],a:"D"},
+    {type:'single', q:"8. 一般教学事故扣发当年绩效工资（）。",o:["A.500元","B.1000元","C.2000元","D.3000元"],a:"B"},
+    {type:'single', q:"9. 严重教学事故扣发当年绩效工资（）。",o:["A.1000元","B.2000元","C.3000元","D.5000元"],a:"B"},
+    {type:'single', q:"10. 重大教学事故扣发当年（）岗位津贴。",o:["A.1个月","B.2个月","C.3个月","D.6个月"],a:"C"},
+    {type:'single', q:"11. 一学年内两次一般教学事故，按（）处理。",o:["A.警告","B.严重教学事故","C.重大教学事故","D.不处理"],a:"B"},
+    {type:'single', q:"12. 一年内两次严重教学事故，按（）处理。",o:["A.一般教学事故","B.严重教学事故","C.重大教学事故","D.通报批评"],a:"C"},
+    {type:'single', q:"13. 事故责任人对认定有异议，应在接到通知单（）内向教学质量监测与评估中心提出听证申请。",o:["A.2日","B.3日","C.5日","D.10日"],a:"B"},
+    {type:'single', q:"14. 对处理决定不服，可在接到通知后（）个工作日内向学校申诉委员会书面申诉。",o:["A.5","B.10","C.15","D.20"],a:"B"},
+    {type:'single', q:"15. 本办法中“以上”“以内”（）本数。",o:["A.包括","B.不包括","C.视情况而定","D.文件未说明"],a:"A"},
+    // 多选 5题
+    {type:'multi', q:"16. 教学事故包含以下哪几类？",o:["A.课堂教学类","B.实践教学类","C.考试管理类","D.教学管理类"],a:["A","B","C","D"]},
+    {type:'multi', q:"17. 下列属于一般教学事故的有（）",o:["A.上课迟到5-10分钟，一年一次","B.监考迟到5-10分钟，一年一次","C.试卷评阅不规范","D.上课接打电话两次及以上"],a:["A","B","C","D"]},
+    {type:'multi', q:"18. 下列属于严重教学事故的有（）",o:["A.擅自取消教学活动","B.试卷泄密造成严重后果","C.纵容学生论文弄虚作假","D.伪造学生成绩档案"],a:["A","B","C","D"]},
+    {type:'multi', q:"19. 一般教学事故的处理包括（）",o:["A.单位内通报批评","B.扣发绩效1000元","C.取消当年评优","D.取消1年内职务晋升资格"],a:["A","B","C","D"]},
+    {type:'multi', q:"20. 教学事故处理同时追究（）责任。",o:["A.直接责任人","B.单位主管领导","C.单位党政主要负责人","D.学校分管领导"],a:["A","B","C"]}
+];
+
+let current = 0; // 当前题目
+let userAnswers = []; // 用户答案
+let examResult = null;
+
+// 初始化导航
+function renderNav(){
+    let html = '';
+    questions.forEach((item,idx)=>{
+        let type = item.type=='single' ? '单选' : '多选';
+        html += `<div class="nav-item" onclick="goTo(${idx})" id="nav${idx}">${idx+1}. ${type}</div>`;
+    });
+    document.getElementById('navList').innerHTML = html;
+}
+
+// 开始考试
+function startExam(){
+    const jobNum = document.getElementById('jobNum').value.trim();
+    const userName = document.getElementById('userName').value.trim();
+    if(!jobNum || !userName){
+        alert('请输入工号和姓名！');
+        return;
+    }
+    document.getElementById('examBox').style.display = 'block';
+    renderQuestion();
+    setNavActive();
+}
+
+// 渲染题目
+function renderQuestion(){
+    const q = questions[current];
+    let html = `<div class="q-title">${q.q}</div><div class="options">`;
+    
+    if(q.type === 'single'){
+        q.o.forEach(opt=>{
+            let val = opt.substring(0,1);
+            let checked = userAnswers[current] === val ? 'checked' : '';
+            html += `<div class="option">
+                <label><input type="radio" name="q" value="${val}" ${checked} onclick="saveAnswer()"> ${opt}</label>
+            </div>`;
+        });
+    }else{
+        q.o.forEach(opt=>{
+            let val = opt.substring(0,1);
+            let checked = userAnswers[current]?.includes(val) ? 'checked' : '';
+            html += `<div class="option">
+                <label><input type="checkbox" name="q" value="${val}" ${checked} onclick="saveAnswer()"> ${opt}</label>
+            </div>`;
+        });
+    }
+    html += `</div>`;
+    document.getElementById('questionBox').innerHTML = html;
+    setNavActive();
+}
+
+// 保存答案
+function saveAnswer(){
+    const q = questions[current];
+    if(q.type === 'single'){
+        const sel = document.querySelector('input[name="q"]:checked');
+        userAnswers[current] = sel ? sel.value : '';
+    }else{
+        const arr = Array.from(document.querySelectorAll('input[name="q"]:checked')).map(i=>i.value);
+        userAnswers[current] = arr;
+    }
+}
+
+// 导航高亮
+function setNavActive(){
+    document.querySelectorAll('.nav-item').forEach((n,i)=>{
+        n.classList.toggle('active', i===current);
+    });
+}
+
+// 切换题目
+function goTo(idx){
+    saveAnswer();
+    current = idx;
+    renderQuestion();
+}
+function prevQuestion(){
+    if(current>0){
+        saveAnswer();
+        current--;
+        renderQuestion();
+    }
+}
+function nextQuestion(){
+    if(current < questions.length-1){
+        saveAnswer();
+        current++;
+        renderQuestion();
+    }
+}
+
+// 提交评分
+function submitExam(){
+    const jobNum = document.getElementById('jobNum').value.trim();
+    const userName = document.getElementById('userName').value.trim();
+    if(!jobNum || !userName) return alert('请输入工号姓名！');
+    
+    saveAnswer();
+    let score = 0, right = 0;
+    let detail = [];
+
+    questions.forEach((q,idx)=>{
+        const userAns = userAnswers[idx] || (q.type=='single' ? '未答' : []);
+        let isRight = false;
+
+        if(q.type === 'single'){
+            isRight = userAns === q.a;
+        }else{
+            const ua = Array.isArray(userAns) ? userAns : [];
+            isRight = ua.length === q.a.length && ua.every(v=>q.a.includes(v));
+        }
+
+        if(isRight){ score +=5; right++; }
+        detail.push({
+            num:idx+1, type:q.type, q:q.q,
+            user:q.type=='single' ? userAns : userAns.join(','),
+            correct:q.type=='single' ? q.a : q.a.join(','),
+            right:isRight
+        });
+    });
+
+    examResult = {jobNum, userName, score, right, total:questions.length, detail};
+    showResult();
+}
+
+// 显示结果
+function showResult(){
+    document.getElementById('examBox').style.display = 'none';
+    document.getElementById('resultPage').style.display = 'block';
+    
+    const res = examResult;
+    document.getElementById('resultInfo').innerHTML = `
+        <p>工号：${res.jobNum}</p>
+        <p>姓名：${res.userName}</p>
+        <p>总题数：${res.total} 题</p>
+        <p>答对：${res.right} 题</p>
+        <p class="score ${res.score>=60 ? 'correct' : 'wrong'}">
+            总分：${res.score} / 100 ｜ ${res.score>=60 ? '✅ 合格' : '❌ 不合格'}
+        </p>
+    `;
+
+    let list = '';
+    res.detail.forEach(item=>{
+        const cls = item.right ? 'correct' : 'wrong';
+        list += `<div class="item">
+            ${item.num}. ${item.type=='single'?'单选':'多选'} | 
+            <span class="${cls}">${item.right?'正确':'错误'}</span> | 
+            你的答案：${item.user || '未答'} | 正确：${item.correct}
+        </div>`;
+    });
+    document.getElementById('answerList').innerHTML = list;
+}
+
+// 导出成绩
+function exportScore(){
+    if(!examResult) return alert('请先提交！');
+    const csv = `工号,姓名,总分,答对题数,是否合格
+${examResult.jobNum},${examResult.userName},${examResult.score},${examResult.right},${examResult.score>=60?'合格':'不合格'}`;
+    
+    const blob = new Blob([csv], {type:'text/csv;charset=utf-8'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `教学事故考试_${examResult.userName}.csv`;
+    a.click();
+}
+
+// 重置
+function resetExam(){
+    current = 0;
+    userAnswers = [];
+    examResult = null;
+    document.getElementById('jobNum').value = '';
+    document.getElementById('userName').value = '';
+    document.getElementById('examBox').style.display = 'none';
+    document.getElementById('resultPage').style.display = 'none';
+    alert('已重置！');
+}
+
+// 初始化
+renderNav();
+</script>
+</body>
+</html>

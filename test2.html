@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>教学事故认定办法 · 学习测试</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d100d;--bg-s:#161916;--bg-c:#1c1f1c;--bg-ch:#232623;
+  --fg:#eae8e3;--fg-m:#8a8880;--fg-d:#5a5850;
+  --ac:#c8a44e;--ac-g:rgba(200,164,78,.12);--ac-b:#e0be5a;
+  --ok:#4caf7d;--ok-bg:rgba(76,175,125,.07);--ok-bd:rgba(76,175,125,.28);
+  --no:#cf5c5c;--no-bg:rgba(207,92,92,.07);--no-bd:rgba(207,92,92,.28);
+  --bd:#282b28;--bd-l:#353835;--r:12px;--rs:8px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans SC',sans-serif;background:var(--bg);color:var(--fg);min-height:100vh;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:'';position:fixed;top:-20%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(200,164,78,.035) 0%,transparent 70%);pointer-events:none}
+body::after{content:'';position:fixed;bottom:-15%;left:-8%;width:400px;height:400px;background:radial-gradient(circle,rgba(76,175,125,.025) 0%,transparent 70%);pointer-events:none}
+
+.navbar{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,16,13,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--bd);height:56px;display:flex;align-items:center;padding:0 16px;gap:12px}
+.navbar.hd{transform:translateY(-100%);transition:transform .3s}
+.navbar.vi{transform:none;transition:transform .3s}
+.nav-brand{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.nav-brand-icon{width:30px;height:30px;border-radius:7px;background:var(--ac-g);border:1px solid rgba(200,164,78,.18);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--ac)}
+.nav-brand-text{font-family:'Noto Serif SC',serif;font-size:14px;font-weight:700;color:var(--fg);letter-spacing:1px;white-space:nowrap}
+.nav-div{width:1px;height:22px;background:var(--bd-l);flex-shrink:0}
+.nav-user{font-size:11px;color:var(--fg-d);white-space:nowrap;display:flex;align-items:center;gap:5px}
+.nav-user span{color:var(--fg-m);font-weight:500}
+.nav-center{flex:1;display:flex;align-items:center;justify-content:center;gap:12px}
+.nav-timer{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--fg-m);font-variant-numeric:tabular-nums;background:var(--bg-s);border:1px solid var(--bd);border-radius:5px;padding:4px 10px}
+.nav-timer i{font-size:10px;color:var(--ac)}
+.nav-timer.warn{color:var(--no);border-color:var(--no-bd)}
+.nav-timer.warn i{color:var(--no)}
+.nav-pmini{width:70px;height:4px;background:var(--bd);border-radius:2px;overflow:hidden}
+.nav-pmini-f{height:100%;background:var(--ac);border-radius:2px;transition:width .3s}
+.nav-pt{font-size:11px;color:var(--fg-d);white-space:nowrap}
+
+.qnav{position:fixed;top:56px;left:0;right:0;z-index:99;background:rgba(22,25,22,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd);padding:8px 16px;display:flex;gap:5px;overflow-x:auto;align-items:center;scrollbar-width:none}
+.qnav::-webkit-scrollbar{display:none}
+.qnav.hd{display:none}
+.qnd{width:32px;height:32px;border-radius:7px;border:1px solid var(--bd);background:transparent;color:var(--fg-d);font-size:11px;font-weight:600;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;flex-shrink:0;font-family:inherit}
+.qnd:hover{border-color:var(--ac);color:var(--fg)}
+.qnd.act{border-color:var(--ac);background:var(--ac);color:var(--bg)}
+.qnd.ans{border-color:rgba(200,164,78,.25);background:var(--ac-g);color:var(--ac)}
+.qnd.dok{border-color:var(--ok-bd);background:var(--ok-bg);color:var(--ok)}
+.qnd.dno{border-color:var(--no-bd);background:var(--no-bg);color:var(--no)}
+.qnd.dbl{border-color:var(--no-bd);background:var(--no-bg);color:var(--no)}
+.qns{width:1px;height:18px;background:var(--bd-l);flex-shrink:0;margin:0 3px}
+
+.main-w{padding-top:108px;min-height:100vh;display:flex;flex-direction:column}
+.main-w.hd{display:none}
+
+.login-ov{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;background:var(--bg);transition:opacity .5s,visibility .5s}
+.login-ov.out{opacity:0;visibility:hidden;pointer-events:none}
+.login-ov::before{content:'';position:absolute;top:18%;left:50%;transform:translateX(-50%);width:350px;height:350px;background:radial-gradient(circle,rgba(200,164,78,.05) 0%,transparent 70%);pointer-events:none}
+.login-box{width:100%;max-width:390px;padding:40px 34px;background:var(--bg-s);border:1px solid var(--bd);border-radius:16px;position:relative;text-align:center;animation:lfIn .6s ease}
+.login-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--ac),var(--ac-b),var(--ac));border-radius:16px 16px 0 0}
+@keyframes lfIn{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
+.l-icon{width:50px;height:50px;border-radius:12px;background:var(--ac-g);border:1px solid rgba(200,164,78,.18);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:19px;color:var(--ac)}
+.l-title{font-family:'Noto Serif SC',serif;font-size:20px;font-weight:700;margin-bottom:4px}
+.l-sub{font-size:11px;color:var(--fg-d);margin-bottom:28px}
+.l-fields{display:flex;flex-direction:column;gap:13px;margin-bottom:22px}
+.l-field{position:relative;text-align:left}
+.l-field label{display:block;font-size:10px;font-weight:500;color:var(--fg-m);margin-bottom:4px;letter-spacing:1px}
+.l-field input{width:100%;padding:10px 13px 10px 36px;background:var(--bg-c);border:1px solid var(--bd);border-radius:var(--rs);color:var(--fg);font-size:14px;font-family:inherit;outline:none;transition:border-color .2s}
+.l-field input::placeholder{color:var(--fg-d)}
+.l-field input:focus{border-color:var(--ac)}
+.l-field .fi{position:absolute;left:11px;bottom:11px;font-size:12px;color:var(--fg-d);pointer-events:none}
+.l-field .fe{font-size:10px;color:var(--no);margin-top:2px;display:none}
+.l-field.err input{border-color:var(--no)}
+.l-field.err .fe{display:block}
+.l-btn{width:100%;padding:12px;background:linear-gradient(135deg,var(--ac),#b8943e);color:var(--bg);border:none;border-radius:var(--rs);font-size:13px;font-weight:700;font-family:inherit;cursor:pointer;transition:all .3s;letter-spacing:2px;display:flex;align-items:center;justify-content:center;gap:8px}
+.l-btn:hover{box-shadow:0 4px 18px rgba(200,164,78,.28);transform:translateY(-1px)}
+
+.q-stage{flex:1;display:flex;align-items:flex-start;justify-content:center;padding:20px 16px 0}
+.q-card{width:100%;max-width:700px;background:var(--bg-c);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;transition:border-color .3s;animation:qF .3s ease}
+@keyframes qF{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.q-card.qok{border-color:var(--ok-bd)}.q-card.qno{border-color:var(--no-bd)}
+.qc-top{padding:26px 26px 0;display:flex;align-items:flex-start;gap:12px}
+.qc-badge{flex-shrink:0;padding:3px 9px;border-radius:5px;font-size:10px;font-weight:600;letter-spacing:1px}
+.qc-badge.cb{background:var(--ac-g);color:var(--ac);border:1px solid rgba(200,164,78,.18)}
+.qc-badge.tb{background:rgba(100,180,220,.1);color:#7cc0e8;border:1px solid rgba(100,180,220,.18)}
+.qc-num{font-weight:700;color:var(--ac);font-size:13px;flex-shrink:0;min-width:22px;padding-top:1px}
+.qc-text{font-size:15px;line-height:1.85;color:var(--fg);padding-top:1px}
+.qc-body{padding:18px 26px 26px}
+.opts-g{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+@media(max-width:600px){.opts-g{grid-template-columns:1fr}}
+.ob{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid var(--bd);border-radius:var(--rs);background:transparent;color:var(--fg-m);cursor:pointer;transition:all .2s;font-size:14px;text-align:left;font-family:inherit;line-height:1.5}
+.ob:hover{border-color:var(--ac);color:var(--fg);background:var(--ac-g)}
+.ob.sel{border-color:var(--ac);background:var(--ac-g);color:var(--ac-b);font-weight:500}
+.ob.sel .ol{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+.ob.dis{pointer-events:none}
+.ob.sok{border-color:var(--ok-bd)!important;background:var(--ok-bg)!important;color:var(--ok)!important}
+.ob.sok .ol{background:var(--ok)!important;color:#fff!important;border-color:var(--ok)!important}
+.ob.sno{border-color:var(--no-bd)!important;background:var(--no-bg)!important;color:var(--no)!important}
+.ob.sno .ol{background:var(--no)!important;color:#fff!important;border-color:var(--no)!important}
+.ol{width:25px;height:25px;border-radius:6px;border:1px solid var(--bd-l);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:11px;flex-shrink:0;transition:all .2s}
+.tf-g{display:flex;gap:11px}
+.tf-b{flex:1;display:flex;align-items:center;justify-content:center;gap:9px;padding:14px;border:1px solid var(--bd);border-radius:var(--rs);background:transparent;color:var(--fg-m);cursor:pointer;transition:all .2s;font-size:15px;font-family:inherit;font-weight:500}
+.tf-b:hover{border-color:var(--ac);color:var(--fg);background:var(--ac-g)}
+.tf-b.sel{border-color:var(--ac);background:var(--ac-g);color:var(--ac-b)}
+.tf-b.dis{pointer-events:none}
+.tf-b.sok{border-color:var(--ok-bd)!important;background:var(--ok-bg)!important;color:var(--ok)!important}
+.tf-b.sno{border-color:var(--no-bd)!important;background:var(--no-bg)!important;color:var(--no)!important}
+
+.exp-box{display:none;margin-top:18px;padding:15px 16px;background:var(--bg-s);border:1px solid var(--bd);border-radius:var(--rs);font-size:13px;line-height:1.85;color:var(--fg-m)}
+.exp-box.show{display:block;animation:qF .3s ease}
+.exp-box strong{color:var(--ac);font-weight:600}
+.exp-res{display:flex;align-items:center;gap:7px;margin-bottom:7px;font-size:13px;font-weight:600}
+.exp-res.erk{color:var(--ok)}.exp-res.ern{color:var(--no)}
+.exp-res i{font-size:14px}
+
+.bbar{position:fixed;bottom:0;left:0;right:0;z-index:98;background:rgba(13,16,13,.94);backdrop-filter:blur(16px);border-top:1px solid var(--bd);padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:10px}
+.bbar.hd{display:none}
+.bb{display:inline-flex;align-items:center;gap:7px;padding:10px 22px;border-radius:var(--rs);font-size:13px;font-family:inherit;font-weight:500;cursor:pointer;transition:all .2s;border:1px solid var(--bd);background:transparent;color:var(--fg-m)}
+.bb:hover:not(:disabled){border-color:var(--ac);color:var(--ac);background:var(--ac-g)}
+.bb:disabled{opacity:.3;cursor:not-allowed}
+.bb-p{background:linear-gradient(135deg,var(--ac),#b8943e);color:var(--bg);border-color:transparent;font-weight:700;padding:10px 28px}
+.bb-p:hover:not(:disabled){box-shadow:0 4px 14px rgba(200,164,78,.25);transform:translateY(-1px)}
+.bb-ac{border-color:var(--ac);color:var(--ac)}
+.bb-sp{flex:1}
+
+.sc-ov{display:none;position:fixed;inset:0;z-index:200;background:var(--bg);overflow-y:auto;padding:36px 16px}
+.sc-ov.show{display:block;animation:qF .4s ease}
+.sc-wrap{max-width:500px;margin:0 auto}
+.sc-card{background:#fff;border-radius:12px;overflow:hidden;color:#1a1a1a}
+.sc-hd{background:linear-gradient(135deg,#1a3a2a,#2a5a3a);padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+.sc-hd .sh-n{font-family:'Noto Serif SC',serif;font-size:16px;font-weight:700;color:#fff;letter-spacing:2px}
+.sc-hd .sh-t{font-size:10px;color:rgba(255,255,255,.5);letter-spacing:1px;margin-top:2px}
+.sc-hd .sh-b{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:6px;padding:4px 10px;font-size:9px;color:rgba(255,255,255,.7);letter-spacing:1px;white-space:nowrap}
+.sc-bd{padding:24px}
+.sc-ur{display:flex;gap:28px;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid #eee}
+.sc-ui{display:flex;flex-direction:column;gap:1px}
+.sc-ui .sl{font-size:9px;color:#999;letter-spacing:1px}
+.sc-ui .sv{font-size:16px;font-weight:700;color:#1a1a1a}
+.sc-sr{display:flex;align-items:center;justify-content:space-between}
+.sc-sl{display:flex;flex-direction:column;gap:2px}
+.sc-sl .ssl{font-size:10px;color:#999}
+.sc-sl .sst{font-size:10px;color:#bbb}
+.sc-sbig{font-family:'Noto Serif SC',serif;font-size:50px;font-weight:900;line-height:1}
+.sc-sbig.ce{color:#2d8a56}.sc-sbig.cg{color:#b8943e}.sc-sbig.cf{color:#cf5c5c}
+.sc-sbig .su{font-size:15px;font-weight:500;margin-left:2px}
+.sc-ss{display:flex;margin-top:20px;border:1px solid #eee;border-radius:7px;overflow:hidden}
+.sc-si{flex:1;text-align:center;padding:12px 5px}
+.sc-si+.sc-si{border-left:1px solid #eee}
+.sc-si .sn{font-size:19px;font-weight:700}
+.sc-si .sn.g{color:#2d8a56}.sc-si .sn.r{color:#cf5c5c}.sc-si .sn.gr{color:#ccc}.sc-si .sn.n{color:#666}
+.sc-si .sl2{font-size:9px;color:#999;margin-top:1px}
+.sc-ft{padding:10px 24px;background:#fafafa;border-top:1px solid #eee;display:flex;align-items:center;justify-content:space-between}
+.sc-ft .sf-t{font-size:9px;color:#bbb}
+.sc-ft .sf-r{font-size:11px;font-weight:600;letter-spacing:1px}
+.sf-r.pass{color:#2d8a56}.sf-r.fail{color:#cf5c5c}
+.sc-tip{text-align:center;margin-top:10px;font-size:10px;color:var(--fg-d)}
+.sc-tip i{margin-right:3px}
+.sc-acts{display:flex;justify-content:center;gap:12px;margin-top:22px;flex-wrap:wrap}
+.sc-ab{display:inline-flex;align-items:center;gap:7px;padding:11px 24px;border:1px solid var(--bd-l);border-radius:var(--rs);background:transparent;color:var(--fg-m);font-size:13px;font-family:inherit;cursor:pointer;transition:all .2s}
+.sc-ab:hover{border-color:var(--ac);color:var(--ac);background:var(--ac-g)}
+
+.toast{position:fixed;top:68px;left:50%;transform:translateX(-50%) translateY(-100px);background:var(--bg-c);border:1px solid var(--bd-l);border-radius:var(--rs);padding:10px 20px;font-size:12px;color:var(--fg);box-shadow:0 4px 20px rgba(0,0,0,.35);z-index:999;transition:transform .4s;display:flex;align-items:center;gap:7px;white-space:nowrap}
+.toast.show{transform:translateX(-50%) translateY(0)}
+.toast i{color:var(--ac)}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--bd-l);border-radius:3px}
+@media(max-width:600px){
+  .navbar{padding:0 10px;gap:6px}.nav-brand-text{display:none}.nav-user{display:none}
+  .qc-top{padding:18px 16px 0}.qc-body{padding:14px 16px 20px}
+  .bbar{padding:10px 12px;gap:6px}.bb{padding:9px 14px;font-size:12px}
+  .sc-hd{padding:14px 18px}.sc-bd{padding:18px}.sc-ur{gap:16px}
+}
+</style>
+</head>
+<body>
+
+<div id="toast" class="toast"><i class="fas fa-exclamation-circle"></i><span id="toast-msg"></span></div>
+
+<div class="login-ov" id="login-ov">
+  <div class="login-box">
+    <div class="l-icon"><i class="fas fa-shield-alt"></i></div>
+    <div class="l-title">学习效果自测</div>
+    <div class="l-sub">教学事故认定与处理办法 · 湖师发〔2022〕22号</div>
+    <div class="l-fields">
+      <div class="l-field" id="f-gh"><label>工号</label><i class="fas fa-id-badge fi"></i><input type="text" id="i-gh" placeholder="请输入工号" maxlength="20" autocomplete="off"><div class="fe">请输入工号</div></div>
+      <div class="l-field" id="f-nm"><label>姓名</label><i class="fas fa-user fi"></i><input type="text" id="i-nm" placeholder="请输入姓名" maxlength="20" autocomplete="off"><div class="fe">请输入姓名</div></div>
+    </div>
+    <button class="l-btn" onclick="doLogin()"><i class="fas fa-arrow-right"></i>进入考试</button>
+  </div>
+</div>
+
+<nav class="navbar hd" id="navbar">
+  <div class="nav-brand"><div class="nav-brand-icon"><i class="fas fa-graduation-cap"></i></div><div class="nav-brand-text">教学事故认定测试</div></div>
+  <div class="nav-div"></div>
+  <div class="nav-user"><i class="fas fa-user-circle"></i><span id="nav-u">—</span></div>
+  <div class="nav-center">
+    <div class="nav-timer" id="nav-tm"><i class="fas fa-clock"></i><span id="tm-txt">30:00</span></div>
+    <div class="nav-pmini"><div class="nav-pmini-f" id="nav-pb"></div></div>
+  </div>
+  <div class="nav-pt" id="nav-pt">0/25</div>
+</nav>
+
+<div class="qnav hd" id="qnav"></div>
+
+<div class="main-w hd" id="main-w"><div class="q-stage" id="q-stage"></div></div>
+
+<div class="bbar hd" id="bbar">
+  <button class="bb" id="bp" onclick="goPrev()" disabled><i class="fas fa-chevron-left"></i> 上一题</button>
+  <div class="bb-sp"></div>
+  <button class="bb bb-p" id="bs" onclick="doSubmit()"><i class="fas fa-paper-plane"></i> 提交答卷</button>
+  <div class="bb-sp"></div>
+  <button class="bb" id="bn" onclick="goNext()">下一题 <i class="fas fa-chevron-right"></i></button>
+</div>
+
+<div class="sc-ov" id="sc-ov">
+  <div class="sc-wrap">
+    <div class="sc-card">
+      <div class="sc-hd"><div><div class="sh-n">湖北师范大学</div><div class="sh-t">教学事故认定与处理办法 · 学习测试</div></div><div class="sh-b">湖师发〔2022〕22号</div></div>
+      <div class="sc-bd">
+        <div class="sc-ur">
+          <div class="sc-ui"><span class="sl">工号</span><span class="sv" id="sc-gh">—</span></div>
+          <div class="sc-ui"><span class="sl">姓名</span><span class="sv" id="sc-nm">—</span></div>
+          <div class="sc-ui"><span class="sl">日期</span><span class="sv" id="sc-dt" style="font-size:13px">—</span></div>
+        </div>
+        <div class="sc-sr">
+          <div class="sc-sl"><span class="ssl">最终成绩</span><span class="sst" id="sc-tm">用时 —</span></div>
+          <div class="sc-sbig" id="sc-sc">0<span class="su">分</span></div>
+        </div>
+        <div class="sc-ss">
+          <div class="sc-si"><div class="sn g" id="sc-ok">0</div><div class="sl2">答对</div></div>
+          <div class="sc-si"><div class="sn r" id="sc-no">0</div><div class="sl2">答错</div></div>
+          <div class="sc-si"><div class="sn gr" id="sc-bl">0</div><div class="sl2">未答</div></div>
+          <div class="sc-si"><div class="sn n" id="sc-rt">0%</div><div class="sl2">正确率</div></div>
+        </div>
+      </div>
+      <div class="sc-ft"><span class="sf-t">满分100分 · 60分合格</span><span class="sf-r" id="sc-rs">—</span></div>
+    </div>
+    <div class="sc-tip"><i class="fas fa-camera"></i>上方白色卡片已针对截图优化，可直接截取作为成绩凭证</div>
+    <div class="sc-acts">
+      <button class="sc-ab" onclick="enterAna()"><i class="fas fa-list-check"></i> 逐题查看解析</button>
+      <button class="sc-ab" onclick="doRetry()"><i class="fas fa-redo"></i> 重新测试</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const CQ=[
+{id:'c1',text:'教学事故按情节轻重程度，共分为几个等级？',opts:['两级','三级','四级','五级'],ans:1,exp:'文件第二条规定，按情节轻重程度将其分为三级：一般教学事故、严重教学事故和重大教学事故。'},
+{id:'c2',text:'教学事故主要分为以下哪四类？',opts:['课堂教学类、实践教学类、考试管理类和教学管理类','理论教学类、实验教学类、学生管理类和后勤服务类','课前准备类、课中讲授类、课后辅导类和考试评价类','教师责任类、管理责任类、学生责任类和外聘人员类'],ans:0,exp:'文件第二条规定，教学事故分为四类：课堂教学类、实践教学类、考试管理类和教学管理类。'},
+{id:'c3',text:'教师上课迟到5-10分钟，或提前下课5-10分钟，一年发生几次应认定为"一般教学事故"？',opts:['一次','两次','三次','四次'],ans:0,exp:'文件第三条规定，迟到5-10分钟等情形，一年一次的按一般教学事故处理。'},
+{id:'c4',text:'教师在上课、监考等教学过程中接打电话、看手机的，发现几次及以上按一般教学事故处理？',opts:['一次','两次','三次','四次'],ans:1,exp:'文件第三条规定，发现一次给予警告，两次及以上按一般教学事故处理。'},
+{id:'c5',text:'教师指导的学生学士学位论文(设计)查重率超过多少（含本数），应认定为一般教学事故？',opts:['20%','25%','30%','50%'],ans:1,exp:'文件第三条规定，查重率超过25%（含本数）认定为一般教学事故；超过50%为严重教学事故。'},
+{id:'c6',text:'因个人原因导致管理的实验室漏水、火灾等安全事故，造成经济损失多少元以上的，应认定为严重教学事故？',opts:['2000元','3000元','5000元','10000元'],ans:2,exp:'文件第四条规定，造成经济损失5000元以上的认定为严重教学事故。'},
+{id:'c7',text:'因监考人员监考不力出现多少比例以上的考生作弊或考场秩序混乱的，认定为严重教学事故？',opts:['15%','20%','25%','30%'],ans:2,exp:'文件第四条规定，出现25%以上的考生作弊认定为严重教学事故。'},
+{id:'c8',text:'发生一般教学事故，扣发事故责任人当年绩效工资多少元？',opts:['500元','1000元','2000元','3000元'],ans:1,exp:'文件第六条规定，一般教学事故扣发当年绩效工资1000元。'},
+{id:'c9',text:'发生严重教学事故，取消其几年内技术职务晋升申报的资格？',opts:['一年','两年','三年','五年'],ans:2,exp:'文件第七条规定，严重教学事故取消其三年内技术职务晋升申报资格。'},
+{id:'c10',text:'发生重大教学事故，扣发事故责任人当年几个月岗位津贴？',opts:['1个月','2个月','3个月','6个月'],ans:2,exp:'文件第八条规定，重大教学事故扣发当年3个月岗位津贴。'},
+{id:'c11',text:'一学年内两次发生一般教学事故的，应按什么等级处理？',opts:['一般教学事故','严重教学事故','重大教学事故','给予行政警告处分'],ans:1,exp:'文件第六条规定，一学年内两次发生一般教学事故的，按严重教学事故处理。'},
+{id:'c12',text:'发生重大教学事故的单位，扣发单位分管领导和党政主要负责人多少元绩效工资？',opts:['1000元','2000元','3000元','5000元'],ans:1,exp:'文件第九条规定，扣发单位分管领导和党政主要负责人2000元绩效工资。'},
+{id:'c13',text:'事故责任人可向学校申诉委员会提出书面申诉的时限是接到通知后几个工作日以内？',opts:['3个工作日','5个工作日','10个工作日','15个工作日'],ans:2,exp:'文件第十七条规定，在接到通知后的10个工作日以内可提出书面申诉。'},
+{id:'c14',text:'学校申诉委员会应在接到申诉后多少个工作日内做出复议结论？',opts:['5个工作日','10个工作日','15个工作日','20个工作日'],ans:2,exp:'文件第十八条规定，应在接到申诉后15个工作日内做出复议结论。'},
+{id:'c15',text:'本办法所称的"以上"、"以内"，其包含本数的界定是？',opts:['都不包含本数','"以上"包含，"以内"不包含','"以上"不包含，"以内"包含','都包含本数'],ans:3,exp:'文件第十九条规定，本办法所称的"以上"、"以内"，包括本数。'}
+];
+const TQ=[
+{id:'t1',text:'教学事故按情节轻重程度，分为一般教学事故、较大教学事故和重大教学事故三个等级。',ans:false,exp:'文件第二条规定，分为一般教学事故、严重教学事故和重大教学事故三级，没有"较大教学事故"。'},
+{id:'t2',text:'教师上课迟到10-15分钟，一年发生一次的，应直接认定为严重教学事故。',ans:true,exp:'文件第四条规定，迟到10-15分钟，一年一次的按严重教学事故处理。'},
+{id:'t3',text:'教师指导的学生学士学位论文查重率达到40%，应认定为严重教学事故。',ans:false,exp:'查重率超过25%为一般教学事故，超过50%才认定为严重教学事故。40%应认定为一般教学事故。'},
+{id:'t4',text:'监考人员迟到5-10分钟，一年达两次的，应认定为严重教学事故。',ans:true,exp:'文件第四条明确规定，监考迟到5-10分钟，一年达两次的认定为严重教学事故。'},
+{id:'t5',text:'凡造成教学事故，只追究直接责任人的责任，不追究单位主管领导责任。',ans:false,exp:'文件第九条规定，除追究直接责任人外，同时追究单位主管领导和党政主要负责人责任。'},
+{id:'t6',text:'发生重大教学事故，扣发事故责任人当年3个月的绩效工资。',ans:false,exp:'文件第八条规定，重大教学事故扣发的是当年3个月"岗位津贴"，而非"绩效工资"。'},
+{id:'t7',text:'发生严重教学事故的责任人，需在所在单位范围内进行自我检查。',ans:true,exp:'文件第七条规定，严重教学事故责任人需在所在单位范围内进行自我检查。'},
+{id:'t8',text:'学院对教学事故隐瞒不报的，一经查实将追究事故本人、管理者和主管负责人责任。',ans:true,exp:'文件第十六条明确了督察和举报制度，对隐瞒不报的行为实行连带责任追究。'},
+{id:'t9',text:'事故责任人提出申诉后，在申诉及复议期间，原处理决定应暂缓执行。',ans:false,exp:'文件第十七条明确规定，申诉及复议期间，不影响对原处理决定的执行。'},
+{id:'t10',text:'学校申诉委员会应在接到申诉后15个工作日内做出复议结论并通知责任人。',ans:true,exp:'文件第十八条对申诉委员会的复议时效和结果送达做出了明确规定。'}
+];
+const ALL=[];CQ.forEach((q,i)=>ALL.push({...q,type:'c',idx:i+1}));TQ.forEach((q,i)=>ALL.push({...q,type:'t',idx:i+16}));
+const N=ALL.length;let ua={},cur=0,done=false,ana=false,tSec=30*60,tIv=null,started=false,uG='',uN='',sTs=0,_cf=false;
+
+function doLogin(){
+  const g=document.getElementById('i-gh').value.trim(),n=document.getElementById('i-nm').value.trim();
+  document.getElementById('f-gh').classList.remove('err');document.getElementById('f-nm').classList.remove('err');
+  let ok=true;if(!g){document.getElementById('f-gh').classList.add('err');ok=false}if(!n){document.getElementById('f-nm').classList.add('err');ok=false}
+  if(!ok)return;uG=g;uN=n;
+  document.getElementById('nav-u').textContent=uG+' · '+uN;
+  document.getElementById('login-ov').classList.add('out');
+  ['navbar','qnav','main-w','bbar'].forEach(id=>{const e=document.getElementById(id);e.classList.remove('hd');e.classList.add('vi')});
+  started=true;sTs=Date.now();buildQN();renderQ();startTm();
+}
+document.addEventListener('keydown',e=>{if(!started&&e.key==='Enter')doLogin();if(started&&!done){if(e.key==='ArrowLeft')goPrev();if(e.key==='ArrowRight')goNext()}});
+
+function buildQN(){
+  const b=document.getElementById('qnav');let h='';
+  ALL.forEach((q,i)=>{if(i===CQ.length)h+='<div class="qns"></div>';h+=`<button class="qnd" id="qd${i}" onclick="goTo(${i})">${q.idx}</button>`});
+  b.innerHTML=h;
+}
+function updQN(){
+  ALL.forEach((q,i)=>{const d=document.getElementById('qd'+i);d.className='qnd';
+    if(done||ana){const r=gR(q);d.classList.add(r==='ok'?'dok':r==='no'?'dno':'dbl');if(i===cur)d.classList.add('act')}
+    else{if(ua[q.id]!==undefined)d.classList.add('ans');if(i===cur)d.classList.add('act')}
+  });
+}
+
+function renderQ(){
+  const q=ALL[cur],st=document.getElementById('q-stage'),L=['A','B','C','D'],isT=q.type==='t';
+  let oh='';if(isT){oh=`<div class="tf-g"><button class="tf-b${ua[q.id]===true?' sel':''}" id="${q.id}t" onclick="pTF('${q.id}',true)" ${done||ana?'disabled':''}><i class="fas fa-check"></i> 正确</button><button class="tf-b${ua[q.id]===false?' sel':''}" id="${q.id}f" onclick="pTF('${q.id}',false)" ${done||ana?'disabled':''}><i class="fas fa-times"></i> 错误</button></div>`}
+  else{oh=`<div class="opts-g">${q.opts.map((o,oi)=>`<button class="ob${ua[q.id]===oi?' sel':''}" id="${q.id}o${oi}" onclick="pC('${q.id}',${oi})" ${done||ana?'disabled':''}><span class="ol">${L[oi]}</span><span>${o}</span></button>`).join('')}</div>`}
+  let cc='q-card',eh=`<div class="exp-box" id="ex${q.id}">`;
+  if(done||ana){const r=gR(q);if(r==='ok'){cc+=' qok';eh+=`<div class="exp-res erk"><i class="fas fa-check-circle"></i> 回答正确</div>`}
+    else{cc+=' qno';const ct=isT?(q.ans?'正确':'错误'):L[q.ans];eh+=`<div class="exp-res ern"><i class="fas fa-times-circle"></i> ${r==='no'?'回答错误':'未作答'}，正确答案：${ct}</div>`}
+    eh+=`<strong>解析：</strong>${q.exp}</div>`}
+  st.innerHTML=`<div class="${cc}"><div class="qc-top"><div class="qc-badge ${isT?'tb':'cb'}">${isT?'判断题':'选择题'}</div><div class="qc-num">${q.idx}.</div><div class="qc-text">${q.text}</div></div><div class="qc-body">${oh}${eh}</div></div>`;
+  if(done||ana)markO(q);updNav();updQN();
+}
+
+function markO(q){
+  const isT=q.type==='t';
+  if(isT){const te=document.getElementById(q.id+'t'),fe=document.getElementById(q.id+'f');te.classList.add('dis');fe.classList.add('dis');
+    if(q.ans===true)te.classList.add('sok');else fe.classList.add('sok');
+    if(ua[q.id]!==undefined&&ua[q.id]!==q.ans){if(ua[q.id]===true)te.classList.add('sno');else fe.classList.add('sno')}}
+  else{for(let i=0;i<q.opts.length;i++){const b=document.getElementById(q.id+'o'+i);b.classList.add('dis');if(i===q.ans)b.classList.add('sok');if(ua[q.id]!==undefined&&ua[q.id]===i&&i!==q.ans)b.classList.add('sno')}}
+  const eb=document.getElementById('ex'+q.id);if(eb)eb.classList.add('show');
+}
+function gR(q){if(ua[q.id]===undefined)return'blank';if(q.type==='t')return ua[q.id]===q.ans?'ok':'no';return ua[q.id]===q.ans?'ok':'no'}
+function pC(id,i){if(done||ana)return;ua[id]=i;renderQ()}
+function pTF(id,v){if(done||ana)return;ua[id]=v;renderQ()}
+function goTo(i){if(i<0||i>=N)return;cur=i;renderQ()}
+function goPrev(){goTo(cur-1)}function goNext(){goTo(cur+1)}
+function updNav(){document.getElementById('bp').disabled=cur===0;document.getElementById('bn').disabled=cur===N-1;
+  const a=Object.keys(ua).length;document.getElementById('nav-pt').textContent=a+'/'+N;document.getElementById('nav-pb').style.width=(a/N*100)+'%';
+  const d=document.getElementById('qd'+cur);if(d)d.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'})}
+
+function startTm(){tIv=setInterval(()=>{tSec--;if(tSec<=0){tSec=0;clearInterval(tIv);showToast('时间到，已自动提交');doSubmit()}
+  const m=String(Math.floor(tSec/60)).padStart(2,'0'),s=String(tSec%60).padStart(2,'0');document.getElementById('tm-txt').textContent=m+':'+s;
+  const nw=document.getElementById('nav-tm');if(tSec<=300)nw.classList.add('warn');else nw.classList.remove('warn')},1000)}
+function gUT(){const s=Math.floor((Date.now()-sTs)/1000);return Math.floor(s/60)+'分'+(s%60)+'秒'}
+
+function doSubmit(){if(done)return;const a=Object.keys(ua).length;if(a<N){if(!_cf){showToast(`还有 ${N-a} 题未作答，再次点击强制提交`);_cf=true;setTimeout(()=>{_cf=false},3000);return}}
+  done=true;clearInterval(tIv);document.getElementById('bbar').classList.add('hd');showSc()}
+function showSc(){let ok=0,no=0,bl=0;ALL.forEach((q,i)=>{const r=gR(q);if(r==='ok')ok++;else if(r==='no')no++;else bl++});
+  const sc=ok*4,rt=Math.round(ok/N*100),now=new Date();
+  document.getElementById('sc-gh').textContent=uG;document.getElementById('sc-nm').textContent=uN;
+  document.getElementById('sc-dt').textContent=now.getFullYear()+'-'+String(now.getMonth()+1).padStart(2,'0')+'-'+String(now.getDate()).padStart(2,'0');
+  document.getElementById('sc-tm').textContent='用时 '+gUT();
+  const se=document.getElementById('sc-sc');se.innerHTML=sc+'<span class="su">分</span>';se.className='sc-sbig';
+  se.classList.add(sc>=90?'ce':sc>=60?'cg':'cf');
+  document.getElementById('sc-ok').textContent=ok;document.getElementById('sc-no').textContent=no;document.getElementById('sc-bl').textContent=bl;document.getElementById('sc-rt').textContent=rt+'%';
+  const re=document.getElementById('sc-rs');re.textContent=sc>=60?'合格':'不合格';re.className='sf-r '+(sc>=60?'pass':'fail');
+  document.getElementById('sc-ov').classList.add('show');window.scrollTo(0,0)}
+
+function enterAna(){ana=true;cur=0;document.getElementById('sc-ov').classList.remove('show');
+  ['navbar','qnav','main-w'].forEach(id=>{const e=document.getElementById(id);e.classList.remove('hd');e.classList.add('vi')});
+  const bb=document.getElementById('bbar');bb.classList.remove('hd');bb.classList.add('vi');
+  bb.innerHTML=`<button class="bb" onclick="goPrev()" id="bp" disabled><i class="fas fa-chevron-left"></i> 上一题</button><div class="bb-sp"></div><button class="bb" onclick="backSc()"><i class="fas fa-chart-bar"></i> 返回成绩</button><div class="bb-sp"></div><button class="bb bb-ac" onclick="doRetry()"><i class="fas fa-redo"></i> 重做</button><div class="bb-sp"></div><button class="bb" onclick="goNext()" id="bn">下一题 <i class="fas fa-chevron-right"></i></button>`;
+  renderQ();window.scrollTo(0,0)}
+function backSc(){document.getElementById('bbar').classList.add('hd');document.getElementById('bbar').classList.remove('vi');
+  ['navbar','qnav','main-w'].forEach(id=>{document.getElementById(id).classList.add('hd');document.getElementById(id).classList.remove('vi')});
+  document.getElementById('sc-ov').classList.add('show');window.scrollTo(0,0)}
+
+function doRetry(){done=false;ana=false;_cf=false;for(const k in ua)delete ua[k];cur=0;tSec=30*60;
+  document.getElementById('tm-txt').textContent='30:00';document.getElementById('nav-tm').classList.remove('warn');
+  document.getElementById('sc-ov').classList.remove('show');
+  ['navbar','qnav','main-w'].forEach(id=>{const e=document.getElementById(id);e.classList.remove('hd');e.classList.add('vi')});
+  const bb=document.getElementById('bbar');bb.classList.remove('hd');bb.classList.add('vi');
+  bb.innerHTML=`<button class="bb" id="bp" onclick="goPrev()" disabled><i class="fas fa-chevron-left"></i> 上一题</button><div class="bb-sp"></div><button class="bb bb-p" id="bs" onclick="doSubmit()"><i class="fas fa-paper-plane"></i> 提交答卷</button><div class="bb-sp"></div><button class="bb" id="bn" onclick="goNext()">下一题 <i class="fas fa-chevron-right"></i></button>`;
+  sTs=Date.now();if(tIv)clearInterval(tIv);startTm();renderQ();window.scrollTo(0,0)}
+
+function showToast(m){const t=document.getElementById('toast');document.getElementById('toast-msg').textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000)}
+</script>
+</body>
+</html>
