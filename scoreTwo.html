@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>软工2303班课程考核互评系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .logout-btn {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .logout-btn:hover {
+            background-color: #c0392b;
+        }
+
+        /* 登录页面样式 */
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .login-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+            font-size: 1.8rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .login-btn {
+            width: 100%;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .error-message {
+            color: #e74c3c;
+            text-align: center;
+            margin-top: 15px;
+            display: none;
+        }
+
+        /* 学生页面样式 */
+        .student-info {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .student-info h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .student-info p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .student-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .student-card {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-top: 4px solid #3498db;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .student-card.rated {
+            border-top-color: #27ae60;
+        }
+
+        .student-header {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .student-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .rated-badge {
+            background-color: #27ae60;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            float: right;
+            margin-top: 5px;
+        }
+
+        .homework-link {
+            margin-bottom: 20px;
+        }
+
+        .homework-link a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .homework-link a:hover {
+            text-decoration: underline;
+        }
+
+        .link-warning {
+            color: #f39c12;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+        .score-dimension {
+            margin-bottom: 20px;
+        }
+
+        .dimension-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .dimension-visual {
+            color: #e74c3c;
+        }
+
+        .dimension-content {
+            color: #f39c12;
+        }
+
+        .dimension-interaction {
+            color: #9b59b6;
+        }
+
+        .dimension-tech {
+            color: #3498db;
+        }
+
+        .score-value {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* 原版滑块+数字输入框组合样式 */
+        .score-input-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .score-slider {
+            flex: 1;
+            height: 6px;
+            border-radius: 3px;
+            background: #e0e0e0;
+            outline: none;
+            -webkit-appearance: none;
+            appearance: none;
+            cursor: pointer;
+        }
+
+        .score-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #3498db;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .score-slider::-moz-range-thumb {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #3498db;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        /* 不同维度滑块颜色 */
+        .score-slider.visual {
+            accent-color: #e74c3c;
+        }
+
+        .score-slider.visual::-webkit-slider-thumb {
+            background: #e74c3c;
+        }
+
+        .score-slider.visual::-moz-range-thumb {
+            background: #e74c3c;
+        }
+
+        .score-slider.content {
+            accent-color: #f39c12;
+        }
+
+        .score-slider.content::-webkit-slider-thumb {
+            background: #f39c12;
+        }
+
+        .score-slider.content::-moz-range-thumb {
+            background: #f39c12;
+        }
+
+        .score-slider.interaction {
+            accent-color: #9b59b6;
+        }
+
+        .score-slider.interaction::-webkit-slider-thumb {
+            background: #9b59b6;
+        }
+
+        .score-slider.interaction::-moz-range-thumb {
+            background: #9b59b6;
+        }
+
+        .score-slider.tech {
+            accent-color: #3498db;
+        }
+
+        .score-slider.tech::-webkit-slider-thumb {
+            background: #3498db;
+        }
+
+        .score-slider.tech::-moz-range-thumb {
+            background: #3498db;
+        }
+
+        /* 原版数字输入框样式 */
+        .score-number {
+            width: 60px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .submit-btn:disabled {
+            background-color: #bdc3c7;
+            cursor: not-allowed;
+        }
+
+        /* 管理员页面样式 */
+        .admin-title {
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-size: 1.8rem;
+        }
+
+        .export-btn {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .export-btn:hover {
+            background-color: #219653;
+        }
+
+        .ranking-table {
+            width: 100%;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .ranking-table th,
+        .ranking-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .ranking-table th {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: 500;
+        }
+
+        .ranking-table tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .data-insufficient {
+            color: #e74c3c;
+            font-weight: 500;
+        }
+
+        /* 响应式布局 */
+        @media (max-width: 768px) {
+            .student-list {
+                grid-template-columns: 1fr;
+            }
+
+            .ranking-table {
+                display: block;
+                overflow-x: auto;
+            }
+
+            .login-container {
+                margin: 50px auto;
+                padding: 20px;
+            }
+
+            .header-title {
+                font-size: 1.8rem;
+            }
+
+            .student-info h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部导航 -->
+    <div class="header" id="header" style="display: none;">
+        <div class="header-content">
+            <h1 class="header-title">软工2303班课程考核互评系统</h1>
+            <button class="logout-btn" id="logoutBtn">退出登录</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- 登录页面 -->
+        <div id="loginPage">
+            <div class="login-container">
+                <h2 class="login-title">软工2303班课程考核互评系统</h2>
+                <div class="form-group">
+                    <label for="username">账号</label>
+                    <input type="text" id="username" placeholder="请输入学号或管理员账号">
+                </div>
+                <div class="form-group">
+                    <label for="password">密码</label>
+                    <input type="password" id="password" placeholder="请输入密码">
+                </div>
+                <button class="login-btn" id="loginBtn">登录</button>
+                <div class="error-message" id="errorMessage">账号或密码错误</div>
+            </div>
+        </div>
+
+        <!-- 普通同学页面 -->
+        <div id="studentPage" style="display: none;">
+            <div class="student-info">
+                <h2>欢迎你，<span id="currentStudentName"></span></h2>
+                <p>请为以下同学的作业打分（不能给自己打分）</p>
+            </div>
+            <div class="student-list" id="studentList"></div>
+        </div>
+
+        <!-- 管理员页面 -->
+        <div id="adminPage" style="display: none;">
+            <h2 class="admin-title">管理员后台 - 评分汇总排行榜</h2>
+            <button class="export-btn" id="exportBtn">导出CSV</button>
+            <table class="ranking-table">
+                <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>学号</th>
+                        <th>姓名</th>
+                        <th>有效打分人数</th>
+                        <th>视觉版式(30)</th>
+                        <th>内容逻辑(40)</th>
+                        <th>动效交互(20)</th>
+                        <th>技术规范(10)</th>
+                        <th>综合平均分</th>
+                    </tr>
+                </thead>
+                <tbody id="rankingBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // 硬编码学生数据（已更新为最新37人名单）
+        const students = [
+            { id: 1, studentId: '2023116000145', name: '张霞', homeworkUrl: 'https://changanzhang996.github.io/slidev-demo/' },
+            { id: 2, studentId: '2023116000106', name: '郭王燃', homeworkUrl: 'https://luminous-kelpie-e652fe.netlify.app/' },
+            { id: 3, studentId: '2023116000130', name: '钟浩睿', homeworkUrl: 'https://inquisitive-chaja-acefd7.netlify.app/' },
+            { id: 4, studentId: '2023116000109', name: '李华胜', homeworkUrl: 'https://dist-blond-five-43.vercel.app' },
+            { id: 5, studentId: '2023116000131', name: '朱晨曦', homeworkUrl: 'https://stackblitz.com/~/github.com/xicurry/Redbook-MCP-Slidev-Presentation' },
+            { id: 6, studentId: '2023116000117', name: '彭浩', homeworkUrl: '' },
+            { id: 7, studentId: '2023116000216', name: '彭嘉楠', homeworkUrl: 'https://pjnzyh.github.io/redbookMCP/' },
+            { id: 8, studentId: '2023116000223', name: '熊世博', homeworkUrl: 'https://yao1235.github.io/myslidev/' },
+            { id: 9, studentId: '2023116000222', name: '吴御天', homeworkUrl: 'https://golden-heliotrope-5abbe8.netlify.app' },
+            { id: 10, studentId: '2023116000204', name: '付文靖', homeworkUrl: 'https://serene-ganache-cc138b.netlify.app/1' },
+            { id: 11, studentId: '2023116000220', name: '王飘然', homeworkUrl: 'https://delicate-horse-07468c.netlify.app/1' },
+            { id: 12, studentId: '2023116000239', name: '刘雨欣', homeworkUrl: 'https://daytoy7785.github.io/-my-slidev-ppt/' },
+            { id: 13, studentId: '2023116000236', name: '胡欣然', homeworkUrl: 'https://rr0316.github.io/hongshu/' },
+            { id: 14, studentId: '2023116000213', name: '刘喜鹏', homeworkUrl: 'https://stirring-raindrop-17b93f.netlify.app/1' },
+            { id: 15, studentId: '2023116000203', name: '段佳文', homeworkUrl: 'https://dist-ten-virid-58.vercel.app/1' },
+            { id: 16, studentId: '2023116000211', name: '刘畅', homeworkUrl: 'https://stackblitzstartersvagfhamm-vovd--3030--4c73681d.local-corp.webcontainer.io/' },
+            { id: 17, studentId: '2023116000228', name: '张业勋', homeworkUrl: 'https://dist-j65io6bh7-xingxingzyxs-projects.vercel.app/' },
+            { id: 18, studentId: '2023116000207', name: '洪攀科', homeworkUrl: 'https://sparkly-stardust-0ceb79.netlify.app/' },
+            { id: 19, studentId: '2023116000235', name: '洪硕', homeworkUrl: 'https://stackblitz.com/edit/stackblitz-starters-pzshgqjr?file=package.json' },
+            { id: 20, studentId: '2023116000340', name: '沈淑文', homeworkUrl: 'https://shimmering-torrone-599a0f.netlify.app/' },
+            { id: 21, studentId: '2023116000345', name: '赵丽蓉', homeworkUrl: 'https://yyy550.github.io/slidev-presentation/1' },
+            { id: 22, studentId: '2023116000346', name: '郑雪', homeworkUrl: 'https://flourishing-travesseiro-b7c30a.netlify.app/1' },
+            { id: 23, studentId: '2023116000337', name: '李梦馨', homeworkUrl: 'https://mona5211005.github.io/ppt/' },
+            { id: 24, studentId: '2023116090715', name: '杨豪杰', homeworkUrl: 'https://yhj16-hash.github.io/yhjslide/' },
+            { id: 25, studentId: '2023116000323', name: '向阳', homeworkUrl: 'https://tranquil-kangaroo-ef2f0b.netlify.app/1' },
+            { id: 26, studentId: '2023116000331', name: '钟子杰', homeworkUrl: 'https://lambent-twilight-bbad77.netlify.app/1' },
+            { id: 27, studentId: '2023116000304', name: '高泓炜', homeworkUrl: 'godkun/ppt-template: blazing ppt template with slidev' },
+            { id: 28, studentId: '2023116000408', name: '金小梁', homeworkUrl: 'https://jinxiaoliang.vercel.app/1' },
+            { id: 29, studentId: '2023116090810', name: '尚浩阳', homeworkUrl: 'https://graceful-muffin-a6985a.netlify.app/1' },
+            { id: 30, studentId: '2023116000403', name: '段文泽', homeworkUrl: 'https://stackblitz.com/~/github.com/dwz264/slidev-bfga3tnz?file=slides.md' },
+            { id: 31, studentId: '2023116000427', name: '张水斌', homeworkUrl: 'https://liuzhenghao123.github.io/zhangshuibin/' },
+            { id: 32, studentId: '2023116000425', name: '余灏申', homeworkUrl: 'https://rococo-semolina-99a33c.netlify.app/' },
+            { id: 33, studentId: '2023116000424', name: '叶子文', homeworkUrl: 'https://flicker035.github.io/Slidetest1/' },
+            { id: 34, studentId: '2023116000413', name: '刘正浩', homeworkUrl: 'https://liu111-cmd.github.io/slidev-xiaohongshu/' },
+            { id: 35, studentId: '2023116000418', name: '陶凯旋', homeworkUrl: 'https://enchanting-cheesecake-8feef9.netlify.app/1' },
+            { id: 36, studentId: '2023116000419', name: '汪培尧', homeworkUrl: 'https://exquisite-sunburst-bfd40b.netlify.app/' },
+            { id: 37, studentId: '2022116000451', name: '周成彬', homeworkUrl: 'https://playful-cranachan-5210fe.netlify.app/' }
+        ];
+
+        // 链接状态检测结果
+        const linkStatus = {
+            '2023116000145': 'warning', // 内容为空
+            '2023116000109': 'warning', // 网页解析失败
+            '2023116000223': 'warning', // 内容为空
+            '2023116000211': 'warning', // 本地链接
+            '2023116000235': 'warning', // 编辑页面
+            '2023116000304': 'warning', // 非完整URL
+            '2023116000403': 'warning'  // 编辑页面
+        };
+
+        // 评分维度配置
+        const dimensions = [
+            { key: 'visual', name: '视觉版式设计', max: 30, class: 'dimension-visual' },
+            { key: 'content', name: '内容逻辑表达', max: 40, class: 'dimension-content' },
+            { key: 'interaction', name: '动效交互体验', max: 20, class: 'dimension-interaction' },
+            { key: 'tech', name: '技术规范完成度', max: 10, class: 'dimension-tech' }
+        ];
+
+        // 页面元素
+        const loginPage = document.getElementById('loginPage');
+        const studentPage = document.getElementById('studentPage');
+        const adminPage = document.getElementById('adminPage');
+        const header = document.getElementById('header');
+        const loginBtn = document.getElementById('loginBtn');
+        const logoutBtn = document.getElementById('logoutBtn');
+        const exportBtn = document.getElementById('exportBtn');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const errorMessage = document.getElementById('errorMessage');
+        const currentStudentName = document.getElementById('currentStudentName');
+        const studentList = document.getElementById('studentList');
+        const rankingBody = document.getElementById('rankingBody');
+
+        // 初始化
+        init();
+
+        function init() {
+            // 检查登录状态
+            checkLoginStatus();
+            
+            // 绑定事件
+            loginBtn.addEventListener('click', handleLogin);
+            logoutBtn.addEventListener('click', handleLogout);
+            exportBtn.addEventListener('click', exportToCSV);
+            
+            // 回车键登录
+            passwordInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    handleLogin();
+                }
+            });
+        }
+
+        // 检查登录状态
+        function checkLoginStatus() {
+            const user = JSON.parse(localStorage.getItem('currentUser'));
+            if (user) {
+                showPage(user.role);
+            }
+        }
+
+        // 处理登录
+        function handleLogin() {
+            const username = usernameInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            if (!username || !password) {
+                showError('请输入账号和密码');
+                return;
+            }
+
+            // 管理员登录验证
+            if (username === 'admin' && password === 'admin888') {
+                const admin = { role: 'admin', username: 'admin' };
+                localStorage.setItem('currentUser', JSON.stringify(admin));
+                showPage('admin');
+                return;
+            }
+
+            // 学生登录验证
+            const student = students.find(s => s.studentId === username);
+            if (student && password === username.slice(-5)) {
+                const user = { role: 'student', ...student };
+                localStorage.setItem('currentUser', JSON.stringify(user));
+                showPage('student');
+                return;
+            }
+
+            showError('账号或密码错误');
+        }
+
+        // 处理退出登录
+        function handleLogout() {
+            localStorage.removeItem('currentUser');
+            location.reload();
+        }
+
+        // 显示对应页面
+        function showPage(role) {
+            loginPage.style.display = 'none';
+            header.style.display = 'block';
+
+            if (role === 'student') {
+                const user = JSON.parse(localStorage.getItem('currentUser'));
+                currentStudentName.textContent = user.name;
+                renderStudentList();
+                studentPage.style.display = 'block';
+            } else if (role === 'admin') {
+                renderRanking();
+                adminPage.style.display = 'block';
+            }
+        }
+
+        // 显示错误信息
+        function showError(message) {
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+            setTimeout(() => {
+                errorMessage.style.display = 'none';
+            }, 3000);
+        }
+
+        // 渲染学生列表（完全复刻原版滑块+数字输入框）
+        function renderStudentList() {
+            const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+            studentList.innerHTML = '';
+
+            students.forEach(student => {
+                // 跳过自己
+                if (student.studentId === currentUser.studentId) {
+                    return;
+                }
+
+                // 检查是否已评分
+                const scoreKey = `scores_${currentUser.studentId}_${student.studentId}`;
+                const existingScore = JSON.parse(localStorage.getItem(scoreKey));
+                const isRated = !!existingScore;
+
+                const card = document.createElement('div');
+                card.className = `student-card ${isRated ? 'rated' : ''}`;
+                card.dataset.studentId = student.studentId;
+
+                let homeworkLink = '';
+                if (student.homeworkUrl) {
+                    const status = linkStatus[student.studentId];
+                    const warning = status === 'warning' ? '<span class="link-warning">⚠️ 链接可能无法访问</span>' : '';
+                    homeworkLink = `<div class="homework-link">
+                        <a href="${student.homeworkUrl}" target="_blank">查看作业 ↗</a>
+                        ${warning}
+                    </div>`;
+                } else {
+                    homeworkLink = '<div class="homework-link">暂无作业链接</div>';
+                }
+
+                let dimensionsHtml = '';
+                dimensions.forEach(dim => {
+                    // 默认值为0或已保存的值
+                    const value = existingScore ? existingScore[dim.key] : 0;
+                    dimensionsHtml += `
+                        <div class="score-dimension">
+                            <div class="dimension-label">
+                                <span class="${dim.class}">${dim.name}</span>
+                                <span class="score-value">${value}</span>
+                            </div>
+                            <div class="score-input-group">
+                                <input type="range" class="score-slider ${dim.key}" 
+                                    min="0" max="${dim.max}" value="${value}" 
+                                    data-dimension="${dim.key}">
+                                <input type="number" class="score-number" 
+                                    min="0" max="${dim.max}" value="${value}" 
+                                    data-dimension="${dim.key}">
+                            </div>
+                        </div>
+                    `;
+                });
+
+                card.innerHTML = `
+                    <div class="student-header">
+                        <div class="student-name">${student.name}</div>
+                        ${isRated ? '<div class="rated-badge">已评</div>' : ''}
+                    </div>
+                    ${homeworkLink}
+                    ${dimensionsHtml}
+                    <button class="submit-btn">${isRated ? '修改评分' : '提交评分'}</button>
+                `;
+
+                // 绑定滑块和数字输入框的双向同步事件
+                const sliders = card.querySelectorAll('.score-slider');
+                const numbers = card.querySelectorAll('.score-number');
+                const valueDisplays = card.querySelectorAll('.score-value');
+
+                sliders.forEach(slider => {
+                    slider.addEventListener('input', (e) => {
+                        const dimension = e.target.dataset.dimension;
+                        const value = e.target.value;
+                        const numberInput = card.querySelector(`.score-number[data-dimension="${dimension}"]`);
+                        const valueDisplay = card.querySelector(`.score-value`);
+                        
+                        numberInput.value = value;
+                        // 更新对应维度的分数显示
+                        const dimensionIndex = dimensions.findIndex(d => d.key === dimension);
+                        valueDisplays[dimensionIndex].textContent = value;
+                    });
+                });
+
+                numbers.forEach(number => {
+                    number.addEventListener('input', (e) => {
+                        const dimension = e.target.dataset.dimension;
+                        let value = parseInt(e.target.value);
+                        const max = parseInt(e.target.max);
+                        const min = parseInt(e.target.min);
+                        
+                        // 限制输入范围
+                        if (isNaN(value)) value = 0;
+                        if (value < min) value = min;
+                        if (value > max) value = max;
+                        
+                        e.target.value = value;
+                        const slider = card.querySelector(`.score-slider[data-dimension="${dimension}"]`);
+                        const valueDisplay = card.querySelector(`.score-value`);
+                        
+                        slider.value = value;
+                        // 更新对应维度的分数显示
+                        const dimensionIndex = dimensions.findIndex(d => d.key === dimension);
+                        valueDisplays[dimensionIndex].textContent = value;
+                    });
+                });
+
+                // 绑定提交事件
+                const submitBtn = card.querySelector('.submit-btn');
+                submitBtn.addEventListener('click', () => handleSubmitScore(student.studentId));
+
+                studentList.appendChild(card);
+            });
+        }
+
+        // 处理提交评分
+        function handleSubmitScore(targetStudentId) {
+            const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+            const card = document.querySelector(`.student-card[data-student-id="${targetStudentId}"]`);
+            const sliders = card.querySelectorAll('.score-slider');
+            const score = {};
+            let isValid = true;
+
+            // 验证所有维度都已填写且在范围内
+            sliders.forEach(slider => {
+                const dimension = slider.dataset.dimension;
+                const value = parseFloat(slider.value);
+                const max = parseInt(slider.max);
+
+                if (isNaN(value) || value < 0 || value > max) {
+                    isValid = false;
+                    slider.style.border = '2px solid #e74c3c';
+                } else {
+                    slider.style.border = 'none';
+                    score[dimension] = value;
+                }
+            });
+
+            if (!isValid) {
+                showError('请确保所有维度都填写了正确的分数');
+                return;
+            }
+
+            // 保存到localStorage
+            const scoreKey = `scores_${currentUser.studentId}_${targetStudentId}`;
+            localStorage.setItem(scoreKey, JSON.stringify(score));
+
+            // 重新渲染列表
+            renderStudentList();
+            alert('评分提交成功！');
+        }
+
+        // 渲染排行榜
+        function renderRanking() {
+            const rankingData = calculateRanking();
+            rankingBody.innerHTML = '';
+
+            rankingData.forEach((item, index) => {
+                const row = document.createElement('tr');
+                
+                if (item.validCount < 3) {
+                    row.innerHTML = `
+                        <td>${index + 1}</td>
+                        <td>${item.studentId}</td>
+                        <td>${item.name}</td>
+                        <td>${item.validCount}</td>
+                        <td colspan="5" class="data-insufficient">数据不足</td>
+                    `;
+                } else {
+                    row.innerHTML = `
+                        <td>${index + 1}</td>
+                        <td>${item.studentId}</td>
+                        <td>${item.name}</td>
+                        <td>${item.validCount}</td>
+                        <td>${item.visualAvg.toFixed(2)}</td>
+                        <td>${item.contentAvg.toFixed(2)}</td>
+                        <td>${item.interactionAvg.toFixed(2)}</td>
+                        <td>${item.techAvg.toFixed(2)}</td>
+                        <td>${item.finalAvg.toFixed(2)}</td>
+                    `;
+                }
+
+                rankingBody.appendChild(row);
+            });
+        }
+
+        // 计算排行榜数据
+        function calculateRanking() {
+            const result = [];
+
+            students.forEach(student => {
+                // 获取所有对该学生的评分
+                const allScores = [];
+                students.forEach(rater => {
+                    if (rater.studentId === student.studentId) return;
+                    
+                    const scoreKey = `scores_${rater.studentId}_${student.studentId}`;
+                    const score = JSON.parse(localStorage.getItem(scoreKey));
+                    if (score) {
+                        // 计算该评分的总分
+                        const total = score.visual + score.content + score.interaction + score.tech;
+                        allScores.push({ ...score, total });
+                    }
+                });
+
+                const validCount = allScores.length;
+                const studentResult = {
+                    studentId: student.studentId,
+                    name: student.name,
+                    validCount
+                };
+
+                if (validCount >= 3) {
+                    // 去掉一个最高分和一个最低分
+                    allScores.sort((a, b) => a.total - b.total);
+                    const filteredScores = allScores.slice(1, -1);
+                    const filteredCount = filteredScores.length;
+
+                    // 计算各维度平均分
+                    studentResult.visualAvg = filteredScores.reduce((sum, s) => sum + s.visual, 0) / filteredCount;
+                    studentResult.contentAvg = filteredScores.reduce((sum, s) => sum + s.content, 0) / filteredCount;
+                    studentResult.interactionAvg = filteredScores.reduce((sum, s) => sum + s.interaction, 0) / filteredCount;
+                    studentResult.techAvg = filteredScores.reduce((sum, s) => sum + s.tech, 0) / filteredCount;
+                    
+                    // 计算综合平均分
+                    studentResult.finalAvg = (studentResult.visualAvg + studentResult.contentAvg + 
+                        studentResult.interactionAvg + studentResult.techAvg);
+                }
+
+                result.push(studentResult);
+            });
+
+            // 按综合平均分降序排序，数据不足的排在后面
+            result.sort((a, b) => {
+                if (a.validCount < 3 && b.validCount >= 3) return 1;
+                if (a.validCount >= 3 && b.validCount < 3) return -1;
+                if (a.validCount < 3 && b.validCount < 3) return 0;
+                return b.finalAvg - a.finalAvg;
+            });
+
+            return result;
+        }
+
+        // 导出CSV
+        function exportToCSV() {
+            const rankingData = calculateRanking();
+            let csvContent = '序号,学号,姓名,有效打分人数,视觉版式平均分,内容逻辑平均分,动效交互平均分,技术规范平均分,综合平均分\n';
+
+            rankingData.forEach((item, index) => {
+                if (item.validCount < 3) {
+                    csvContent += `${index + 1},${item.studentId},${item.name},${item.validCount},数据不足,数据不足,数据不足,数据不足,数据不足\n`;
+                } else {
+                    csvContent += `${index + 1},${item.studentId},${item.name},${item.validCount},` +
+                        `${item.visualAvg.toFixed(2)},${item.contentAvg.toFixed(2)},` +
+                        `${item.interactionAvg.toFixed(2)},${item.techAvg.toFixed(2)},` +
+                        `${item.finalAvg.toFixed(2)}\n`;
+                }
+            });
+
+            // 创建下载链接
+            const blob = new Blob(['\ufeff' + csvContent], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `软工2303班互评评分汇总_${new Date().toLocaleDateString()}.csv`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
