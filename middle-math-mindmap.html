@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>初中数学知识点框架图 · 思维导图</title>
+<style id="page-style">
+  :root{
+    --board:#1B3A2F;
+    --board-dark:#142B23;
+    --paper:#FBF7EC;
+    --paper-line:#E7DEC7;
+    --ink:#22301F;
+    --ink-soft:#5B6B54;
+    --chalk-yellow:#E8C468;
+    --chalk-white:#F4F1E6;
+    font-family:"Noto Serif SC","Songti SC","STSong",serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--board);
+    background-image:
+      radial-gradient(ellipse at top left, rgba(255,255,255,0.03), transparent 60%),
+      radial-gradient(ellipse at bottom right, rgba(255,255,255,0.03), transparent 60%);
+    color:var(--chalk-white);
+    min-height:100vh;
+  }
+  header{
+    padding:28px 24px 10px;
+    text-align:center;
+    border-bottom:1px dashed rgba(244,241,230,0.25);
+  }
+  header h1{
+    margin:0 0 4px;
+    font-size:26px;
+    letter-spacing:6px;
+    font-weight:700;
+    color:var(--chalk-white);
+    text-shadow:0 0 1px rgba(244,241,230,0.4);
+  }
+  header p{
+    margin:0;
+    font-size:12px;
+    letter-spacing:2px;
+    color:rgba(244,241,230,0.55);
+    font-family:ui-monospace,Menlo,monospace;
+  }
+
+  nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    padding:18px 16px 4px;
+  }
+  nav button{
+    appearance:none;
+    border:1px solid rgba(244,241,230,0.35);
+    background:transparent;
+    color:rgba(244,241,230,0.8);
+    padding:8px 16px;
+    border-radius:999px;
+    font-size:13px;
+    letter-spacing:2px;
+    cursor:pointer;
+    font-family:inherit;
+    transition:all .15s ease;
+  }
+  nav button:hover{
+    border-color:var(--chalk-yellow);
+    color:var(--chalk-yellow);
+  }
+  nav button.active{
+    background:var(--chalk-yellow);
+    border-color:var(--chalk-yellow);
+    color:var(--board-dark);
+    font-weight:700;
+  }
+
+  main{
+    max-width:1180px;
+    margin:18px auto 60px;
+    padding:0 16px;
+  }
+
+  .panel{
+    display:none;
+    background:var(--paper);
+    color:var(--ink);
+    border-radius:14px;
+    box-shadow:0 18px 40px rgba(0,0,0,0.35);
+    overflow:hidden;
+  }
+  .panel.active{display:block;}
+
+  .panel-head{
+    padding:20px 26px 14px;
+    border-bottom:2px solid var(--accent, #C9532F);
+    display:flex;
+    align-items:baseline;
+    gap:12px;
+    background:
+      repeating-linear-gradient( var(--paper) 0px, var(--paper) 27px, var(--paper-line) 28px );
+  }
+  .panel-head .tag{
+    font-family:ui-monospace,Menlo,monospace;
+    font-size:12px;
+    color:#fff;
+    background:var(--accent,#C9532F);
+    padding:3px 10px;
+    border-radius:4px;
+    letter-spacing:1px;
+  }
+  .panel-head h2{
+    margin:0;
+    font-size:20px;
+    letter-spacing:1px;
+  }
+  .panel-toolbar{
+    margin-left:auto;
+    display:flex;
+    gap:8px;
+  }
+  .panel-toolbar button{
+    font-family:ui-monospace,Menlo,monospace;
+    font-size:11px;
+    border:1px solid var(--ink-soft);
+    background:transparent;
+    color:var(--ink-soft);
+    padding:4px 9px;
+    border-radius:6px;
+    cursor:pointer;
+  }
+  .panel-toolbar button:hover{
+    border-color:var(--accent,#C9532F);
+    color:var(--accent,#C9532F);
+  }
+
+  .mindmap{
+    padding:20px 26px 34px;
+    background:
+      repeating-linear-gradient( var(--paper) 0px, var(--paper) 27px, var(--paper-line) 28px );
+    font-size:14.5px;
+    line-height:1.55;
+  }
+
+  ul.tree{
+    list-style:none;
+    margin:0;
+    padding-left:22px;
+    border-left:1.5px dashed #C9B98A;
+  }
+  .mindmap > ul.tree{
+    border-left:none;
+    padding-left:0;
+  }
+  ul.tree li{
+    position:relative;
+    margin:3px 0;
+    padding-left:16px;
+  }
+  ul.tree li::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:14px;
+    width:14px;
+    height:1.5px;
+    background:#C9B98A;
+  }
+  .node{
+    display:inline-flex;
+    align-items:flex-start;
+    gap:6px;
+    cursor:default;
+  }
+  .node .twist{
+    flex:0 0 auto;
+    width:14px;
+    height:14px;
+    margin-top:2px;
+    border-radius:3px;
+    border:1px solid var(--accent,#C9532F);
+    color:var(--accent,#C9532F);
+    font-size:10px;
+    line-height:12px;
+    text-align:center;
+    cursor:pointer;
+    user-select:none;
+    background:#fff;
+  }
+  .node .twist.leaf{
+    visibility:hidden;
+  }
+  .node .label{
+    color:var(--ink);
+  }
+  .lvl-0 > .node .label{
+    font-weight:700;
+    font-size:17px;
+    color:var(--accent,#C9532F);
+  }
+  .lvl-1 > .node .label{
+    font-weight:700;
+    color:#3A4A32;
+  }
+  .lvl-2 > .node .label{
+    color:var(--ink);
+  }
+  .lvl-3 > .node .label, .lvl-4 > .node .label{
+    color:var(--ink-soft);
+    font-size:13.5px;
+  }
+  .formula{
+    font-family:ui-monospace,"Cambria Math",monospace;
+  }
+  ul.tree.collapsed{
+    display:none;
+  }
+
+  footer{
+    text-align:center;
+    color:rgba(244,241,230,0.4);
+    font-size:11px;
+    padding:0 0 30px;
+    font-family:ui-monospace,Menlo,monospace;
+    letter-spacing:1px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>初中数学知识点框架图</h1>
+  <p>SIX PARTS · MINDMAP · 内容取自原始框架图，未作删改</p>
+</header>
+
+<nav id="tabs"></nav>
+
+<main id="panels"></main>
+
+<footer>点击方块节点可展开 / 折叠 · 内容与原 PDF 一致</footer>
+
+<script>
+/* ---------- 数据：与 PDF 原文一一对应，未修改内容，仅按缩进层级重新组织 ---------- */
+
+const PARTS = [
+{
+  id:"p1", short:"第一部分", title:"数与式", accent:"#C9532F",
+  data:{ label:"数与式", children:[
+    { label:"实数", children:[
+      { label:"定义：有理数和无理数统称实数" },
+      { label:"分类", children:[
+        { label:"有理数：整数与分数" },
+        { label:"无理数：常见类型（开方开不尽的数、与π有关的数、无限不循环小数）" },
+      ]},
+      { label:"实数运算", children:[
+        { label:"法则：加、减、乘、除、乘方、开方" },
+        { label:"运算定律：交换律、结合律、分配律" },
+      ]},
+      { label:"相关概念", children:[
+        { label:"数轴（比较大小）、相反数、倒数（负倒数）科学记数法" },
+        { label:"有效数字、平方根与算术平方根、立方根、非负式子（a²，|a|，√a）" },
+      ]},
+    ]},
+    { label:"整式", children:[
+      { label:"分类", children:[
+        { label:"单项式：系数与次数" },
+        { label:"多项式：次数与项数" },
+      ]},
+      { label:"加减法则：加减法、去括号（添括号）法则、合并同类项" },
+      { label:"幂的运算", children:[
+        { label:"aᵐ·aⁿ=aᵐ⁺ⁿ ；aᵐ÷aⁿ=aᵐ⁻ⁿ", f:true },
+        { label:"(aᵐ)ⁿ=aᵐⁿ ；(ab)ᵐ=aᵐbᵐ ；(a/b)ᵐ=aᵐ/bᵐ", f:true },
+        { label:"a⁰=1 ；a⁻ᵖ=1/aᵖ", f:true },
+      ]},
+      { label:"乘法运算", children:[
+        { label:"单项式×单项式；单项式×多项式；多项式×多项式" },
+        { label:"单项式÷单项式；多项式÷单项式" },
+      ]},
+      { label:"混合运算：先乘方开方，再乘除，最后算加减；同级运算自左至右顺序计算；括号优先" },
+      { label:"乘法公式", children:[
+        { label:"平方差公式：(a+b)(a-b)=a²-b²", f:true },
+        { label:"完全平方公式：(a±b)²=a²±2ab+b²", f:true },
+      ]},
+    ]},
+    { label:"分式", children:[
+      { label:"分式的定义：分母中含可变字母" },
+      { label:"分式有意义的条件：分母不为零" },
+      { label:"分式值为零的条件：分子为零，分母不为零" },
+      { label:"分式的性质：a/b=(a×m)/(b×m)；a/b=(a÷m)/(b÷m)（通分与约分的根据）", f:true },
+      { label:"分式的运算：通分、约分，加、减、乘、除", children:[
+        { label:"化简求值：先化简再求值（整式与分式的通分、符号变化）；整体代换求值" },
+      ]},
+    ]},
+    { label:"二次根式", children:[
+      { label:"定义：式子√a(a≥0)叫二次根式，二次根式的意义即被开方数大于等于0", f:true },
+      { label:"二次根式的性质：(√a)²=a；√a²=a(a≥0)，-a(a<0)", f:true },
+      { label:"二次根式的相关概念", children:[
+        { label:"最简二次根式（分解质因数法化简）" },
+        { label:"同类二次根式及合并同类二次根式" },
+        { label:"分母有理化（“单项式与多项式”型）" },
+      ]},
+      { label:"二次根式的运算", children:[
+        { label:"加减法：先化最简，再合并同类二次根式" },
+        { label:"乘除法：√a·√b=√ab；√a/√b=√(a/b)（结果化简）", f:true },
+      ]},
+    ]},
+    { label:"分解因式", children:[
+      { label:"定义：（与整式乘法过程相反，分解要彻底）" },
+      { label:"方法", children:[
+        { label:"提取公因式法：（注意系数与相同字母，要提彻底）" },
+        { label:"公式法", children:[
+          { label:"平方差公式：a²-b²=(a+b)(a-b)", f:true },
+          { label:"完全平方公式：a²±2ab+b²=(a±b)²", f:true },
+        ]},
+        { label:"十字相乘法：x²+(a+b)x+ab=(x+a)(x+b)", f:true },
+        { label:"分组分解法：（对称分组与不对称分组）" },
+      ]},
+    ]},
+  ]}
+},
+
+{
+  id:"p2", short:"第二部分", title:"方程与不等式", accent:"#2E6E5E",
+  data:{ label:"方程与不等式", children:[
+    { label:"方程", children:[
+      { label:"一元一次方程", children:[
+        { label:"定义与解" },
+        { label:"解法步骤：去分母、去括号、移项、合并同类项、系数化为1" },
+        { label:"应用：确定类型、找出关键量、数量关系" },
+      ]},
+      { label:"二元一次方程（组）", children:[
+        { label:"定义与解" },
+        { label:"解法：代入消元法、加减消元法" },
+        { label:"简单的三元一次方程组" },
+        { label:"简单的二元二次方程组" },
+      ]},
+      { label:"一元二次方程", children:[
+        { label:"定义与判别式(Δ=b²-4ac)", f:true },
+        { label:"解法：直接开平方法、配方法、求根公式法、因式分解法" },
+      ]},
+      { label:"分式方程", children:[
+        { label:"定义与根（增根）" },
+        { label:"解法：去分母化为整式方程，解整式方程，验根" },
+      ]},
+      { label:"方程的应用", children:[
+        { label:"类型", children:[
+          { label:"1. 行程问题" },
+          { label:"2. 工程（效）问题" },
+          { label:"3. 增长率问题：（增长率与负增长率）" },
+          { label:"4. 数字问题：（数位变化）" },
+          { label:"5. 图形问题：（周长与面积（等积变换））" },
+          { label:"6. 销售问题：（利润与利率）" },
+          { label:"7. 储蓄问题：（利息、本息和、利息税）" },
+          { label:"8. 分配与方案问题" },
+        ]},
+        { label:"常用方法", children:[
+          { label:"1. 线段图示法" },
+          { label:"2. 列表法" },
+          { label:"3. 直观模型法" },
+        ]},
+      ]},
+    ]},
+    { label:"不等式（组）", children:[
+      { label:"一元一次不等式", children:[
+        { label:"一般不等式解法" },
+        { label:"条件不等式解法" },
+      ]},
+      { label:"一元一次不等式组", children:[
+        { label:"解法：（借助数轴）" },
+        { label:"应用", children:[
+          { label:"1. 不等式与不等式" },
+          { label:"2. 不等式与方程" },
+          { label:"3. 不等式与函数" },
+          { label:"4. 最佳方案问题" },
+          { label:"5. 最后一个分配问题" },
+        ]},
+      ]},
+    ]},
+  ]}
+},
+
+{
+  id:"p3", short:"第三部分", title:"函数与图象", accent:"#2A5B8C",
+  data:{ label:"函数", children:[
+    { label:"直角坐标系", children:[
+      { label:"①各象限内点的特点" },
+      { label:"②坐标轴上点的特点：x轴：纵坐标y=0；y轴：横坐标x=0", f:true },
+      { label:"③平行于x轴、y轴的线段长度的求法（大坐标减小坐标）" },
+      { label:"④不共线的几点围成的多边形的面积求法（割补法）" },
+      { label:"⑤对称点的坐标：关于x轴对称(x相同，y相反)；关于y轴对称(x相反，y相同)；关于原点O对称(x,y都相反)", f:true },
+    ]},
+    { label:"一次函数", children:[
+      { label:"函数表达式", children:[
+        { label:"正比例函数：y=kx(k≠0)（一点求解析式）", f:true, children:[
+          { label:"一、三象限角平分线：y=x", f:true },
+          { label:"二、四象限角平分线：y=-x", f:true },
+        ]},
+        { label:"一次函数：y=kx+b(k≠0)（两点求解析式）", f:true },
+      ]},
+      { label:"增减性：y=kx与y=kx+b增减性一样，k>0时，x增大y增大；k<0，x增大y减小", f:true },
+      { label:"平移性：y=kx+b可由y=kx上下平移而来；若y=k₁x+b₁与y=k₂x+b₂平行，则k₁=k₂，b₁≠b₂", f:true },
+      { label:"垂直性：若y=k₁x+b₁与y=k₂x+b₂垂直，则k₁·k₂=-1", f:true },
+      { label:"求交点：（联立函数表达式解方程组）" },
+      { label:"正负性：观察图像y>0与y<0时，x的取值范围（图像在x轴上方或下方时，x的取值范围）", f:true },
+    ]},
+    { label:"反比例函数", children:[
+      { label:"表达式：y=k/x(k≠0)（一点求解析式）", f:true },
+      { label:"性质", children:[
+        { label:"①区域性：k>0时，图像在一、三象限；k<0时，图像在二、四象限", f:true },
+        { label:"②增减性：k>0时，每个象限内y随x增大而减小；k<0时，每个象限内y随x增大而减小", f:true },
+        { label:"③恒值性：（图形面积与k值有关）" },
+        { label:"④对称性：既是轴对称图形，又是中心对称图形" },
+      ]},
+      { label:"求交点：（联立函数表达式解方程组求交点坐标，还可由图像比较函数的大小）" },
+    ]},
+    { label:"二次函数", children:[
+      { label:"表达式", children:[
+        { label:"①一般式：y=ax²+bx+c，其中(a≠0)", f:true },
+        { label:"②顶点式：y=a(x-k)²+h，其中(a≠0)，(k,h)为抛物线顶点坐标", f:true },
+        { label:"③交点式：y=a(x-x₁)(x-x₂)，其中(a≠0)，x₁、x₂是函数图象与x轴交点的横坐标", f:true },
+      ]},
+      { label:"性质", children:[
+        { label:"①开口方向与大小：a>0向上，a<0向下；|a|越大，开口越大；|a|越小，开口越小", f:true },
+        { label:"②对称性：对称轴直线x=-b/2a", f:true },
+        { label:"③增减性：a>0时，对称轴左侧x增大y减小、右侧x增大y增大；a<0时，对称轴左侧x增大y增大、右侧x增大y减小", f:true },
+        { label:"④顶点坐标：(-b/2a, (4ac-b²)/4a)", f:true },
+        { label:"⑤最值：a>0时，x=-b/2a，y最小值=(4ac-b²)/4a；a<0时，x=-b/2a，y最大值=(4ac-b²)/4a", f:true },
+      ]},
+      { label:"示意图：画示意图五要素（开口方向、顶点、对称轴、与x、y交点坐标）" },
+      { label:"符号判断", children:[
+        { label:"a与c：开口方向确定a的符号，抛物线与y轴交点纵坐标确定c的值" },
+        { label:"b的符号：b的符号由a与对称轴位置有关：左同右异" },
+        { label:"Δ=b²-4ac：Δ>0与x轴有两个交点；Δ=0与x轴有两个交点；Δ<0与x轴无交点", f:true },
+        { label:"a+b+c：当x=1时，y=a+b+c的值", f:true },
+        { label:"a-b+c：当x=-1时，y=a-b+c的值", f:true },
+      ]},
+    ]},
+    { label:"函数应用", children:[
+      { label:"①求函数表达式" },
+      { label:"②求交点坐标" },
+      { label:"③求围成的图形的面积(巧设坐标)" },
+      { label:"④比较函数的大小" },
+    ]},
+  ]}
+},
+
+{
+  id:"p4", short:"第四部分", title:"图形与几何", accent:"#8C4A2A",
+  data:{ label:"图形与几何", children:[
+    { label:"几何初步", children:[
+      { label:"线", children:[
+        { label:"直线：两点确定一条直线" },
+        { label:"射线" },
+        { label:"线段：两点之间线段最短，（点到直线的距离，平行线间的距离）" },
+      ]},
+      { label:"角", children:[
+        { label:"角的分类：锐角、直角、钝角、平角、周角" },
+        { label:"角的度量与比较：1°=60′，1′=60″", f:true },
+        { label:"余角与补角的性质：同角的余角（补角）相等，等角的余角（补角）相等" },
+        { label:"角的位置关系：同位角、内错角、同旁内角、对顶角、邻补角" },
+      ]},
+      { label:"相交线", children:[
+        { label:"对顶角：对顶角相等" },
+        { label:"垂线：定义，垂直的判定，垂线段最短" },
+      ]},
+      { label:"平行线", children:[
+        { label:"定义：在同一平面内，不相交的两条直线叫平行线" },
+        { label:"性质：两直线平行，同位角相等、内错角相等、同旁内角互补" },
+        { label:"判定", children:[
+          { label:"同位角相等或内错角相等或同旁内角互补，两直线平行" },
+          { label:"平行于同一条直线的两条直线平行" },
+          { label:"平面内，垂直于同一条直线的两直线平行" },
+        ]},
+      ]},
+    ]},
+    { label:"三角函数", children:[
+      { label:"定义：在Rt△ABC中，sinα=α的对边/斜边，cosα=α的邻边/斜边，tanα=α的对边/α的邻边", f:true },
+      { label:"特殊三角函数值", children:[
+        { label:"sin30°=1/2，cos30°=√3/2，tan30°=√3/3", f:true },
+        { label:"sin45°=√2/2，cos45°=√2/2，tan45°=1", f:true },
+        { label:"sin60°=√3/2，cos60°=1/2，tan60°=√3", f:true },
+      ]},
+      { label:"应用：要构造Rt△，才能使用三角函数" },
+    ]},
+    { label:"三角形", children:[
+      { label:"分类", children:[
+        { label:"按边分类：不等边三角形、等腰三角形、等边三角形" },
+        { label:"按角分类：锐角三角形、直角三角形、钝角三角形" },
+      ]},
+      { label:"边", children:[
+        { label:"三边关系：两边之和大于第三边，两边之差小于第三边" },
+        { label:"面积与周长：C=a+b+c，S=½底×高", f:true },
+      ]},
+      { label:"角", children:[
+        { label:"三角形的内角和等于180度，外角和等于360度" },
+        { label:"三角形的一个外角等于不相邻的两内角之和" },
+        { label:"三角形的一个外角大于任何一个不相邻的内角" },
+      ]},
+      { label:"线段", children:[
+        { label:"中线：一条中线平分三角形的面积" },
+        { label:"角平分线", children:[
+          { label:"性质：角平分线上的点到角两边的距离相等" },
+          { label:"判定：到角两边的距离相等的点在角的平分线上" },
+          { label:"内心：三角形三条角平分线的交点，到三边距离相等" },
+        ]},
+        { label:"高：高的作法及高的位置（可以在三角形的内部、边上、外部）" },
+        { label:"中位线：三角形的中位线平行于第三边且等于第三边的一半" },
+        { label:"中垂线", children:[
+          { label:"性质：线段垂直平分线上的点到线段两端点的距离相等" },
+          { label:"判定：到线段两端点的距离相等的点在线段的垂直平分线上" },
+          { label:"外心：三角形三边垂直平分线的交点，到三个顶点的距离相等" },
+        ]},
+      ]},
+      { label:"等腰三角形", children:[
+        { label:"性质", children:[
+          { label:"等腰三角形的两腰相等、两底角相等，具有三线合一性质，是轴对称图形" },
+          { label:"等边三角形的三边上均有三线合一，三边相等，三角形每个角都是60度" },
+        ]},
+        { label:"判定", children:[
+          { label:"有两边相等的三角形是等腰三角形" },
+          { label:"有两角相等的三角形是等腰三角形" },
+          { label:"有一个角为60度的等腰三角形是等边三角形" },
+          { label:"有两个角是60度的三角形是等边三角形" },
+        ]},
+      ]},
+      { label:"直角三角形", children:[
+        { label:"性质", children:[
+          { label:"一个角是直角或两个锐角互余" },
+          { label:"直角三角形斜边上的中线等于斜边的一半" },
+          { label:"直角三角形中，30°的锐角所对的直角边等于斜边的一半", f:true },
+          { label:"勾股定理：两直角边的平方和等于斜边的平方" },
+        ]},
+        { label:"判定", children:[
+          { label:"证一个角是直角或两个角互余" },
+          { label:"有一边上的中线等于这边的一半的三角形是直角三角形" },
+          { label:"勾股定理的逆定理：若a²+b²=c²，则∠C=90°", f:true },
+        ]},
+      ]},
+      { label:"全等三角形", children:[
+        { label:"性质", children:[
+          { label:"全等三角形的对应边相等，对应角相等，周长、面积也相等" },
+          { label:"全等三角形对应线段（角平分线、中线、高、中位线等）相等" },
+        ]},
+        { label:"判定：ASA，SAS，AAS，SSS，HL", f:true },
+      ]},
+    ]},
+    { label:"四边形", children:[
+      { label:"多边形：多边形的内角和为（n-2）·180°，外角和为360°", f:true },
+      { label:"梯形", children:[
+        { label:"定义：一组对边平行而另一组对边不平行的四边形叫做梯形" },
+        { label:"特殊梯形", children:[
+          { label:"直角梯形" },
+          { label:"等腰梯形", children:[
+            { label:"性质：两腰相等、对角线相等，同一底上的两角相等" },
+            { label:"判定", children:[
+              { label:"两腰相等的梯形是等腰梯形" },
+              { label:"对角线相等的梯形是等腰梯形" },
+              { label:"同一底上的两角相等的梯形是等腰梯形" },
+            ]},
+          ]},
+        ]},
+      ]},
+      { label:"平行四边形", children:[
+        { label:"性质：平行四边形的两组对边分别平行且相等；两组对角分别相等；两条对角线互相平分" },
+        { label:"判定", children:[
+          { label:"两组对边分别平行" },
+          { label:"一组对边平行且相等" },
+          { label:"两组对边分别相等⇒的四边形是平行四边形", f:true },
+          { label:"两组对角分别相等" },
+          { label:"对角线互相平分" },
+        ]},
+      ]},
+      { label:"矩形", children:[
+        { label:"性质：共性：具有平行四边形的所有性质；个性：对角线相等，四个角都是直角" },
+        { label:"判定", children:[
+          { label:"先证平行四边形，再证有一个直角" },
+          { label:"先证平行四边形，再证对角线相等" },
+          { label:"三个角是直角的四边形是矩形" },
+        ]},
+      ]},
+      { label:"菱形", children:[
+        { label:"性质：共性：具有平行四边形的所有性质；个性：对角线互相垂直且每条对角线平分一组对角，四条边相等" },
+        { label:"判定", children:[
+          { label:"先证平行四边形，再证对角线互相垂直" },
+          { label:"先证平行四边形，再证一组邻边相等" },
+          { label:"四条边都相等的四边形是菱形" },
+        ]},
+      ]},
+      { label:"正方形", children:[
+        { label:"性质：具有平行四边形、矩形、菱形的所有性质" },
+        { label:"判定", children:[
+          { label:"证平行四边形→矩形→正方形", f:true },
+          { label:"证平行四边形→菱形→正方形", f:true },
+        ]},
+      ]},
+      { label:"面积求法", children:[
+        { label:"梯形：S=½（上底+下底）×高=中位线×高", f:true },
+        { label:"平行四边形：S=底×高", f:true },
+        { label:"矩形：S=长×宽", f:true },
+        { label:"菱形：S=底×高=对角线乘积的一半", f:true },
+        { label:"正方形：S=边长×边长=对角线乘积的一半", f:true },
+      ]},
+    ]},
+    { label:"圆", children:[
+      { label:"点与圆的三种位置关系", children:[
+        { label:"点在圆外：d>r", f:true },
+        { label:"点在圆上：d=r", f:true },
+        { label:"点在圆内：d<r", f:true },
+      ]},
+      { label:"圆的轴对称性", children:[
+        { label:"弓形计算：（弦、弦心距、半径、拱高）之间的关系" },
+        { label:"垂径定理", children:[
+          { label:"定理：垂直于弦的直径平分弦，并且平分弦所对的两条弧" },
+          { label:"推论：平分弦（不是直径）的直径垂直于弦，并且平分弦所对的弧" },
+        ]},
+      ]},
+      { label:"圆的中心对称性", children:[
+        { label:"五组量的关系：在同圆或等圆中，两条弧、两条弦、两个圆心角、两个圆周角、两条弦心距中有一组量相等，则其余的各组量也分别相等" },
+        { label:"圆周角与圆心角", children:[
+          { label:"同弧所对的圆周角是它所对圆心角的一半" },
+          { label:"半圆（或直径）所对的圆周角是90°", f:true },
+          { label:"90°的圆周角所对的弦是直径，所对的弧是半圆", f:true },
+        ]},
+        { label:"相交线定理：圆中两弦AB、CD相交于P点，则PA·PB=PC·PD", f:true },
+        { label:"圆中两条平行弦所夹的弧相等" },
+      ]},
+      { label:"直线和圆的位置关系", children:[
+        { label:"直线和圆的三种位置关系", children:[
+          { label:"相离：d>r", f:true },
+          { label:"相切：d=r（距离法）", f:true },
+          { label:"相交：d<r", f:true },
+        ]},
+        { label:"圆的切线", children:[
+          { label:"性质：圆的切线垂直于过切点的直径（或半径）" },
+          { label:"判定：经过半径的外端且垂直于这条半径的直线是圆的切线" },
+        ]},
+        { label:"弦切角：弦切角等于它所夹的弧对的圆周角" },
+        { label:"切线长定理：如图，PA=PB，PO平分∠APB", f:true },
+        { label:"切割线定理：如图，PA²=PC·PD", f:true },
+        { label:"外心与内心" },
+      ]},
+      { label:"圆和圆的位置关系", children:[
+        { label:"相离：外离（d>R+r），内含（d<R-r）", f:true },
+        { label:"相切：外切（d=R+r），内切（d=R-r）", f:true },
+        { label:"相交：R-r<d<R+r", f:true },
+      ]},
+      { label:"圆的有关计算", children:[
+        { label:"弧长公式：l弧长=(n/360)×2πr=nπr/180", f:true },
+        { label:"扇形面积公式：S=(n/360)×πr²=½·l弧长·r", f:true },
+        { label:"圆锥的侧面积：S侧=½·2πr·l=πrl（r为底面圆的半径，l为母线）", f:true },
+        { label:"圆锥的全面积：S全=πr²+πrl", f:true },
+      ]},
+    ]},
+  ]}
+},
+
+{
+  id:"p5", short:"第五部分", title:"图形的变化", accent:"#6B4A8C",
+  data:{ label:"图形的变化", children:[
+    { label:"轴对称", children:[
+      { label:"轴对称（折叠）", children:[
+        { label:"①轴对称指两个图形之间的关系，它们全等" },
+        { label:"②对应点的连线段被对称轴垂直平分" },
+        { label:"③对应线段所在的直线相交于对称轴上一点（或平行）" },
+        { label:"④图形折叠后常用勾股定理求线段长" },
+      ]},
+      { label:"轴对称图形", children:[
+        { label:"①指一个图形" },
+        { label:"②轴对称图形被对称轴分成的两部分全等" },
+      ]},
+    ]},
+    { label:"平移", children:[
+      { label:"①平移前后两个图形全等" },
+      { label:"②平移前后对应点的连线段相等且平行（或共线）" },
+      { label:"③平移前后的对应角相等，对应线段相等且平行（或共线）" },
+      { label:"④平移的两个要素：平移方向、平移距离" },
+    ]},
+    { label:"旋转", children:[
+      { label:"①旋转前后的两个图形全等" },
+      { label:"②旋转前后对应点与旋转中心的连线段相等，且它们的夹角等于旋转角" },
+      { label:"③旋转前后对应角相等，对应线段相等" },
+      { label:"④旋转的三要素：旋转中心、旋转方向、旋转角" },
+    ]},
+    { label:"视图与投影", children:[
+      { label:"视图的画法", children:[
+        { label:"①大小、比例要适中" },
+        { label:"②实线、虚线要画清" },
+      ]},
+      { label:"投影", children:[
+        { label:"平行投影：平行光线下的投影，物体平行影子平行或共线" },
+        { label:"中心投影：点光源射出的光线下的投影，影子不平行" },
+        { label:"视点、视线、盲区" },
+        { label:"投影的计算：画好图形，相似三角形性质的应用" },
+      ]},
+    ]},
+    { label:"相似形", children:[
+      { label:"比例的性质", children:[
+        { label:"基本性质：a/b=c/d ⇔ ad=bc", f:true },
+        { label:"合比性质：a/b=c/d ⇒ (a±b)/b=(c±d)/d", f:true },
+        { label:"等比性质：a/b=c/d=…=m/n=k ⇒ (a+b+…+m)/(b+d+…+n)=k，（条件b+d+…+n≠0）", f:true },
+      ]},
+      { label:"黄金分割：线段AB被点C分成AC、BC两线段（AC>BC），满足AC²=BC·AB，则点C为AB的一个黄金分割点", f:true },
+      { label:"相似图形", children:[
+        { label:"相似多边形", children:[
+          { label:"性质：相似多边形的对应边成比例、对应角相等" },
+          { label:"判定：全部的对应边成比例、对应角相等" },
+        ]},
+        { label:"相似三角形", children:[
+          { label:"性质", children:[
+            { label:"①对应角相等、对应边成比例" },
+            { label:"②对应线段（中线、高、角平分线、周长）的比等于相似比" },
+            { label:"③面积的比等于相似比的平方" },
+          ]},
+          { label:"判定", children:[
+            { label:"①有两个角相等的两个三角形相似" },
+            { label:"②两边对应成比例且夹角相等的两个三角形相似" },
+            { label:"③三边对应成比例的两个三角形相似" },
+            { label:"④有一条直角边与斜边对应成比例的两个直角三角形相似" },
+          ]},
+          { label:"射影定理：在Rt△ABC中，∠C=90°，CD⊥AB，则AC²=AD·AB，BC²=BD·AB，CD²=AD·BD（如图）", f:true },
+        ]},
+      ]},
+      { label:"位似图形", children:[
+        { label:"①位似图形是一种特殊的相似图形，具有相似图形的一切性质" },
+        { label:"②位似图形对应点所确定的直线过位似中心" },
+        { label:"③通过位似可以将图形放大或缩小" },
+      ]},
+    ]},
+  ]}
+},
+
+{
+  id:"p6", short:"第六部分", title:"统计与概率", accent:"#B0562C",
+  data:{ label:"统计与概率", children:[
+    { label:"两查", children:[
+      { label:"普查：总体与个体（研究对象→中心词）", f:true },
+      { label:"抽样调查：样本与容量（无单位的数量）" },
+    ]},
+    { label:"三图", children:[
+      { label:"折线图（发展趋势与波动性→横纵轴坐标单位长度要统一）", f:true },
+      { label:"条形图（纵坐标起点为零→高度之比等于频数或频率之比）", f:true },
+      { label:"扇形图（知道各量的百分比→可用加权平均数求平均值）", f:true },
+    ]},
+    { label:"三数", children:[
+      { label:"平均数", children:[
+        { label:"算术平均数" },
+        { label:"参照平均数" },
+        { label:"加权平均数" },
+      ]},
+      { label:"众数(可能不止一个)" },
+      { label:"中位数（排序、定位）" },
+    ]},
+    { label:"三差", children:[
+      { label:"方差：s²=(1/n)[(x̄-x₁)²+(x̄-x₂)²+…+(x̄-xₙ)²]", f:true },
+      { label:"（一组数据整体被扩大n倍，平均数扩大n倍，方差扩大n²倍）；（一组数据整体被增加m，平均数增加m，方差不变）", f:true },
+      { label:"标准差：方差的算术平方根s" },
+      { label:"极差：最大数与最小数之差" },
+      { label:"（方差与标准差均衡量数据的波动性，方差越小波动越小）" },
+    ]},
+    { label:"事件", children:[
+      { label:"确定事件", children:[
+        { label:"必然事件：（概率为1）" },
+        { label:"不可能事件：（概率为0）" },
+      ]},
+      { label:"不确定事件：（概率在0与1之间）" },
+    ]},
+    { label:"两率", children:[
+      { label:"频率：（试验值，多次试验后频率会接近理论概率）" },
+      { label:"概率：求法", children:[
+        { label:"比例法（数量之比、面积之比等）" },
+        { label:"列表法（返回与不返回的两步实验求概率）" },
+        { label:"树状图（返回与不返回的两步或两步以上的试验求概率）" },
+      ]},
+    ]},
+  ]}
+},
+];
+
+/* ---------- 渲染逻辑 ---------- */
+
+function renderNode(node, level){
+  const li = document.createElement("li");
+  li.className = "lvl-" + level;
+
+  const wrap = document.createElement("div");
+  wrap.className = "node";
+
+  const twist = document.createElement("span");
+  twist.className = "twist" + (node.children && node.children.length ? "" : " leaf");
+  twist.textContent = node.children && node.children.length ? "–" : "";
+
+  const label = document.createElement("span");
+  label.className = "label" + (node.f ? " formula" : "");
+  label.textContent = node.label;
+
+  wrap.appendChild(twist);
+  wrap.appendChild(label);
+  li.appendChild(wrap);
+
+  if(node.children && node.children.length){
+    const ul = document.createElement("ul");
+    ul.className = "tree";
+    node.children.forEach(child => ul.appendChild(renderNode(child, level+1)));
+    li.appendChild(ul);
+
+    twist.addEventListener("click", () => {
+      const collapsed = ul.classList.toggle("collapsed");
+      twist.textContent = collapsed ? "+" : "–";
+    });
+  }
+
+  return li;
+}
+
+function buildPanel(part){
+  const panel = document.createElement("div");
+  panel.className = "panel";
+  panel.id = "panel-" + part.id;
+  panel.style.setProperty("--accent", part.accent);
+
+  const head = document.createElement("div");
+  head.className = "panel-head";
+  head.innerHTML = `<span class="tag">${part.short}</span><h2>${part.title}</h2>`;
+
+  const toolbar = document.createElement("div");
+  toolbar.className = "panel-toolbar";
+  const expandBtn = document.createElement("button");
+  expandBtn.textContent = "全部展开";
+  const collapseBtn = document.createElement("button");
+  collapseBtn.textContent = "全部折叠";
+  const svgBtn = document.createElement("button");
+  svgBtn.textContent = "下载 SVG";
+  toolbar.appendChild(expandBtn);
+  toolbar.appendChild(collapseBtn);
+  toolbar.appendChild(svgBtn);
+  head.appendChild(toolbar);
+
+  const body = document.createElement("div");
+  body.className = "mindmap";
+  const rootUl = document.createElement("ul");
+  rootUl.className = "tree";
+  rootUl.appendChild(renderNode(part.data, 0));
+  body.appendChild(rootUl);
+
+  expandBtn.addEventListener("click", () => {
+    body.querySelectorAll("ul.tree.collapsed").forEach(u => u.classList.remove("collapsed"));
+    body.querySelectorAll(".twist:not(.leaf)").forEach(t => t.textContent = "–");
+  });
+  collapseBtn.addEventListener("click", () => {
+    body.querySelectorAll(".mindmap > ul.tree > li > ul.tree").forEach(u => {}); // no-op guard
+    body.querySelectorAll("ul.tree").forEach(u => {
+      if(u !== rootUl) u.classList.add("collapsed");
+    });
+    body.querySelectorAll(".twist:not(.leaf)").forEach(t => t.textContent = "+");
+  });
+
+  svgBtn.addEventListener("click", () => exportSVG(part, body));
+
+  panel.appendChild(head);
+  panel.appendChild(body);
+  return panel;
+}
+
+/* ---------- 导出为 SVG ---------- */
+
+function exportSVG(part, mindmapEl){
+  const width  = Math.max(mindmapEl.scrollWidth, mindmapEl.clientWidth) + 20;
+  const height = Math.max(mindmapEl.scrollHeight, mindmapEl.clientHeight) + 20;
+
+  const styleText = document.getElementById("page-style").textContent;
+  const clone = mindmapEl.cloneNode(true);
+  clone.style.width = width + "px";
+
+  const xhtmlDiv =
+    '<div xmlns="http://www.w3.org/1999/xhtml" style="width:' + width + 'px;box-sizing:border-box;">' +
+      '<style>' + styleText + '</style>' +
+      clone.outerHTML +
+    '</div>';
+
+  const svgMarkup =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="' + width + '" height="' + height + '" ' +
+    'viewBox="0 0 ' + width + ' ' + height + '">' +
+      '<rect x="0" y="0" width="' + width + '" height="' + height + '" fill="#FBF7EC"/>' +
+      '<foreignObject x="0" y="0" width="' + width + '" height="' + height + '">' +
+        xhtmlDiv +
+      '</foreignObject>' +
+    '</svg>';
+
+  const blob = new Blob([svgMarkup], {type:"image/svg+xml;charset=utf-8"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = part.short + "_" + part.title + "_思维导图.svg";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 2000);
+}
+
+const tabsEl = document.getElementById("tabs");
+const panelsEl = document.getElementById("panels");
+
+PARTS.forEach((part, i) => {
+  const btn = document.createElement("button");
+  btn.textContent = part.short + "·" + part.title;
+  btn.addEventListener("click", () => activate(part.id));
+  tabsEl.appendChild(btn);
+  part._tabBtn = btn;
+
+  const panel = buildPanel(part);
+  panelsEl.appendChild(panel);
+});
+
+function activate(id){
+  PARTS.forEach(p => {
+    const isActive = p.id === id;
+    p._tabBtn.classList.toggle("active", isActive);
+    document.getElementById("panel-" + p.id).classList.toggle("active", isActive);
+  });
+}
+activate(PARTS[0].id);
+</script>
+</body>
+</html>
